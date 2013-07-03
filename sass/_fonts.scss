@@ -1,0 +1,14 @@
+// PFDinTextCondPro Medium
+@font-face {
+    font-family: 'pf_din_text_cond_promedium';
+    src: url('../fonts/pfdintextcondpro-medium.eot');
+    src: url('../fonts/pfdintextcondpro-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-medium.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin pm(){
+  font-family: 'pf_din_text_cond_promedium', arial, sans-serif;
+}
