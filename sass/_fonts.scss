@@ -12,3 +12,18 @@
 @mixin pm(){
   font-family: 'pf_din_text_cond_promedium', arial, sans-serif;
 }
+
+// PFDinTextCondPro Light
+@font-face {
+    font-family: 'pf_din_text_cond_prolight';
+    src: url('../fonts/pfdintextcondpro-light.eot');
+    src: url('../fonts/pfdintextcondpro-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-light.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin pl(){
+  font-family: 'pf_din_text_cond_prolight', arial, sans-serif;
+}

@@ -6,7 +6,8 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/app.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 <!-- BEGIN .topper -->
@@ -30,6 +31,35 @@
 			<i class="icon icon_callback"></i>
 			<span>Обратный звонок</span>
 			<i class="icon icon_arrow2"></i>
+			<!-- BEGIN .callback__popup -->
+			<div class="callback__popup">
+				<label class="label">
+					<div class="label__title">Ваше имя:</div>
+					<div class="label__field">
+						<input type="text" class="input_text" placeholder="" value="">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Телефон:</div>
+					<div class="label__field">
+						<input type="text" class="input_text" placeholder="" value="">
+					</div>
+				</label>
+				<div class="label"><div class="label__warning"><i></i>не забудьте указать код города/оператора</div></div>
+				<!-- BEGIN .callback__time -->
+				<div class="callback__time">
+					<h3 class="h1">Когда перезвонить?</h3>
+					<label><input type="checkbox" class="checkbox"> В указанное время <input type="text" class="input_text" placeholder="" value=""></label>
+					<label><input type="checkbox" class="checkbox"> Сейчас</label>
+					<!-- BEGIN .callback__btn -->
+					<div class="callback__btn">
+						<button class="btn btn_orange">Перезвонить</button>
+					</div>
+					<!-- /.callback__btn -->
+				</div>
+				<!-- /.callback__time -->
+			</div>
+			<!-- /.callback__popup -->
 		</div>
 		<!-- /.callback -->
 		<!-- BEGIN .livechat -->
@@ -38,12 +68,12 @@
 			<span>Он-лайн чат</span>
 		</div>
 		<!-- /.livechat -->
-		<!-- BEGIN .topper__login -->
-		<div class="topper__login">
+		<!-- BEGIN .profile -->
+		<div class="profile">
 			<a href="#">Регистрация</a>
 			<button class="btn">Вход</button>
 		</div>
-		<!-- /.topper__login -->
+		<!-- /.profile -->
 	</div>
 	<!-- /.topper__in -->
 </div>
@@ -102,11 +132,94 @@
 		</ul>
 	</div>
 	<!-- /.nav -->
+	<!-- BEGIN .infographics -->
+	<div class="infographics">
+		<ul>
+			<li>
+				<div class="infographics__numb">2770</div>
+				<div class="infographics__text">товаров<br> в продаже</div>
+			</li>
+			<li>
+				<div class="infographics__numb">1300</div>
+				<div class="infographics__text">посетителей<br> каждый день</div>
+			</li>
+			<li>
+				<div class="infographics__numb">2035</div>
+				<div class="infographics__text">товаров<br> в наличии</div>
+			</li>
+			<li>
+				<div class="infographics__numb">1046</div>
+				<div class="infographics__text">заказов<br> в неделю</div>
+			</li>
+			<li>
+				<div class="infographics__numb">780</div>
+				<div class="infographics__text">обращений<br> в день</div>
+			</li>
+		</ul>
+	</div>
+	<!-- /.infographics -->
+	<!-- BEGIN .l -->
+	<div class="l">
+		<!-- BEGIN .l-sidebar -->
+		<div class="l-sidebar">
+			<!-- BEGIN .reviews -->
+			<div class="reviews">
+				<div class="reviews__head">
+					<h1 class="h1">Обзоры</h1>
+					<div class="reviews__all"><a href="#">посмотреть все</a> (18)</div>
+				</div>
+				<div class="reviews__content">
+					<ul>
+						<li class="reviews__item">
+							<div class="reviews__info">
+								<h3 class="reviews__title">Far Cry 3</h3>
+								<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры Far Cry 3  тропическом...</p>
+								<a href="#">подробнее</a>
+							</div>
+							<div class="reviews__media">
+								<img src="img/img-1.jpg" alt="img">
+							</div>
+						</li>
+						<li class="reviews__item">
+							<div class="reviews__info">
+								<h3 class="reviews__title">Borderlands 2</h3>
+								<p>В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме противостояния...</p>
+								<a href="#">подробнее</a>
+							</div>
+							<div class="reviews__media">
+								<img src="img/img-2.jpg" alt="img">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.reviews -->
+			<!-- BEGIN .social -->
+			<div class="social">
+				<img src="img/soc.jpg" alt="fb">
+			</div>
+			<!-- /.social -->
+		</div>
+		<!-- /.l-sidebar -->
+		<!-- BEGIN .l-main -->
+		<div class="l-main">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, doloribus, architecto, sed quae aspernatur a dolore laudantium ut quidem nam officia similique expedita fuga repellat soluta cum magni ratione facilis?
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, magnam aliquam praesentium architecto vero et sed dolorem amet quis tenetur sunt quisquam totam. Laudantium totam autem natus optio cupiditate veniam.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, iusto iste eligendi ipsa reiciendis sint similique quam incidunt porro distinctio quis beatae repudiandae possimus doloribus error unde in aliquid voluptatum.
+		</div>
+		<!-- /.l-main -->
+	</div>
+	<!-- /.l -->
 </div>
 <!-- END page-->
 <!-- BEGIN .recent-products -->
 <div class="recent-products">
-	<h2 class="h1">Просмотренные товары</h2>
+	<div class="recent-products__head">
+		<h2 class="h1">Просмотренные товары</h2>
+		<span class="recent-products__collapse">Свернуть<i class="icon icon_arrow2"></i></span>
+	</div>
 	<!-- BEGIN .recent-products__carousel -->
 	<div class="recent-products__carousel">
 		<!-- BEGIN .recent-products__wrap -->
