@@ -99,12 +99,13 @@
 			<!-- /.callback__popup -->
 		</div>
 		<!-- /.callback -->
-		<!-- BEGIN .livechat -->
-		<div class="livechat">
-			<i class="icon icon_chat"></i>
-			<span>Он-лайн чат</span>
-		</div>
-		<!-- /.livechat -->
+		 <!-- BEGIN .livechat -->
+			<div class="livechat">
+			   <!-- <i class="icon icon_chat"></i>
+			   <span>Он-лайн чат</span> -->
+			   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitewindow_567940" onclick="o=window.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitewindow_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+			</div>
+		  <!-- /.livechat -->
 		<!-- BEGIN .profile -->
 		<div class="profile">
 			<a href="#">Регистрация</a>
@@ -711,19 +712,30 @@
 			<div class="social">
 				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FGrenkaUA&amp;width=229&amp;height=262&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=true" scrolling="no" frameborder="0" style="border:1px solid #dcdcdc; overflow:hidden; width:229px; height:262px;" allowTransparency="true"></iframe>
 			</div>
-			<!-- /.social -->
-			<!-- BEGIN .social -->
 			<div class="social">
 				<script type="text/javascript" src="//vk.com/js/api/openapi.js?97"></script>
-
-				<!-- VK Widget -->
 				<div id="vk_groups" style="border: 1px solid #dcdcdc"></div>
 				<script type="text/javascript">
 				VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
 				</script>
 			</div>
-			<!-- /.social -->
+			<div class="social">
+				<a class="twitter-timeline" href="https://twitter.com/GrenkaUa" data-widget-id="354579017233469441">Твиты пользователя @GrenkaUa</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			<div class="social">
+				<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>
+				<script type="text/javascript">
+				    window.___gcfg = {lang: 'ru'};
 
+				    (function() {
+				        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				        po.src = 'https://apis.google.com/js/plusone.js';
+				        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				    })();
+				</script>
+			</div>
+			<!-- /.social -->
 		</div>
 		<!-- /.l-sidebar -->
 		<!-- BEGIN .l-main -->
@@ -774,28 +786,28 @@
 			<!-- /.popular -->
 
 			<!-- BEGIN .tab -->
-			<div class="tab">
+			<div class="products-wrap">
 				<!-- BEGIN .tab__top -->
-				<div class="tab__top">
-					<!-- BEGIN .tab__nav -->
-					<ul class="tab__nav">
-						<li class="is-active"><a href="#">Новинки</a></li>
-						<li><a href="#">Эксклюзивно</a></li>
-						<li><a href="#">Бестселлеры</a></li>
-						<li><a href="#">Топ21</a></li>
+				<div class="tab-wrap">
+					<!-- BEGIN .tab-wrap -->
+					<ul class="tab js-tab">
+						<li class="is-active" data-tab=".js-tab-cont1">Новинки</li>
+						<li data-tab=".js-tab-cont2">Эксклюзивно</li>
+						<li data-tab=".js-tab-cont3">Бестселлеры</li>
+						<li data-tab=".js-tab-cont4">Топ21</li>
 					</ul>
 					<!-- /.tab__nav -->
 					<!-- BEGIN .tab__all -->
-					<div class="tab__all">
+					<div class="tab-all-link">
 						<a href="#">посмотреть все</a> (155)
 					</div>
 					<!-- /.tab__all -->
 				</div>
 				<!-- /.tab__top -->
 				<!-- BEGIN .tab__main -->
-				<div class="tab__main">
-					<!-- BEGIN .tab__wrap -->
-					<div class="tab__wrap">
+				<div class="tab-cont">
+					<!-- BEGIN tab-cont -->
+					<div class="js-tab-cont js-tab-cont1">
 						<!-- BEGIN .tab__list -->
 						<ul class="tab__list product-list">
 							<li class="product">
@@ -826,6 +838,19 @@
 									<div class="product__info">
 										<h1 class="h1">DMC: Devil new May Cry</h1>
 										<div class="product__platform">x-box 360</div>
+										<!-- BEGIN .rating -->
+										<ul class="rating">
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+										<!-- /.rating -->
+										<div class="product__descr">
+											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+											<p><a href="#">подробнее</a></p>
+										</div>
 										<div class="product__price"><strong>110</strong> грн. <span>($26)</span></div>
 										<button class="btn">купить</button>
 									</div>
@@ -1014,34 +1039,120 @@
 						</ul>
 						<!-- /.tab__list -->
 					</div>
-					<!-- /.tab__wrap -->
+					<!-- /tab-cont -->
+					<!-- BEGIN tab-cont -->
+					<div class="js-tab-cont js-tab-cont2">
+						<!-- BEGIN .tab__list -->
+						<ul class="product-list">
+							<li class="product">
+								<div class="product__inner">
+									<!-- BEGIN .product__image -->
+									<div class="product__image">
+										<img src="img/img-8.jpg" width="100" height="130" alt="img">
+									</div>
+									<!-- /.product__image -->
+									<!-- BEGIN .product__info -->
+									<div class="product__info">
+										<h1 class="h1">Metal Gear Rising: Revengeance</h1>
+										<div class="product__platform">PS3</div>
+										<div class="product__price"><strong>210</strong> грн. <span>($26)</span></div>
+										<button class="btn">купить</button>
+									</div>
+									<!-- /.product__info -->
+								</div>
+							</li>
+							<li class="product">
+								<div class="product__inner">
+									<!-- BEGIN .product__image -->
+									<div class="product__image">
+										<img src="img/img-8.jpg" width="100" height="130" alt="img">
+									</div>
+									<!-- /.product__image -->
+									<!-- BEGIN .product__info -->
+									<div class="product__info">
+										<h1 class="h1">Metal Gear Rising: Revengeance</h1>
+										<div class="product__platform">PS3</div>
+										<div class="product__price"><strong>210</strong> грн. <span>($26)</span></div>
+										<button class="btn">купить</button>
+									</div>
+									<!-- /.product__info -->
+								</div>
+							</li>
+							<li class="product">
+								<div class="product__inner">
+									<!-- BEGIN .product__image -->
+									<div class="product__image">
+										<img src="img/img-8.jpg" width="100" height="130" alt="img">
+									</div>
+									<!-- /.product__image -->
+									<!-- BEGIN .product__info -->
+									<div class="product__info">
+										<h1 class="h1">Metal Gear Rising: Revengeance</h1>
+										<div class="product__platform">PS3</div>
+										<div class="product__price"><strong>210</strong> грн. <span>($26)</span></div>
+										<button class="btn">купить</button>
+									</div>
+									<!-- /.product__info -->
+								</div>
+							</li>
+							<li class="product">
+								<div class="product__inner">
+									<!-- BEGIN .product__image -->
+									<div class="product__image">
+										<img src="img/img-8.jpg" width="100" height="130" alt="img">
+									</div>
+									<!-- /.product__image -->
+									<!-- BEGIN .product__info -->
+									<div class="product__info">
+										<h1 class="h1">Metal Gear Rising: Revengeance</h1>
+										<div class="product__platform">PS3</div>
+										<div class="product__price"><strong>210</strong> грн. <span>($26)</span></div>
+										<button class="btn">купить</button>
+									</div>
+									<!-- /.product__info -->
+								</div>
+							</li>
+						</ul>
+						<!-- /.tab__list -->
+					</div>
+					<!-- /tab-cont -->
+					<!-- tab-cont -->
+					<div class="js-tab-cont js-tab-cont3">
+						3
+					</div>
+					<!-- /tab-cont -->
+					<!-- tab-cont -->
+					<div class="js-tab-cont js-tab-cont4">
+						4
+					</div>
+					<!-- /tab-cont -->
 				</div>
-				<!-- /.tab__main -->
+				<!-- /.tab_-wrap -->
 			</div>
 			<!-- /.tab -->
 
 			<!-- BEGIN .tab -->
-			<div class="tab">
+			<div class="products-wrap">
 				<!-- BEGIN .tab__top -->
-				<div class="tab__top">
+				<div class="tab-wrap">
 					<!-- BEGIN .tab__nav -->
-					<ul class="tab__nav">
-						<li class="is-active"><a href="#">Скоро</a></li>
+					<ul class="tab js-tab">
+						<li class="is-active" data-tab=".js-tab-cont5">Скоро</li>
 					</ul>
 					<!-- /.tab__nav -->
 					<!-- BEGIN .tab__all -->
-					<div class="tab__all">
+					<div class="tab-all-link">
 						<a href="#">посмотреть все</a> (5)
 					</div>
 					<!-- /.tab__all -->
 				</div>
 				<!-- /.tab__top -->
 				<!-- BEGIN .tab__main -->
-				<div class="tab__main">
+				<div class="tab-cont">
 					<!-- BEGIN .tab__wrap -->
-					<div class="tab__wrap">
+					<div class="js-tab-cont5">
 						<!-- BEGIN .tab__list -->
-						<ul class="tab__list product-list">
+						<ul class="product-list">
 							<li class="product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
@@ -1113,7 +1224,7 @@
 <div class="recent-product">
 	<div class="recent-product__head">
 		<h2 class="h1">Просмотренные товары</h2>
-		<span class="recent-product__collapse">Свернуть<i class="icon icon_arrow2"></i></span>
+		<span class="recent-product__collapse"><span>Свернуть</span><i class="icon icon_arrow2"></i></span>
 	</div>
 	<!-- BEGIN .recent-product__carousel -->
 	<div class="recent-product__carousel">

@@ -5,7 +5,9 @@ $(document).ready(function() {
 	var popup__callback = $(".js-popup-callback");
 	var popup__city = $(".js-city-popup");
 	var popup__enter = $(".js-popup-enter");
-
+	var prod_carousel = $('.recent-product__carousel');
+	var tab = $(".js-tab").find("li"); 
+	var tab_cont = $(".js-tab-cont"); 
 	// ---------------- CALLBACK POPUP -------------------- //
 		$('.callback').click(function() {
 			$(this).toggleClass("is-active");
@@ -13,8 +15,20 @@ $(document).ready(function() {
 			return false;
 		});
 
-		$('.recent-products__collapse').click(function() {
-			$('.recent-products__carousel').slideToggle();
+	// show/hide recent products
+		$('.recent-product__collapse').click(function() {
+			$('.recent-product__carousel').slideToggle();
+			if ($(this).hasClass("js-inactive")) {
+				$(this).removeClass("js-inactive");
+				$(this).find("span").text("Свернуть");
+				prod_carousel.slideDown();
+
+			}
+			else {
+				$(this).addClass("js-inactive");
+				$(this).find("span").text("Развернуть");
+				prod_carousel.slideUp();
+			}
 		});
 
 		$(document).click(function() {
@@ -53,6 +67,23 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 
+	// ---------------- tabs -------------------- //
+	
+	// default
+	tab_cont.hide();
+	tab_cont.first().show();
+	tab.first().addClass("is-active");
+
+	// action
+	tab.click(function(){
+		tab.removeClass("is-active");
+		$(this).toggleClass("is-active");
+
+		var index = $(this).attr("data-tab");
+
+		tab_cont.hide();
+		$(index).show();
+	});
 
 
 });
