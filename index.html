@@ -177,16 +177,33 @@
 		</div>
 		<!-- /.header__info -->
 		<!-- BEGIN .basket -->
-		<div class="basket">
-			<img src="img/basket.png" alt="">
+		<div class="basket is-active">
+			<!-- BEGIN .basket__in -->
+			<div class="basket__in">
+				<!-- BEGIN .basket__content -->
+				<div class="basket__content" style="display:none;">
+					<i class="icon icon_gift"></i>
+					<div class="basket__text">В <a href="#">корзине</a> Вас ожидает подарок</div>
+				</div>
+				<!-- /.basket__content -->
+				<!-- BEGIN .basket__content -->
+				<div class="basket__content"  style="display:block;">
+					<div class="basket__text">
+						<p>В <a href="#">корзине</a> товаров: <span>5</span></p>
+						<p>На сумму: <span>4790 грн.</span></p>
+					</div>
+				</div>
+				<!-- /.basket__content -->
+			</div>
+			<!-- /.basket__in -->
 		</div>
 		<!-- /.basket -->
 	</div>
 	<!-- /.header -->
 	<!-- BEGIN .nav -->
-	<nav class="nav">
-		<ul>
-			<li><a href="#">Игры<i class="icon icon_arrow3"></i></a></li>
+	<div class="nav-wrap">
+		<ul class="nav">
+			<li class="is-active"><a href="#">Игры<i class="icon icon_arrow3"></i></a></li>
 			<li><a href="#">Программы<i class="icon icon_arrow3"></i></a></li>
 			<li><a href="#">Геймерам<i class="icon icon_arrow3"></i></a></li>
 			<li><a href="#">Приставки<i class="icon icon_arrow3"></i></a></li>
@@ -194,7 +211,54 @@
 			<li><a href="#">E-ключи<i class="icon icon_arrow3"></i></a></li>
 			<li><a href="#">Акции<i class="icon icon_arrow3"></i></a></li>
 		</ul>
-	</nav>
+		<div class="drop-nav">
+			<div class="drop-nav__left game-promo">
+				<a href="#" class="game-promo__title">Metro: Last Light</a>
+				<span class="game-promo__sub-title">PlayStation 3</span>
+				<a href="#" class="game-promo__img">
+					<img src="img/metro.jpg" alt="metro game">
+				</a>
+				<div class="game-promo__descr">
+					<p>Разработчики обещают сохранить все лучшее, что было в Metro 2033, и исправить некоторые существующие недостатки. Обещается так же продвинутый АИ и оптимизация графического движка. В игре станет доступен полноценный сетевой режим. </p>
+				</div>
+			</div>
+			<div class="drop-nav__right">
+				<ul class="sub-nav">
+					<li><a href="#">Блоки питания</a></li>
+					<li><a href="#">Видеокарты</a></li>
+					<li><a href="#">Материнские платы</a></li>
+					<li><a href="#">Клавиатуры</a></li>
+					<li><a href="#">Мыши</a></li>
+					<li><a href="#">Корпуса</a></li>
+					<li>
+						<a href="#">Игровые поверхности</a>
+						<ul>
+							<li><a href="#">подкатегория</a></li>
+							<li><a href="#">еще-то категория</a></li>
+							<li><a href="#">просто название</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Системы охлаждения</a></li>
+					<li><a href="#">3D-очки</a></li>
+				</ul>
+				<ul class="sub-nav">
+					<li><a href="#">Игровые приставки</a></li>
+					<li><a href="#">Игровые пакеты</a></li>
+					<li><a href="#">Игровые манипуляторы</a></li>
+					<li><a href="#">Аксессуары к приставкам</a></li>
+				</ul>
+				<ul class="sub-nav">
+					<li><a href="#">Офисные устройства</a></li>
+					<li><a href="#">USB-Лампочки</a></li>
+					<li><a href="#">Развлечения</a></li>
+					<li><a href="#">Новогодние сувениры</a></li>
+					<li><a href="#">Аудио. Видео</a></li>
+					<li><a href="#">Дом. Интерьер</a></li>
+					<li><a href="#">Логические игры</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<!-- /.nav -->
 	<!-- BEGIN .heroes -->
 	<div class="heroes">

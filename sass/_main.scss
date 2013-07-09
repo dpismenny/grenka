@@ -16,6 +16,7 @@ input{
 	.icon_arrow3{@include s(arrow3);}
 	.icon_callback{@include s(ico_callback);}
 	.icon_chat_off{@include s(ico_chat_off);}
+	.icon_chat_on{@include s(ico_chat_on);}
 	.icon_tel{@include s(ico_tel);}
 	.icon_fb{@include s(ico_fb);}
 	.icon_fb_hover{@include s(ico_fb_hover);}
@@ -37,6 +38,7 @@ input{
 	.icon_subscribe{@include s(ico_subscribe);}
 	.icon_user{@include s(ico_user);}
 	.icon_basket{@include s(ico_basket);}
+	.icon_gift{@include s(ico_gift);}
 .btn{
 	display: inline-block;
 	vertical-align: middle;
@@ -169,7 +171,7 @@ input{
 	font-size: 12px;
 	line-height: 1;
 	position: relative;
-	z-index: 1000;
+	z-index: 3000;
 }
 .topper__in{
 	@extend %site;
@@ -406,6 +408,14 @@ input{
 			text-decoration: none;
 		}
 	}
+	&.is-active{
+		.icon_chat{
+			@include s(ico_chat_on);
+		}
+	}
+	.icon_chat{
+		@include s(ico_chat_off);
+	}
 	span{
 		text-decoration: underline;
 		font-size: 11px;
@@ -537,8 +547,41 @@ input{
 	}
 	.basket{
 		float: right;
-		padding-top: 23px;
+		margin-top: 35px;
 		margin-right: -7px;
+		background: url(../img/ico_basket_off.png) no-repeat;
+		width: 167px;
+		height: 74px;
+		font-size: 12px;
+		color: #676767;
+		&.is-active{
+			background: url(../img/ico_basket_on.png) no-repeat;
+			.basket__content{
+				padding: 0 5px;
+			}
+		}
+		a{
+			color: #68a814;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.icon_gift{
+			float: left;
+			margin-right: 10px;
+		}
+		.basket__in{
+			padding: 32px 17px 10px;
+			line-height: 1.2;
+		}
+		.basket__text{
+			overflow: hidden;
+			span{
+				color: #f47b01;
+				font-weight: bold;
+			}
+		}
 	}
 }
 .nav{
@@ -697,6 +740,7 @@ input{
 	}
 	.recent-buy__price{
 		font-size: 11px;
+		text-transform: uppercase;
 		color: #f47b01;
 		strong{
 			font-size: 16px;
@@ -1161,6 +1205,7 @@ input{
 		color: #f47b01;
 		line-height: 1;
 		margin-bottom: 8px;
+		text-transform: uppercase;
 		strong{
 			font-size: 16px;
 		}
@@ -1516,13 +1561,12 @@ input{
 		@include box-sizing(border-box);
 		background-color: #f0f0f0;
 		height: 43px;
-		overflow: hidden;
 	}
 	.tab__nav{
 		@extend %clr;
 		border-left: 1px solid #dcdcdc;
 		li{
-			line-height: 43px;
+			line-height: 41px;
 			list-style-type: none;
 			float: left;
 			border-right: 1px solid #dcdcdc;
@@ -1530,7 +1574,7 @@ input{
 			&:hover, &.is-active{
 				background-color: #fff;
 				border-top: 1px solid #dcdcdc;
-				border-bottom: 1px solid transparent;
+				margin-bottom: -1px;
 				a{
 					color: #000;
 				}
@@ -1552,7 +1596,6 @@ input{
 	}
 	.tab__main{
 		border: 1px solid #dcdcdc;
-		border-top: 0;
 	}
 	.tab__list{
 		@extend %clr;
@@ -1624,6 +1667,7 @@ input{
 		color: #f47b01;
 		line-height: 1;
 		margin-bottom: 8px;
+		text-transform: uppercase;
 		strong{
 			font-size: 16px;
 		}
