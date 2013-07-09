@@ -301,6 +301,10 @@ input { outline: 0; border: 1px solid #d5d5d5; box-shadow: inset 0 1px 1px rgba(
 .reviews .reviews__media { float: right; width: 60px; }
 .reviews .reviews__media img { width: 100%; }
 
+.social { margin-bottom: 20px; }
+
+.fb-like-box { border: 1px solid #dcdcdc; }
+
 .infographics { background: #f0f0f0; margin-bottom: 26px; }
 .infographics li { list-style-type: none; display: inline-block; height: 57px; line-height: 57px; border-left: 1px solid #e2e2e2; padding: 0 23px; }
 .infographics li:first-child { border-left: 0; }
