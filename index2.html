@@ -1,0 +1,1356 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .topper -->
+<div class="topper">
+	<!-- BEGIN .topper__in -->
+	<div class="topper__in">
+		<!-- BEGIN .location -->
+		<div class="location">
+			Ваш город:<span class="location__current js-change-city"><span>Корсунь-Шевченковский</span><i class="icon icon_arrow"></i></span>
+			<!-- BEGIN .callback__popup -->
+			<div class="popup js-city-popup popup_location">
+				<div class="popup__title">
+					Изменить местоположение
+				</div>
+				<label class="label label_width">
+					<div class="label__title">Введите название:</div>
+					<div class="label__field">
+						<input type="text" class="input_text" placeholder="" value="">
+					</div>
+				</label>
+				<!-- BEGIN city-list -->
+				<div class="city-list">
+					<p>Часто используемые города:</p>
+					<a href="#" class="#">Киев</a>
+					<a href="#" class="#">Донецк</a>
+					<a href="#" class="#">Днепропетровск</a>
+					<a href="#" class="#">Запорожье</a>
+					<a href="#" class="#">Харьков</a>
+					<a href="#" class="#">Бердянск</a>
+					<a href="#" class="#">Полтава</a>
+					<a href="#" class="#">Днепродзержинск</a>
+					<a href="#" class="#">Винница</a>
+					<a href="#" class="#">Хмельницкий</a>
+					<a href="#" class="#">Одесса</a>
+					<a href="#" class="#">Симферополь</a>
+				</div>
+				<!-- /.city-list -->
+				<button class="btn btn_orange">запомнить</button>
+			</div>
+			<!-- /.callback__popup -->
+		</div>
+		<!-- /.location -->
+		<!-- BEGIN .topper__nav -->
+		<ul class="topper__nav">
+			<li><a href="#">Категории</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<!-- /.topper__nav -->
+		<!-- BEGIN .callback -->
+		<div class="callback">
+			<i class="icon icon_callback"></i>
+			<span>Обратный звонок</span>
+			<i class="icon icon_arrow2"></i>
+			<!-- BEGIN .callback__popup -->
+			<div class="popup popup_callback js-popup-callback">
+				<label class="label">
+					<div class="label__title">Ваше имя:</div>
+					<div class="label__field">
+						<input type="text" class="input_text" placeholder="" value="">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__title">Телефон:</div>
+					<div class="label__field">
+						<input type="text" class="input_text" placeholder="" value="">
+					</div>
+				</label>
+				<div class="label"><div class="label__warning"><i></i>не забудьте указать код города/оператора</div></div>
+				<!-- BEGIN .callback__time -->
+				<div class="callback__time">
+					<h3 class="h1">Когда перезвонить?</h3>
+					<label><input type="checkbox" class="checkbox"> В указанное время <input type="text" class="input_text" placeholder="" value=""></label>
+					<label><input type="checkbox" class="checkbox"> Сейчас</label>
+					<!-- BEGIN .callback__btn -->
+					<div class="callback__btn">
+						<button class="btn btn_orange">Перезвонить</button>
+					</div>
+					<!-- /.callback__btn -->
+				</div>
+				<!-- /.callback__time -->
+			</div>
+			<!-- /.callback__popup -->
+		</div>
+		<!-- /.callback -->
+		<!-- BEGIN .livechat -->
+		<div class="livechat">
+			<i class="icon icon_chat_off"></i>
+			<span>Он-лайн чат</span>
+		</div>
+		<!-- /.livechat -->
+		<!-- BEGIN .profile -->
+		<div class="profile">
+			<a href="#">Регистрация</a>
+			<button class="btn js-enter">Вход</button>
+			<!-- BEGIN .callback__popup -->
+			<div class="popup js-popup-enter popup_enter">
+				<label class="label">
+					<div class="label__field">
+						<input type="text" class="input_text" placeholder="Логин">
+					</div>
+				</label>
+				<label class="label">
+					<div class="label__field">
+						<input type="password" class="input_text" placeholder="Пароль">
+					</div>
+				</label>
+				<div class="remember-me">
+					<label class="checkbox-wrap">
+						<input type="checkbox" class="checkbox">
+						<span>Запомнить меня</span>
+					</label>
+					<a href="#">Забыли пароль?</a>
+				</div>
+				<div class="enter-soc">
+					<span class="enter-soc__text">
+						Войти через:
+					</span>
+					<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+					<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+					<button class="btn btn_orange">Перезвонить</button>
+				</div>
+				<a href="#" class="btn-simple">регистрируйся и получи скидку</a>
+			</div>
+			<!-- /.callback__popup -->
+		</div>
+		<!-- /.profile -->
+	</div>
+	<!-- /.topper__in -->
+</div>
+<!-- /.topper -->
+
+<!-- BEGIN  page-->
+<div class="page">
+
+	<!-- BEGIN .header -->
+	<div class="header">
+		<!-- BEGIN .header__logo -->
+		<h1 class="header__logo"><a href="#" title="Интернет-магазин GRENKA.ua">Интернет-магазин GRENKA.ua</a></h1>
+		<!-- /.header__logo -->
+		<!-- BEGIN .header__info -->
+		<div class="header__info">
+			<!-- BEGIN .header__contacts -->
+			<div class="header__contacts">
+				<div class="header__tel"><span>044</span> 359 05 055 <i class="icon icon_tel"></i></div>
+				Звоните нам с <strong>9:00</strong> до <strong>21:00</strong> <span>ежедневно</span>
+			</div>
+			<!-- /.header__contacts -->
+			<!-- BEGIN .search -->
+			<div class="search">
+				<!-- BEGIN .search__field -->
+				<div class="search__field">
+					<input type="text" class="search__input" name="" id="" placeholder="поиск...">
+					<button type="submit" class="search__submit" value=""><i></i></button>
+					<!-- BEGIN .search__example -->
+					<div class="search__example">
+						Например: <a href="#">нокия x5</a>
+					</div>
+					<!-- /.search__example -->
+				</div>
+				<!-- /.search__field -->
+			</div>
+			<!-- /.search -->
+		</div>
+		<!-- /.header__info -->
+		<!-- BEGIN .basket -->
+		<div class="basket">
+			<img src="img/basket.png" alt="">
+		</div>
+		<!-- /.basket -->
+	</div>
+	<!-- /.header -->
+	<!-- BEGIN .nav -->
+	<div class="nav-wrap">
+		<ul class="nav">
+			<li class="is-active"><a href="#">Игры<i class="icon icon_arrow3"></i></a></li>
+			<li><a href="#">Программы<i class="icon icon_arrow3"></i></a></li>
+			<li><a href="#">Геймерам<i class="icon icon_arrow3"></i></a></li>
+			<li><a href="#">Приставки<i class="icon icon_arrow3"></i></a></li>
+			<li><a href="#">Техника<i class="icon icon_arrow3"></i></a></li>
+			<li><a href="#">E-ключи<i class="icon icon_arrow3"></i></a></li>
+			<li><a href="#">Акции<i class="icon icon_arrow3"></i></a></li>
+		</ul>
+		<div class="drop-nav">
+			<div class="drop-nav__left game-promo">
+				<a href="#" class="game-promo__title">Metro: Last Light</a>
+				<span class="game-promo__sub-title">PlayStation 3</span>
+				<a href="#" class="game-promo__img">
+					<img src="img/metro.jpg" alt="metro game">
+				</a>
+				<div class="game-promo__descr">
+					<p>Разработчики обещают сохранить все лучшее, что было в Metro 2033, и исправить некоторые существующие недостатки. Обещается так же продвинутый АИ и оптимизация графического движка. В игре станет доступен полноценный сетевой режим. </p>
+				</div>
+			</div>
+			<div class="drop-nav__right">
+				<ul class="sub-nav">
+					<li><a href="#">Блоки питания</a></li>
+					<li><a href="#">Видеокарты</a></li>
+					<li><a href="#">Материнские платы</a></li>
+					<li><a href="#">Клавиатуры</a></li>
+					<li><a href="#">Мыши</a></li>
+					<li><a href="#">Корпуса</a></li>
+					<li>
+						<a href="#">Игровые поверхности</a>
+						<ul>
+							<li><a href="#">подкатегория</a></li>
+							<li><a href="#">еще-то категория</a></li>
+							<li><a href="#">просто название</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Системы охлаждения</a></li>
+					<li><a href="#">3D-очки</a></li>
+				</ul>
+				<ul class="sub-nav">
+					<li><a href="#">Игровые приставки</a></li>
+					<li><a href="#">Игровые пакеты</a></li>
+					<li><a href="#">Игровые манипуляторы</a></li>
+					<li><a href="#">Аксессуары к приставкам</a></li>
+				</ul>
+				<ul class="sub-nav">
+					<li><a href="#">Офисные устройства</a></li>
+					<li><a href="#">USB-Лампочки</a></li>
+					<li><a href="#">Развлечения</a></li>
+					<li><a href="#">Новогодние сувениры</a></li>
+					<li><a href="#">Аудио. Видео</a></li>
+					<li><a href="#">Дом. Интерьер</a></li>
+					<li><a href="#">Логические игры</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- /.nav -->
+	<!-- BEGIN .heroes -->
+	<div class="heroes">
+		<!-- BEGIN .heroes__nav -->
+		<div class="heroes__nav">
+			<!-- BEGIN .heroes__list -->
+			<div class="heroes__list">
+				<ul class="heroes__in">
+					<li class="is-active">
+						<a href="#">
+							<!-- BEGIN .heroes__media -->
+							<div class="heroes__media">
+								<img src="img/img-5.jpg" height="56" width="71" alt="img">
+							</div>
+							<!-- /.heroes__media -->
+							<!-- BEGIN .heroes__info -->
+							<div class="heroes__info">
+								<h1 class="h1">Aliens: Colonial Marines</h1>
+								<div class="heroes__platform">Nintendo 2</div>
+							</div>
+							<!-- /.heroes__info -->
+						</a>
+					</li>
+					<li>
+						<i class="heroes__new"></i>
+						<a href="#">
+							<!-- BEGIN .heroes__media -->
+							<div class="heroes__media">
+								<img src="img/img-6.jpg" height="56" width="71" alt="img">
+							</div>
+							<!-- /.heroes__media -->
+							<!-- BEGIN .heroes__info -->
+							<div class="heroes__info">
+								<h1 class="h1">Gears of War: Judgment</h1>
+								<div class="heroes__platform">Xbox 360</div>
+							</div>
+							<!-- /.heroes__info -->
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<!-- BEGIN .heroes__media -->
+							<div class="heroes__media">
+								<img src="img/img-7.jpg" height="56" width="71" alt="img">
+							</div>
+							<!-- /.heroes__media -->
+							<!-- BEGIN .heroes__info -->
+							<div class="heroes__info">
+								<h1 class="h1">Mortal Kombat Complete Edition</h1>
+								<div class="heroes__platform">PlayStation 3</div>
+							</div>
+							<!-- /.heroes__info -->
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<!-- BEGIN .heroes__media -->
+							<div class="heroes__media">
+								<img src="http://placehold.it/71x56" height="56" width="71" alt="img">
+							</div>
+							<!-- /.heroes__media -->
+							<!-- BEGIN .heroes__info -->
+							<div class="heroes__info">
+								<h1 class="h1">Aliens: Colonial Marines</h1>
+								<div class="heroes__platform">Nintendo 2</div>
+							</div>
+							<!-- /.heroes__info -->
+						</a>
+					</li>
+					<li>
+						<i class="heroes__new"></i>
+						<a href="#">
+							<!-- BEGIN .heroes__media -->
+							<div class="heroes__media">
+								<img src="http://placehold.it/71x56" height="56" width="71" alt="img">
+							</div>
+							<!-- /.heroes__media -->
+							<!-- BEGIN .heroes__info -->
+							<div class="heroes__info">
+								<h1 class="h1">Gears of War: Judgment</h1>
+								<div class="heroes__platform">Xbox 360</div>
+							</div>
+							<!-- /.heroes__info -->
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<!-- BEGIN .heroes__media -->
+							<div class="heroes__media">
+								<img src="http://placehold.it/71x56" height="56" width="71" alt="img">
+							</div>
+							<!-- /.heroes__media -->
+							<!-- BEGIN .heroes__info -->
+							<div class="heroes__info">
+								<h1 class="h1">Mortal Kombat Complete Edition</h1>
+								<div class="heroes__platform">PlayStation 3</div>
+							</div>
+							<!-- /.heroes__info -->
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.heroes__list -->
+			<!-- BEGIN .heroes__button -->
+			<div class="heroes__button">
+				<a href="#"><i></i></a>
+			</div>
+			<!-- /.heroes__button -->
+		</div>
+		<!-- /.heroes__nav -->
+		<!-- BEGIN .heroes__pic -->
+		<div class="heroes__pic">
+			<a href="#">
+				<img src="img/hero-1.jpg" alt="img">
+			</a>
+			<!-- BEGIN .heroes__text -->
+			<div class="heroes__text">
+				<h1 class="h1">Aliens: Colonial Marines</h1>
+				<div class="heroes__platform">PlayStation 3</div>
+				<!-- BEGIN .rating -->
+				<ul class="rating">
+					<li class="is-active"><a href="#"></a></li>
+					<li class="is-active"><a href="#"></a></li>
+					<li class="is-active"><a href="#"></a></li>
+					<li class="is-active"><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+				<!-- /.rating -->
+				<div class="heroes__meta">Release Date 3/19/2013 Eligible for PickUp@Store. More info.Ships to U.S. addresses onlyBilling does not occur until shipment is processed.</div>
+				<button class="btn btn_orange">Подробнее</button>
+			</div>
+			<!-- /.heroes__text -->
+		</div>
+		<!-- /.heroes__pic -->
+	</div>
+	<!-- /.heroes -->
+	<!-- BEGIN .infographics -->
+	<div class="infographics">
+		<ul>
+			<li>
+				<div class="infographics__numb">2770</div>
+				<div class="infographics__text">товаров<br> в продаже</div>
+			</li>
+			<li>
+				<div class="infographics__numb">1300</div>
+				<div class="infographics__text">посетителей<br> каждый день</div>
+			</li>
+			<li>
+				<div class="infographics__numb">2035</div>
+				<div class="infographics__text">товаров<br> в наличии</div>
+			</li>
+			<li>
+				<div class="infographics__numb">1046</div>
+				<div class="infographics__text">заказов<br> в неделю</div>
+			</li>
+			<li>
+				<div class="infographics__numb">780</div>
+				<div class="infographics__text">обращений<br> в день</div>
+			</li>
+		</ul>
+	</div>
+	<!-- /.infographics -->
+	<!-- BEGIN .l -->
+	<div class="l">
+		<!-- BEGIN .l-sidebar -->
+		<div class="l-sidebar">
+			<!-- BEGIN .benefits -->
+			<div class="benefits">
+				<h1 class="h1">5 преимуществ</h1>
+				<ul>
+					<li><span class="benefits__number">1</span>Возврат 21 день без вопросов</li>
+					<li><span class="benefits__number">2</span><span class="mark">Бесплатная доставка</span></li>
+					<li><span class="benefits__number">3</span>999 Эксклюзивных игр</li>
+					<li><span class="benefits__number">4</span>1500 городов с доставкой</li>
+					<li><span class="benefits__number">5</span>Отправка без предоплаты</li>
+				</ul>
+			</div>
+			<!-- /.benefits -->
+			<!-- BEGIN .recent-buy -->
+			<div class="recent-buy cycle">
+			    <!-- BEGIN .cycle-head -->
+			    <div class="cycle-head">
+			    	<h1 class="cycle-title">Недавно покупали</h1>
+			    </div>
+			    <!-- /.cycle-head -->
+				<div class="cycle-slideshow"
+				    data-cycle-fx="carousel"
+				    data-cycle-timeout="0"
+				    data-cycle-slides=".cycle-slide-item"
+				    data-cycle-next="#next"
+				    data-allow-wrap=false
+				    data-cycle-carousel-visible="3"
+				    data-cycle-carousel-vertical="true"
+
+				    >
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Need for Speed Most Wanted</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>735</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-1.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Assassin's Creed (Liberation)</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>1200</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Super Monkey Ball: Banana Splitz</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>650</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-1.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Need for Speed Most Wanted</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>735</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Assassin's Creed (Liberation)</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>840</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-1.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Super Monkey Ball: Banana Splitz</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>1340</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<div class="recent-buy__image">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
+				    	</div>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h1 class="h1">Need for Speed Most Wanted</h1>
+				    		<div class="recent-buy__description">Nintendo Wii U</div>
+				    		<div class="recent-buy__price"><strong>645</strong> грн. <span>($26)</span></div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				</div>
+
+				<div class="cycle-nav">
+				    <a href="#" class="next" id="next"><i></i></a>
+				</div>
+			</div>
+			<!-- /.recent-buy -->
+			<!-- BEGIN .comments-list -->
+			<div class="comments-list cycle">
+			    <!-- BEGIN .cycle-head -->
+			    <div class="cycle-head">
+			    	<h1 class="cycle-title">Отзывы</h1>
+			    </div>
+			    <!-- /.cycle-head -->
+				<div class="cycle-slideshow"
+				    data-cycle-fx="carousel"
+				    data-cycle-timeout="0"
+				    data-cycle-slides=".cycle-slide-item"
+				    data-cycle-next="#next2"
+				    data-allow-wrap=false
+				    data-cycle-carousel-visible="2"
+				    data-cycle-carousel-vertical="true"
+				    >
+				    <div class="cycle-slide-item">
+				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юрий Нагорный</a></div>
+				    	<h1 class="h1">LEGO Властелин Колец</h1>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<!-- /.rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юран</a></div>
+				    	<h1 class="h1">DMC: DEVIL MAY CRY</h1>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<!-- /.rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юрий Нагорный</a></div>
+				    	<h1 class="h1">LEGO Властелин Колец</h1>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<!-- /.rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юран</a></div>
+				    	<h1 class="h1">DMC: DEVIL MAY CRY</h1>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<!-- /.rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юрий Нагорный</a></div>
+				    	<h1 class="h1">LEGO Властелин Колец</h1>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<!-- /.rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="cycle-slide-item">
+				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юран</a></div>
+				    	<h1 class="h1">DMC: DEVIL MAY CRY</h1>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<!-- /.rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				</div>
+
+				<div class="cycle-nav">
+				    <a href="#" class="next" id="next2"><i></i></a>
+				</div>
+			</div>
+			<!-- /.comments-list -->
+			<!-- BEGIN .reviews -->
+			<div class="reviews">
+				<div class="reviews__head">
+					<h1 class="h1">Обзоры</h1>
+					<div class="reviews__all"><a href="#">посмотреть все</a> (18)</div>
+				</div>
+				<div class="reviews__content">
+					<ul>
+						<li class="reviews__item">
+							<div class="reviews__info">
+								<h3 class="reviews__title">Far Cry 3</h3>
+								<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры Far Cry 3  тропическом...</p>
+								<a href="#">подробнее</a>
+							</div>
+							<div class="reviews__media">
+								<img src="img/img-1.jpg" alt="img">
+							</div>
+						</li>
+						<li class="reviews__item">
+							<div class="reviews__info">
+								<h3 class="reviews__title">Borderlands 2</h3>
+								<p>В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме противостояния...</p>
+								<a href="#">подробнее</a>
+							</div>
+							<div class="reviews__media">
+								<img src="img/img-2.jpg" alt="img">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.reviews -->
+			<!-- BEGIN .social -->
+			<div class="social">
+				<img src="img/soc.jpg" alt="fb">
+			</div>
+			<!-- /.social -->
+		</div>
+		<!-- /.l-sidebar -->
+		<!-- BEGIN .l-main -->
+		<div class="l-main">
+			<!-- BEGIN .popular -->
+			<div class="popular">
+				<!-- BEGIN .popular__col1 -->
+				<div class="popular__col popular__col1">
+					<!-- BEGIN .popular__image -->
+					<div class="popular__image">
+						<img src="img/img-3.jpg" width="120" height="140" alt="img">
+					</div>
+					<!-- /.popular__image -->
+					<!-- BEGIN .popular__info -->
+					<div class="popular__info">
+						<h1 class="h1">Товар дня</h1>
+						<h2 class="popular__title">Far Cry 3 Коллекц. издание (рус.)</h2>
+						<div class="popular__platform">playstation 3</div>
+						<div class="popular__price">
+							<strong>954</strong> грн. <span>($26)</span>
+							<a href="#" class="popular__btn"><i class="icon icon_basket"></i></a>
+						</div>
+					</div>
+					<!-- /.popular__info -->
+				</div>
+				<!-- /.popular__col1 -->
+				<!-- BEGIN .popular__col2 -->
+				<div class="popular__col popular__col2">
+					<!-- BEGIN .popular__image -->
+					<div class="popular__image">
+						<img src="img/img-4.jpg" width="120" height="140" alt="img">
+					</div>
+					<!-- /.popular__image -->
+					<!-- BEGIN .popular__info -->
+					<div class="popular__info">
+						<h1 class="h1">Хит дня</h1>
+						<h2 class="popular__title">Enemy Territory: Quake Wars</h2>
+						<div class="popular__platform">xbox-360</div>
+						<div class="popular__price">
+							<strong>1542</strong> грн. <span>($46)</span>
+							<a href="#" class="popular__btn"><i class="icon icon_basket"></i></a>
+						</div>
+					</div>
+					<!-- /.popular__info -->
+				</div>
+				<!-- /.popular__col2 -->
+			</div>
+			<!-- /.popular -->
+
+			<!-- BEGIN .tab -->
+			<div class="tab">
+				<!-- BEGIN .tab__top -->
+				<div class="tab__top">
+					<!-- BEGIN .tab__nav -->
+					<ul class="tab__nav">
+						<li class="is-active"><a href="#">Новинки</a></li>
+						<li><a href="#">Эксклюзивно</a></li>
+						<li><a href="#">Бестселлеры</a></li>
+						<li><a href="#">Топ21</a></li>
+					</ul>
+					<!-- /.tab__nav -->
+					<!-- BEGIN .tab__all -->
+					<div class="tab__all">
+						<a href="#">посмотреть все</a> (155)
+					</div>
+					<!-- /.tab__all -->
+				</div>
+				<!-- /.tab__top -->
+				<!-- BEGIN .tab__main -->
+				<div class="tab__main">
+					<!-- BEGIN .tab__wrap -->
+					<div class="tab__wrap">
+						<!-- BEGIN .tab__list -->
+						<ul class="tab__list products">
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">Metal Gear Rising: Revengeance</h1>
+									<div class="products__platform">PS3</div>
+									<div class="products__price"><strong>210</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__label  products__new -->
+								<div class="products__label products__new "></div>
+								<!-- /.products__label  products__new -->
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__label  products__new -->
+								<div class="products__label products__new "></div>
+								<!-- /.products__label  products__new -->
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__label  products__new -->
+								<div class="products__label products__new "></div>
+								<!-- /.products__label  products__new -->
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+						</ul>
+						<!-- /.tab__list -->
+					</div>
+					<!-- /.tab__wrap -->
+				</div>
+				<!-- /.tab__main -->
+			</div>
+			<!-- /.tab -->
+
+			<!-- BEGIN .tab -->
+			<div class="tab">
+				<!-- BEGIN .tab__top -->
+				<div class="tab__top">
+					<!-- BEGIN .tab__nav -->
+					<ul class="tab__nav">
+						<li class="is-active"><a href="#">Скоро</a></li>
+					</ul>
+					<!-- /.tab__nav -->
+					<!-- BEGIN .tab__all -->
+					<div class="tab__all">
+						<a href="#">посмотреть все</a> (5)
+					</div>
+					<!-- /.tab__all -->
+				</div>
+				<!-- /.tab__top -->
+				<!-- BEGIN .tab__main -->
+				<div class="tab__main">
+					<!-- BEGIN .tab__wrap -->
+					<div class="tab__wrap">
+						<!-- BEGIN .tab__list -->
+						<ul class="tab__list products">
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">Metal Gear Rising: Revengeance</h1>
+									<div class="products__platform">PS3</div>
+									<div class="products__price"><strong>210</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+							<li>
+								<!-- BEGIN .products__image -->
+								<div class="products__image">
+									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+								</div>
+								<!-- /.products__image -->
+								<!-- BEGIN .products__info -->
+								<div class="products__info">
+									<h1 class="h1">DMC: Devil new May Cry</h1>
+									<div class="products__platform">x-box 360</div>
+									<div class="products__price"><strong>110</strong> грн. <span>($26)</span></div>
+									<button class="btn">купить</button>
+								</div>
+								<!-- /.products__info -->
+							</li>
+						</ul>
+						<!-- /.tab__list -->
+					</div>
+					<!-- /.tab__wrap -->
+				</div>
+				<!-- /.tab__main -->
+			</div>
+			<!-- /.tab -->
+
+			<!-- BEGIN .info-block -->
+			<div class="info-block">
+				<!-- BEGIN .info-block__in -->
+				<div class="info-block__in">
+					<p>Вне зависимости от того, где вы находитесь на данный момент, вы сможете заказать товар, что, согласитесь, очень удобно. Какие же преимущества предлагает наш интернет-магазин электроники, телефонов и прочих товаров? Наиболее существенный факт – наличие тысяч позиций, которые гарантированно имеются на складе. Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
+					<p>Интернет магазин бытовой техники (Киев, Харьков, Донецк) поможет вам. Наличие множества решений позволит подобрать устройство с <a href="#">требуемыми характеристиками и стоимостью</a>. Интернет-магазин техники (Харьков, Днепропетровск, Донецк) Rozetka – это многообразие предложений на любой вкус. Чтобы заказать товар, вам не придется никуда ехать или идти, т.к. все операции совершаются в виртуальном режиме. Именно поэтому Rozetka – это интернет-магазин телевизоров, холодильников и иной техники, покупать в котором выгодно и приятно.</p>
+					<p>Интернет магазин бытовой техники (Киев, Харьков, Донецк) поможет вам. Наличие множества решений позволит подобрать устройство с <a href="#">требуемыми характеристиками и стоимостью</a>. Интернет-магазин техники (Харьков, Днепропетровск, Донецк) Rozetka – это многообразие предложений на любой вкус. Чтобы заказать товар, вам не придется никуда ехать или идти, т.к. все операции совершаются в виртуальном режиме. Именно поэтому Rozetka – это интернет-магазин телевизоров, холодильников и иной техники, покупать в котором выгодно и приятно.</p>
+					<p>Интернет магазин бытовой техники (Киев, Харьков, Донецк) поможет вам. Наличие множества решений позволит подобрать устройство с <a href="#">требуемыми характеристиками и стоимостью</a>. Интернет-магазин техники (Харьков, Днепропетровск, Донецк) Rozetka – это многообразие предложений на любой вкус. Чтобы заказать товар, вам не придется никуда ехать или идти, т.к. все операции совершаются в виртуальном режиме. Именно поэтому Rozetka – это интернет-магазин телевизоров, холодильников и иной техники, покупать в котором выгодно и приятно.</p>
+					<p>Интернет магазин бытовой техники (Киев, Харьков, Донецк) поможет вам. Наличие множества решений позволит подобрать устройство с <a href="#">требуемыми характеристиками и стоимостью</a>. Интернет-магазин техники (Харьков, Днепропетровск, Донецк) Rozetka – это многообразие предложений на любой вкус. Чтобы заказать товар, вам не придется никуда ехать или идти, т.к. все операции совершаются в виртуальном режиме. Именно поэтому Rozetka – это интернет-магазин телевизоров, холодильников и иной техники, покупать в котором выгодно и приятно.</p>
+				</div>
+				<!-- /.info-block__in -->
+				<!-- BEGIN .info-block__button -->
+				<div class="info-block__button">
+					<a href="#"><i></i></a>
+				</div>
+				<!-- /.info-block__button -->
+			</div>
+			<!-- /.info-block -->
+		</div>
+		<!-- /.l-main -->
+	</div>
+	<!-- /.l -->
+</div>
+<!-- END page-->
+<!-- BEGIN .recent-products -->
+<div class="recent-products">
+	<div class="recent-products__head">
+		<h2 class="h1">Просмотренные товары</h2>
+		<span class="recent-products__collapse">Свернуть<i class="icon icon_arrow2"></i></span>
+	</div>
+	<!-- BEGIN .recent-products__carousel -->
+	<div class="recent-products__carousel">
+		<!-- BEGIN .recent-products__wrap -->
+		<div class="recent-products__wrap">
+			<div class="cycle-slideshow recent-products__list"
+			    data-cycle-fx=carousel
+			    data-cycle-timeout=0
+			    data-cycle-slides=".recent-products__item"
+			    data-cycle-carousel-visible="4"
+			    data-cycle-next="#recent-next"
+			    data-cycle-prev="#recent-prev"
+			    >
+			    <div class="recent-products__item">
+			   		<!-- BEGIN .recent-products__image -->
+			   		<div class="recent-products__image">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</div>
+			   		<!-- /.recent-products__image -->
+			   		<!-- BEGIN .recent-products__info -->
+			   		<div class="recent-products__info">
+			   			<div class="recent-products__checked"></div>
+			   			<h1 class="h1">DMC: Devil May Cry</h1>
+			   			<div class="recent-products__platform">x-box 360</div>
+			   			<div class="recent-products__price"><strong>110</strong> грн. <span>($26)</span></div>
+			   		</div>
+			   		<!-- /.recent-products__info -->
+			    </div>
+			    <div class="recent-products__item">
+			   		<!-- BEGIN .recent-products__image -->
+			   		<div class="recent-products__image">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</div>
+			   		<!-- /.recent-products__image -->
+			   		<!-- BEGIN .recent-products__info -->
+			   		<div class="recent-products__info">
+			   			<div class="recent-products__checked"></div>
+			   			<h1 class="h1">Your Shape: Fitness Evolved</h1>
+			   			<div class="recent-products__platform">Nintendo Wii U</div>
+			   			<div class="recent-products__price"><strong>110</strong> грн. <span>($26)</span></div>
+			   		</div>
+			   		<!-- /.recent-products__info -->
+			    </div>
+			    <div class="recent-products__item">
+			   		<!-- BEGIN .recent-products__image -->
+			   		<div class="recent-products__image">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</div>
+			   		<!-- /.recent-products__image -->
+			   		<!-- BEGIN .recent-products__info -->
+			   		<div class="recent-products__info">
+			   			<div class="recent-products__checked"></div>
+			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<div class="recent-products__platform">x-box 360</div>
+			   			<div class="recent-products__price"><strong>110</strong> грн. <span>($26)</span></div>
+			   		</div>
+			   		<!-- /.recent-products__info -->
+			    </div>
+			    <div class="recent-products__item">
+			   		<!-- BEGIN .recent-products__image -->
+			   		<div class="recent-products__image">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</div>
+			   		<!-- /.recent-products__image -->
+			   		<!-- BEGIN .recent-products__info -->
+			   		<div class="recent-products__info">
+			   			<div class="recent-products__checked"></div>
+			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<div class="recent-products__platform">x-box 360</div>
+			   			<div class="recent-products__price"><strong>110</strong> грн. <span>($26)</span></div>
+			   		</div>
+			   		<!-- /.recent-products__info -->
+			    </div>
+			    <div class="recent-products__item">
+			   		<!-- BEGIN .recent-products__image -->
+			   		<div class="recent-products__image">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</div>
+			   		<!-- /.recent-products__image -->
+			   		<!-- BEGIN .recent-products__info -->
+			   		<div class="recent-products__info">
+			   			<div class="recent-products__checked"></div>
+			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<div class="recent-products__platform">x-box 360</div>
+			   			<div class="recent-products__price"><strong>110</strong> грн. <span>($26)</span></div>
+			   		</div>
+			   		<!-- /.recent-products__info -->
+			    </div>
+			    <div class="recent-products__item">
+			   		<!-- BEGIN .recent-products__image -->
+			   		<div class="recent-products__image">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</div>
+			   		<!-- /.recent-products__image -->
+			   		<!-- BEGIN .recent-products__info -->
+			   		<div class="recent-products__info">
+			   			<div class="recent-products__checked"></div>
+			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<div class="recent-products__platform">x-box 360</div>
+			   			<div class="recent-products__price"><strong>110</strong> грн. <span>($26)</span></div>
+			   		</div>
+			   		<!-- /.recent-products__info -->
+			    </div>
+			</div>
+
+			    <a href="#" class="recent-products__nav prev" id="recent-prev"><i></i></a>
+			    <a href="#" class="recent-products__nav next" id="recent-next"><i></i></a>
+		</div>
+		<!-- /.recent-products__wrap -->
+	</div>
+	<!-- /.recent-products__carousel -->
+</div>
+<!-- /.recent-products -->
+<!-- BEGIN .footer -->
+<div class="footer">
+	<!-- BEGIN .footer__in -->
+	<div class="footer__in">
+		<!-- BEGIN .footer__subscribe -->
+		<div class="footer__subscribe">
+			<div class="footer__subscribe-text">
+				<i class="icon icon_subscribe"></i>подпишись и получи купон на скидку
+			</div>
+			<!-- BEGIN .footer__subscribe-field -->
+			<div class="footer__subscribe-field">
+				<input type="text" class="footer__subscribe-input" name="" id="" placeholder="введите ваш е-мейл...">
+				<input type="submit" class="footer__subscribe-submit btn btn_orange" value="Да">
+			</div>
+			<!-- /.footer__subscribe-field -->
+		</div>
+		<!-- /.footer__subscribe -->
+		<!-- BEGIN .footer__nav -->
+		<div class="footer__nav">
+			<ul>
+				<h3 class="h1"><a href="#">Игры</a></h3>
+				<li><a href="#">Стратегии</a></li>
+				<li><a href="#">Бродилки</a></li>
+				<li><a href="#">Аркады</a></li>
+				<li><a href="#">Экшн</a></li>
+				<li><a href="#">Гонки</a></li>
+				<li><a href="#">Леталки</a></li>
+			</ul>
+			<ul>
+				<h3 class="h1"><a href="#">Программы</a></h3>
+				<li><a href="#">Утилиты</a></li>
+				<li><a href="#">Финансовые</a></li>
+				<li><a href="#">Коммерческие</a></li>
+				<li><a href="#">Графика</a></li>
+				<li><a href="#">Дизайн</a></li>
+			</ul>
+			<ul>
+				<h3 class="h1"><a href="#">Геймерам</a></h3>
+				<li><a href="#">Блоки питания</a></li>
+				<li><a href="#">Видеокарты</a></li>
+				<li><a href="#">Материнские платы</a></li>
+				<li><a href="#">Клавиатуры</a></li>
+				<li><a href="#">Мыши</a></li>
+				<li><a href="#">Корпуса</a></li>
+				<li><a href="#">Игровые поверхности</a></li>
+				<li><a href="#">Системы охлаждения</a></li>
+				<li><a href="#">3D-очки</a></li>
+			</ul>
+			<ul>
+				<h3 class="h1"><a href="#">Приставки</a></h3>
+				<li><a href="#">Игровые приставки</a></li>
+				<li><a href="#">Игровые пакеты</a></li>
+				<li><a href="#">Игровые манипуляторы</a></li>
+				<li><a href="#">Аксессуары к приставкам</a></li>
+			</ul>
+			<ul>
+				<h3 class="h1"><a href="#">Планшеты</a></h3>
+				<li><a href="#">Офисные устройства</a></li>
+				<li><a href="#">USB-Лампочки</a></li>
+				<li><a href="#">Развлечения</a></li>
+				<li><a href="#">Новогодние сувениры</a></li>
+				<li><a href="#">Аудио. Видео</a></li>
+				<li><a href="#">Дом. Интерьер</a></li>
+				<li><a href="#">Логические игры</a></li>
+			</ul>
+			<ul>
+				<h3 class="h1"><a href="#">E-ключи</a></h3>
+				<li><a href="#">Операционные системы</a></li>
+				<li><a href="#">Офисные приложения</a></li>
+				<li><a href="#">Антивирусы</a></li>
+				<li><a href="#">Распознавание текста</a></li>
+				<li><a href="#">Переводчики и словари</a></li>
+				<li><a href="#">Архиваторы</a></li>
+				<li><a href="#">Системные утилиты</a></li>
+				<li><a href="#">Серверное ПО</a></li>
+			</ul>
+		</div>
+		<!-- /.footer__nav -->
+		<!-- BEGIN .footer__row -->
+		<div class="footer__row">
+			<!-- BEGIN .footer__col -->
+			<div class="footer__col footer__delivery">
+				<h3 class="h1">Доставка</h3>
+				<p>Вне зависимости от того, где вы находитесь на данный момент, вы сможете заказать товар, что, согласитесь, очень удобно. Какие же преимущества предлагает наш интернет-магазин электроники</p>
+			</div>
+			<!-- /.footer__col -->
+			<!-- BEGIN .footer__col -->
+			<div class="footer__col footer__about">
+				<h3 class="h1">О нас</h3>
+				<p>Какие же преимущества предлагает наш интернет-магазин электроники, телефонов и прочих товаров? Наиболее существенный факт – наличие тысяч позиций, которые гарантированно имеются на складе. Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
+			</div>
+			<!-- /.footer__col -->
+			<!-- BEGIN .footer__col -->
+			<div class="footer__col footer__payment">
+				<h3 class="h1">Оплата</h3>
+				<p>Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
+				<!-- BEGIN .footer__payment-services -->
+				<div class="footer__payment-services">
+					<ul>
+						<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
+						<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
+						<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
+						<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
+						<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
+					</ul>
+				</div>
+				<!-- /.footer__payment-services -->
+			</div>
+			<!-- /.footer__col -->
+		</div>
+		<!-- /.footer__row -->
+
+		<!-- BEGIN .footer__row -->
+		<div class="footer__row">
+			<!-- BEGIN .footer__info -->
+			<div class="footer__info">
+				<!-- BEGIN .footer__copyright -->
+				<div class="footer__copyright">
+					<div>&copy; Гренка, 2013</div>
+					<a href="mailto:info@grenka.com.ua">info@grenka.com.ua</a>
+				</div>
+				<!-- /.footer__copyright -->
+				<!-- BEGIN .footer__tel -->
+				<div class="footer__tel">
+					<div>Наш телефон (многоканальный)</div>
+					<div class="footer__tel-number"><span>044</span> 359 05 055 <i class="icon icon_tel"></i></div>
+				</div>
+				<!-- /.footer__tel -->
+				<!-- BEGIN .footer__address -->
+				<div class="footer__address">
+					<div>Адрес: Киев, ул. Жилянская, 97</div>
+					<a href="#">схема проезда</a>
+				</div>
+				<!-- /.footer__address -->
+			</div>
+			<!-- /.footer__info -->
+			<!-- BEGIN .footer__socials -->
+			<div class="footer__socials">
+				<ul>
+					<li>
+						<a href="#" class="icon icon_fb" title="Facebook">
+							Facebook
+							<span class="icon icon_fb_hover"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon icon_vk" title="Вконтакте">
+							Вконтакте
+							<span class="icon icon_vk_hover"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon icon_tw" title="Twitter">
+							Twitter
+							<span class="icon icon_tw_hover"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon icon_yt" title="YouTube">
+							YouTube
+							<span class="icon icon_yt_hover"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon icon_gp" title="Google+">
+							Google+
+							<span class="icon icon_gp_hover"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="icon icon_odk" title="Одноклассники">
+							Одноклассники
+							<span class="icon icon_odk_hover"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.footer__socials -->
+		</div>
+		<!-- /.footer__row -->
+	</div>
+	<!-- /.footer__in -->
+</div>
+<!-- /.footer -->
+</body>
+</html>
