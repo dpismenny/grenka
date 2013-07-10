@@ -67,6 +67,19 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 
+	// ---------------- heroes close button -------------------- //
+		$('.heroes__close').click(function() {
+			$(this).hide();
+			$(".heroes__text").hide();
+		});
+
+	// ----------------  info-block visible -------------------- //
+		$('.info-block__button').click(function() {
+			$(".info-block__hide").slideToggle();
+			$(".info-block__button").toggleClass("is-active");
+			return false;
+		});
+
 	// ---------------- tabs -------------------- //
 	
 	// default

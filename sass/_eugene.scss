@@ -39,7 +39,11 @@
 .enter-soc {
 	margin-bottom: 14px;
 	font-size: 0;
+	div{
+		text-align: center;
+	}
 	.btn {
+		margin-top: 10px;
 		margin-left: 9px !important;
 	}
 }
@@ -55,7 +59,7 @@
 	vertical-align: middle;
 	width: 30px;
 	height: 27px;
-	margin-right: 2px;
+	margin-right: 5px;
 	border: 1px solid #b7b7b7;
 	@include border-radius(5px);
 	background: #e3e3e3;
