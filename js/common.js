@@ -8,14 +8,17 @@ $(document).ready(function() {
 	var prod_carousel = $('.recent-product__carousel');
 	var tab = $(".js-tab").find("li"); 
 	var tab_cont = $(".js-tab-cont"); 
-	// ---------------- CALLBACK POPUP -------------------- //
+	var prod = $(".product"); 
+	var prod_image = $(".product__image"); 
+
+// ---------------- CALLBACK POPUP -------------------- //
 		$('.callback').click(function() {
 			$(this).toggleClass("is-active");
 			popup__callback.toggle();
 			return false;
 		});
 
-	// show/hide recent products
+// show/hide recent products
 		$('.recent-product__collapse').click(function() {
 			$('.recent-product__carousel').slideToggle();
 			if ($(this).hasClass("js-inactive")) {
@@ -45,7 +48,7 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 
-	// ---------------- Change city POPUP -------------------- //
+// ---------------- Change city POPUP -------------------- //
 		$('.js-change-city').click(function() {
 			$(this).parent().toggleClass("is-active");
 			popup__city.toggle();
@@ -56,7 +59,7 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 
-	// ---------------- Change city POPUP -------------------- //
+// ---------------- Change city POPUP -------------------- //
 		$('.js-enter').click(function() {
 			//$(this).toggleClass("is-active");
 			popup__enter.toggle();
@@ -67,20 +70,20 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 
-	// ---------------- heroes close button -------------------- //
+// ---------------- heroes close button -------------------- //
 		$('.heroes__close').click(function() {
 			$(this).hide();
 			$(".heroes__text").hide();
 		});
 
-	// ----------------  info-block visible -------------------- //
+// ----------------  info-block visible -------------------- //
 		$('.info-block__button').click(function() {
 			$(".info-block__hide").slideToggle();
 			$(".info-block__button").toggleClass("is-active");
 			return false;
 		});
 
-	// ---------------- tabs -------------------- //
+// ---------------- tabs -------------------- //
 	
 	// default
 	tab_cont.hide();
@@ -98,5 +101,35 @@ $(document).ready(function() {
 		$(index).show();
 	});
 
+// zomm product item on hover 
+
+	prod_image.hover(
+	  function () {
+	    $(this).parent().parent().addClass("is-hover");
+	  },
+	  function () {
+	    //$(this).parent().parent().removeClass("is-hover");
+	  }
+	);
+	prod.hover(
+	  function () {
+	    //$(this).parent().parent().addClass("is-hover");
+	  },
+	  function () {
+	    $(this).removeClass("is-hover");
+	  }
+	);
+
+// ------------------- Fancybox ----------------------// 
+    $(".to-favorite").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        padding: 20,
+        helpers : {
+            title : {
+                type : 'outside'
+            }
+        } 
+    });
 
 });
