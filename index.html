@@ -32,7 +32,7 @@
 				<label class="label label_width">
 					<div class="label__title">Введите название:</div>
 					<div class="label__field">
-						<input type="text" class="input_text" placeholder="" value="">
+						<input type="text" class="input" placeholder="" value="">
 					</div>
 				</label>
 				<!-- BEGIN city-list -->
@@ -74,20 +74,20 @@
 				<label class="label">
 					<div class="label__title">Ваше имя:</div>
 					<div class="label__field">
-						<input type="text" class="input_text" placeholder="" value="">
+						<input type="text" class="input" placeholder="" value="">
 					</div>
 				</label>
 				<label class="label">
 					<div class="label__title">Телефон:</div>
 					<div class="label__field">
-						<input type="text" class="input_text" placeholder="" value="">
+						<input type="text" class="input" placeholder="" value="">
 					</div>
 				</label>
 				<div class="label"><div class="label__warning"><i></i>не забудьте указать код города/оператора</div></div>
 				<!-- BEGIN .callback__time -->
 				<div class="callback__time">
 					<h3 class="h1">Когда перезвонить?</h3>
-					<label><input type="checkbox" class="checkbox"> В указанное время <input type="text" class="input_text" placeholder="" value=""></label>
+					<label><input type="checkbox" class="checkbox"> В указанное время <input type="text" class="input" placeholder="" value=""></label>
 					<label><input type="checkbox" class="checkbox"> Сейчас</label>
 					<!-- BEGIN .callback__btn -->
 					<div class="callback__btn">
@@ -115,12 +115,12 @@
 			<div class="popup js-popup-enter popup_enter">
 				<label class="label">
 					<div class="label__field">
-						<input type="text" class="input_text" placeholder="Логин">
+						<input type="text" class="input" placeholder="Логин">
 					</div>
 				</label>
 				<label class="label">
 					<div class="label__field">
-						<input type="password" class="input_text" placeholder="Пароль">
+						<input type="password" class="input" placeholder="Пароль">
 					</div>
 				</label>
 				<div class="remember-me">
@@ -415,7 +415,7 @@
 				<img src="img/hero-1.jpg" alt="img">
 			</a>
 			<!-- BEGIN .heroes__close -->
-			<div class="heroes__close"></div>
+			<div class="heroes__close js-text-key"></div>
 			<!-- /.heroes__close -->
 			<!-- BEGIN .heroes__text -->
 			<div class="heroes__text">
@@ -546,7 +546,6 @@
 				    data-cycle-timeout="0"
 				    data-cycle-slides=".cycle-slide-item"
 				    data-cycle-next="#next"
-				    data-allow-wrap=false
 				    data-cycle-carousel-visible="3"
 				    data-cycle-carousel-vertical="true"
 
@@ -661,7 +660,6 @@
 				    data-cycle-timeout="0"
 				    data-cycle-slides=".cycle-slide-item"
 				    data-cycle-next="#next2"
-				    data-allow-wrap=false
 				    data-cycle-carousel-visible="2"
 				    data-cycle-carousel-vertical="true"
 				    >
@@ -1449,7 +1447,7 @@
 									</div>
 									<div class="product__price"><strong>110</strong> грн.</div>
 									<button class="btn">купить</button>
-									<a href="#" class="to-favorite" data-fancybox-href="#popup-favorite1"><i></i>Добавить  список желаний</a>
+									<a href="#" class="to-favorite" data-fancybox-href="#to-favorite1"><i></i>Добавить  список желаний</a>
 								</div>
 								<!-- /.product__info -->
 							</div>
@@ -1483,7 +1481,7 @@
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
-									<a href="#" class="to-favorite"><i></i>Добавить  список желаний</a>
+									<a href="#" class="to-favorite" data-fancybox-href="#to-favorite2"><i></i>Добавить  список желаний</a>
 								</div>
 								<i class="product__counter">1</i>
 							</li>
@@ -1734,14 +1732,14 @@
 			    >
 			    <div class="recent-product__item">
 			   		<!-- BEGIN .recent-product__image -->
-			   		<div class="recent-product__image">
+			   		<a class="recent-product__image" href="#">
 			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
-			   		</div>
+			   		</a>
 			   		<!-- /.recent-product__image -->
 			   		<!-- BEGIN .recent-product__info -->
 			   		<div class="recent-product__info">
 			   			<div class="recent-product__checked"></div>
-			   			<h1 class="h1">DMC: Devil May Cry</h1>
+			   			<h1 class="h1"><a href="#">DMC: Devil May Cry</a></h1>
 			   			<div class="recent-product__platform">x-box 360</div>
 			   			<div class="recent-product__price"><strong>110</strong> грн.</div>
 			   		</div>
@@ -1749,14 +1747,14 @@
 			    </div>
 			    <div class="recent-product__item">
 			   		<!-- BEGIN .recent-product__image -->
-			   		<div class="recent-product__image">
+			   		<a class="recent-product__image" href="#">
 			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
-			   		</div>
+			   		</a>
 			   		<!-- /.recent-product__image -->
 			   		<!-- BEGIN .recent-product__info -->
 			   		<div class="recent-product__info">
 			   			<div class="recent-product__checked"></div>
-			   			<h1 class="h1">Your Shape: Fitness Evolved</h1>
+			   			<h1 class="h1"><a href="#">Your Shape: Fitness Evolved</a></h1>
 			   			<div class="recent-product__platform">Nintendo Wii U</div>
 			   			<div class="recent-product__price"><strong>110</strong> грн.</div>
 			   		</div>
@@ -1764,14 +1762,14 @@
 			    </div>
 			    <div class="recent-product__item">
 			   		<!-- BEGIN .recent-product__image -->
-			   		<div class="recent-product__image">
+			   		<a class="recent-product__image" href="#">
 			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
-			   		</div>
+			   		</a>
 			   		<!-- /.recent-product__image -->
 			   		<!-- BEGIN .recent-product__info -->
 			   		<div class="recent-product__info">
 			   			<div class="recent-product__checked"></div>
-			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<h1 class="h1"><a href="#">DMC: Devil new May Cry</a></h1>
 			   			<div class="recent-product__platform">x-box 360</div>
 			   			<div class="recent-product__price"><strong>110</strong> грн.</div>
 			   		</div>
@@ -1779,14 +1777,14 @@
 			    </div>
 			    <div class="recent-product__item">
 			   		<!-- BEGIN .recent-product__image -->
-			   		<div class="recent-product__image">
+			   		<a class="recent-product__image" href="#">
 			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
-			   		</div>
+			   		</a>
 			   		<!-- /.recent-product__image -->
 			   		<!-- BEGIN .recent-product__info -->
 			   		<div class="recent-product__info">
 			   			<div class="recent-product__checked"></div>
-			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<h1 class="h1"><a href="#">DMC: Devil new May Cry</a></h1>
 			   			<div class="recent-product__platform">x-box 360</div>
 			   			<div class="recent-product__price"><strong>110</strong> грн.</div>
 			   		</div>
@@ -1794,14 +1792,14 @@
 			    </div>
 			    <div class="recent-product__item">
 			   		<!-- BEGIN .recent-product__image -->
-			   		<div class="recent-product__image">
+			   		<a class="recent-product__image" href="#">
 			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
-			   		</div>
+			   		</a>
 			   		<!-- /.recent-product__image -->
 			   		<!-- BEGIN .recent-product__info -->
 			   		<div class="recent-product__info">
 			   			<div class="recent-product__checked"></div>
-			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<h1 class="h1"><a href="#">DMC: Devil new May Cry</a></h1>
 			   			<div class="recent-product__platform">x-box 360</div>
 			   			<div class="recent-product__price"><strong>110</strong> грн.</div>
 			   		</div>
@@ -1809,14 +1807,14 @@
 			    </div>
 			    <div class="recent-product__item">
 			   		<!-- BEGIN .recent-product__image -->
-			   		<div class="recent-product__image">
+			   		<a class="recent-product__image" href="#">
 			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
-			   		</div>
+			   		</a>
 			   		<!-- /.recent-product__image -->
 			   		<!-- BEGIN .recent-product__info -->
 			   		<div class="recent-product__info">
 			   			<div class="recent-product__checked"></div>
-			   			<h1 class="h1">DMC: Devil new May Cry</h1>
+			   			<h1 class="h1"><a href="#">DMC: Devil new May Cry</a></h1>
 			   			<div class="recent-product__platform">x-box 360</div>
 			   			<div class="recent-product__price"><strong>110</strong> грн.</div>
 			   		</div>
@@ -1837,14 +1835,20 @@
 	<!-- BEGIN .footer__in -->
 	<div class="footer__in">
 		<!-- BEGIN .footer__subscribe -->
-		<div class="footer__subscribe">
-			<div class="footer__subscribe-text">
+		<div class="subscribe">
+			<div class="subscribe__text">
 				<i class="icon icon_subscribe"></i>подпишись и получи купон на скидку
 			</div>
 			<!-- BEGIN .footer__subscribe-field -->
-			<div class="footer__subscribe-field">
-				<input type="text" class="footer__subscribe-input" name="" id="" placeholder="введите ваш е-мейл...">
-				<input type="submit" class="footer__subscribe-submit btn btn_orange" value="Да">
+			<div class="subscribe__field">
+				<input type="text" class="subscribe__input" name="" id="" placeholder="введите ваш е-мейл...">
+				<input type="submit" class="subscribe__submit btn btn_orange" value="Да">
+				<div class="tooltip">
+					<strong class="tooltip__title">ПОДПИСКА НА РАССЫЛКУ</strong>
+					<div class="tooltip__text">
+						Система безопасности GRENKA запрещает подписывать так много разных адресов, пожалуйста, зарегистрируйтесь на сайте, напишите в онлайн-чат или попробуйте повторить попытку немного позднее.
+					</div>
+				</div>
 			</div>
 			<!-- /.footer__subscribe-field -->
 		</div>
@@ -1947,22 +1951,28 @@
 		<!-- BEGIN .footer__row -->
 		<div class="footer__row">
 			<!-- BEGIN .footer__info -->
-			<div class="footer__info">
+			<div class="footer__info" itemscope itemtype="http://schema.org/Organization">
 				<!-- BEGIN .footer__copyright -->
 				<div class="footer__copyright">
-					<div>&copy; Гренка, 2013</div>
-					<a href="mailto:info@grenka.com.ua">info@grenka.com.ua</a>
+					<div>&copy; <span itemprop="name">Гренка</span>, 2013</div>
+					<a href="mailto:info@grenka.com.ua" itemprop="email">info@grenka.com.ua</a>
 				</div>
 				<!-- /.footer__copyright -->
 				<!-- BEGIN .footer__tel -->
 				<div class="footer__tel">
 					<div>Наш телефон (многоканальный)</div>
-					<div class="footer__tel-number"><span>044</span> 359 05 055 <i class="icon icon_tel"></i></div>
+					<div class="footer__tel-number" itemprop="telephone">
+						<span>044</span> 359 05 055 <i class="icon icon_tel"></i>
+					</div>
 				</div>
 				<!-- /.footer__tel -->
 				<!-- BEGIN .footer__address -->
 				<div class="footer__address">
-					<div>Адрес: Киев, ул. Жилянская, 97</div>
+					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						Адрес: 
+						<span itemprop="addressLocality">Киев</span>, 
+						<span itemprop="streetAddress">ул. Жилянская, 97</span>
+					</div>
 					<a href="#">схема проезда</a>
 				</div>
 				<!-- /.footer__address -->
@@ -2017,8 +2027,7 @@
 </div>
 <!-- /.footer -->
 
-<div class="popup-overlay"></div>
-<div class="window window_s" id="popup-favorite1">
+<div class="window window_s" id="to-favorite1">
 	<div class="window__header">
 		<div class="window__title">
 			Список желаний
@@ -2046,10 +2055,48 @@
 		<div class="radio">
 			<label>
 				<input type="radio" name="name">
+				<input type="text" class="input">
+			</label>
+			<p>Или например, "Желаю на День рождения"</p>
+		</div>
+		<input class="btn" type="submit">
+	</div>
+</div>
+<div class="window window_s" id="to-favorite2">
+	<div class="window__header">
+		<div class="window__title">
+			Список желаний
+		</div>
+	</div>
+	<div class="window__body">
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
 				<span>Мой список желаний</span>
 			</label>
 		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<span>Мой список желаний</span>
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<span>Мой список желаний</span>
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<input type="text" class="input">
+			</label>
+			<p>Или например, "Желаю на День рождения"</p>
+		</div>
+		<input class="btn" type="submit">
 	</div>
 </div>
+
 </body>
 </html>

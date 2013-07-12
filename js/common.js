@@ -10,6 +10,7 @@ $(document).ready(function() {
 	var tab_cont = $(".js-tab-cont"); 
 	var prod = $(".product"); 
 	var prod_image = $(".product__image"); 
+	var key_text = $('.js-text-key'); 
 
 // ---------------- CALLBACK POPUP -------------------- //
 		$('.callback').click(function() {
@@ -71,11 +72,18 @@ $(document).ready(function() {
 		});
 
 // ---------------- heroes close button -------------------- //
-		$('.heroes__close').click(function() {
-			$(this).hide();
-			$(".heroes__text").hide();
-		});
-
+		// $('.heroes__close').click(function() {
+		// 	$(this).hide();
+		// 	$(".heroes__text").hide();
+		// });
+		key_text.hover(
+		  function () {
+		    $(".heroes__text").fadeOut();
+		  },
+		  function () {
+		    $(".heroes__text").fadeIn();
+		  }
+		);
 // ----------------  info-block visible -------------------- //
 		$('.info-block__button').click(function() {
 			$(".info-block__hide").slideToggle();
@@ -124,7 +132,8 @@ $(document).ready(function() {
     $(".to-favorite").fancybox({
         openEffect  : 'none',
         closeEffect : 'none',
-        padding: 20,
+        padding: 0,
+        showCloseButton: true,
         helpers : {
             title : {
                 type : 'outside'

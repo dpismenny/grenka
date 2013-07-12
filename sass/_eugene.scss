@@ -270,28 +270,21 @@
 	
 }
 
-.popup-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #777;
-	@include opacity(.7);
-	z-index: 4000;
-}
+
 .window {
-	position: fixed;
-	top: 50%;
-	left: 50%;  
-	z-index: 5000;
+	display: none;  
+	//position: fixed;
+	//top: 50%;
+	//left: 50%;  
+	//z-index: 5000;
 }
 .window_s {
-	margin: -161px 0 0 -157px;
 	width: 314px;
+	
 }
 .window__header {
-	padding: 7px 0;
+	padding: 7px 10px;
+	@include border-radius(4px 4px 0 0);
 	@include background-image(linear-gradient(#8ac143, #69a815))
 }
 .window__title {
@@ -300,10 +293,12 @@
 	font-size: 34px;
 	@include pm;
 	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .window__body {
 	padding: 20px;
-	@include background-image(linear-gradient(#fbfbfb, #e3e3e3));
 }
 .radio {
 	margin-bottom: 13px;
@@ -316,4 +311,44 @@
 	span {
 		margin-left: 5px;
 	}
+	.input {
+		width: 226px;
+	}
+	p {
+		margin-top: 6px;
+		font-size: 11px;
+		color: #878787;
+	}
+}
+.tooltip {
+	position: absolute;
+	border: 1px solid #bcbcbc;
+	padding: 10px 27px;
+	width: 433px;
+	height: 165px;
+	@include box-sizing(border-box);
+	background-color: #f7f7f7;
+	line-height: 1.4;
+	@include box-shadow(0 1px 16px rgba(0,0,0,.26));
+	@include background-image(linear-gradient(bottom, #e7e7e7 0%, #e7e7e7 0.68%, #fff 100%));
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 50%;
+		margin-left: -10px;
+		@include s(arrow5);
+	}
+}
+.tooltip__title {
+	display: block;
+	margin-bottom: 12px;  
+	color: #6aa917;
+	@include pm;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+.tooltip__text {
+	line-height: 1.8;
 }
