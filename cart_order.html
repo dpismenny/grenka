@@ -1,0 +1,187 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN  .page-->
+<div class="page" style="width: 710px;">
+	<div class="title">мой заказ</div>
+	<!-- BEGIN .cart -->		
+	<div class="cart">
+		<div class="cart__title">Ваш предзаказ <span>№312</span> успешно оформлен. <strong>Спасибо!</strong></div>
+		<div class="cart__adv">
+			<p>В течение 15 минут с Вами свяжется наш менеджер, если предзаказ оформлен <span>с 9-00 до 21-00</span>.</p>
+			<p>Если Вы оформили предзаказ в другое время, то мы обязательно перезвоним <span>с 9-00 до 9-30</span>.</p>
+		</div>
+		<ul class="cart__info">
+			<li>Информация о предзаказе</li>
+			<li><span>Способ оплаты:</span>Банковская карта (VISA, MASTER, Приват24)</li>
+			<li><span>Чем доставим:</span>Курьером</li>
+			<li><span>Город:</span>Киев</li>
+			<li><span>Статус:</span><strong class="is-error">Не оплачен</strong><button class="btn">оплатить через pay 24</button></li>
+		</ul>
+		<!-- BEGIN .buy-discount -->
+		<div class="buy-discount">
+			<div class="buy-discount__title">
+				<span>купить со скидкой 15%</span>
+				<span>до конца акции осталось:</span>
+			</div>
+			<!-- BEGIN .counter -->
+			<ul class="counter">
+				<li>
+					<strong>11</strong>
+					<span>дней</span>
+				</li>
+				<li>
+					<strong>06</strong>
+					<span>часов</span>
+				</li>
+				<li>
+					<strong>57</strong>
+					<span>минут</span>
+				</li>
+				<li>
+					<strong>03</strong>
+					<span>секунд</span>
+				</li>
+			</ul>
+			<!-- END .counter -->
+		</div>
+		<!-- END .buy-discount -->
+		<!-- BEGIN .add-order -->
+		<ul class="add-order">
+			<li class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">добавить в заказ</button>
+			</li>
+			<li class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">добавить в заказ</button>
+			</li>
+			<li class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape: Fitness Evolved</a>
+				</div>
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">добавить в заказ</button>
+			</li>
+			<li class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Fitness Evolved</a>
+				</div>
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">добавить в заказ</button>
+			</li>
+		</ul>
+		<!-- END .add-order -->
+	</div>
+	<!-- END .cart -->
+	<!-- BEGIN .offer -->
+	<div class="offer">
+		<div class="offer__title">специальное предложение на 2 просмотренных товара</div>
+		<div class="offer__top">				
+			<div class="offer__slider">
+				<button id="offer__btn-prev" class="offer__btn-top"></button>	
+				<button id="offer__btn-next" class="offer__btn-down"></button>
+				<div class="offer__items cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".offer__prod" data-cycle-next="#offer__btn-next" data-cycle-prev="#offer__btn-prev" data-allow-wrap="true" data-cycle-carousel-visible="1" data-cycle-carousel-vertical="true">						
+					<div class="offer__prod">
+						<div class="offer__prod-pic">
+							<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+						</div>					
+						<div class="offer__prod-desc">
+							<a href="#">Aliens: Colonial Marines</a>
+							<button class="btn">купить</button>
+						</div>
+					</div>
+					<div class="offer__prod">
+						<div class="offer__prod-pic">
+							<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+						</div>					
+						<div class="offer__prod-desc">
+							<a href="#">Your Shape: Fitness Evolved </a>
+							<button class="btn">купить</button>
+						</div>
+					</div>
+					<div class="offer__prod">
+						<div class="offer__prod-pic">
+							<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+						</div>					
+						<div class="offer__prod-desc">
+							<a href="#">Aliens: Colonial Marines</a>
+							<button class="btn">купить</button>
+						</div>
+					</div>
+				</div>				
+			</div>	
+			<div class="offer__plus"></div>
+			<div class="offer__slider offer__slider_right">
+				<button id="offer__btn-prev-1" class="offer__btn-top"></button>	
+				<button id="offer__btn-next-1" class="offer__btn-down"></button>
+				<div class="offer__items cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".offer__prod" data-cycle-next="#offer__btn-next-1" data-cycle-prev="#offer__btn-prev-1" data-allow-wrap="true" data-cycle-carousel-visible="1" data-cycle-carousel-vertical="true">						
+					<div class="offer__prod">
+						<div class="offer__prod-pic">
+							<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+						</div>					
+						<div class="offer__prod-desc">
+							<a href="#">Aliens: Colonial Marines</a>
+							<button class="btn">купить</button>
+						</div>
+					</div>
+					<div class="offer__prod">
+						<div class="offer__prod-pic">
+							<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+						</div>					
+						<div class="offer__prod-desc">
+							<a href="#">Your Shape: Fitness Evolved </a>
+							<button class="btn">купить</button>
+						</div>
+					</div>
+					<div class="offer__prod">
+						<div class="offer__prod-pic">
+							<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+						</div>					
+						<div class="offer__prod-desc">
+							<a href="#">Aliens: Colonial Marines</a>
+							<button class="btn">купить</button>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="offer__down">
+			<p><ins>420 грн</ins> <strong>СКИДКА 15%</strong> ЭКОНОМИЯ 63 грн <span>357 грн</span></p>
+			<button class="btn">КУПИТЬ сразу 2 товара</button>
+		</div>
+	</div>
+	<!-- END .offer -->
+</div>
+<!-- END .page-->
