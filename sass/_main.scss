@@ -1716,6 +1716,9 @@ table {
 		display: inline-block;
 		overflow: hidden;
 		max-height: 53px;
+		a {
+			color: #3e3e3e;
+		}
 	}
 }
 .product {
@@ -1837,13 +1840,7 @@ table {
 .product__info{
 	overflow: hidden;
 }
-.product__platform{
-	font-size: 14px;
-	color: #929292;
-	text-transform: uppercase;
-	line-height: 1;
-	margin-bottom: 8px;
-}
+
 .product__price{
 	font-size: 11px;
 	color: #f47b01;
@@ -1930,4 +1927,7 @@ table {
     &:hover{
     	cursor: default;
     }
+}
+.schema-rating {
+	display: none;
 }

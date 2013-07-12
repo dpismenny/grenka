@@ -849,17 +849,55 @@
 					<div class="js-tab-cont js-tab-cont1">
 						<!-- BEGIN .tab__list -->
 						<ul class="tab__list product-list">
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
+										<!-- BEGIN .rating -->
+										<ul class="rating">
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+										<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+											<span itemprop="ratingValue">3.5</span>
+										</div>
+										<!-- /.rating -->
+										<div class="product__descr" itemprop="description" itemprop="description">
+											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+											<p><a href="#">подробнее</a></p>
+										</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+										<button class="btn">купить</button>
+										<link itemprop="availability" href="http://schema.org/InStock" />
+									</div>
+									<!-- /.product__info -->
+								</div>
+							</li>
+							<li class="product" itemscope itemtype="http://schema.org/Product">
+								<div class="product__inner">
+									<!-- BEGIN .product__image -->
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
+									<!-- /.product__image -->
+									<!-- BEGIN .product__info -->
+									<div class="product__info">
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -869,47 +907,17 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
-								<div class="product__inner">
-									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
-									<!-- /.product__image -->
-									<!-- BEGIN .product__info -->
-									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
-										<!-- BEGIN .rating -->
-										<ul class="rating">
-											<li class="is-active"><a href="#"></a></li>
-											<li class="is-active"><a href="#"></a></li>
-											<li class="is-active"><a href="#"></a></li>
-											<li class="is-active"><a href="#"></a></li>
-											<li><a href="#"></a></li>
-										</ul>
-										<!-- /.rating -->
-										<div class="product__descr">
-											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-											<p><a href="#">подробнее</a></p>
-										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
-										<button class="btn">купить</button>
-									</div>
-									<!-- /.product__info -->
-								</div>
-							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__label  label_best -->
 									<div class="product__label label_best"></div>
@@ -921,8 +929,10 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -932,30 +942,32 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__label  label_new -->
 									<div class="product__label label_new"></div>
 									<!-- /.product__label  label_new -->
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -965,30 +977,32 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__label  label_soon -->
 									<div class="product__label label_soon"></div>
 									<!-- /.product__label  label_soon -->
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -998,30 +1012,32 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__label  label_top -->
 									<div class="product__label label_top"></div>
 									<!-- /.product__label  label_top -->
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1031,27 +1047,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1061,27 +1079,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1091,27 +1111,62 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+										<button class="btn">купить</button>
+										<link itemprop="availability" href="http://schema.org/InStock" />
+									</div>
+									<!-- /.product__info -->
+								</div>
+							</li>
+							<li class="product" itemscope itemtype="http://schema.org/Product">
+								<div class="product__inner">
+									<!-- BEGIN .product__image -->
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
+									<!-- /.product__image -->
+									<!-- BEGIN .product__info -->
+									<div class="product__info">
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
+										<!-- BEGIN .rating -->
+										<ul class="rating">
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li class="is-active"><a href="#"></a></li>
+											<li><a href="#"></a></li>
+										</ul>
+										<!-- /.rating -->
+										<div class="product__descr" itemprop="description">
+											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+											<p><a href="#">подробнее</a></p>
+										</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1121,27 +1176,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1151,27 +1208,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1181,41 +1240,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
-										<button class="btn">купить</button>
-									</div>
-									<!-- /.product__info -->
-								</div>
-							</li>
-							<li class="product">
-								<div class="product__inner">
-									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
-									<!-- /.product__image -->
-									<!-- BEGIN .product__info -->
-									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
-										<!-- BEGIN .rating -->
-										<ul class="rating">
-											<li class="is-active"><a href="#"></a></li>
-											<li class="is-active"><a href="#"></a></li>
-											<li class="is-active"><a href="#"></a></li>
-											<li class="is-active"><a href="#"></a></li>
-											<li><a href="#"></a></li>
-										</ul>
-										<!-- /.rating -->
-										<div class="product__descr">
-											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-											<p><a href="#">подробнее</a></p>
-										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
@@ -1229,17 +1258,19 @@
 					<div class="js-tab-cont js-tab-cont2">
 						<!-- BEGIN .tab__list -->
 						<ul class="product-list">
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1249,27 +1280,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1279,27 +1312,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1309,27 +1344,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1339,11 +1376,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
@@ -1356,17 +1393,19 @@
 					<!-- tab-cont -->
 					<div class="js-tab-cont js-tab-cont3">
 						<ul class="product-list">
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1376,27 +1415,29 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1406,11 +1447,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
@@ -1425,13 +1466,13 @@
 							<div class="product__inner">
 								<!-- BEGIN .product__image -->
 								<div class="product__image">
-									<img src="img/img-8.jpg" width="100" height="130" alt="img">
+									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
 								</div>
 								<!-- /.product__image -->
 								<!-- BEGIN .product__info -->
 								<div class="product__info">
 									<h1 class="h1">DMC: Devil new May Cry</h1>
-									<div class="product__platform">x-box 360</div>
+									
 									<!-- BEGIN .rating -->
 									<ul class="rating">
 										<li class="is-active"><a href="#"></a></li>
@@ -1441,11 +1482,11 @@
 										<li><a href="#"></a></li>
 									</ul>
 									<!-- /.rating -->
-									<div class="product__descr">
+									<div class="product__descr" itemprop="description">
 										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 										<p><a href="#">подробнее</a></p>
 									</div>
-									<div class="product__price"><strong>110</strong> грн.</div>
+									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 									<button class="btn">купить</button>
 									<a href="#" class="to-favorite" data-fancybox-href="#to-favorite1"><i></i>Добавить  список желаний</a>
 								</div>
@@ -1456,14 +1497,16 @@
 							<li class="product product_middle">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1473,11 +1516,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
@@ -1488,14 +1531,16 @@
 							<li class="product product_middle">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1505,11 +1550,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
@@ -1520,14 +1565,16 @@
 							<li class="product product_middle">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1537,11 +1584,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
@@ -1552,14 +1599,16 @@
 							<li class="product product_middle">
 								<div class="product__inner">
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1569,11 +1618,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 									</div>
 									<!-- /.product__info -->
 									<a href="#" class="to-favorite"><i></i>Добавить  список желаний</a>
@@ -1610,20 +1659,22 @@
 					<div class="js-tab-cont5">
 						<!-- BEGIN .tab__list -->
 						<ul class="product-list">
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__label  label_top -->
 									<div class="product__label label_top"></div>
 									<!-- /.product__label  label__top -->
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1633,30 +1684,32 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->
 								</div>
 							</li>
-							<li class="product">
+							<li class="product" itemscope itemtype="http://schema.org/Product">
 								<div class="product__inner">
 									<!-- BEGIN .product__label  label_soon -->
 									<div class="product__label label_soon"></div>
 									<!-- /.product__label  label_soon -->
 									<!-- BEGIN .product__image -->
-									<div class="product__image">
-										<img src="img/img-8.jpg" width="100" height="130" alt="img">
-									</div>
+									<a itemprop="url" href="#" class="product__image">
+										<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+									</a>
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1">DMC: Devil new May Cry</h1>
-										<div class="product__platform">x-box 360</div>
+										<h1 class="h1" itemprop="name">
+											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+										</h1>
+										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
 											<li class="is-active"><a href="#"></a></li>
@@ -1666,11 +1719,11 @@
 											<li><a href="#"></a></li>
 										</ul>
 										<!-- /.rating -->
-										<div class="product__descr">
+										<div class="product__descr" itemprop="description">
 											<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
 											<p><a href="#">подробнее</a></p>
 										</div>
-										<div class="product__price"><strong>110</strong> грн.</div>
+										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">купить</button>
 									</div>
 									<!-- /.product__info -->

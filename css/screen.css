@@ -494,6 +494,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .tab-all-link a:hover { text-decoration: none; }
 
 .product-list .h1 { font-size: 18px; text-transform: uppercase; font-family: 'pf_din_text_cond_promedium', arial, sans-serif; color: #3e3e3e; font-weight: normal; line-height: 1; margin-bottom: 10px; display: inline-block; overflow: hidden; max-height: 53px; }
+.product-list .h1 a { color: #3e3e3e; }
 
 .product { position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; list-style-type: none; width: 50%; height: 200px; float: left; border-top: 1px solid #dcdcdc; border-left: 1px solid #dcdcdc; }
 .product:nth-child(odd) { border-left: 0; }
@@ -528,8 +529,6 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .product__info { overflow: hidden; }
 
-.product__platform { font-size: 14px; color: #929292; text-transform: uppercase; line-height: 1; margin-bottom: 8px; }
-
 .product__price { font-size: 11px; color: #f47b01; line-height: 1; margin-bottom: 8px; text-transform: uppercase; }
 .product__price strong { font-size: 16px; }
 .product__price span { font-size: 14px; }
@@ -552,6 +551,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 .code { border: 1px solid #b7b7b7; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; display: inline-block; padding: 9px; vertical-align: text-top; letter-spacing: 1px; background: #ebebeb; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #fefefe)); background-image: -webkit-linear-gradient(#ebebeb, #fefefe); background-image: -moz-linear-gradient(#ebebeb, #fefefe); background-image: -o-linear-gradient(#ebebeb, #fefefe); background-image: linear-gradient(#ebebeb, #fefefe); z-index: 90; height: 20px; width: auto; -moz-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; font-family: Calibri; color: #2a2a2a; font-size: 13px; text-transform: uppercase; left: -64px; position: fixed; top: 41%; font-weight: bold; }
 .code span { color: #000000; vertical-align: middle; }
 .code:hover { cursor: default; }
+
+.schema-rating { display: none; }
 
 .label_width .label__title, .label_width .label__field { float: none; width: 100%; }
 
