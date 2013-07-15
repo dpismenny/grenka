@@ -162,6 +162,8 @@
 	@include pm;
 	text-decoration: none;
 	font-size: 28px;
+	display: inline-block;
+	margin-bottom: 25px;
 	&:hover {
 		color: #f47b01;
 	}
