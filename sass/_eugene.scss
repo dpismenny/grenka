@@ -88,6 +88,26 @@
 		@include s(vk);
 	}
 }
+.enter-soc__yandex {
+	i {
+		@include s(yandex);
+	}
+}
+.enter-soc__mail {
+	i {
+		@include s(mail);
+	}
+}
+.enter-soc__tw {
+	i {
+		@include s(tw);
+	}
+}
+.enter-soc__google {
+	i {
+		@include s(gp);
+	}
+}
 .btn-simple {
 	display: block;
 	padding: 8px 5px;
