@@ -74,7 +74,7 @@ $(document).ready(function() {
 // ---------------- hide slider text -------------------- //
         
         key_text.live("hover", function(){ 
-            $(this).next().fadeToggle();
+            $(this).parent().find(".slider-info, .shadow-slider").fadeToggle();
          });  
 // ----------------  info-block visible -------------------- //
 		$('.info-block__button').click(function() {
