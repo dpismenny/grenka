@@ -177,6 +177,64 @@ table {
 .input {
 	width: 100%;
 	height: 29px;
+}
+.btn_orange {
+	border: 1px solid #bf6000;
+	background-color: #f37b01;
+	@include box-shadow(0 1px 1px rgba(0,0,0,.38));
+	@include background-image(linear-gradient(#ff972f, #f37b01));
+	background-repeat: repeat-x;
+	border-color:  #ff972f  #ff972f #f37b01;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	@include text-shadow(0 1px 0 rgba(255,255,255,.34));
+	color: #000;
+	&:hover,
+	&:focus,
+	&:active{
+		color: #000;
+		background-color: #f37b01;
+	}
+	&:active{
+		@include box-shadow(
+			0 1px 1px rgba(0,0,0,.38),
+			inset 	0 2px 4px rgba(0, 0, 0, 0.15),
+					0 1px 2px rgba(0, 0, 0, 0.05)
+			);
+	}
+}
+.label{
+	display: block;
+	margin-bottom: 5px;
+	@extend %clr;
+	font-size: 12px;
+	color: #676767;
+	.label__title{
+		float: left;
+		width: 77px;
+		line-height: 29px;
+	}
+	.label__field{
+		float: left;
+		width: 177px;
+		height: 29px;
+		line-height: 29px;
+		input{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.label__warning{
+		font-size: 10px;
+		color: #f47b01;
+		i{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 7px;
+			@include s(ico_warning);
+		}
+	}
+}
+.input_text{
 	@include box-sizing(border-box);
 	border: 1px solid #adadad;
 	@include border-radius(5px);
