@@ -11,13 +11,13 @@ $(document).ready(function() {
 	var prod = $(".product"); 
 	var prod_image = $(".product__image"); 
 	var key_text = $('.js-text-key'); 
-
+    var tab_counter = $(".js-tab-counter");
 // ---------------- CALLBACK POPUP -------------------- //
-		$('.callback').click(function() {
-			$(this).toggleClass("is-active");
-			popup__callback.toggle();
-			return false;
-		});
+	$('.callback').click(function() {
+		$(this).toggleClass("is-active");
+		popup__callback.toggle();
+		return false;
+	});
 
 // show/hide recent products
 		$('.recent-product__collapse').click(function() {
@@ -97,16 +97,20 @@ $(document).ready(function() {
 	tab_cont.hide();
 	tab_cont.first().show();
 	tab.first().addClass("is-active");
-
+    var count_first = tab.first().attr("data-counter");
+    tab_counter.text("(" + count_first + ")");
 	// action
 	tab.click(function(){
 		tab.removeClass("is-active");
 		$(this).toggleClass("is-active");
 
-		var index = $(this).attr("data-tab");
+        var index = $(this).attr("data-tab");
+		var count = $(this).attr("data-counter");
 
 		tab_cont.hide();
 		$(index).show();
+
+        tab_counter.text("("+count+")");
 	});
 
 // zomm product item on hover 
