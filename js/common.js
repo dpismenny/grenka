@@ -71,19 +71,11 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 
-// ---------------- heroes close button -------------------- //
-		// $('.heroes__close').click(function() {
-		// 	$(this).hide();
-		// 	$(".heroes__text").hide();
-		// });
-		key_text.hover(
-		  function () {
-		    $(".heroes__text").fadeOut();
-		  },
-		  function () {
-		    $(".heroes__text").fadeIn();
-		  }
-		);
+// ---------------- hide slider text -------------------- //
+        
+        key_text.live("hover", function(){ 
+            $(this).next().fadeToggle();
+         });  
 // ----------------  info-block visible -------------------- //
 		$('.info-block__button').click(function() {
 			$(".info-block__hide").slideToggle();

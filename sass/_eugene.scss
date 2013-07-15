@@ -389,7 +389,7 @@
     right:0;
     top:0;
     width: 711px;
-    height: 358px;
+    height: 359px;
     img {
     	position: absolute;
     	right:0;
@@ -414,11 +414,18 @@
 			}
 		}
 	}
+	.icon-eye {
+		position: absolute;
+		top: 30px;
+		left: 52px;
+		z-index: 1000;
+		@include s(ico_eye);
+	}
 }
 .slider-info {
     position: absolute;
-    left:47px;
-    top:30px;
+    left:52px;
+    top:72px;
     width: 235px;
     h4 {
     	color: #fff;
@@ -515,18 +522,37 @@
 }
 
 .btn-slider  {
-	position: absolute;
-    left: 0;
-    top: 0;
+	position: relative;
+	z-index: 2;
+	height: 40px;
+    width: 100%;
     background: #fdfdfd;
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fdfdfd), to(#f0f0f0));
-    background: -moz-linear-gradient(#fdfdfd, #f0f0f0);
-    background: linear-gradient(#fdfdfd, #f0f0f0);
+    @include background-image(linear-gradient(#fdfdfd, #f0f0f0));
     border-top:1px solid #dcdcdc;
     cursor: pointer;
-    height: 40px;
-    position: relative;
+    line-height: 1;
+    text-align: center;
+    i {
+    	display: inline-block;
+    	vertical-align: middle;
+    }
+}
+.btn-slider_up {
+	display: none;
+	i {
+		@include s(arrow_cycle2);
+	}
+}
+.btn-slider_down {
+	i {
+		@include s(arrow_cycle);
+	}
 }
 .shadow-slider {
-	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	@include background-image(linear-gradient(left, #000, rgba(0,0,0,.0) 50%, rgba(0,0,0,.0) 100%));
 }
