@@ -1,0 +1,118 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/common-moroz.js"></script>
+</head>
+<body>
+<!-- BEGIN  .page-->
+<div class="page" style="width: 710px;">
+	<div class="title title_big">ваша корзина</div>
+	<!-- BEGIN .cart -->		
+	<div class="cart cart_popup">
+		<div class="cart__in">
+			<div class="cart__top">
+				<div class="cart__delivery">бесплатная доставка</div>
+				<div class="cart__progress">
+					<div class="cart__progress-scale"><i style="width: 90%"></i></div>
+					<span>90%</span>
+				</div>
+				<div class="cart__message">Купите еще на 1 грн и получите бемплатную доставку</div>
+			</div>
+			<div class="cart__table"><table>
+					<thead>
+						<tr>
+							<th>Фото</th>
+							<th>Название товара</th>
+							<th>Количество</th>
+							<th>Цена</th>
+							<th>Скидка</th>
+							<th>Стоимость</th>
+							<th>Удалить</th>     
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+							<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+							<td>
+								<div class="input-number js-input-number">
+									<input class="input-number__value" type="text" value="1">
+									<button class="input-number__plus"><i></i></button>
+									<button class="input-number__minus"><i></i></button>
+								</div>
+							</td>
+							<td class="cart__table-price">100 грн.</td>
+							<td class="cart__table-discount">30%</td>
+							<td class="cart__table-cost">100 грн</td>
+							<td class="cart__table-delete"><button><i></i></button></td>
+						</tr>
+						<tr>
+							<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+							<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+							<td>
+								<div class="input-number js-input-number">
+									<input class="input-number__value" type="text" value="1">
+									<button class="input-number__plus"><i></i></button>
+									<button class="input-number__minus"><i></i></button>
+								</div>
+							</td>
+							<td class="cart__table-price">100 грн.</td>
+							<td class="cart__table-discount">30%</td>
+							<td class="cart__table-cost">100 грн</td>
+							<td class="cart__table-delete"><button><i></i></button></td>
+						</tr>
+						<tr class="cart__table-coupon">
+							<td><i class="cart__table-gift"></i></td>
+							<td colspan="6"><strong>купон на 500 грн.</strong></td>
+						</tr>
+						<tr class="cart__table-coupon">
+							<td><i class="cart__table-gift"></i></td>
+							<td colspan="6"><p>Купите еще на 500 грн и получите игру <a href="#">NFS Most Wanted</a> в подарок!</p></td>
+						</tr>
+						<tr class="cart__table-total">
+							<td colspan="7">итого: <span>115 грн.</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="cart__begin">
+				<div class="cart__forms">
+					<div class="cart__forms-item">
+						<label for="number-card">введите номер дисконтной карты</label>
+						<input id="number-card" type="text">
+						<button class="btn">получить скидку</button>
+					</div>
+					<div class="cart__forms-item cart__forms-item_mod">
+						<label for="number-phone">заказать через телефон без оформления заказа</label>
+						<input id="number-phone" type="text" value="+ 38">
+						<button class="btn">жду звонка</button>
+						<span>Например: 067 982 19 29</span>
+					</div>
+				</div>
+				<div class="cart__go">
+					<button class="btn">начать оформление</button>
+					<div class="cart__go-txt">Дальше Вы сможете выбрать удобный способ доставки и оплаты</div>
+					<div class="cart__go-services">
+						
+					</div>
+				</div>
+			</div>
+			<div class="cart__payment">
+				<button class="btn">вернуться в каталог</button>
+			</div>
+		</div>		
+	</div>
+	<!-- END .cart -->
+</div>
+<!-- END .page-->
