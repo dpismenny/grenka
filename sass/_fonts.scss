@@ -1,29 +1,11 @@
-// PFDinTextCondPro Medium
-@font-face {
-    font-family: 'pf_din_text_cond_promedium';
-    src: url('../fonts/pfdintextcondpro-medium.eot');
-    src: url('../fonts/pfdintextcondpro-medium.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pfdintextcondpro-medium.woff') format('woff'),
-         url('../fonts/pfdintextcondpro-medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext);
+
 
 @mixin pm(){
-  font-family: 'pf_din_text_cond_promedium', arial, sans-serif;
-}
-
-// PFDinTextCondPro Light
-@font-face {
-    font-family: 'pf_din_text_cond_prolight';
-    src: url('../fonts/pfdintextcondpro-light.eot');
-    src: url('../fonts/pfdintextcondpro-light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/pfdintextcondpro-light.woff') format('woff'),
-         url('../fonts/pfdintextcondpro-light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
 }
 
 @mixin pl(){
-  font-family: 'pf_din_text_cond_prolight', arial, sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }

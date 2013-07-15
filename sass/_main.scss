@@ -1008,7 +1008,6 @@ table {
 .comments-list{
 	.h1{
 		font-size: 16px;
-		font-weight: normal;
 		@include pm;
 		color: #303030;
 		text-transform: uppercase;
@@ -1063,7 +1062,6 @@ table {
 			text-transform: uppercase;
 			font-size: 20px;
 			color: #000;
-			font-weight: normal;
 			@include pm;
 			margin-bottom: 0;
 			float: left;
@@ -1187,7 +1185,6 @@ table {
 		@extend %site;
 	}
 	.h1{
-		font-weight: normal;
 		@include pm;
 		text-transform: uppercase;
 		font-size: 22px;
@@ -1269,7 +1266,6 @@ table {
 			text-transform: uppercase;
 			@include pm;
 			color: #fff;
-			font-weight: normal;
 			line-height: 1;
 			margin-bottom: 10px;
 			display: inline-block;
@@ -1320,7 +1316,6 @@ table {
 		color: #fff;
 		@include pm;
 		line-height: 1;
-		font-weight: normal;
 		text-transform: uppercase;
 		margin-bottom: 25px;
 		a{
@@ -1604,7 +1599,6 @@ table {
 		font-size: 22px;
 		@include pm;
 		text-transform: uppercase;
-		font-weight: normal;
 		margin-bottom: 0.3em;
 	}
 	.popular__title{
@@ -1728,7 +1722,6 @@ table {
 		text-transform: uppercase;
 		@include pm;
 		color: #3e3e3e;
-		font-weight: normal;
 		line-height: 1;
 		margin-bottom: 10px;
 		display: inline-block;

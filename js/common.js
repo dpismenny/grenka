@@ -4,7 +4,8 @@ $(document).ready(function() {
 
 	var popup__callback = $(".js-popup-callback");
 	var popup__city = $(".js-city-popup");
-	var popup__enter = $(".js-popup-enter");
+    var popup__enter = $(".js-popup-enter");
+	var popup = $(".js-popup");
 	var prod_carousel = $('.recent-product__carousel');
 	var tab = $(".js-tab").find("li"); 
 	var tab_cont = $(".js-tab-cont"); 
@@ -37,12 +38,9 @@ $(document).ready(function() {
 
 		$(document).click(function() {
 			$('.callback').removeClass('is-active');
-			popup__callback.hide();
+			popup.hide();
 
 			$('.js-change-city').parent().removeClass("is-active");
-			popup__city.hide();
-
-			popup__enter.hide();
 		});
 
 		popup__callback.click(function(event){
@@ -141,23 +139,23 @@ $(document).ready(function() {
     // Главный слайдер
         // Главный слайдер
         $('#slider-left-main').veronica_slider(
+            {
+                active : true, // режим выбора активного элемента
+                autoplay : true, // автоматическая прокрутка
+                height: 107, // высота блока
+                step : 5000, // время в милисикундах для автоматического режима
+                callback : function(el)
                 {
-                    active : true, // режим выбора активного элемента
-                    autoplay : true, // автоматическая прокрутка
-                    height: 107, // высота блока
-                    step : 5000, // время в милисикундах для автоматического режима
-                    callback : function(el)
-                    {
-                        $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
-                    }, // callback функция при смене активного элемента
-                    stop: ['#main_slider_pause','table.main-menu'], // идентификаторы элментов, при наведении на которые автопрокрутка останавливается
-                    fixed: true, // режим прокрутки если активный элемент вверху или внизу
-                    click : function(el) {
-                        $('#slider-left-main').find('li.active').removeClass('active');
-                        $(el).addClass('active');
-                        $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
-                    } // callback функция при клике
-                }
+                    $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
+                }, // callback функция при смене активного элемента
+                stop: ['#main_slider_pause','table.main-menu'], // идентификаторы элментов, при наведении на которые автопрокрутка останавливается
+                fixed: true, // режим прокрутки если активный элемент вверху или внизу
+                click : function(el) {
+                    $('#slider-left-main').find('li.active').removeClass('active');
+                    $(el).addClass('active');
+                    $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
+                } // callback функция при клике
+            }
         );
 
 

@@ -162,7 +162,7 @@
 	@include pm;
 	text-decoration: none;
 	font-size: 28px;
-	display: inline-block;
+	display: block;
 	margin-bottom: 25px;
 	&:hover {
 		color: #f47b01;
@@ -515,7 +515,6 @@
     	padding-bottom: 10px;
     	text-transform: uppercase;
     	@include pm;
-    	font-weight: normal;
 	}
     p {
     	color:#929292;
