@@ -640,20 +640,22 @@
 		<!-- BEGIN .l-main -->
 		<div class="l-main">
 			<!-- BEGIN .popular -->
-			<div class="popular">
+			<div class="popular-wrap">
 				<!-- BEGIN .popular__col1 -->
-				<div class="popular__col popular__col1">
+				<div class="popular" itemscope itemtype="http://schema.org/Product">
 					<!-- BEGIN .popular__image -->
-					<div class="popular__image">
-						<img src="img/img-3.jpg" width="120" height="140" alt="img">
-					</div>
+					<a class="popular__image" href="#" itemprop="url">
+						<img src="img/img-3.jpg" itemprop="image" width="120" height="140" alt="img">
+					</a>
 					<!-- /.popular__image -->
 					<!-- BEGIN .popular__info -->
 					<div class="popular__info">
-						<h1 class="h1">Товар дня</h1>
-						<h2 class="popular__title">Far Cry 3 Коллекц. издание (рус.)</h2>
+						<h2 class="popular__title">Товар дня</h2>
+						<h3 class="popular__sub-title" itemprop="name">
+							<a href="#" itemprop="url">Far Cry 3 Коллекц. издание (рус.)</a>
+						</h3>
 						<a href="#" class="popular__price">
-							<strong>954</strong> грн.
+							<strong itemprop="price">954</strong> грн.
 							<div class="popular__btn"><i class="icon icon_basket"></i></div>
 						</a>
 					</div>
@@ -661,18 +663,20 @@
 				</div>
 				<!-- /.popular__col1 -->
 				<!-- BEGIN .popular__col2 -->
-				<div class="popular__col popular__col2">
+				<div class="popular popular_orange" itemscope itemtype="http://schema.org/Product">
 					<!-- BEGIN .popular__image -->
-					<div class="popular__image">
-						<img src="img/img-4.jpg" width="120" height="140" alt="img">
-					</div>
+					<a class="popular__image" href="#" itemprop="url">
+						<img src="img/img-4.jpg" itemprop="image" width="120" height="140" alt="img">
+					</a>
 					<!-- /.popular__image -->
 					<!-- BEGIN .popular__info -->
 					<div class="popular__info">
-						<h1 class="h1">Хит дня</h1>
-						<h2 class="popular__title">Enemy Territory: Quake Wars</h2>
+						<h2 class="popular__title">Хит дня</h2>
+						<h3 class="popular__sub-title" itemprop="name">
+							<a href="#" itemprop="url">Enemy Territory: Quake Wars</a>
+						</h3>
 						<a href="#" class="popular__price">
-							<strong>1542</strong> грн.
+							<strong itemprop="price">1542</strong> грн.
 							<div class="popular__btn"><i class="icon icon_basket"></i></div>
 						</a>
 					</div>

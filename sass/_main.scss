@@ -11,6 +11,9 @@ input{
 	border: 1px solid #d5d5d5;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
+$brcl: #dcdcdc;
+$green: #69a915;
+$orange: #f47b01;
 /* ------------------------------------- Reset css -------------------------------------------- */
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
 h6, p, blockquote, pre,a, abbr, acronym, address, big,
@@ -853,41 +856,44 @@ table {
 	}
 }
 
-.popular{
+.popular-wrap {
 	@extend %clr;
-	// margin-bottom: 30px;
-	.popular__col{
-		width: 354px;
-		height: 180px; //tmp
-		padding: 20px;
-		@include box-sizing(border-box);
-	}
-	.popular__col1{
+}
+.popular {
+	width: 354px;
+	padding: 20px;
+	float: right;
+	background: #68a814;
+	@include box-sizing(border-box);
+	&:first-child {
 		float: left;
-		background-color: #68a814;
 	}
-	.popular__col2{
-		float: right;
-		background-color: #f47b01;
+}
+.popular_orange {
+	background: #f47b01;
+}
+.popular__info{
+	overflow: hidden;
+}
+.popular__image{
+	float: right;
+	margin-left: 15px;
+	img{
+		display: block;
 	}
-	.popular__info{
-		overflow: hidden;
-	}
-	.popular__image{
-		float: right;
-		margin-left: 15px;
-		img{
-			display: block;
-		}
-	}
-	.h1{
-		color: #000;
-		font-size: 22px;
-		@include pm;
-		text-transform: uppercase;
-		margin-bottom: 0.3em;
-	}
-	.popular__title{
+}
+.popular__title {
+	color: #000;
+	font-size: 22px;
+	@include pm;
+	text-transform: uppercase;
+	margin-bottom: 0.3em;
+}
+.popular__sub-title{
+	height: 44px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	a {
 		color: #fff;
 		font-size: 18px;
 		@include pm;
@@ -895,52 +901,52 @@ table {
 		font-weight: normal;
 		line-height: 1.2;
 	}
-	.popular__platform{
-		color: #000;
+}
+.popular__platform{
+	color: #000;
+	font-size: 14px;
+	text-transform: uppercase;
+	@include pm;
+}
+.popular__price{
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 15px;
+	border: 2px solid rgba(#fff,.4);
+	color: #fff;
+	font-size: 11px;
+	line-height: 1;
+	display: inline-block;
+	padding: 7px 50px 7px 7px;
+	text-decoration: none;
+	@include box-sizing(border-box);
+	span{
 		font-size: 14px;
-		text-transform: uppercase;
-		@include pm;
 	}
-	.popular__price{
-		text-transform: uppercase;
-		position: relative;
-		margin-top: 15px;
-		border: 2px solid rgba(#fff,.4);
-		color: #fff;
-		font-size: 11px;
-		line-height: 1;
-		display: inline-block;
-		padding: 7px 50px 7px 7px;
+	strong{
+		font-size: 16px;
+	}
+	&:hover{
 		text-decoration: none;
-		@include box-sizing(border-box);
-		span{
-			font-size: 14px;
-		}
-		strong{
-			font-size: 16px;
-		}
-		&:hover{
-			text-decoration: none;
-			cursor: pointer;
-			border: 2px solid #fff;
-			.popular__btn{
-				border-left: 2px solid #fff;
-			}
+		cursor: pointer;
+		border: 2px solid #fff;
+		.popular__btn{
+			border-left: 2px solid #fff;
 		}
 	}
-	.popular__btn{
-		width: 35px;
-		text-align: center;
-		height: 100%;
-		position: absolute;
-		right: 0;
-		top: 0;
-		display: block;
-		border-left: 2px solid rgba(#fff,.4);
-		.icon_basket{
-			margin-top: 9px;
-			vertical-align: top;
-		}
+}
+.popular__btn{
+	width: 35px;
+	text-align: center;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	border-left: 2px solid rgba(#fff,.4);
+	.icon_basket{
+		margin-top: 9px;
+		vertical-align: top;
 	}
 }
 
@@ -1186,20 +1192,6 @@ table {
 	font-style: normal;
 	@include background-image(linear-gradient(#ff9e00, #ff8304));
 }
-// .label_new{
-// 	@include s(ico_new);
-// }
-// .label_best{
-// 	@include s(ico_best);
-// }
-// .label_soon{
-// 	@include s(ico_soon);
-// }
-// .label_top{
-// 	@include s(ico_top);
-// }
-
-
 
 .code  {
     border:1px solid #b7b7b7;
@@ -1233,4 +1225,10 @@ table {
 }
 .schema-rating {
 	display: none;
+}
+
+.nav__link {
+	&:hover {
+		text-decoration: none;
+	}
 }
