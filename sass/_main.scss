@@ -1235,136 +1235,136 @@ table {
 		text-transform: uppercase;
 	}
 }
-.recent-product{
+.recent {
 
 }
-.recent-product__head{
-		position: relative;
-		@extend %site;
+.recent__head {
+	position: relative;
+	@extend %site;
+}
+.recent__title {
+	@include pm;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 1;
+	margin-bottom: 18px;
+	a {
+		color: #fff;
+		text-decoration: none;
 	}
-	.h1{
+}
+.recent__collapse {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 11px;
+	color: #68a814;
+	text-decoration: underline;
+	text-transform: lowercase;
+	&:hover{
+		text-decoration: none;
+		cursor: pointer;
+	}
+	i{
+		margin-left: 7px;
+	}
+}
+.recent__carousel {
+	background-color: #505050;
+	border-top: 1px solid #5e5e5e;
+	border-bottom: 1px solid #5e5e5e;
+	height: 165px; //tmp 
+}
+.recent__wrap{
+	@extend %site;
+	position: relative;
+	height: 100%;
+}
+.recent__nav {
+	position: absolute;
+	top: -20px;
+	content:"";
+	@extend %hide-text;
+	display: block;
+	width: 20px;
+	background-color: #505050;
+	text-align: center;
+	height: 100%;
+	@include box-sizing(border-box);
+	i{
+		display: inline-block;
+		vertical-align: middle;
+		@include s(ico_nav);
+		margin-top: 82px;
+	}
+	&.prev {
+		left: -18px;
+		i{
+			@include rotate(180);
+		}
+	}
+	&.next {
+		right: -9px;
+	}
+}
+.recent__list {
+	margin-top: 20px;
+}
+.recent__item {
+	@extend %clr;
+	padding: 0 25px;
+	@include box-sizing(border-box);
+	position: relative;
+	width: 240px;
+	height: 123px;
+	border-left: 1px solid #5d5d5d;
+	box-shadow: -1px 1px 0 #2e2e2e;
+	.h1 {
+		font-size: 16px;
+		text-transform: uppercase;
 		@include pm;
-		text-transform: uppercase;
-		font-size: 22px;
+		color: #fff;
 		line-height: 1;
-		margin-bottom: 18px;
-		a {
-			color: #fff;
-			text-decoration: none;
-		}
-	}
-	.recent-product__collapse{
-		position: absolute;
-		top: 0;
-		right: 0;
-		font-size: 11px;
-		color: #68a814;
-		text-decoration: underline;
-		text-transform: lowercase;
-		&:hover{
-			text-decoration: none;
-			cursor: pointer;
-		}
-		i{
-			margin-left: 7px;
-		}
-	}
-	.recent-product__carousel{
-		background-color: #505050;
-		border-top: 1px solid #5e5e5e;
-		border-bottom: 1px solid #5e5e5e;
-		height: 165px; //tmp 
-	}
-	.recent-product__wrap{
-		@extend %site;
-		position: relative;
-		height: 100%;
-	}
-	.recent-product__nav{
-		position: absolute;
-		top: -20px;
-		content:"";
-		@extend %hide-text;
-		display: block;
-		width: 20px;
-		background-color: #505050;
-		text-align: center;
-		height: 100%;
-		@include box-sizing(border-box);
-		i{
-			display: inline-block;
-			vertical-align: middle;
-			@include s(ico_nav);
-			margin-top: 82px;
-		}
-		&.prev{
-			left: -18px;
-			i{
-				@include rotate(180);
-			}
-		}
-		&.next{
-			right: -9px;
-		}
-	}
-	.recent-product__list{
-		margin-top: 20px;
-	}
-	.recent-product__item{
-		@extend %clr;
-		padding: 0 25px;
-		@include box-sizing(border-box);
-		position: relative;
-		width: 240px;
-		height: 123px;
-		border-left: 1px solid #5d5d5d;
-		box-shadow: -1px 1px 0 #2e2e2e;
-		.h1{
-			font-size: 16px;
-			text-transform: uppercase;
-			@include pm;
-			color: #fff;
-			line-height: 1;
-			margin-bottom: 10px;
-			display: inline-block;
-			overflow: hidden;
-			max-height: 33px;
-		}
-	}
-	.recent-product__image{
-		float: right;
-		width: 60px;
-		margin-left: 10px;
-		margin-top: 32px;
-	}
-	.recent-product__info{
+		margin-bottom: 10px;
+		display: inline-block;
 		overflow: hidden;
-		white-space: normal !important;
+		max-height: 33px;
 	}
-	.recent-product__platform{
-		font-size: 13px;
-		color: #929292;
-		text-transform: none;
-		line-height: 1;
-		margin-bottom: 10px;
+}
+.recent__image{
+	float: right;
+	width: 60px;
+	margin-left: 10px;
+	margin-top: 32px;
+}
+.recent__info{
+	overflow: hidden;
+	white-space: normal !important;
+}
+.recent__platform{
+	font-size: 13px;
+	color: #929292;
+	text-transform: none;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.recent__price{
+	font-size: 11px;
+	color: #f47b01;
+	line-height: 1;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	strong{
+		font-size: 16px;
 	}
-	.recent-product__price{
-		font-size: 11px;
-		color: #f47b01;
-		line-height: 1;
-		margin-bottom: 8px;
-		text-transform: uppercase;
-		strong{
-			font-size: 16px;
-		}
-		span{
-			font-size: 14px;
-		}
+	span{
+		font-size: 14px;
 	}
-	.recent-product__checked{
-		@include s(ico_checked);
-		margin-bottom: 10px;
-	}
+}
+.recent__checked{
+	@include s(ico_checked);
+	margin-bottom: 10px;
+}
 .footer {
 	// height: 725px; //tmp
 	background: #2e2e2e;
@@ -1426,9 +1426,17 @@ table {
 		margin-top: 16px;
 	}
 }
-.subscribe__field{
+.subscribe__field {
 	position: relative;
+	float: right;
+	width: 491px;
 	@extend %clr;
+	.btn {
+		position: absolute;
+		top: 9px;
+		right: 0;
+		padding: 5px 17px;
+	}
 }
 .subscribe__input{
 	@include border-radius(5px);
@@ -1444,12 +1452,7 @@ table {
 	color: #5f5f5f;
 	font-size: 12px;
 }
-.subscribe__submit{
-	position: absolute;
-	top: 9px;
-	right: 0;
-	padding: 5px 17px;
-}
+
 .footer__nav{
 	@extend %clr;
 	font-size: 12px;
@@ -1591,36 +1594,36 @@ table {
 			text-decoration: none;
 		}
 	}
-	.info-block__in{
-		padding: 30px 35px;
-		overflow: hidden;
+}
+.info-block__in {
+	padding: 30px 35px;
+	overflow: hidden;
+}
+.info-block__hide {
+	display: none;
+	width: 640px;
+}
+.info-block__button {
+	border-top: 1px solid #dcdcdc;
+	@include box-sizing(border-box);
+	height: 40px;
+	background-color: #fdfdfd;
+	@include background-image(linear-gradient(#fdfdfd, #f0f0f0));
+	a{
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		text-align: center;
 	}
-	.info-block__hide{
-		display: none;
-		width: 640px;
+	i{
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 16px;
+		@include s(arrow_cycle);
 	}
-	.info-block__button{
-		border-top: 1px solid #dcdcdc;
-		@include box-sizing(border-box);
-		height: 40px;
-		background-color: #fdfdfd;
-		@include background-image(linear-gradient(#fdfdfd, #f0f0f0));
-		a{
-			display: inline-block;
-			height: 100%;
-			width: 100%;
-			text-align: center;
-		}
+	&.is-active {
 		i{
-			display: inline-block;
-			vertical-align: top;
-			margin-top: 16px;
-			@include s(arrow_cycle);
-		}
-		&.is-active{
-			i{
-				@include rotate(180);
-			}
+			@include rotate(180);
 		}
 	}
 }
