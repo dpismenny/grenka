@@ -18,27 +18,25 @@
 <div class="code" title="Сообщите этот номер при заказе по телефону оператору и мы оформим заказ максимально быстро"> код клиента: <span>435435</span></div>
 
 
-<!-- BEGIN .topper -->
-<div class="topper">
-	<!-- BEGIN .topper__in -->
-	<div class="topper__in">
+<!-- BEGIN .top -->
+<div class="top">
+	<!-- BEGIN .top__in -->
+	<div class="top__in">
 		<!-- BEGIN .location -->
-		<div class="location">
-			Ваш город:<span class="location__current js-change-city"><span>Корсунь-Шевченковский</span><i class="icon icon_arrow"></i></span>
-			<!-- BEGIN .callback__popup -->
-			<div class="popup js-popup js-city-popup popup_location">
-				<div class="popup js-popup__title">
-					Изменить местоположение
-				</div>
-				<label class="label label_width">
-					<div class="label__title">Введите название:</div>
-					<div class="label__field">
-						<input type="text" class="input" placeholder="" value="">
-					</div>
+		<div class="location js-top-popup">
+			<div class="location__city">
+				<span>Ваш город:</span>
+				<strong>Киев</strong>
+				<i class="ico-arr"><i></i></i>
+			</div>
+			<div class="location__down">
+				<div class="location__title">Изменить местоположение</div>
+				<label class="label">
+					<span class="label__title">Введите название:</span>
+					<input class="label__input" type="text">
 				</label>
-				<!-- BEGIN city-list -->
-				<div class="city-list">
-					<p>Часто используемые города:</p>
+				<div class="location__cities">
+					<span>Часто используемые города:</span>
 					<a href="#" class="#">Киев</a>
 					<a href="#" class="#">Донецк</a>
 					<a href="#" class="#">Днепропетровск</a>
@@ -52,108 +50,102 @@
 					<a href="#" class="#">Одесса</a>
 					<a href="#" class="#">Симферополь</a>
 				</div>
-				<!-- /.city-list -->
 				<button class="btn btn_orange">запомнить</button>
-			</div>
-			<!-- /.callback__popup -->
-		</div>
-		<!-- /.location -->
-		<!-- BEGIN .topper__nav -->
-		<ul class="topper__nav">
-			<li><a href="#">Категории</a></li>
-			<li><a href="#">Новости</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-		<!-- /.topper__nav -->
+			</div>	
+		</div>	
+		<!-- BEGIN .top__nav -->
+		<nav class="top__nav">
+			<ul>
+				<li><a href="#">Категории</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>		
+		<!-- END .topper__nav -->
 		<!-- BEGIN .callback -->
-		<div class="callback">
-			<i class="icon icon_callback"></i>
-			<span>Обратный звонок</span>
-			<i class="icon icon_arrow2"></i>
-			<!-- BEGIN .callback__popup -->
-			<div class="popup js-popup popup_callback js-popup-callback">
+		<div class="callback js-top-popup">
+			<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
+			<div class="callback__down">
 				<label class="label">
-					<div class="label__title">Ваше имя:</div>
-					<div class="label__field">
-						<input type="text" class="input" placeholder="" value="">
-					</div>
+					<span class="label__title">Ваше имя:</span>
+					<input class="label__input" type="text">
 				</label>
 				<label class="label">
-					<div class="label__title">Телефон:</div>
-					<div class="label__field">
-						<input type="text" class="input" placeholder="" value="">
-					</div>
+					<span class="label__title">Телефон:</span>
+					<input class="label__input" type="text">
 				</label>
-				<div class="label"><div class="label__warning"><i></i>не забудьте указать код города/оператора</div></div>
-				<!-- BEGIN .callback__time -->
+				<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
 				<div class="callback__time">
-					<h3 class="h1">Когда перезвонить?</h3>
-					<label><input type="checkbox" class="checkbox"> В указанное время <input type="text" class="input" placeholder="" value=""></label>
-					<label><input type="checkbox" class="checkbox"> Сейчас</label>
-					<!-- BEGIN .callback__btn -->
-					<div class="callback__btn">
-						<button class="btn btn_orange">Перезвонить</button>
-					</div>
-					<!-- /.callback__btn -->
+					<strong>Когда перезвонить?</strong>
+					<div class="callback__cols">
+						<div class="callback__column">
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>В указанное время</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>Сейчас</span>
+							</label>
+						</div>
+						<div class="callback__column">
+							<div class="label">
+								<input class="label__input" type="text">
+							</div>
+							<button class="btn btn_orange">перезвонить</button>
+						</div>
+					</div>										
 				</div>
-				<!-- /.callback__time -->
 			</div>
-			<!-- /.callback__popup -->
 		</div>
-		<!-- /.callback -->
-		 <!-- BEGIN .livechat -->
-			<div class="livechat">
-			   <!-- <i class="icon icon_chat"></i>
-			   <span>Он-лайн чат</span> -->
-			   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitewindow_567940" onclick="o=window.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitewindow_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
-			</div>
-		  <!-- /.livechat -->
-		<!-- BEGIN .profile -->
-		<div class="profile">
-			<a href="#">Регистрация</a>
-			<button class="btn btn_gray js-enter">Вход</button>
-			<!-- BEGIN .callback__popup -->
-			<div class="popup js-popup js-popup-enter popup_enter">
-				<label class="label">
-					<div class="label__field">
-						<input type="text" class="input" placeholder="Логин">
+		<!--END .callback -->
+	 <!-- BEGIN .livechat -->
+		<div class="livechat">
+		   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitewindow_567940" onclick="o=window.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitewindow_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+		</div>
+	  <!-- END .livechat -->
+		<!-- BEGIN .enter -->
+		<div class="enter">
+			<a class="enter__reg" href="#">Регистрация</a>
+			<div class="enter__go js-top-popup">
+				<button class="btn btn_gray">Вход</button>
+				<div class="enter__down">
+					<div class="enter__login">
+						<label class="label">
+							<input class="label__input" type="text" placeholder="Логин">
+						</label>
+						<label class="label">
+							<input class="label__input" type="password" placeholder="Пароль">
+						</label>
 					</div>
-				</label>
-				<label class="label">
-					<div class="label__field">
-						<input type="password" class="input" placeholder="Пароль">
-					</div>
-				</label>
-				<div class="remember-me">
-					<label class="checkbox-wrap">
-						<input type="checkbox" class="checkbox">
-						<span>Запомнить меня</span>
+					<label class="label-check">
+						<input type="checkbox">
+						<i></i>
+						<span>В указанное время</span>
+						<a href="#">Забыли пароль?</a>
 					</label>
-					<a href="#">Забыли пароль?</a>
-				</div>
-				<div class="enter-soc">
-					<span class="enter-soc__text">
-						Войти через:
-					</span>
-					<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
-					<div>
+					<div class="enter-soc">
+						<span class="enter-soc__text">Войти через:</span>
+						<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+					</div>
+					<div class="btn-wrap">
 						<button class="btn btn_orange">Войти на сайт</button>
 					</div>
+					<a href="#" class="btn-simple">зарегистрируйся и получи скидку</a>
 				</div>
-				<a href="#" class="btn-simple">зарегистрируйся и получи скидку</a>
-			</div>
-			<!-- /.callback__popup -->
+			</div>			
 		</div>
-		<!-- /.profile -->
+		<!-- END .enter -->
 	</div>
-	<!-- /.topper__in -->
 </div>
-<!-- /.topper -->
+<!-- END .top -->
 
 <!-- BEGIN  page-->
 <div class="page">
@@ -640,20 +632,22 @@
 		<!-- BEGIN .l-main -->
 		<div class="l-main">
 			<!-- BEGIN .popular -->
-			<div class="popular">
+			<div class="popular-wrap">
 				<!-- BEGIN .popular__col1 -->
-				<div class="popular__col popular__col1">
+				<div class="popular" itemscope itemtype="http://schema.org/Product">
 					<!-- BEGIN .popular__image -->
-					<div class="popular__image">
-						<img src="img/img-3.jpg" width="120" height="140" alt="img">
-					</div>
+					<a class="popular__image" href="#" itemprop="url">
+						<img src="img/img-3.jpg" itemprop="image" width="120" height="140" alt="img">
+					</a>
 					<!-- /.popular__image -->
 					<!-- BEGIN .popular__info -->
 					<div class="popular__info">
-						<h1 class="h1">Товар дня</h1>
-						<h2 class="popular__title">Far Cry 3 Коллекц. издание (рус.)</h2>
+						<h2 class="popular__title">Товар дня</h2>
+						<h3 class="popular__sub-title" itemprop="name">
+							<a href="#" itemprop="url">Far Cry 3 Коллекц. издание (рус.)</a>
+						</h3>
 						<a href="#" class="popular__price">
-							<strong>954</strong> грн.
+							<strong itemprop="price">954</strong> грн.
 							<div class="popular__btn"><i class="icon icon_basket"></i></div>
 						</a>
 					</div>
@@ -661,18 +655,20 @@
 				</div>
 				<!-- /.popular__col1 -->
 				<!-- BEGIN .popular__col2 -->
-				<div class="popular__col popular__col2">
+				<div class="popular popular_orange" itemscope itemtype="http://schema.org/Product">
 					<!-- BEGIN .popular__image -->
-					<div class="popular__image">
-						<img src="img/img-4.jpg" width="120" height="140" alt="img">
-					</div>
+					<a class="popular__image" href="#" itemprop="url">
+						<img src="img/img-4.jpg" itemprop="image" width="120" height="140" alt="img">
+					</a>
 					<!-- /.popular__image -->
 					<!-- BEGIN .popular__info -->
 					<div class="popular__info">
-						<h1 class="h1">Хит дня</h1>
-						<h2 class="popular__title">Enemy Territory: Quake Wars</h2>
+						<h2 class="popular__title">Хит дня</h2>
+						<h3 class="popular__sub-title" itemprop="name">
+							<a href="#" itemprop="url">Enemy Territory: Quake Wars</a>
+						</h3>
 						<a href="#" class="popular__price">
-							<strong>1542</strong> грн.
+							<strong itemprop="price">1542</strong> грн.
 							<div class="popular__btn"><i class="icon icon_basket"></i></div>
 						</a>
 					</div>
@@ -689,138 +685,29 @@
 	<div class="l">
 		<!-- BEGIN .l-sidebar -->
 		<div class="l-sidebar">
-			<!-- BEGIN .recent-buy -->
-			<div class="recent-buy cycle">
+				<!-- BEGIN .comments-list -->
+			<div class="cycle">
 			    <!-- BEGIN .cycle-head -->
 			    <div class="cycle-head">
-			    	<h1 class="cycle-title">Недавно покупали</h1>
+			    	<div class="cycle-title">Отзывы</div>
 			    </div>
 			    <!-- /.cycle-head -->
 				<div class="cycle-slideshow"
 				    data-cycle-fx="carousel"
 				    data-cycle-timeout="0"
-				    data-cycle-slides=".cycle-slide-item"
-				    data-cycle-next="#next"
-				    data-cycle-carousel-visible="3"
-				    data-cycle-carousel-vertical="true"
-
-				    >
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Need for Speed Most Wanted</h1>
-				    		<div class="recent-buy__price"><strong>735</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-1.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Assassin's Creed (Liberation)</h1>
-				    		<div class="recent-buy__price"><strong>1200</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Super Monkey Ball: Banana Splitz</h1>
-				    		<div class="recent-buy__price"><strong>650</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-1.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Need for Speed Most Wanted</h1>
-				    		<div class="recent-buy__price"><strong>735</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Assassin's Creed (Liberation)</h1>
-				    		<div class="recent-buy__price"><strong>840</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-1.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Super Monkey Ball: Banana Splitz</h1>
-				    		<div class="recent-buy__price"><strong>1340</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				    <div class="cycle-slide-item">
-				    	<!-- BEGIN .recent-buy__image -->
-				    	<div class="recent-buy__image">
-				    		<img src="img/img-2.jpg" height="83" width="60" alt="img">
-				    	</div>
-				    	<!-- /.recent-buy__image -->
-				    	<!-- BEGIN .recent-buy__info -->
-				    	<div class="recent-buy__info">
-				    		<h1 class="h1">Need for Speed Most Wanted</h1>
-				    		<div class="recent-buy__price"><strong>645</strong> грн.</div>
-				    	</div>
-				    	<!-- /.recent-buy__info -->
-				    </div>
-				</div>
-
-				<div class="cycle-nav">
-				    <a href="#" class="next" id="next"><i></i></a>
-				</div>
-			</div>
-			<!-- /.recent-buy -->
-			<!-- BEGIN .comments-list -->
-			<div class="comments-list cycle">
-			    <!-- BEGIN .cycle-head -->
-			    <div class="cycle-head">
-			    	<h1 class="cycle-title">Отзывы</h1>
-			    </div>
-			    <!-- /.cycle-head -->
-				<div class="cycle-slideshow"
-				    data-cycle-fx="carousel"
-				    data-cycle-timeout="0"
-				    data-cycle-slides=".cycle-slide-item"
+				    data-cycle-slides=".js-cycle-slide"
 				    data-cycle-next="#next2"
 				    data-cycle-carousel-visible="2"
 				    data-cycle-carousel-vertical="true"
 				    >
-				    <div class="cycle-slide-item">
-				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юрий Нагорный</a></div>
-				    	<h1 class="h1">LEGO Властелин Колец</h1>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username" >
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">LEGO Властелин Колец</a>
+				    	</h3>
 				    	<!-- BEGIN .rating -->
 				    	<ul class="rating">
 				    		<li class="is-active"><a href="#"></a></li>
@@ -829,13 +716,21 @@
 				    		<li><a href="#"></a></li>
 				    		<li><a href="#"></a></li>
 				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
 				    	<!-- /.rating -->
 				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
 				    	<a href="#">подробнее</a>
 				    </div>
-				    <div class="cycle-slide-item">
-				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юран</a></div>
-				    	<h1 class="h1">DMC: DEVIL MAY CRY</h1>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">DMC: DEVIL MAY CRY</a>
+				    	</h3>
 				    	<!-- BEGIN .rating -->
 				    	<ul class="rating">
 				    		<li class="is-active"><a href="#"></a></li>
@@ -844,13 +739,21 @@
 				    		<li><a href="#"></a></li>
 				    		<li><a href="#"></a></li>
 				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
 				    	<!-- /.rating -->
 				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
 				    	<a href="#">подробнее</a>
 				    </div>
-				    <div class="cycle-slide-item">
-				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юрий Нагорный</a></div>
-				    	<h1 class="h1">LEGO Властелин Колец</h1>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">LEGO Властелин Колец</a>
+				    	</h3>
 				    	<!-- BEGIN .rating -->
 				    	<ul class="rating">
 				    		<li class="is-active"><a href="#"></a></li>
@@ -859,13 +762,21 @@
 				    		<li><a href="#"></a></li>
 				    		<li><a href="#"></a></li>
 				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
 				    	<!-- /.rating -->
 				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
 				    	<a href="#">подробнее</a>
 				    </div>
-				    <div class="cycle-slide-item">
-				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юран</a></div>
-				    	<h1 class="h1">DMC: DEVIL MAY CRY</h1>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">DMC: DEVIL MAY CRY</a>
+				    	</h3>
 				    	<!-- BEGIN .rating -->
 				    	<ul class="rating">
 				    		<li class="is-active"><a href="#"></a></li>
@@ -874,13 +785,21 @@
 				    		<li><a href="#"></a></li>
 				    		<li><a href="#"></a></li>
 				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
 				    	<!-- /.rating -->
 				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
 				    	<a href="#">подробнее</a>
 				    </div>
-				    <div class="cycle-slide-item">
-				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юрий Нагорный</a></div>
-				    	<h1 class="h1">LEGO Властелин Колец</h1>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">LEGO Властелин Колец</a>
+				    	</h3>
 				    	<!-- BEGIN .rating -->
 				    	<ul class="rating">
 				    		<li class="is-active"><a href="#"></a></li>
@@ -889,13 +808,21 @@
 				    		<li><a href="#"></a></li>
 				    		<li><a href="#"></a></li>
 				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
 				    	<!-- /.rating -->
 				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
 				    	<a href="#">подробнее</a>
 				    </div>
-				    <div class="cycle-slide-item">
-				    	<div class="comments-list__username"><a href="#"><i class="icon icon_user"></i>Юран</a></div>
-				    	<h1 class="h1">DMC: DEVIL MAY CRY</h1>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">DMC: DEVIL MAY CRY</a>
+				    	</h3>
 				    	<!-- BEGIN .rating -->
 				    	<ul class="rating">
 				    		<li class="is-active"><a href="#"></a></li>
@@ -904,6 +831,9 @@
 				    		<li><a href="#"></a></li>
 				    		<li><a href="#"></a></li>
 				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
 				    	<!-- /.rating -->
 				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
 				    	<a href="#">подробнее</a>
@@ -915,6 +845,134 @@
 				</div>
 			</div>
 			<!-- /.comments-list -->
+			<!-- BEGIN .recent-buy -->
+			<div class="cycle">
+			    <!-- BEGIN .cycle-head -->
+			    <div class="cycle-head">
+			    	<div class="cycle-title">Недавно покупали</div>
+			    </div>
+			    <!-- /.cycle-head -->
+				<div class="cycle-slideshow"
+				    data-cycle-fx="carousel"
+				    data-cycle-timeout="0"
+				    data-cycle-slides=".js-cycle-slide"
+				    data-cycle-next="#next"
+				    data-cycle-carousel-visible="3"
+				    data-cycle-carousel-vertical="true"
+
+				    >
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Need for Speed Most Wanted</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">735</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-1.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Assassin's Creed (Liberation)</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">1200</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Super Monkey Ball: Banana Splitz</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">650</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-1.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Need for Speed Most Wanted</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">735</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Assassin's Creed (Liberation)</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">840</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-1.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Super Monkey Ball: Banana Splitz</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">1340</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				    <div class="js-cycle-slide recent-buy" itemscope itemtype="http://schema.org/Product">
+				    	<!-- BEGIN .recent-buy__image -->
+				    	<a class="recent-buy__image" href="#">
+				    		<img src="img/img-2.jpg" height="83" width="60" alt="img" itemprop="image">
+				    	</a>
+				    	<!-- /.recent-buy__image -->
+				    	<!-- BEGIN .recent-buy__info -->
+				    	<div class="recent-buy__info">
+				    		<h3 class="recent-buy__title" itemprop="name">
+				    			<a href="#" itemprop="url">Need for Speed Most Wanted</a>
+				    		</h3>
+				    		<div class="recent-buy__price"><strong itemprop="price">645</strong> грн.</div>
+				    	</div>
+				    	<!-- /.recent-buy__info -->
+				    </div>
+				</div>
+
+				<div class="cycle-nav">
+				    <a href="#" class="next" id="next"><i></i></a>
+				</div>
+			</div>
+			<!-- /.recent-buy -->
 			<!-- BEGIN .reviews -->
 			<div class="reviews">
 				<div class="reviews__head">
@@ -923,25 +981,25 @@
 				</div>
 				<div class="reviews__content">
 					<ul>
-						<li class="reviews__item">
+						<li class="reviews__item" itemprop="review" itemscope itemtype="http://schema.org/Review">
 							<div class="reviews__info">
-								<h3 class="reviews__title">Far Cry 3</h3>
-								<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры Far Cry 3  тропическом...</p>
-								<a href="#">подробнее</a>
+								<h3 class="reviews__title" itemprop="name"><a href="#" itemprop="url">Far Cry 3</a></h3>
+								<p itemprop="reviewBody">Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры Far Cry 3  тропическом...</p>
+								<a href="#" itemprop="url">подробнее</a>
 							</div>
-							<div class="reviews__media">
-								<img src="img/img-1.jpg" alt="img">
-							</div>
+							<a class="reviews__media" href="#" itemprop="url">
+								<img src="img/img-1.jpg" alt="img" itemprop="image">
+							</a>
 						</li>
-						<li class="reviews__item">
+						<li class="reviews__item" itemprop="review" itemscope itemtype="http://schema.org/Review">
 							<div class="reviews__info">
-								<h3 class="reviews__title">Borderlands 2</h3>
-								<p>В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме противостояния...</p>
-								<a href="#">подробнее</a>
+								<h3 class="reviews__title" itemprop="name"><a href="#" itemprop="url">Borderlands 2</a></h3>
+								<p itemprop="reviewBody">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме противостояния...</p>
+								<a href="#" itemprop="url">подробнее</a>
 							</div>
-							<div class="reviews__media">
-								<img src="img/img-2.jpg" alt="img">
-							</div>
+							<a class="reviews__media" href="#" itemprop="url">
+								<img src="img/img-2.jpg" alt="img" itemprop="image">
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -1013,9 +1071,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1049,9 +1107,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1084,9 +1142,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1119,9 +1177,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1154,9 +1212,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1189,9 +1247,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1221,9 +1279,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1253,9 +1311,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1286,9 +1344,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1318,9 +1376,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1350,9 +1408,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1382,9 +1440,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1422,9 +1480,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1454,9 +1512,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1486,9 +1544,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1518,9 +1576,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1557,9 +1615,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1589,9 +1647,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1658,9 +1716,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1692,9 +1750,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1726,9 +1784,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1760,9 +1818,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1826,9 +1884,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -1861,9 +1919,9 @@
 									<!-- /.product__image -->
 									<!-- BEGIN .product__info -->
 									<div class="product__info">
-										<h1 class="h1" itemprop="name">
+										<h3 class="product__title" itemprop="name">
 											<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-										</h1>
+										</h3>
 										
 										<!-- BEGIN .rating -->
 										<ul class="rating">
@@ -2060,7 +2118,7 @@
 		<!-- BEGIN .footer__nav -->
 		<div class="footer__nav">
 			<ul>
-				<h3 class="h1"><a href="#">Игры</a></h3>
+				<a href="#" class="footer__title">Игры</a></h3>
 				<li><a href="#">Стратегии</a></li>
 				<li><a href="#">Бродилки</a></li>
 				<li><a href="#">Аркады</a></li>
@@ -2069,7 +2127,7 @@
 				<li><a href="#">Леталки</a></li>
 			</ul>
 			<ul>
-				<h3 class="h1"><a href="#">Программы</a></h3>
+				<a href="#" class="footer__title">Программы</a></h3>
 				<li><a href="#">Утилиты</a></li>
 				<li><a href="#">Финансовые</a></li>
 				<li><a href="#">Коммерческие</a></li>
@@ -2077,7 +2135,7 @@
 				<li><a href="#">Дизайн</a></li>
 			</ul>
 			<ul>
-				<h3 class="h1"><a href="#">Геймерам</a></h3>
+				<a href="#" class="footer__title">Геймерам</a></h3>
 				<li><a href="#">Блоки питания</a></li>
 				<li><a href="#">Видеокарты</a></li>
 				<li><a href="#">Материнские платы</a></li>
@@ -2089,14 +2147,14 @@
 				<li><a href="#">3D-очки</a></li>
 			</ul>
 			<ul>
-				<h3 class="h1"><a href="#">Приставки</a></h3>
+				<a href="#" class="footer__title">Приставки</a></h3>
 				<li><a href="#">Игровые приставки</a></li>
 				<li><a href="#">Игровые пакеты</a></li>
 				<li><a href="#">Игровые манипуляторы</a></li>
 				<li><a href="#">Аксессуары к приставкам</a></li>
 			</ul>
 			<ul>
-				<h3 class="h1"><a href="#">Планшеты</a></h3>
+				<a href="#" class="footer__title">Планшеты</a></h3>
 				<li><a href="#">Офисные устройства</a></li>
 				<li><a href="#">USB-Лампочки</a></li>
 				<li><a href="#">Развлечения</a></li>
@@ -2106,7 +2164,7 @@
 				<li><a href="#">Логические игры</a></li>
 			</ul>
 			<ul>
-				<h3 class="h1"><a href="#">E-ключи</a></h3>
+				<a href="#" class="footer__title">E-ключи</a></h3>
 				<li><a href="#">Операционные системы</a></li>
 				<li><a href="#">Офисные приложения</a></li>
 				<li><a href="#">Антивирусы</a></li>
@@ -2122,31 +2180,29 @@
 		<div class="footer__row">
 			<!-- BEGIN .footer__col -->
 			<div class="footer__col footer__delivery">
-				<h3 class="h1"><a href="#">Доставка</a></h3>
+				<a href="#" class="footer__title">Доставка</a>
 				<p>Вне зависимости от того, где вы находитесь на данный момент, вы сможете заказать товар, что, согласитесь, очень удобно. Какие же преимущества предлагает наш интернет-магазин электроники</p>
 			</div>
 			<!-- /.footer__col -->
 			<!-- BEGIN .footer__col -->
 			<div class="footer__col footer__about">
-				<h3 class="h1"><a href="#">О нас</a></h3>
+				<a href="#" class="footer__title">О нас</a>
 				<p>Какие же преимущества предлагает наш интернет-магазин электроники, телефонов и прочих товаров? Наиболее существенный факт – наличие тысяч позиций, которые гарантированно имеются на складе. Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
 			</div>
 			<!-- /.footer__col -->
 			<!-- BEGIN .footer__col -->
 			<div class="footer__col footer__payment">
-				<h3 class="h1"><a href="#">Оплата</a></h3>
+				<a href="#" class="footer__title">Оплата</a>
 				<p>Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
-				<!-- BEGIN .footer__payment-services -->
-				<div class="footer__payment-services">
-					<ul>
-						<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
-						<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
-						<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
-						<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
-						<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
-					</ul>
-				</div>
-				<!-- /.footer__payment-services -->
+				<!-- BEGIN .payment -->
+				<ul class="payment">
+					<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
+					<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
+					<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
+					<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
+					<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
+				</ul>
+				<!-- /.payment -->
 			</div>
 			<!-- /.footer__col -->
 		</div>
@@ -2182,48 +2238,46 @@
 				<!-- /.footer__address -->
 			</div>
 			<!-- /.footer__info -->
-			<!-- BEGIN .footer__socials -->
-			<div class="footer__socials">
-				<ul>
-					<li>
-						<a href="#" class="icon icon_fb" title="Facebook">
-							Facebook
-							<span class="icon icon_fb_hover"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon icon_vk" title="Вконтакте">
-							Вконтакте
-							<span class="icon icon_vk_hover"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon icon_tw" title="Twitter">
-							Twitter
-							<span class="icon icon_tw_hover"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon icon_yt" title="YouTube">
-							YouTube
-							<span class="icon icon_yt_hover"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon icon_gp" title="Google+">
-							Google+
-							<span class="icon icon_gp_hover"></span>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon icon_odk" title="Одноклассники">
-							Одноклассники
-							<span class="icon icon_odk_hover"></span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<!-- /.footer__socials -->
+			<!-- BEGIN .socials -->
+			<ul class="socials">
+				<li>
+					<a href="#" class="icon icon_fb" title="Facebook">
+						Facebook
+						<span class="icon icon_fb_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_vk" title="Вконтакте">
+						Вконтакте
+						<span class="icon icon_vk_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_tw" title="Twitter">
+						Twitter
+						<span class="icon icon_tw_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_yt" title="YouTube">
+						YouTube
+						<span class="icon icon_yt_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_gp" title="Google+">
+						Google+
+						<span class="icon icon_gp_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_odk" title="Одноклассники">
+						Одноклассники
+						<span class="icon icon_odk_hover"></span>
+					</a>
+				</li>
+			</ul>
+			<!-- /.socials -->
 		</div>
 		<!-- /.footer__row -->
 	</div>

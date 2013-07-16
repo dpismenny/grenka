@@ -131,7 +131,7 @@
 	left: 0;
 	right: 0;
 	top: 49px;
-	z-index: 2000;
+	z-index: 9;
 	padding: 30px 0 30px 37px;
 	@extend %clr;
 	background: #2a2a2a;
@@ -547,7 +547,7 @@
 	z-index: 2;
 	height: 40px;
     width: 100%;
-    background: #fdfdfd;
+    background: #f0f0f0;
     @include background-image(linear-gradient(#fdfdfd, #f0f0f0));
     border-top:1px solid #dcdcdc;
     cursor: pointer;

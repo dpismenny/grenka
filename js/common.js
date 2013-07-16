@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 // init variables
 
-	var popup__callback = $(".js-popup-callback");
-	var popup__city = $(".js-city-popup");
-    var popup__enter = $(".js-popup-enter");
-	var popup = $(".js-popup");
+	// var popup__callback = $(".js-popup-callback");
+	// var popup__city = $(".js-city-popup");
+ //    var popup__enter = $(".js-popup-enter");
+	// var popup = $(".js-popup");
 	var prod_carousel = $('.recent-product__carousel');
 	var tab = $(".js-tab").find("li"); 
 	var tab_cont = $(".js-tab-cont"); 
@@ -14,73 +14,140 @@ $(document).ready(function() {
 	var key_text = $('.js-text-key'); 
     var tab_counter = $(".js-tab-counter");
     var recent_key = $(".js-recent-key");
-// ---------------- CALLBACK POPUP -------------------- //
-	$('.callback').click(function() {
-		$(this).toggleClass("is-active");
-		popup__callback.toggle();
-		return false;
-	});
+
+    //input number
+function input_number() {
+    $('.js-input-number').each(function() {
+        var el = $(this);
+        var el_plus = el.find('.input-number__plus');
+        var el_minus = el.find('.input-number__minus');
+        var el_value = el.find('.input-number__value');
+        el_plus.click(function() {
+            var value = el_value.val();
+            value = parseInt(value);
+            if (value >= 1) {
+                value++;
+                el_value.val(value);
+            };
+        });
+        el_minus.click(function() {
+            var value = el_value.val();
+            value = parseInt(value);
+            if (value > 1) {
+                value--;
+                el_value.val(value);
+            };
+        });
+    });
+}
+input_number();
+
+
+
+
+//select
+function select() {
+    var el = $('.js-select');
+    var title = $('.label__select-val');
+    var option = $('.label__select-options li');
+    title.click(function() {
+        if (!$(this).parent().hasClass('is-open')) {
+            $(this).parent().addClass('is-open');
+            $(this).next().slideDown();
+        }
+        else {
+            $(this).parent().removeClass('is-open');
+            $(this).next().hide();
+        };
+    });
+    option.click(function() {
+        var value = $(this).text();
+        $(this).parent().prev().find('span').html(value);
+        $(this).parent().parent().removeClass('is-open');
+        $(this).parent().hide();
+    });
+};
+select();
+$('.js-select').click(function(event){
+    event.stopPropagation();
+});
+//stop propagation
+$(document).click(function() {
+    $('.js-select').removeClass('is-open');
+    $('.label__select-options').hide();
+    $('.js-top-popup').removeClass('is-active');
+});
+$('.js-top-popup').click(function(event){
+    event.stopPropagation();
+});
+
+//location
+$('.js-top-popup').click(function() {
+    if ($(this).hasClass("is-active")) {
+        $(this).removeClass('is-active');
+    }
+    else {
+        $('.js-top-popup').removeClass('is-active');
+        $(this).addClass('is-active');
+    }
+});
+
+//select
+function select() {
+    var el = $('.js-select');
+    var title = $('.label__select-val');
+    var option = $('.label__select-options li');
+    title.click(function() {
+        if (!$(this).parent().hasClass('is-open')) {
+            $(this).parent().addClass('is-open');
+            $(this).next().slideDown();
+        }
+        else {
+            $(this).parent().removeClass('is-open');
+            $(this).next().hide();
+        };
+    });
+    option.click(function() {
+        var value = $(this).text();
+        $(this).parent().prev().find('span').html(value);
+        $(this).parent().parent().removeClass('is-open');
+        $(this).parent().hide();
+    });
+};
+select();
+
+$('.js-select').click(function(event){
+    event.stopPropagation();
+});
+
 
 // show/hide recent products
-		recent_key.click(function() {
-			$('.recent__carousel').slideToggle();
-			if ($(this).hasClass("js-inactive")) {
-				$(this).removeClass("js-inactive");
-				$(this).find("span").text("Свернуть");
-				prod_carousel.slideDown();
+	recent_key.click(function() {
+		$('.recent__carousel').slideToggle();
+		if ($(this).hasClass("js-inactive")) {
+			$(this).removeClass("js-inactive");
+			$(this).find("span").text("Свернуть");
+			prod_carousel.slideDown();
 
-			}
-			else {
-				$(this).addClass("js-inactive");
-				$(this).find("span").text("Развернуть");
-				prod_carousel.slideUp();
-			}
-		});
-
-		$(document).click(function() {
-			$('.callback').removeClass('is-active');
-			popup.hide();
-
-			$('.js-change-city').parent().removeClass("is-active");
-		});
-
-		popup__callback.click(function(event){
-			event.stopPropagation();
-		});
-
-// ---------------- Change city POPUP -------------------- //
-		$('.js-change-city').click(function() {
-			$(this).parent().toggleClass("is-active");
-			popup__city.toggle();
-			return false;
-		});
-
-		popup__city.click(function(event){
-			event.stopPropagation();
-		});
-
-// ---------------- Change city POPUP -------------------- //
-		$('.js-enter').click(function() {
-			//$(this).toggleClass("is-active");
-			popup__enter.toggle();
-			return false;
-		});
-
-		popup__enter.click(function(event){
-			event.stopPropagation();
-		});
+		}
+		else {
+			$(this).addClass("js-inactive");
+			$(this).find("span").text("Развернуть");
+			prod_carousel.slideUp();
+		}
+	});
 
 // ---------------- hide slider text -------------------- //
         
-        key_text.live("hover", function(){ 
-            $(this).parent().find(".slider-info, .shadow-slider").fadeToggle();
-         });  
+    key_text.live("hover", function(){ 
+        $(this).parent().find(".slider-info, .shadow-slider").fadeToggle();
+     });  
 // ----------------  info-block visible -------------------- //
-		$('.info-block__button').click(function() {
-			$(".info-block__hide").slideToggle();
-			$(".info-block__button").toggleClass("is-active");
-			return false;
-		});
+	$('.info-block__button').click(function() {
+		$(".info-block__hide").slideToggle();
+		$(".info-block__button").toggleClass("is-active");
+		return false;
+	});
 
 // ---------------- tabs -------------------- //
 	
