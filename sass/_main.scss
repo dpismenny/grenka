@@ -1253,9 +1253,9 @@ table {
 	}
 }
 .product-list {
+	position: relative;
 	@extend %clr;
-	//border-bottom: 1px solid #dcdcdc;
-	
+	z-index: 30;
 }
 .product {
 	position: relative;

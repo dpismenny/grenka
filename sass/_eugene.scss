@@ -353,6 +353,7 @@
 	line-height: 1.4;
 	@include box-shadow(0 1px 16px rgba(0,0,0,.26));
 	@include background-image(linear-gradient(bottom, #e7e7e7 0%, #e7e7e7 0.68%, #fff 100%));
+	z-index: 9990;
 	&:after {
 		content: "";
 		position: absolute;

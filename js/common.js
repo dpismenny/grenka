@@ -7,12 +7,9 @@ $(document).ready(function() {
  //    var popup__enter = $(".js-popup-enter");
 	// var popup = $(".js-popup");
 	var prod_carousel = $('.recent-product__carousel');
-	var tab = $(".js-tab").find("li"); 
-	var tab_cont = $(".js-tab-cont"); 
 	var prod = $(".product"); 
 	var prod_image = $(".product__image"); 
 	var key_text = $('.js-text-key'); 
-    var tab_counter = $(".js-tab-counter");
     var recent_key = $(".js-recent-key");
 
     //input number
@@ -83,13 +80,8 @@ $('.js-top-popup').click(function(event){
 
 //location
 $('.js-top-popup').click(function() {
-    if ($(this).hasClass("is-active")) {
-        $(this).removeClass('is-active');
-    }
-    else {
-        $('.js-top-popup').removeClass('is-active');
-        $(this).addClass('is-active');
-    }
+    $('.js-top-popup').removeClass('is-active');
+    $(this).toggleClass('is-active');
 });
 
 //select
@@ -149,27 +141,21 @@ $('.js-select').click(function(event){
 		return false;
 	});
 
-// ---------------- tabs -------------------- //
-	
-	// default
-	tab_cont.hide();
-	tab_cont.first().show();
-	tab.first().addClass("is-active");
-    var count_first = tab.first().attr("data-counter");
-    tab_counter.text("(" + count_first + ")");
-	// action
-	tab.click(function(){
-		tab.removeClass("is-active");
-		$(this).toggleClass("is-active");
-
-        var index = $(this).attr("data-tab");
-		var count = $(this).attr("data-counter");
-
-		tab_cont.hide();
-		$(index).show();
-
-        tab_counter.text("("+count+")");
-	});
+//tabs
+function tabs() {
+  $('.js-tabs-nav button').click(function() {
+    if (!$(this).hasClass('active')) {
+      $(this).parent().find('button').removeClass('is-active');
+      var value = $(this).attr('data-tab');
+      var count = $(this).attr('data-count');
+      $(this).addClass('is-active');
+      $(this).parent().parent().parent().find('.js-tabs-content').hide();
+      $('#' + value).show();
+      $(this).parent().next().find('.js-tabs-count').html('('+count+')');
+    };    
+  });
+};
+tabs();
 
 // zomm product item on hover 
 
