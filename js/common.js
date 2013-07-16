@@ -13,6 +13,7 @@ $(document).ready(function() {
 	var prod_image = $(".product__image"); 
 	var key_text = $('.js-text-key'); 
     var tab_counter = $(".js-tab-counter");
+    var recent_key = $(".js-recent-key");
 // ---------------- CALLBACK POPUP -------------------- //
 	$('.callback').click(function() {
 		$(this).toggleClass("is-active");
@@ -21,8 +22,8 @@ $(document).ready(function() {
 	});
 
 // show/hide recent products
-		$('.recent-product__collapse').click(function() {
-			$('.recent-product__carousel').slideToggle();
+		recent_key.click(function() {
+			$('.recent__carousel').slideToggle();
 			if ($(this).hasClass("js-inactive")) {
 				$(this).removeClass("js-inactive");
 				$(this).find("span").text("Свернуть");
