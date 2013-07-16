@@ -18,27 +18,25 @@
 <div class="code" title="Сообщите этот номер при заказе по телефону оператору и мы оформим заказ максимально быстро"> код клиента: <span>435435</span></div>
 
 
-<!-- BEGIN .topper -->
-<div class="topper">
-	<!-- BEGIN .topper__in -->
-	<div class="topper__in">
+<!-- BEGIN .top -->
+<div class="top">
+	<!-- BEGIN .top__in -->
+	<div class="top__in">
 		<!-- BEGIN .location -->
-		<div class="location">
-			Ваш город:<span class="location__current js-change-city"><span>Корсунь-Шевченковский</span><i class="icon icon_arrow"></i></span>
-			<!-- BEGIN .callback__popup -->
-			<div class="popup js-popup js-city-popup popup_location">
-				<div class="popup js-popup__title">
-					Изменить местоположение
-				</div>
-				<label class="label label_width">
-					<div class="label__title">Введите название:</div>
-					<div class="label__field">
-						<input type="text" class="input" placeholder="" value="">
-					</div>
+		<div class="location js-top-popup">
+			<div class="location__city">
+				<span>Ваш город:</span>
+				<strong>Киев</strong>
+				<i class="ico-arr"><i></i></i>
+			</div>
+			<div class="location__down">
+				<div class="location__title">Изменить местоположение</div>
+				<label class="label">
+					<span class="label__title">Введите название:</span>
+					<input class="label__input" type="text">
 				</label>
-				<!-- BEGIN city-list -->
-				<div class="city-list">
-					<p>Часто используемые города:</p>
+				<div class="location__cities">
+					<span>Часто используемые города:</span>
 					<a href="#" class="#">Киев</a>
 					<a href="#" class="#">Донецк</a>
 					<a href="#" class="#">Днепропетровск</a>
@@ -52,108 +50,102 @@
 					<a href="#" class="#">Одесса</a>
 					<a href="#" class="#">Симферополь</a>
 				</div>
-				<!-- /.city-list -->
 				<button class="btn btn_orange">запомнить</button>
-			</div>
-			<!-- /.callback__popup -->
-		</div>
-		<!-- /.location -->
-		<!-- BEGIN .topper__nav -->
-		<ul class="topper__nav">
-			<li><a href="#">Категории</a></li>
-			<li><a href="#">Новости</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-		<!-- /.topper__nav -->
+			</div>	
+		</div>	
+		<!-- BEGIN .top__nav -->
+		<nav class="top__nav">
+			<ul>
+				<li><a href="#">Категории</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>		
+		<!-- END .topper__nav -->
 		<!-- BEGIN .callback -->
-		<div class="callback">
-			<i class="icon icon_callback"></i>
-			<span>Обратный звонок</span>
-			<i class="icon icon_arrow2"></i>
-			<!-- BEGIN .callback__popup -->
-			<div class="popup js-popup popup_callback js-popup-callback">
+		<div class="callback js-top-popup">
+			<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
+			<div class="callback__down">
 				<label class="label">
-					<div class="label__title">Ваше имя:</div>
-					<div class="label__field">
-						<input type="text" class="input" placeholder="" value="">
-					</div>
+					<span class="label__title">Ваше имя:</span>
+					<input class="label__input" type="text">
 				</label>
 				<label class="label">
-					<div class="label__title">Телефон:</div>
-					<div class="label__field">
-						<input type="text" class="input" placeholder="" value="">
-					</div>
+					<span class="label__title">Телефон:</span>
+					<input class="label__input" type="text">
 				</label>
-				<div class="label"><div class="label__warning"><i></i>не забудьте указать код города/оператора</div></div>
-				<!-- BEGIN .callback__time -->
+				<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
 				<div class="callback__time">
-					<h3 class="h1">Когда перезвонить?</h3>
-					<label><input type="checkbox" class="checkbox"> В указанное время <input type="text" class="input" placeholder="" value=""></label>
-					<label><input type="checkbox" class="checkbox"> Сейчас</label>
-					<!-- BEGIN .callback__btn -->
-					<div class="callback__btn">
-						<button class="btn btn_orange">Перезвонить</button>
-					</div>
-					<!-- /.callback__btn -->
+					<strong>Когда перезвонить?</strong>
+					<div class="callback__cols">
+						<div class="callback__column">
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>В указанное время</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>Сейчас</span>
+							</label>
+						</div>
+						<div class="callback__column">
+							<div class="label">
+								<input class="label__input" type="text">
+							</div>
+							<button class="btn btn_orange">перезвонить</button>
+						</div>
+					</div>										
 				</div>
-				<!-- /.callback__time -->
 			</div>
-			<!-- /.callback__popup -->
 		</div>
-		<!-- /.callback -->
-		 <!-- BEGIN .livechat -->
-			<div class="livechat">
-			   <!-- <i class="icon icon_chat"></i>
-			   <span>Он-лайн чат</span> -->
-			   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitewindow_567940" onclick="o=window.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitewindow_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
-			</div>
-		  <!-- /.livechat -->
-		<!-- BEGIN .profile -->
-		<div class="profile">
-			<a href="#">Регистрация</a>
-			<button class="btn btn_gray js-enter">Вход</button>
-			<!-- BEGIN .callback__popup -->
-			<div class="popup js-popup js-popup-enter popup_enter">
-				<label class="label">
-					<div class="label__field">
-						<input type="text" class="input" placeholder="Логин">
+		<!--END .callback -->
+	 <!-- BEGIN .livechat -->
+		<div class="livechat">
+		   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitewindow_567940" onclick="o=window.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitewindow_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+		</div>
+	  <!-- END .livechat -->
+		<!-- BEGIN .enter -->
+		<div class="enter">
+			<a class="enter__reg" href="#">Регистрация</a>
+			<div class="enter__go js-top-popup">
+				<button class="btn btn_gray">Вход</button>
+				<div class="enter__down">
+					<div class="enter__login">
+						<label class="label">
+							<input class="label__input" type="text" placeholder="Логин">
+						</label>
+						<label class="label">
+							<input class="label__input" type="password" placeholder="Пароль">
+						</label>
 					</div>
-				</label>
-				<label class="label">
-					<div class="label__field">
-						<input type="password" class="input" placeholder="Пароль">
-					</div>
-				</label>
-				<div class="remember-me">
-					<label class="checkbox-wrap">
-						<input type="checkbox" class="checkbox">
-						<span>Запомнить меня</span>
+					<label class="label-check">
+						<input type="checkbox">
+						<i></i>
+						<span>В указанное время</span>
+						<a href="#">Забыли пароль?</a>
 					</label>
-					<a href="#">Забыли пароль?</a>
-				</div>
-				<div class="enter-soc">
-					<span class="enter-soc__text">
-						Войти через:
-					</span>
-					<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
-					<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
-					<div>
+					<div class="enter-soc">
+						<span class="enter-soc__text">Войти через:</span>
+						<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+					</div>
+					<div class="btn-wrap">
 						<button class="btn btn_orange">Войти на сайт</button>
 					</div>
+					<a href="#" class="btn-simple">зарегистрируйся и получи скидку</a>
 				</div>
-				<a href="#" class="btn-simple">зарегистрируйся и получи скидку</a>
-			</div>
-			<!-- /.callback__popup -->
+			</div>			
 		</div>
-		<!-- /.profile -->
+		<!-- END .enter -->
 	</div>
-	<!-- /.topper__in -->
 </div>
-<!-- /.topper -->
+<!-- END .top -->
 
 <!-- BEGIN  page-->
 <div class="page">
