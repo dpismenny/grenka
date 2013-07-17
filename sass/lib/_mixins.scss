@@ -27,6 +27,9 @@ $break-large: 1180px;
 	filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
 	zoom: 1;
 }
+@mixin switch-on-gpu {
+    @include transform(translate3d(0,0,0));
+}
 
 // TRANSITION
 @mixin transition($what) {

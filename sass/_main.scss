@@ -36,7 +36,7 @@
 
 .btn {
 	display: inline-block;
-	padding: 7px 14px 6px;
+	padding: 5px 14px 4px;
 	vertical-align: middle;
 	@include box-sizing(border-box);
 	border: 1px solid #55831a;
@@ -861,10 +861,10 @@
 	@include pm;
 	color: #3e3e3e;
 	line-height: 1;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	display: inline-block;
 	overflow: hidden;
-	height: 35px;
+	height: 38px;
 	overflow: hidden;
 	a {
 		color: #3e3e3e;
@@ -873,7 +873,10 @@
 .product_width {
 	width: 100%;
 	height: 288px;
-	.h1 {
+	.product__inner {
+		padding-left: 74px;
+	}
+	.product__title {
 		font-size: 30px;
 	}
 	.product__descr {
@@ -927,14 +930,25 @@
 	&.is-hover {
 		.product__inner {
 			width: 810px;
-			height: 368px;
+			padding: 30px 60px 30px 74px;  
+			height: 360px;
 		}
 		.product__image {
-			height: 324px;
+			height: 300px;
 		}
+		.product__price {
+			margin-bottom: 123px;
+		}
+		
 	}
 	.to-favorite {
 		margin-left: 87px;
+	}
+	.product__descr {
+		font-size: 12px;
+	}
+	.product__price {
+		margin-bottom: 51px;
 	}
 }
 .product_middle {
@@ -951,6 +965,9 @@
 			width: 443px;
 			height: 316px;
 		}
+		.product__price {
+			margin-bottom: 24px;
+		}
 	}
 }
 .product__inner {  
@@ -966,10 +983,14 @@
 	float: right;
 	width: 100px;
 	margin-left: 15px;
+	img {
+		display: block;
+	}
 }
 .product__info{
 	overflow: hidden;
 	padding-bottom: 4px;
+	@extend %clr;
 }
 
 .product__price{
@@ -1026,18 +1047,17 @@
     background: #ebebeb;
     @include background-image(linear-gradient(#ebebeb, #fefefe));
     z-index: 90;
-    height: 20px;
+    height: 17px;
     width: auto;
     @include rotate(-90);
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=6.123031769111886e-17, M12=1, M21=-1, M22=6.123031769111886e-17, SizingMethod='auto expand')";
-    font-family: Calibri;
+    font: bold 12px Arial,sans-serif;
     color:#2a2a2a;
-    font-size: 13px;
     text-transform: uppercase;
-    left: -64px;
+    left: -70px;
     position: fixed;
     top: 41%;
-    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
     span {
         color:#000000;
         vertical-align: middle;
