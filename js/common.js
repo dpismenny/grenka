@@ -39,35 +39,6 @@ function input_number() {
 }
 input_number();
 
-
-
-
-//select
-function select() {
-    var el = $('.js-select');
-    var title = $('.label__select-val');
-    var option = $('.label__select-options li');
-    title.click(function() {
-        if (!$(this).parent().hasClass('is-open')) {
-            $(this).parent().addClass('is-open');
-            $(this).next().slideDown();
-        }
-        else {
-            $(this).parent().removeClass('is-open');
-            $(this).next().hide();
-        };
-    });
-    option.click(function() {
-        var value = $(this).text();
-        $(this).parent().prev().find('span').html(value);
-        $(this).parent().parent().removeClass('is-open');
-        $(this).parent().hide();
-    });
-};
-select();
-$('.js-select').click(function(event){
-    event.stopPropagation();
-});
 //stop propagation
 $(document).click(function() {
     $('.js-select').removeClass('is-open');
@@ -189,8 +160,7 @@ tabs();
         } 
     });
 
-
-    // Главный слайдер
+    if ($('#slider-left-main').length > 0) {
         // Главный слайдер
         $('#slider-left-main').veronica_slider(
             {
@@ -211,6 +181,15 @@ tabs();
                 } // callback функция при клике
             }
         );
+    }
+    
+
+    // Search example
+    $(".js-search-example a").click(function(){
+        var text = $(this).text();
+        $(".js-searc-input").val(text);
+        return false;
+    });
 
 
 

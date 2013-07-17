@@ -101,15 +101,67 @@
 					</div>
 				</div>
 				<div class="cart__go">
-					<button class="btn">начать оформление</button>
+					<button class="btn btn_medium">начать оформление</button>
 					<div class="cart__go-txt">Дальше Вы сможете выбрать удобный способ доставки и оплаты</div>
-					<div class="cart__go-services">
-						
+					<div class="cart__services">
+						<!-- BEGIN .callback -->
+						<div class="callback js-top-popup">
+							<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
+							<div class="callback__down">
+								<label class="label">
+									<span class="label__title">Ваше имя:</span>
+									<input class="label__input" type="text">
+								</label>
+								<label class="label">
+									<span class="label__title">Телефон:</span>
+									<input class="label__input" type="text">
+								</label>
+								<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
+								<div class="callback__time">
+									<strong>Когда перезвонить?</strong>
+									<div class="callback__cols">
+										<div class="callback__column">
+											<label class="label-radio">
+												<input type="radio" name="name">
+												<i></i>
+												<span>В указанное время</span>
+											</label>
+											<label class="label-radio">
+												<input type="radio" name="name">
+												<i></i>
+												<span>Сейчас</span>
+											</label>
+										</div>
+										<div class="callback__column">
+											<div class="label">
+												<input class="label__input" type="text">
+											</div>
+											<button class="btn btn_orange">перезвонить</button>
+										</div>
+									</div>										
+								</div>
+							</div>
+						</div>
+						<!--END .callback -->
+						<!-- BEGIN .livechat -->
+						<div class="livechat">
+						  <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+						</div>
+					  <!-- END .livechat -->
 					</div>
 				</div>
 			</div>
 			<div class="cart__payment">
 				<button class="btn btn_gray">вернуться в каталог</button>
+				<!-- BEGIN .payment -->
+				<ul class="payment payment_gray">
+					<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
+					<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
+					<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
+					<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
+					<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
+				</ul>
+				<!-- END .payment -->
 			</div>
 		</div>		
 	</div>

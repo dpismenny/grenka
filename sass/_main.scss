@@ -950,7 +950,7 @@
 			height: 300px;
 		}
 		.product__price {
-			margin-bottom: 123px;
+			margin-bottom: 110px;
 		}
 		
 	}
@@ -958,10 +958,14 @@
 		margin-left: 87px;
 	}
 	.product__descr {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.product__price {
-		margin-bottom: 51px;
+		margin-bottom: 38px;
+		font-size: 18px;
+		strong {
+			font-size: 20px;
+		}
 	}
 }
 .product_middle {
@@ -1064,13 +1068,16 @@
     width: auto;
     @include rotate(-90);
     -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=6.123031769111886e-17, M12=1, M21=-1, M22=6.123031769111886e-17, SizingMethod='auto expand')";
-    font: bold 12px Arial,sans-serif;
+    font: bold 14px Arial,sans-serif;
     color:#2a2a2a;
     text-transform: uppercase;
-    left: -70px;
+    left: 0;
     position: fixed;
-    top: 41%;
+    top: 50%;
+    margin-top: 130px;
     -webkit-font-smoothing: antialiased;
+    -webkit-transform-origin: 0 0;
+    text-shadow: 0 0 1px;
     span {
         color:#000000;
         vertical-align: middle;
@@ -1117,7 +1124,6 @@
 	color: #6aa917;
 	@include pm;
 	font-size: 20px;
-	font-weight: normal;
 	text-align: center;
 }
 .tooltip__text {
