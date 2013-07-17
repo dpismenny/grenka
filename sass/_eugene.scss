@@ -142,6 +142,7 @@
 	position: relative;
     margin-bottom: 10px;
     overflow: hidden;
+    
 }
 .slider-small {
     width: 249px;
@@ -195,13 +196,14 @@
 			}
 		}
 	}
-	.icon-eye {
-		position: absolute;
-		top: 30px;
-		left: 52px;
-		z-index: 7;
-		@include s(ico_eye);
-	}
+    .icon-eye {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        z-index: 7;
+        @include s(ico_eye);
+    }
+	
 }
 .slider-info {
     position: absolute;
@@ -256,6 +258,7 @@
 }
 
 .slider-info {
+    z-index: 3;
 	p {
 		color: #949494;
     	font-size: 14px;
@@ -305,6 +308,7 @@
 
 .big_info {
     display: none !important;
+    
 }
 
 .btn-slider  {
@@ -340,5 +344,6 @@
 	bottom: 0;
 	right: 0;
 	left: 0;
+    z-index: 2;
 	@include background-image(linear-gradient(left, #000, rgba(0,0,0,.0) 50%, rgba(0,0,0,.0) 100%));
 }

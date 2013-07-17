@@ -1071,10 +1071,13 @@
     font: bold 12px Arial,sans-serif;
     color:#2a2a2a;
     text-transform: uppercase;
-    left: -70px;
+    left: 0;
     position: fixed;
-    top: 41%;
+    top: 50%;
+    margin-top: 130px;
     -webkit-font-smoothing: antialiased;
+    -webkit-transform-origin: 0 0;
+    text-shadow: 0 0 1px;
     span {
         color:#000000;
         vertical-align: middle;
