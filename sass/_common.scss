@@ -113,7 +113,10 @@ input{
 	line-height: 1;
 	position: relative;
 	z-index: 3000;
-	
+	.label-check,
+	.label-radio {
+		line-height: 1.2;
+	}
 }
 .top__in {
 	@extend %site;
@@ -122,7 +125,7 @@ input{
 .location {
 	position: relative;
 	float: left;
-	width: 145px;
+	max-width: 200px;
 	height: 39px;
 	margin: 6px 27px 0 -14px;
 	&.is-active {

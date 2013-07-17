@@ -22,123 +22,120 @@
 	<div class="cart cart_ordering">
 		<div class="cart__in">
 			<!-- BEGIN .tabs -->
-			<div class="tabs">
+			<div class="tabs js-tabs">
 				<div class="tabs__top">
-					<div class="tabs__nav js-tab">
-						<button class="is-active" data-item="">новый пользователь</button>
-						<button data-item="">я уже покупал у вас</button>						
-					</div>
-					<div class="tabs__all"><a href="#">посмотреть все</a>(55)</div>
-				</div>
-				<div class="tabs__content">
-					<div class="cart__cols">
-						<div class="cart__cols-item">
-							<label class="label">
-								<span class="label__title">Имя<span>*</span></span>
-								<input class="label__input" type="text">
-								<span class="label__help">Осталось 60 символов</span>
-							</label>
-							<label class="label">
-								<span class="label__title">Фамилия<span>*</span></span>
-								<input class="label__input" type="text">
-								<span class="label__help">Осталось 60 символов</span>
-							</label>
-						</div>
-						<div class="cart__cols-item">
-							<label class="label">
-								<span class="label__title">Е-mail<span>*</span></span>
-								<input class="label__input" type="text">
-								<span class="label__help">Осталось 60 символов</span>
-							</label>
-							<label class="label">
-								<span class="label__title">Телефон<span>*</span></span>
-								<input class="label__input" type="text">
-								<span class="label__help">Осталось 60 символов</span>
-							</label>
-						</div>
+					<div class="tabs__nav js-tabs-nav">
+						<button class="is-active" data-tab="tab1">новый пользователь</button>
+						<button data-tab="tab2">я уже покупал у вас</button>						
 					</div>
 				</div>
-				<div class="tabs__content">
-					<div class="cart__cols">
-						<div class="cart__cols-item">
-							<label class="label">
-								<span class="label__title">Е-mail<span>*</span></span>
-								<input class="label__input" type="text">
-								<span class="label__help">Емейл на который Вы уже заказывали</span>
-							</label>
-						</div>
-						<div class="cart__cols-item">
-							<label class="label">
-								<span class="label__title">Пароль<span>*</span></span>
-								<input class="label__input" type="text">
-								<span class="label__help"><a href="#">Забыли пароль?</a></span>
-							</label>
+				<div class="tabs__cols">
+					<div id="tab1" class="tabs__content js-tabs-content" style="display: block">
+						<label class="label">
+							<span class="label__title">Имя<span>*</span></span>
+							<input class="label__input" type="text">
+							<span class="label__help">Осталось 60 символов</span>
+						</label>
+						<label class="label">
+							<span class="label__title">Фамилия<span>*</span></span>
+							<input class="label__input" type="text">
+							<span class="label__help">Осталось 60 символов</span>
+						</label>
+						<label class="label">
+							<span class="label__title">Е-mail<span>*</span></span>
+							<input class="label__input" type="text">
+							<span class="label__help">Осталось 60 символов</span>
+						</label>
+						<label class="label">
+							<span class="label__title">Телефон<span>*</span></span>
+							<input class="label__input" type="text">
+							<span class="label__help">Осталось 60 символов</span>
+						</label>
+					</div>
+					<div id="tab2" class="tabs__content js-tabs-content">
+						<label class="label">
+							<span class="label__title">Е-mail<span>*</span></span>
+							<input class="label__input" type="text">
+							<span class="label__help">Емейл на который Вы уже заказывали</span>
+						</label>
+						<label class="label">
+							<span class="label__title">Пароль<span>*</span></span>
+							<input class="label__input" type="text">
+							<span class="label__help"><a href="#">Забыли пароль?</a></span>
+						</label>
+						<div class="cart__login">
+							<div class="cart__login-social">
+								<div class="cart__login-title">или войдите используя социальные сети</div>
+
+							</div>		
+							<button class="btn btn_orange">войти</button>				
 						</div>
 					</div>
-					<div class="cart__enter">
-						<div class="cart__enter-social">
-							<div class="cart__enter-title">или войдите используя социальные сети</div>
-							<div class="social">
-								<a class="social__fb" href="#"><span></span></a>
-								<a class="social__vk" href="#"><span></span></a>
-								<a class="social__tw" href="#"><span></span></a>
-								<a class="social__gp" href="#"><span></span></a>
-							</div>
-						</div>		
-						<button class="btn">войти</button>				
+					<div class="cart__table">
+						<table>
+							<thead>
+								<tr>
+									<th>Фото</th>
+									<th>Название товара</th>
+									<th>Количество</th>
+									<th>Цена</th>
+									<th>Скидка</th>
+									<th>Стоимость</th>
+									<th>Удалить</th>     
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+									<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+									<td>
+										<div class="input-number js-input-number">
+											<input class="input-number__value" type="text" value="1">
+											<button class="input-number__plus"><i></i></button>
+											<button class="input-number__minus"><i></i></button>
+										</div>
+									</td>
+									<td class="cart__table-price">100 грн.</td>
+									<td class="cart__table-discount">30%</td>
+									<td class="cart__table-cost">100 грн</td>
+									<td class="cart__table-delete"><button><i></i></button></td>
+								</tr>
+								<tr>
+									<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+									<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+									<td>
+										<div class="input-number js-input-number">
+											<input class="input-number__value" type="text" value="1">
+											<button class="input-number__plus"><i></i></button>
+											<button class="input-number__minus"><i></i></button>
+										</div>
+									</td>
+									<td class="cart__table-price">100 грн.</td>
+									<td class="cart__table-discount">30%</td>
+									<td class="cart__table-cost">100 грн</td>
+									<td class="cart__table-delete"><button><i></i></button></td>
+								</tr>
+								<tr class="cart__table-coupon">
+									<td><i class="cart__table-gift"></i></td>
+									<td colspan="6"><strong>купон на 500 грн.</strong></td>
+								</tr>
+								<tr class="cart__table-coupon">
+									<td><i class="cart__table-gift"></i></td>
+									<td colspan="6"><p>Купите еще на 500 грн и получите игру <a href="#">NFS Most Wanted</a> в подарок!</p></td>
+								</tr>
+								<tr class="cart__table-total">
+									<td colspan="7">итого: <span>115 грн.</span></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
+					<!-- END .tabs -->
 				</div>
-			</div>
-			<!-- END .tabs -->
-			<div class="cart__table">
-				<table>
-					<tbody>
-						<tr>
-							<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
-							<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
-							<td>
-								<div class="input-number js-input-number">
-									<input class="input-number__value" type="text" value="1">
-									<button class="input-number__plus"><i></i></button>
-									<button class="input-number__minus"><i></i></button>
-								</div>
-							</td>
-							<td class="cart__table-price">100 грн.</td>
-							<td class="cart__table-discount">30%</td>
-							<td class="cart__table-cost">100 грн</td>
-							<td class="cart__table-delete"><button><i></i></button></td>
-						</tr>
-						<tr>
-							<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
-							<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
-							<td>
-								<div class="input-number js-input-number">
-									<input class="input-number__value" type="text" value="1">
-									<button class="input-number__plus"><i></i></button>
-									<button class="input-number__minus"><i></i></button>
-								</div>
-							</td>
-							<td class="cart__table-price">100 грн.</td>
-							<td class="cart__table-discount">30%</td>
-							<td class="cart__table-cost">100 грн</td>
-							<td class="cart__table-delete"><button><i></i></button></td>
-						</tr>
-						<tr class="cart__table-coupon">
-							<td><i class="cart__table-gift"></i></td>
-							<td colspan="6"><strong>купон на 500 грн.</strong></td>
-						</tr>
-						<tr class="cart__table-coupon">
-							<td><i class="cart__table-gift"></i></td>
-							<td colspan="6"><p>Купите еще на 500 грн и получите игру <a href="#">NFS Most Wanted</a> в подарок!</p></td>
-						</tr>
-						<tr class="cart__table-total">
-							<td colspan="7">итого: <span>115 грн.</span></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="cart__btn">
-				<button class="btn">все верно, заказ подтверждаю</button>
+				<div class="cart__btn">
+					<div class="cart__btn-in">
+						<button class="btn">все верно, заказ подтверждаю</button>
+					</div>					
+				</div>
 			</div>
 			<div class="cart__address">
 				<label class="label-check">
@@ -233,7 +230,7 @@
 					<div class="cart__forms-item">
 						<label for="number-card">заказать через телефон без оформления заказа</label>
 						<input id="number-card" type="text">
-						<button class="btn">жду звонка</button>
+						<button class="btn btn_gray">жду звонка</button>
 						<span>Например: 067 982 19 29</span>
 					</div>
 				</div>

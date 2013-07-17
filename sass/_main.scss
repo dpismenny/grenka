@@ -68,6 +68,14 @@
 	text-align: center;
 	margin-bottom: 10px;
 }
+.btn_medium {
+	padding: 6px 30px 5px;
+	font-size: 20px;
+}
+.btn_big {
+	padding: 7px 50px;
+	font-size: 26px;
+}
 .btn_orange {
 	color: #000;
 	border: 1px solid #bf5f00;
@@ -347,7 +355,7 @@
 	display: block;
 	input, i {
 		position: absolute;
-		top: -1px;
+		top: 1px;
 		left: 0;		
 	}
 	input {
@@ -1111,6 +1119,23 @@
 	line-height: 1.8;
 }
 
+//title
+.title {
+	padding: 7px 30px;
+	@include background-image(linear-gradient(bottom, #67a713 0%, #8ac143 100%));
+  box-shadow: 0 -1px 0 rgba(0,0,0,.2) inset;
+	@include pm;
+	font-size: 36px;
+	color: #FFF;
+	text-transform: uppercase;
+}
+.title_big {
+	padding: 15px 30px;
+	text-align: center;
+}
+.title_center {
+	text-align: center;
+}
 
 // Ie8
 .lteie8 {
