@@ -496,7 +496,7 @@ input { outline: 0; border: 1px solid #d5d5d5; box-shadow: inset 0 1px 1px rgba(
 .info-block a { text-decoration: underline; color: #68a814; }
 .info-block a:hover { text-decoration: none; }
 
-.info-block__in { padding: 30px 35px; overflow: hidden; }
+.info-block__in { padding: 26px 35px; overflow: hidden; }
 
 .info-block__hide { display: none; width: 640px; }
 
