@@ -103,7 +103,7 @@
 		<!--END .callback -->
 	 <!-- BEGIN .livechat -->
 		<div class="livechat">
-		   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitewindow_567940" onclick="o=window.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitewindow_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+		   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
 		</div>
 	  <!-- END .livechat -->
 		<!-- BEGIN .enter -->
@@ -1013,7 +1013,7 @@
 			<div class="social">
 				<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>
 				<script type="text/javascript">
-				    window.___gcfg = {lang: 'ru'};
+				    popup.___gcfg = {lang: 'ru'};
 
 				    (function() {
 				        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -1923,6 +1923,36 @@
 					<!-- END .product-list -->
 				</div>
 				<div id="tab4" class="tabs__content js-tabs-content">
+					<div class="product product_width">
+				       <div class="product__inner">
+					        <!-- BEGIN .product__image -->
+					        <a class="product__image" href="#">
+					         	<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+					        </a>
+					        <!-- /.product__image -->
+					        <!-- BEGIN .product__info -->
+					        <div class="product__info">
+					         	<h1 class="h1">DMC: Devil new May Cry</h1>
+						        <!-- BEGIN .rating -->
+						        <ul class="rating">
+						          	<li class="is-active"><a href="#"></a></li>
+						          	<li class="is-active"><a href="#"></a></li>
+						          	<li class="is-active"><a href="#"></a></li>
+						          	<li class="is-active"><a href="#"></a></li>
+						          	<li><a href="#"></a></li>
+						         </ul>
+						         <!-- /.rating -->
+						        <div class="product__descr" itemprop="description">
+						          	<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+						          	<p><a href="#">подробнее</a></p>
+						        </div>
+						        <div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+						        <button class="btn">купить</button>
+						        <a href="#" class="to-favorite" data-fancybox-href="#to-favorite1"><i></i>Добавить  список желаний</a>
+					        </div>
+					        <!-- /.product__info -->
+					    </div>
+				    </div>
 					<!-- BEGIN .product-list -->
 					<ul class="product-list">
 						<li class="product" itemscope itemtype="http://schema.org/Product">
@@ -2411,14 +2441,52 @@
 	<!-- END .footer__in -->
 </div>
 <!-- END .footer -->
-
-<div class="window window_s" id="to-favorite1">
-	<div class="window__header">
-		<div class="window__title">
+<!-- 
+<div class="popup popup_s" id="to-favorite1">
+	<div class="popup__header">
+		<div class="popup__title">
 			Список желаний
 		</div>
 	</div>
-	<div class="window__body">
+	<div class="popup__body">
+		<label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+		<label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+       <label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+       <label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+		<div class="label label_">
+			<label class="label-radio">
+	        	<input type="radio" name="name">
+	        	<i></i>
+	       </label>
+        	<input class="label__input" type="text">
+        	<span class="label__help">Или например, "Желаю на День рождения"</span>
+       </div>
+		<input class="btn" type="submit">
+	</div>
+</div>
+<div class="popup popup_s" id="to-favorite2">
+	<div class="popup__header">
+		<div class="popup__title">
+			Список желаний
+		</div>
+	</div>
+	<div class="popup__body">
 		<div class="radio">
 			<label>
 				<input type="radio" name="name">
@@ -2446,42 +2514,7 @@
 		</div>
 		<input class="btn" type="submit">
 	</div>
-</div>
-<div class="window window_s" id="to-favorite2">
-	<div class="window__header">
-		<div class="window__title">
-			Список желаний
-		</div>
-	</div>
-	<div class="window__body">
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список желаний</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список желаний</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список желаний</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<input type="text" class="input">
-			</label>
-			<p>Или например, "Желаю на День рождения"</p>
-		</div>
-		<input class="btn" type="submit">
-	</div>
-</div>
+</div> -->
 
 </body>
 </html>
