@@ -215,6 +215,9 @@
     	font-weight: normal;
     	@include pm;
     	line-height: 1;
+        a {
+            color: #fff;
+        }
     }
     h6 {
     	color:#f47b01;
@@ -288,6 +291,9 @@
 
 .slider-list-image {
     float: left;
+}
+.slider-biggest__img {
+    display: block;
 }
 .slider-btn {
     background: #fdfdfd;

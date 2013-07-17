@@ -950,7 +950,7 @@
 			height: 300px;
 		}
 		.product__price {
-			margin-bottom: 123px;
+			margin-bottom: 110px;
 		}
 		
 	}
@@ -958,10 +958,14 @@
 		margin-left: 87px;
 	}
 	.product__descr {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.product__price {
-		margin-bottom: 51px;
+		margin-bottom: 38px;
+		font-size: 18px;
+		strong {
+			font-size: 20px;
+		}
 	}
 }
 .product_middle {
@@ -1117,7 +1121,6 @@
 	color: #6aa917;
 	@include pm;
 	font-size: 20px;
-	font-weight: normal;
 	text-align: center;
 }
 .tooltip__text {

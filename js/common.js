@@ -191,26 +191,32 @@ tabs();
 
 
     // Главный слайдер
-        // Главный слайдер
-        $('#slider-left-main').veronica_slider(
+    $('#slider-left-main').veronica_slider(
+        {
+            active : true, // режим выбора активного элемента
+            autoplay : true, // автоматическая прокрутка
+            height: 107, // высота блока
+            step : 5000, // время в милисикундах для автоматического режима
+            callback : function(el)
             {
-                active : true, // режим выбора активного элемента
-                autoplay : true, // автоматическая прокрутка
-                height: 107, // высота блока
-                step : 5000, // время в милисикундах для автоматического режима
-                callback : function(el)
-                {
-                    $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
-                }, // callback функция при смене активного элемента
-                stop: ['#main_slider_pause','table.main-menu'], // идентификаторы элментов, при наведении на которые автопрокрутка останавливается
-                fixed: true, // режим прокрутки если активный элемент вверху или внизу
-                click : function(el) {
-                    $('#slider-left-main').find('li.active').removeClass('active');
-                    $(el).addClass('active');
-                    $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
-                } // callback функция при клике
-            }
-        );
+                $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
+            }, // callback функция при смене активного элемента
+            stop: ['#main_slider_pause','table.main-menu'], // идентификаторы элментов, при наведении на которые автопрокрутка останавливается
+            fixed: true, // режим прокрутки если активный элемент вверху или внизу
+            click : function(el) {
+                $('#slider-left-main').find('li.active').removeClass('active');
+                $(el).addClass('active');
+                $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
+            } // callback функция при клике
+        }
+    );
+
+    // Search example
+    $(".js-search-example a").click(function(){
+        var text = $(this).text();
+        $(".js-searc-input").val(text);
+        return false;
+    });
 
 
 
