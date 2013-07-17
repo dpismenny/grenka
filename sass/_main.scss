@@ -554,6 +554,11 @@
 		display: inline-block;
 		vertical-align: middle;
 	}
+	&:disabled {
+		i {
+			@include opacity(.5);
+		}
+	}
 
 }
 .recent__nav-prev {
