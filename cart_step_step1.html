@@ -64,11 +64,38 @@
 							<span class="label__help"><a href="#">Забыли пароль?</a></span>
 						</label>
 						<div class="cart__login">
+							<button class="btn btn_orange btn_big">войти</button>				
 							<div class="cart__login-social">
 								<div class="cart__login-title">или войдите используя социальные сети</div>
-
-							</div>		
-							<button class="btn btn_orange">войти</button>				
+								<!-- BEGIN .socials -->
+								<ul class="socials">
+									<li>
+										<a href="#" class="icon icon_fb" title="Facebook">
+											Facebook
+											<span class="icon icon_fb_hover"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="icon icon_vk" title="Вконтакте">
+											Вконтакте
+											<span class="icon icon_vk_hover"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="icon icon_tw" title="Twitter">
+											Twitter
+											<span class="icon icon_tw_hover"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="icon icon_gp" title="Google+">
+											Google+
+											<span class="icon icon_gp_hover"></span>
+										</a>
+									</li>
+								</ul>
+								<!-- END .socials -->
+							</div>								
 						</div>
 					</div>
 					<div class="cart__table">
@@ -133,7 +160,7 @@
 				</div>
 				<div class="cart__btn">
 					<div class="cart__btn-in">
-						<button class="btn">все верно, заказ подтверждаю</button>
+						<button class="btn btn_medium">все верно, заказ подтверждаю</button>
 					</div>					
 				</div>
 			</div>
@@ -221,18 +248,73 @@
 						</label>					
 					</div>
 				</div>
-			</div>			
-			<div class="cart__btn">
-				<button class="btn">все верно, заказ подтверждаю</button>
-			</div>
+				<div class="cart__btn">
+					<button class="btn btn_medium">все верно, заказ подтверждаю</button>
+				</div>
+			</div>				
 			<div class="cart__down">
 				<div class="cart__forms">
-					<div class="cart__forms-item">
-						<label for="number-card">заказать через телефон без оформления заказа</label>
-						<input id="number-card" type="text">
+					<div class="cart__forms-item cart__forms-item_mod">
+						<label for="number-phone">заказать через телефон без оформления заказа</label>
+						<input id="number-phone" type="text" value="+ 38">
 						<button class="btn btn_gray">жду звонка</button>
 						<span>Например: 067 982 19 29</span>
 					</div>
+				</div>
+				<div class="cart__services">
+					<!-- BEGIN .callback -->
+					<div class="callback js-top-popup">
+						<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
+						<div class="callback__down">
+							<label class="label">
+								<span class="label__title">Ваше имя:</span>
+								<input class="label__input" type="text">
+							</label>
+							<label class="label">
+								<span class="label__title">Телефон:</span>
+								<input class="label__input" type="text">
+							</label>
+							<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
+							<div class="callback__time">
+								<strong>Когда перезвонить?</strong>
+								<div class="callback__cols">
+									<div class="callback__column">
+										<label class="label-radio">
+											<input type="radio" name="name">
+											<i></i>
+											<span>В указанное время</span>
+										</label>
+										<label class="label-radio">
+											<input type="radio" name="name">
+											<i></i>
+											<span>Сейчас</span>
+										</label>
+									</div>
+									<div class="callback__column">
+										<div class="label">
+											<input class="label__input" type="text">
+										</div>
+										<button class="btn btn_orange">перезвонить</button>
+									</div>
+								</div>										
+							</div>
+						</div>
+					</div>
+					<!--END .callback -->
+					<!-- BEGIN .livechat -->
+					<div class="livechat">
+					  <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+					</div>
+				  <!-- END .livechat -->
+				  <!-- BEGIN .payment -->
+					<ul class="payment payment_gray">
+						<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
+						<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
+						<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
+						<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
+						<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
+					</ul>
+					<!-- END .payment -->
 				</div>
 			</div>
 		</div>		
