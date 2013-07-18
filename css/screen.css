@@ -374,7 +374,7 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 .counter { font-size: 0; }
 .counter li { display: inline-block; margin-left: -1px; vertical-align: top; text-align: center; }
 .counter li:first-child { margin-left: 0; }
-.counter strong { position: relative; display: block; width: 46px; height: 48px; margin-bottom: 2px; background: #fefefe; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #e4e4e4)); background-image: -webkit-linear-gradient(#fefefe, #e4e4e4); background-image: -moz-linear-gradient(#fefefe, #e4e4e4); background-image: -o-linear-gradient(#fefefe, #e4e4e4); background-image: linear-gradient(#fefefe, #e4e4e4); border: 1px solid #c0c0c0; border-radius: 4px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13); line-height: 48px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-weight: normal; font-size: 30px; color: #2e2e2e; }
+.counter strong { position: relative; display: block; width: 46px; height: 48px; margin-bottom: 2px; background: #fefefe; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #e4e4e4)); background-image: -webkit-linear-gradient(#fefefe, #e4e4e4); background-image: -moz-linear-gradient(#fefefe, #e4e4e4); background-image: -o-linear-gradient(#fefefe, #e4e4e4); background-image: linear-gradient(#fefefe, #e4e4e4); border: 1px solid #c0c0c0; border-radius: 4px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13); line-height: 48px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 30px; color: #2e2e2e; }
 .counter strong:after { content: ""; position: absolute; top: 3px; left: 3px; right: 3px; bottom: 25px; background: rgba(255, 255, 255, 0.5); box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2) inset; }
 .counter span { font-size: 11px; color: #bababa; }
 
@@ -501,10 +501,9 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .info-block__hide { display: none; width: 640px; }
 
-.info-block__button { border-top: 1px solid #dcdcdc; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; background-color: #f0f0f0; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #f0f0f0)); background-image: -webkit-linear-gradient(#fdfdfd, #f0f0f0); background-image: -moz-linear-gradient(#fdfdfd, #f0f0f0); background-image: -o-linear-gradient(#fdfdfd, #f0f0f0); background-image: linear-gradient(#fdfdfd, #f0f0f0); }
-.info-block__button a { display: inline-block; height: 100%; width: 100%; text-align: center; }
-.info-block__button i { display: inline-block; vertical-align: top; margin-top: 16px; background: url('../img/icons-s00f9a9c5c3.png') 0 -1625px no-repeat; width: 11px; height: 7px; }
-.info-block__button.is-active i { -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
+.btn-show { display: block; width: 100%; border-top: 1px solid #dcdcdc; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 40px; line-height: 1; background-color: #f0f0f0; text-align: center; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #f0f0f0)); background-image: -webkit-linear-gradient(#fdfdfd, #f0f0f0); background-image: -moz-linear-gradient(#fdfdfd, #f0f0f0); background-image: -o-linear-gradient(#fdfdfd, #f0f0f0); background-image: linear-gradient(#fdfdfd, #f0f0f0); }
+.btn-show i { display: inline-block; vertical-align: middle; background: url('../img/icons-s00f9a9c5c3.png') 0 -1625px no-repeat; width: 11px; height: 7px; }
+.btn-show.is-active i { -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 
 .popular { width: 354px; padding: 20px; float: right; background: #68a814; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .popular:first-child { float: left; }

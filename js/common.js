@@ -2,16 +2,12 @@ $(document).ready(function() {
 
 // init variables
 
-	// var popup__callback = $(".js-popup-callback");
-	// var popup__city = $(".js-city-popup");
- //    var popup__enter = $(".js-popup-enter");
-	// var popup = $(".js-popup");
 	var prod_carousel = $('.recent-product__carousel');
 	var prod = $(".product"); 
 	var prod_image = $(".product__image"); 
 	var key_text = $('.js-text-key'); 
     var recent_key = $(".js-recent-key");
-
+    var hidden_block = $(".js-hidden-block").hide();
     //input number
 function input_number() {
     $('.js-input-number').each(function() {
@@ -106,9 +102,9 @@ $('.js-select').click(function(event){
         $(this).parent().find(".slider-info, .shadow-slider").fadeToggle();
      });  
 // ----------------  info-block visible -------------------- //
-	$('.info-block__button').click(function() {
-		$(".info-block__hide").slideToggle();
-		$(".info-block__button").toggleClass("is-active");
+	$('.js-show-hidden').click(function() {
+		$(this).parent().find(hidden_block).slideToggle();
+		$(this).toggleClass("is-active");
 		return false;
 	});
 
