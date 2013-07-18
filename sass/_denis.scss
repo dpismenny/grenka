@@ -22,18 +22,24 @@
 		font-size: 12px;
 		color: #5f5f5f;
 	}
+	.btn-show{
+		&.is-active{
+			@include s(btn-close);
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			border: none;
+			&:hover{
+				cursor: pointer;
+			}
+			i{
+				display: none;
+			}
+		}
+	}
 }
 .delivery__in{
 	padding: 30px;
-}
-.delivery__close{
-	@include s(btn-close);
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	&:hover{
-		cursor: pointer;
-	}
 }
 .delivery__head{
 	padding-left: 50px;
@@ -70,10 +76,12 @@
 	color: #68a814;
 }
 .delivery__info{
-	margin-top: 15px;
+	margin-bottom: 45px;
+	margin-left: 50px;
+	margin-top: -30px;
 }
 .delivery__content{
-	margin-top: 40px;
+	padding-top: 40px;
 }
 .delivery__cols{
 	@extend %clr;
