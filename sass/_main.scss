@@ -863,10 +863,8 @@
 	.rate {
 		display: none;
 	}
-	&:hover {
-		
-	}
 }
+
 .product__title {
 	font-size: 18px;
 	text-transform: uppercase;
@@ -994,6 +992,10 @@
 	@extend %clr;
 	@include box-sizing(border-box);
 	@include transition(box-shadow 0.2s linear);
+	.badge {
+		top: 0;
+		right: 0;
+	}
 }
 .product__image{
 	float: right;
@@ -1149,6 +1151,14 @@
 	text-align: center;
 }
 
+.badge {
+	position: absolute;
+}
+.badge_new {@include s(ico_new);}
+.badge_best {@include s(ico_best);}
+.badge_top {@include s(ico_top);}
+.badge_delivery {@include s(delivery);}
+
 // Ie8
 .lteie8 {
 	.code {
@@ -1167,7 +1177,7 @@
 		i {
 			display: none;
 		}
-	}
+	}  
 	.label__input {
 		line-height: 25px;
 	}
