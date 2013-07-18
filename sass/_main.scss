@@ -353,6 +353,7 @@
 	position: relative;
 	padding-left: 24px;
 	display: block;
+	@include unselectable;
 	input, i {
 		position: absolute;
 		top: 1px;
@@ -362,6 +363,7 @@
 		width: 13px;
 		height: 13px;
 		opacity: 0;
+		z-index: 2;
 		&:checked {
 			& + i {
 				&:after {
@@ -1154,6 +1156,7 @@
 .lteie8 {
 	.code {
 		left: 0;
+		top: 200px;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=6.123031769111886e-17, M12=1, M21=-1, M22=6.123031769111886e-17, SizingMethod='auto expand')";
 	}
 	.infographics__text {
@@ -1161,6 +1164,15 @@
 	}
 	.popular__price {
 		border: 2px solid #fff;
+	}
+	.label-check,
+	.label-radio {
+		i {
+			display: none;
+		}
+	}
+	.label__input {
+		line-height: 25px;
 	}
 }
 
