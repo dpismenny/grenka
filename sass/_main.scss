@@ -1101,6 +1101,7 @@
 
 
 .tooltip {
+	display: none;
 	position: absolute;
 	border: 1px solid #bcbcbc;
 	padding: 10px 27px;
@@ -1150,7 +1151,13 @@
 .title_center {
 	text-align: center;
 }
-
+.title__info {
+	float: right;
+	width: 23%;
+	font-size: 18px;
+	height: 50px;
+	overflow: hidden;
+}
 .badge {
 	position: absolute;
 }

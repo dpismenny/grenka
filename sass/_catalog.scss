@@ -1,0 +1,86 @@
+.slider-action {
+	position: relative;
+	margin: 1px 0 46px;
+	.pager {
+		bottom: -30px;
+		width: 100%;
+	}
+}
+.action-wrap {
+	overflow: hidden;
+}
+.action {
+	float: left;
+	padding: 15px 20px;
+	width: 50%;
+	height: 130px;
+	background: #f79b03;
+	color: #fff;
+	text-decoration: none;
+	@include pm;
+	text-transform: uppercase;
+	@include box-sizing(border-box);
+	@include background-image(linear-gradient(left, #f47b01, #f47b01 65%, #f79b03));
+	overflow: hidden;
+	img {
+		float: right;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+.action__main {
+	overflow: hidden;
+}
+.action__top {
+	margin-bottom: 5px;
+	color: #000;
+	font-size: 22px;
+}
+.action__title {
+	font-size: 18px;
+}
+.action__date {
+	font-size: 12px;
+	text-transform: normal;
+	span {
+		display: block;
+		color: #000;
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+}
+.pager {
+	position: absolute;
+	text-align: center;
+	button {
+		position: relative;
+		margin-left: 7px;
+		width: 10px;
+		height: 10px;
+		border: 1px solid #b7b7b7;
+		@include border-radius(50%);
+		background: #e3e3e3;
+		@include box-shadow(0 1px 1px rgba(0,0,0,.13));
+		@include background-image(linear-gradient(bottom, #e3e3e3 0%, #fff 100%));
+		&:first-child {
+			margin-left: 0;
+		}
+		&:hover {
+			@include box-shadow(none);
+		}
+		&.is-active {
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: -2px 0 0 -2px;
+				width: 4px;
+				height: 4px;
+				@include border-radius(50%);
+				background: #f47b01;
+			}
+		}
+	}
+}

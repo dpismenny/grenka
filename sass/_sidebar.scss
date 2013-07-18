@@ -4,21 +4,6 @@
         position: relative;
         z-index: 1001;
     }
-    .cycle-head{
-        @include box-sizing(border-box);
-        height: 43px;
-        line-height: 43px;
-        background-color: #fff;
-        border: 1px solid #dcdcdc;
-        padding: 0 20px;
-    }
-    .cycle-title{
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: normal;
-        color: #67a713;
-        @include pm;
-    }
     .cycle-slideshow{
         position: relative;
         &:before{
@@ -71,7 +56,21 @@
         }
     }
 }
-
+.sidebar-head {
+    @include box-sizing(border-box);
+    height: 43px;
+    line-height: 43px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 0 20px;
+}
+.sidebar-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    color: #67a713;
+    @include pm;
+}
 .recent-buy{
     .recent-buy__info{
         overflow: hidden;
