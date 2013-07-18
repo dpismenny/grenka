@@ -353,6 +353,7 @@
 	position: relative;
 	padding-left: 24px;
 	display: block;
+	@include unselectable;
 	input, i {
 		position: absolute;
 		top: 1px;
@@ -362,6 +363,7 @@
 		width: 13px;
 		height: 13px;
 		opacity: 0;
+		z-index: 2;
 		&:checked {
 			& + i {
 				&:after {
@@ -1067,16 +1069,19 @@
     height: 17px;
     width: auto;
     @include rotate(-90);
-    font: bold 14px Arial,sans-serif;
+    font: normal 14px Arial,sans-serif;
     color:#2a2a2a;
-    text-transform: uppercase;
     left: 0;
     position: fixed;
     top: 50%;
     margin-top: 130px;
     -webkit-font-smoothing: antialiased;
-    @include transform-origin( 0,0,0,0 );
     text-shadow: 0 0 1px;   
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
     span {   
         color:#000000;
         vertical-align: middle;
@@ -1151,6 +1156,7 @@
 .lteie8 {
 	.code {
 		left: 0;
+		top: 200px;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=6.123031769111886e-17, M12=1, M21=-1, M22=6.123031769111886e-17, SizingMethod='auto expand')";
 	}
 	.infographics__text {
@@ -1158,6 +1164,15 @@
 	}
 	.popular__price {
 		border: 2px solid #fff;
+	}
+	.label-check,
+	.label-radio {
+		i {
+			display: none;
+		}
+	}
+	.label__input {
+		line-height: 25px;
 	}
 }
 
