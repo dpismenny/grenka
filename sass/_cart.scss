@@ -1,3 +1,43 @@
+.label {
+	position: relative;
+}
+.label_error {
+	.label__input {
+		background: #ededed;
+	}
+}
+.label__tooltip {
+	position: absolute;
+	top: 7px;
+	left: -40px;
+	padding: 5px 12px;
+	border: 1px solid #ff8080;
+	box-shadow: 0 1px 5px rgba(0,0,0,.3);
+	border-radius: 4px;
+	background: #fff;
+	font-size: 12px;
+	color: #ff0000;
+	z-index: 1000;
+	&:before, &:after {
+		content: "";
+		position: absolute;		
+		width: 0px;
+		height: 0px;
+		border-style: solid;		
+	}
+	&:before {
+		bottom: -6px;
+		right: 28px;
+		border-width: 6px 5px 0 5px;
+		border-color: #ff8080 transparent transparent transparent;
+	}
+	&:after {
+		bottom: -5px;
+		right: 29px;
+		border-width: 5px 4px 0 4px;
+		border-color: #fff transparent transparent transparent;
+	}
+}
 //cart
 .cart {
 	margin-bottom: 20px;
@@ -272,6 +312,9 @@
 		a {
 			color: $orange;
 			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 	.cart__table-gift {
@@ -751,7 +794,6 @@
 		@include s(label-in-stock);
 	}
 }
-
 //tabs
 .tabs {
 	margin-bottom: 20px;
