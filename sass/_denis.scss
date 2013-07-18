@@ -441,6 +441,20 @@
 		&:first-child{
 			margin: 0;
 		}
+		&:hover{
+			.icon_team-fb{
+				@include s(tfb_h);
+			}
+			.icon_team-vk{
+				@include s(tvk_h);
+			}
+			.icon_team-tw{
+				@include s(ttw_h);
+			}
+			.icon_team-mail{
+				@include s(tmail_h);
+			}
+		}
 	}
 }
 
