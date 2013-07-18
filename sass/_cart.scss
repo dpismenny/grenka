@@ -1,9 +1,9 @@
 .label {
 	position: relative;
-}
-.label_error {
-	.label__input {
-		background: #ededed;
+	&.is-error {
+		.label__input {
+			background: #ededed;
+		}
 	}
 }
 .label__tooltip {
@@ -38,6 +38,11 @@
 		border-color: #fff transparent transparent transparent;
 	}
 }
+//icons
+.icon_mr{@include s(ico_mr);}
+.icon_mr_hover{@include s(ico_mr_hover);}
+.icon_yr{@include s(ico_yr);}
+.icon_yr_hover{@include s(ico_yr_hover);}
 //cart
 .cart {
 	margin-bottom: 20px;
@@ -48,7 +53,7 @@
 	background: #fff;
 	@include background-image(linear-gradient(#fff, #e3e3e3));
 	border: none;
-	.cart__in {
+	.cart__in {  
 		padding: 25px;
 	}
 }
@@ -474,6 +479,10 @@
 		float: none;
 		display: inline-block;
 		margin-bottom: 15px;
+		li {
+			margin: 0 7px;
+			vertical-align: middle;
+		}
 	}
 }
 .cart__login-social {
@@ -524,13 +533,17 @@
 	margin-right: 6px;
 }
 .cart__down {
-	padding: 30px 0 0 115px;
+	padding: 30px 0 0 50px;
 	margin: 0 -40px -40px;
 	border-top: 1px solid $brcl;
 	@extend %clr;
+	.btn {
+		float: left;
+	}
 	.cart__forms {
 		float: left;
-		margin: 0 45px 20px 0;
+		margin: 0 50px 20px 0;
+		padding: 0;
 	}
 	.cart__services {
 		float: left;
@@ -540,6 +553,10 @@
 		padding-top: 15px;
 		clear: both;
 	}
+}
+.cart__back {
+	float: left;
+	margin: 31px 50px 0 0;
 }
 //stats-users
 .stats-users {

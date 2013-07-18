@@ -45,7 +45,6 @@
 	background-color: #fff;
 	color: #fff;
 	@include pm;
-	text-decoration: none;
 	font-size: 14px;
 	text-transform: uppercase;
 	text-shadow: 0 1px 0 rgba(0,0,0,.34);
@@ -55,6 +54,7 @@
 	&:hover {
 		border: 1px solid #6a9f26;
 		background: #74b61d;
+		text-decoration: none;
 		@include background-image(linear-gradient(bottom, #74b61d 0%, #9cd453 100%));
 	}
 	&:active {
