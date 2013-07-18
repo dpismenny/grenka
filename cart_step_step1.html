@@ -70,28 +70,16 @@
 								<!-- BEGIN .socials -->
 								<ul class="socials">
 									<li>
-										<a href="#" class="icon icon_fb" title="Facebook">
-											Facebook
-											<span class="icon icon_fb_hover"></span>
-										</a>
+										<a href="#" class="icon icon_fb" title="Facebook">Facebook<span class="icon icon_fb_hover"></span></a>
 									</li>
 									<li>
-										<a href="#" class="icon icon_vk" title="Вконтакте">
-											Вконтакте
-											<span class="icon icon_vk_hover"></span>
-										</a>
+										<a href="#" class="icon icon_vk" title="Вконтакте">Вконтакте<span class="icon icon_vk_hover"></span></a>
 									</li>
 									<li>
-										<a href="#" class="icon icon_tw" title="Twitter">
-											Twitter
-											<span class="icon icon_tw_hover"></span>
-										</a>
+										<a href="#" class="icon icon_tw" title="Twitter">Twitter<span class="icon icon_tw_hover"></span></a>
 									</li>
 									<li>
-										<a href="#" class="icon icon_gp" title="Google+">
-											Google+
-											<span class="icon icon_gp_hover"></span>
-										</a>
+										<a href="#" class="icon icon_gp" title="Google+">Google+<span class="icon icon_gp_hover"></span></a>
 									</li>
 								</ul>
 								<!-- END .socials -->
@@ -165,7 +153,7 @@
 				</div>
 			</div>
 			<div class="cart__address">
-				<label class="label-check">
+				<label class="label-check js-hide-address">
 					<input type="checkbox">
 					<i></i>
 					<span>Не хочу заполнять адрес доставки, сообщу по телефону</span>
@@ -227,10 +215,11 @@
 					</div>
 					<div class="cart__cols-item">
 						<div class="cart__address-detail">
-							<label class="label cart__street">
+							<label class="label label_error cart__street">
 								<span class="label__title">Адрес<span>*</span></span>
 								<input class="label__input" type="text">
 								<span class="label__help">Улица</span>
+								<span class="label__tooltip">вы не указали адрес</span>
 							</label>
 							<label class="label cart__house">
 								<input class="label__input" type="text">
@@ -242,7 +231,7 @@
 							</label>
 						</div>	
 						<label class="label">
-							<span class="label__title">Адрес<span>*</span></span>
+							<span class="label__title">Комментарий к заказу<span>*</span></span>
 							<textarea class="label__area"></textarea>
 							<span class="label__help">Осталось 60 символов</span>
 						</label>					
