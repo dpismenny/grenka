@@ -53,25 +53,30 @@ $('.js-top-popup').click(function() {
 
 //select
 function select() {
-    var el = $('.js-select');
-    var title = $('.label__select-val');
-    var option = $('.label__select-options li');
-    title.click(function() {
-        if (!$(this).parent().hasClass('is-open')) {
-            $(this).parent().addClass('is-open');
-            $(this).next().slideDown();
-        }
-        else {
-            $(this).parent().removeClass('is-open');
-            $(this).next().hide();
-        };
-    });
-    option.click(function() {
-        var value = $(this).text();
-        $(this).parent().prev().find('span').html(value);
-        $(this).parent().parent().removeClass('is-open');
-        $(this).parent().hide();
-    });
+  var el = $('.js-select');
+  var title = el.find('.label__select-val');
+  var option = el.find('.label__select-options li');
+  title.click(function() {          
+      if (!$(this).parent().hasClass('is-open')) {
+          el.removeClass('is-open');
+          el.find('.label__select-options').hide();
+          $(this).parent().addClass('is-open');
+          $(this).next().slideDown('fast');
+      }
+      else {
+          $(this).parent().removeClass('is-open');
+          $(this).next().hide();
+      };
+  });
+  option.click(function() {
+      var value = $(this).text();
+      $(this).parent().prev().find('span').html(value);
+      $(this).parent().parent().removeClass('is-open');
+      $(this).parent().hide();
+  });
+  title.click(function(event){
+      event.stopPropagation();
+  });
 };
 select();
 

@@ -382,6 +382,9 @@ input{
 .enter{
 	float: right;
 	margin-top: 7px;	
+	.label__tooltip {
+		top: -17px;
+	}
 }
 .enter__reg {
 	float: left;
