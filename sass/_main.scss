@@ -1067,16 +1067,19 @@
     height: 17px;
     width: auto;
     @include rotate(-90);
-    font: bold 14px Arial,sans-serif;
+    font: normal 14px Arial,sans-serif;
     color:#2a2a2a;
-    text-transform: uppercase;
     left: 0;
     position: fixed;
     top: 50%;
     margin-top: 130px;
     -webkit-font-smoothing: antialiased;
-    @include transform-origin( 0,0,0,0 );
     text-shadow: 0 0 1px;   
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
     span {   
         color:#000000;
         vertical-align: middle;
