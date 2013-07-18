@@ -163,7 +163,6 @@
 		box-shadow: 1px 1px 1px rgba(0,0,0,.13);
 		line-height: 48px;		
 		@include pm;
-		font-weight: normal;
 		font-size: 30px;
 		color: #2e2e2e;
 		&:after {
@@ -666,22 +665,19 @@
 	display: none;
 	width: 640px;
 }
-.info-block__button {
+.btn-show {
+	display: block;
+	width: 100%;
 	border-top: 1px solid #dcdcdc;
 	@include box-sizing(border-box);
 	height: 40px;
+	line-height: 1;
 	background-color: #f0f0f0;
+	text-align: center;
 	@include background-image(linear-gradient(#fdfdfd, #f0f0f0));
-	a{
-		display: inline-block;
-		height: 100%;
-		width: 100%;
-		text-align: center;
-	}
 	i{
 		display: inline-block;
-		vertical-align: top;
-		margin-top: 16px;
+		vertical-align: middle;
 		@include s(arrow_cycle);
 	}
 	&.is-active {
