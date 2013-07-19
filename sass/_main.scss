@@ -137,7 +137,20 @@
 			);
 	}
 }
-
+.btn_added {
+	position: relative;
+	padding-right: 33px;
+	height: 29px;
+	font-size: 12px;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 8px;
+		margin-top: -7px;
+		@include s(added);
+	}
+}
 //counter
 .counter {
 	font-size: 0;
