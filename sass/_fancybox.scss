@@ -97,8 +97,8 @@
 	right: -10px;
 	cursor: pointer;
 	z-index: 8040;
-	width: 18px;
-	height: 18px;
+	width: 19px;
+	height: 19px;
 	@include border-radius(50%);
 	@include box-shadow(0 1px 1px rgba(0,0,0,.32));
 	background: #89bf41;
@@ -115,8 +115,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		margin: -3px 0 0 -4px;
-		@include s(close);
+		margin: -4px 0 0 -4px;  
+		@include s(btn-delete);
 	}
 } 
 

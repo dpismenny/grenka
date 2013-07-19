@@ -109,7 +109,7 @@ $('.js-select').click(function(event){
 // ----------------  info-block visible -------------------- //
 	$('.js-show-hidden').click(function() {
 		$(this).parent().find(hidden_block).slideToggle();
-		$(this).toggleClass("is-active");
+		$(this).parent.find('.js-show-hidden').toggleClass("is-active");
 		return false;
 	});
 

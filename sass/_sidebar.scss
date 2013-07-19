@@ -56,7 +56,8 @@
         }
     }
 }
-.sidebar-head {
+.sidebar-head,
+.cycle-head {
     @include box-sizing(border-box);
     height: 43px;
     line-height: 43px;
@@ -64,7 +65,8 @@
     border: 1px solid #dcdcdc;
     padding: 0 20px;
 }
-.sidebar-title {
+.sidebar-title,
+.cycle-title {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: normal;
