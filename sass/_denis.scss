@@ -5,6 +5,14 @@
 .icon_team-vk{@include s(tvk);}
 .icon_team-tw{@include s(ttw);}
 .icon_team-mail{@include s(tmail);}
+.icon_contact_phone{@include s(contact_phone);}
+.icon_contact_kyivstar{@include s(contact_kyivstar);}
+.icon_contact_life{@include s(contact_life);}
+.icon_contact_mts{@include s(contact_mts);}
+.icon_contact_callback{@include s(contact_callback);}
+.icon_contact_chat{@include s(contact_chat);}
+.icon_contact_skype{@include s(contact_skype);}
+.icon_contact_qrc{@include s(contact_qrc);}
 
 .delivery{
 	border: 1px solid #dcdcdc;
@@ -441,9 +449,235 @@
 		&:first-child{
 			margin: 0;
 		}
+		&:hover{
+			.icon_team-fb{
+				@include s(tfb_h);
+			}
+			.icon_team-vk{
+				@include s(tvk_h);
+			}
+			.icon_team-tw{
+				@include s(ttw_h);
+			}
+			.icon_team-mail{
+				@include s(tmail_h);
+			}
+		}
 	}
 }
 
 .benefits_mod{
 	margin-bottom: 25px;
+}
+
+
+
+.map{
+	margin-bottom: 30px;
+}
+.map__title{
+	line-height: 1;
+	@include pm;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.map__content{
+	border: 1px solid #ddd;
+	@include box-sizing(border-box);
+	height: 400px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.contacts{
+	padding: 40px 30px 25px;
+	border: 1px solid #dcdcdc;
+	border-width: 0 1px 1px 1px;
+	@include box-sizing(border-box);
+}
+.contacts__title{
+	line-height: 1;
+	@include pm;
+	font-size: 28px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.contacts__text{
+	font-size: 14px;
+	color: #5f5f5f;
+	margin-bottom: 30px;
+	strong{
+		color: #000;
+	}
+	span{
+		color: #f47b01;
+	}
+}
+.contacts__list{
+	@extend %clr;
+	margin-bottom: 35px;
+	li{
+		height: 52px;
+		line-height: 52px;
+		margin-bottom: 1px;
+		@include box-sizing(border-box);
+		&:hover{
+			.contacts__list-icon{
+				margin-right: 0;
+			}
+			.contacts__list-text{
+				margin-top: -1px;
+				height: 54px;
+				border: 1px solid #b5b5b5;
+				@include box-shadow(0 0 13px rgba(0,0,0,.19));
+				cursor: default;
+			}
+		}
+	}
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.contacts__list-icon{
+	float: left;
+	width: 67px;
+	margin-right: 1px;
+	background-color: #67a713;
+	@include background-image(linear-gradient(bottom, #67a713 0%, #8ac143 100%));
+	height: 100%;
+	text-align: center;
+	@include box-shadow(inset -1px -1px 0 rgba(#000,.1));
+}
+.contacts__list-text{
+	float: left;
+	background-color: #f6f6f6;
+	@include background-image(linear-gradient(bottom, #eee 0%, #f6f6f6 100%));
+	width: 579px;
+	height: 100%;
+	font-size: 12px;
+	color: #5f5f5f;
+	padding-left: 16px;
+	@include box-sizing(border-box);
+	span{
+		font-size: 18px;
+		color: #989898;
+		display: inline-block;
+		margin-right: 15px;
+	}
+	strong{
+
+		color: #000;
+	}
+}
+
+.last-buy{
+	font-size: 12px;
+	color: #5f5f5f;
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.btn-show{
+		border: 1px solid #dcdcdc;
+	}
+}
+.last-buy__title{
+	font-size: 12px;
+	color: #f47b01;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+.last-buy__content{
+	padding: 5px 17px 15px;
+	border: 1px solid #dcdcdc;
+	border-width: 1px 1px 0 1px;
+}
+.last-buy__list{
+	li{
+		margin-top: 10px;
+		width: 88%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.feedback{
+	position: relative;
+	@extend %clr;
+	margin-bottom: 30px;
+	.btn{
+		float: right;
+	}
+	.label{
+		margin-bottom: 10px;
+	}
+	.label__area{
+		margin-bottom: 0;
+	}
+	.label__input{
+		width: 312px;
+		margin-bottom: 0;
+	}
+	.label__title{
+		display: block;
+		margin-bottom: 17px;
+		span{
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	}
+	.label__title_mod{
+		margin-bottom: 5px;
+		font-size: 12px;
+		color: #5f5f5f;
+		position: absolute;
+		top: 7px;
+		left: 335px;
+	}
+	.label__tooltip{
+		top: -17px;
+	}
+}
+.feedback__title{
+	margin-bottom: 30px;
+	font-size: 14px;
+	color: #f47b01;
+	line-height: 1;
+}
+.feedback__in{
+	position: relative;
+}
+.label__feedback{
+	position: absolute;
+	top: -5px;
+	right: 0;
+	@extend %clr;
+	.label__title{
+		display: inline-block;
+		margin-right: 12px;
+	}
+	.label__select{
+		display: inline-block;
+		width: 312px;
+	}
+}
+.label__warning{
+	font-size: 11px;
+	color: #6dac1b;
+}
+.label__select{
+	&.is-inactive{
+		span{
+			font-size: 14px;
+			color: #b2b2b2;
+			font-weight: normal;
+		}
+	}
 }
