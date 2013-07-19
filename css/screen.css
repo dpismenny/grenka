@@ -1,9 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext);
 .header__logo a, .payment li, .socials a, .recent__nav, .team__social li { font: 0/0 a; text-shadow: none; color: transparent; }
 
-.top__in, .callback__down .label, .callback__cols, .enter__login, .header, .search__list a, .drop-nav, .nav, .subscribe, .subscribe__field, .footer__nav, .footer__row, .infographics, .recent__item, .popular-wrap, .tab, .product-list, .product__inner, .product__info, .cart_ordering .tabs__cols, .cart__begin, .cart__forms-item, .cart__services, .cart__cols, .cart__login, .cart__address-detail, .cart__down, .offer__prod, .tabs__top, .game-promo, .slider-left-main li, .cycle .cycle-carousel-wrap .cycle-slide, .reviews__item, .categ-block__list, .delivery__item, .delivery__cols, .about__detail, .about__cols, .team__member, .team__social, .contacts__list, .feedback, .label__feedback { *zoom: 1; }
-.top__in:before, .callback__down .label:before, .callback__cols:before, .enter__login:before, .header:before, .search__list a:before, .drop-nav:before, .nav:before, .subscribe:before, .subscribe__field:before, .footer__nav:before, .footer__row:before, .infographics:before, .recent__item:before, .popular-wrap:before, .tab:before, .product-list:before, .product__inner:before, .product__info:before, .cart_ordering .tabs__cols:before, .cart__begin:before, .cart__forms-item:before, .cart__services:before, .cart__cols:before, .cart__login:before, .cart__address-detail:before, .cart__down:before, .offer__prod:before, .tabs__top:before, .game-promo:before, .slider-left-main li:before, .cycle .cycle-carousel-wrap .cycle-slide:before, .reviews__item:before, .categ-block__list:before, .delivery__item:before, .delivery__cols:before, .about__detail:before, .about__cols:before, .team__member:before, .team__social:before, .contacts__list:before, .feedback:before, .label__feedback:before, .top__in:after, .callback__down .label:after, .callback__cols:after, .enter__login:after, .header:after, .search__list a:after, .drop-nav:after, .nav:after, .subscribe:after, .subscribe__field:after, .footer__nav:after, .footer__row:after, .infographics:after, .recent__item:after, .popular-wrap:after, .tab:after, .product-list:after, .product__inner:after, .product__info:after, .cart_ordering .tabs__cols:after, .cart__begin:after, .cart__forms-item:after, .cart__services:after, .cart__cols:after, .cart__login:after, .cart__address-detail:after, .cart__down:after, .offer__prod:after, .tabs__top:after, .game-promo:after, .slider-left-main li:after, .cycle .cycle-carousel-wrap .cycle-slide:after, .reviews__item:after, .categ-block__list:after, .delivery__item:after, .delivery__cols:after, .about__detail:after, .about__cols:after, .team__member:after, .team__social:after, .contacts__list:after, .feedback:after, .label__feedback:after { content: " "; display: table; }
-.top__in:after, .callback__down .label:after, .callback__cols:after, .enter__login:after, .header:after, .search__list a:after, .drop-nav:after, .nav:after, .subscribe:after, .subscribe__field:after, .footer__nav:after, .footer__row:after, .infographics:after, .recent__item:after, .popular-wrap:after, .tab:after, .product-list:after, .product__inner:after, .product__info:after, .cart_ordering .tabs__cols:after, .cart__begin:after, .cart__forms-item:after, .cart__services:after, .cart__cols:after, .cart__login:after, .cart__address-detail:after, .cart__down:after, .offer__prod:after, .tabs__top:after, .game-promo:after, .slider-left-main li:after, .cycle .cycle-carousel-wrap .cycle-slide:after, .reviews__item:after, .categ-block__list:after, .delivery__item:after, .delivery__cols:after, .about__detail:after, .about__cols:after, .team__member:after, .team__social:after, .contacts__list:after, .feedback:after, .label__feedback:after { clear: both; }
+.top__in, .callback__down .label, .callback__cols, .enter__login, .header, .search__list a, .drop-nav, .nav, .subscribe, .subscribe__field, .footer__nav, .footer__row, .infographics, .recent__item, .popular-wrap, .tab, .product-list, .product__inner, .product__info, .breadcrumbs, .cart_ordering .tabs__cols, .cart__begin, .cart__forms-item, .cart__services, .cart__cols, .cart__login, .cart__address-detail, .cart__down, .offer__prod, .tabs__top, .prod__content, .game-promo, .slider-left-main li, .cycle .cycle-carousel-wrap .cycle-slide, .reviews__item, .categ-block__list, .delivery__item, .delivery__cols, .about__detail, .about__cols, .team__member, .team__social, .contacts__list, .feedback, .label__feedback { *zoom: 1; }
+.top__in:before, .callback__down .label:before, .callback__cols:before, .enter__login:before, .header:before, .search__list a:before, .drop-nav:before, .nav:before, .subscribe:before, .subscribe__field:before, .footer__nav:before, .footer__row:before, .infographics:before, .recent__item:before, .popular-wrap:before, .tab:before, .product-list:before, .product__inner:before, .product__info:before, .breadcrumbs:before, .cart_ordering .tabs__cols:before, .cart__begin:before, .cart__forms-item:before, .cart__services:before, .cart__cols:before, .cart__login:before, .cart__address-detail:before, .cart__down:before, .offer__prod:before, .tabs__top:before, .prod__content:before, .game-promo:before, .slider-left-main li:before, .cycle .cycle-carousel-wrap .cycle-slide:before, .reviews__item:before, .categ-block__list:before, .delivery__item:before, .delivery__cols:before, .about__detail:before, .about__cols:before, .team__member:before, .team__social:before, .contacts__list:before, .feedback:before, .label__feedback:before, .top__in:after, .callback__down .label:after, .callback__cols:after, .enter__login:after, .header:after, .search__list a:after, .drop-nav:after, .nav:after, .subscribe:after, .subscribe__field:after, .footer__nav:after, .footer__row:after, .infographics:after, .recent__item:after, .popular-wrap:after, .tab:after, .product-list:after, .product__inner:after, .product__info:after, .breadcrumbs:after, .cart_ordering .tabs__cols:after, .cart__begin:after, .cart__forms-item:after, .cart__services:after, .cart__cols:after, .cart__login:after, .cart__address-detail:after, .cart__down:after, .offer__prod:after, .tabs__top:after, .prod__content:after, .game-promo:after, .slider-left-main li:after, .cycle .cycle-carousel-wrap .cycle-slide:after, .reviews__item:after, .categ-block__list:after, .delivery__item:after, .delivery__cols:after, .about__detail:after, .about__cols:after, .team__member:after, .team__social:after, .contacts__list:after, .feedback:after, .label__feedback:after { content: " "; display: table; }
+.top__in:after, .callback__down .label:after, .callback__cols:after, .enter__login:after, .header:after, .search__list a:after, .drop-nav:after, .nav:after, .subscribe:after, .subscribe__field:after, .footer__nav:after, .footer__row:after, .infographics:after, .recent__item:after, .popular-wrap:after, .tab:after, .product-list:after, .product__inner:after, .product__info:after, .breadcrumbs:after, .cart_ordering .tabs__cols:after, .cart__begin:after, .cart__forms-item:after, .cart__services:after, .cart__cols:after, .cart__login:after, .cart__address-detail:after, .cart__down:after, .offer__prod:after, .tabs__top:after, .prod__content:after, .game-promo:after, .slider-left-main li:after, .cycle .cycle-carousel-wrap .cycle-slide:after, .reviews__item:after, .categ-block__list:after, .delivery__item:after, .delivery__cols:after, .about__detail:after, .about__cols:after, .team__member:after, .team__social:after, .contacts__list:after, .feedback:after, .label__feedback:after { clear: both; }
 
 .cycle .cycle-nav .next.disabled { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 10+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */ filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
 
@@ -656,6 +656,39 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 .lteie8 .label-check i, .lteie8 .label-radio i { display: none; }
 .lteie8 .label__input { line-height: 25px; }
 
+.breadcrumbs li { float: left; color: #676767; font-size: 11px; }
+.breadcrumbs li a { text-decoration: underline; }
+.breadcrumbs li a:hover { text-decoration: none; }
+.breadcrumbs li:first-child span { display: none; }
+.breadcrumbs span { margin: 0 8px; }
+
+.gallery__nav { position: relative; float: left; width: 99px; }
+.gallery__nav button { position: absolute; left: 0; right: 0; height: 20px; background: none; }
+.gallery__nav button.disabled { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.gallery__nav i { position: absolute; left: 32px; width: 0px; height: 0px; border-style: solid; }
+
+.gallery__up { top: -20px; }
+.gallery__up i { top: 0; border-width: 0 8px 10px 8px; border-color: transparent transparent #69a915 transparent; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
+
+.gallery__down { bottom: -20px; }
+.gallery__down i { bottom: 0; border-width: 10px 8px 0 8px; border-color: #69a915 transparent transparent transparent; }
+
+.gallery__list { position: relative; }
+.gallery__list:before, .gallery__list:after { content: ""; position: absolute; left: 0; width: 79px; border-top: 1px solid gainsboro; }
+.gallery__list:before { top: 0; }
+.gallery__list:after { bottom: 0; }
+
+.gallery__slide a { position: relative; display: block; width: 77px; height: 63px; margin-right: 20px; border: 1px solid gainsboro; border-width: 1px 1px 0 1px; line-height: 63px; text-align: center; font-size: 0; }
+.gallery__slide a.is-active { border: 1px solid #7e7e7e; border-width: 1px 1px 0 1px; box-shadow: 0 1px 0 #7e7e7e; z-index: 10; }
+.gallery__slide a.is-active:before, .gallery__slide a.is-active:after { content: ""; position: absolute; width: 0px; height: 0px; border-style: solid; }
+.gallery__slide a.is-active:before { top: 23px; right: -10px; border-width: 9px 0 9px 10px; border-color: transparent transparent transparent #7e7e7e; }
+.gallery__slide a.is-active:after { top: 25px; right: -8px; border-width: 7px 0 7px 8px; border-color: transparent transparent transparent #fff; }
+.gallery__slide img { vertical-align: middle; }
+
+.gallery__pic { border: 1px solid gainsboro; overflow: hidden; }
+.gallery__pic a { position: relative; display: block; height: 446px; line-height: 446px; text-align: center; font-size: 0; }
+.gallery__pic a img { vertical-align: middle; }
+
 .label { position: relative; }
 .label.is-error .label__input { background: #ededed; }
 
@@ -912,6 +945,14 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 .tabs__all a { margin-right: 5px; text-decoration: underline; }
 
 .tabs__content { display: none; border: 1px solid gainsboro; }
+
+.prod { position: relative; padding: 10px 27px 15px; border: 1px solid gainsboro; border-top: 3px solid #69a915; }
+.prod .breadcrumbs { margin-bottom: 40px; }
+
+.prod__articul { position: absolute; top: 0; right: 0; padding: 10px 14px; border: 1px solid gainsboro; border-width: 0 0 1px 1px; color: #676767; }
+.prod__articul strong { margin-left: 5px; color: #000; }
+
+.prod__content .gallery { float: left; width: 485px; }
 
 .game-promo { color: #949494; line-height: 1.2; }
 .game-promo .game-promo__img, .game-promo .game-promo__title { padding: 0; }
