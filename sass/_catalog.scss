@@ -117,6 +117,7 @@
 		}
 		.categ-block__name {
 			background: #fff;
+			color: #000;
 		}
 	}
 	&:first-child {
@@ -152,4 +153,132 @@
 	background: #f47b01;
 	@include box-sizing(border-box);
 	@include background-image(linear-gradient(bottom, #f9ae04 0%, #f47b01 100%));
+}
+.cat-slider {
+	margin: 20px 0;
+	.add-order {
+		border: 1px solid $brcl;
+		border-top: 0;
+		&:after, 
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 1px;
+			background: #fff;
+			z-index: 100;
+		}
+		&:before {
+			right: auto;
+			left: 0;
+		}
+	}
+	.add-order__item {
+		float: none;
+		width: 178px;
+		border-left: 1px solid $brcl;
+		border-right: 1px solid $brcl;
+		border-top: 0;
+		margin-left: -1px;
+	}
+}
+.cat-slider__head {
+	position: relative;
+	z-index: 2;
+	height: 43px;
+	background: #f0f0f0;
+	@extend %clr;
+	border-bottom: 1px solid $brcl;
+}
+.cat-slider__nav {
+	float: right;
+	@extend %clr;
+	font-size: 0;
+	a {
+		display: inline-block;
+		margin-right: 20px;
+		color: #f47b01;
+		font-size: 11px;
+		vertical-align: middle;
+		text-decoration: underline;
+	}
+	button {
+		margin-left: -1px;
+		@include box-sizing(border-box);
+		height: 43px;
+		width: 49px;
+		border: 1px solid $brcl;
+		border-bottom: 0;
+		text-align: center;
+		line-height: 1;
+		vertical-align: middle;  
+		i {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&.disabled {
+			i {
+				@include opacity(.2);
+			}
+		}
+	}
+}
+.cat-slider__prev {
+	i {
+		@include s(prev1);
+	}
+}
+.cat-slider__next {  
+	i {  
+		@include s(next1);
+	}
+}
+.cat-slider__title {
+	float: left;
+	padding: 7px 15px;
+	@include pm;
+	height: 44px;
+	@include box-sizing(border-box);
+	border: 1px solid $brcl;
+	border-bottom-color: #fff;
+	font-size: 20px;
+	color: #000;
+	background: #fff;
+	text-transform: uppercase;
+}
+.banner {
+	@extend %clr;
+	margin: 20px 0;
+	padding: 20px 30px;
+	height: 138px;
+	@include box-sizing(border-box);
+	@include background-image(linear-gradient(top, #f9ae04 0%, #f47b01 100%));
+	.popular {
+		padding: 0;
+		width: 260px;
+		background: none;
+	}
+	.popular__image {
+		float: left;
+		margin: 0 23px 0 0;
+	}
+	.popular__sub-title {
+		margin-bottom: 6px;
+	}
+}
+.banner__title{
+	float: left;
+	margin-top: 10px;
+	line-height: 1;
+	width: 360px;
+	text-align: center;
+	font-size: 78px;
+	@include pm;
+	text-transform: uppercase;
+	color: #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
