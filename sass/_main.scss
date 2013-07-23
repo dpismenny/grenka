@@ -855,7 +855,9 @@
 	clear: both;
 	position: relative;
 	@extend %clr;
-	z-index: 30;
+	&:hover {
+		z-index: 30;
+	}
 }
 .product {
 	position: relative;
