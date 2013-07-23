@@ -10,6 +10,33 @@ $('.js-hide-address').click(function() {
   }
 });
 
+//placeholder
+$('.js-placeholder').focus(function() {
+	if ($(this).val() == '') {
+		$(this).next().hide();
+	};
+});
+$('.js-placeholder').blur(function() {
+	if ($(this).val() == '') {
+		$(this).next().show();
+	};
+});
+
+//read all description
+$('.js-read-all').click(function() {
+	if (!$(this).hasClass('is-open')) {
+		$(this).addClass('is-open');
+		$(this).html('скрыть');
+		$(this).parent().prev().height('auto');
+	}
+	else {
+		$(this).removeClass('is-open');
+		$(this).html('Читать полностью...');
+		$(this).parent().prev().height('135px');
+	}
+	
+})
+
 //gallery
 function gallery() {
 	var el = $('.js-gallery');
@@ -21,6 +48,20 @@ function gallery() {
 			$(this).parent().parent().parent().parent().next().find('img').attr('src', pic);			
 		};		
 		return false;
+	});
+	el.find('.gallery__up').click(function() {
+		var act = $(this).parent().find('.gallery__slide a.is-active');
+		act.removeClass('is-active');
+		act.parent().prev().find('a').addClass('is-active');
+		var pic = act.parent().prev().find('a').attr('href');
+		$(this).parent().next().find('img').attr('src', pic);	
+	});
+	el.find('.gallery__down').click(function() {
+		var act = $(this).parent().find('.gallery__slide a.is-active');
+		act.removeClass('is-active');
+		act.parent().next().find('a').addClass('is-active');
+		var pic = act.parent().prev().find('a').attr('href');
+		$(this).parent().next().find('img').attr('src', pic);	
 	});
 };
 gallery();
