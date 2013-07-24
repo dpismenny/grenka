@@ -347,3 +347,94 @@
     z-index: 2;
 	@include background-image(linear-gradient(left, #000, rgba(0,0,0,.0) 50%, rgba(0,0,0,.0) 100%));
 }
+
+.section {
+    padding: 40px 30px;
+    border: 1px solid $brcl;
+    font-size: 14px;
+    color: #676767;
+    p {
+        margin-bottom: 14px;
+    }
+}
+
+// Brand page
+.brand-info {
+    @extend %clr;
+    width: 380px;
+    img {
+        float: left;
+        margin: 0 23px 35px 0;
+    }
+}
+.brand-info__main {
+    position: relative;
+    top: -10px;
+    overflow: hidden;
+    font-size: 11px;
+    color: #676767;
+}
+.brand-info__title {
+    @include pm;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    span {
+        color: #818181;
+    }
+}
+.product-row {
+    position: relative;
+    padding: 30px;
+    @extend %clr;
+    border: 1px solid $brcl;
+    margin-bottom: -1px;
+}
+.product-row__img {
+    float: left;
+    margin-right: 30px;
+}
+.product-row__descr {
+    float: left;
+    width: 400px;
+    color: #606060;
+    p {
+        margin-bottom: 7px;
+    }
+}
+.product-row__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    @include pm;
+    a {
+        color: #3e3e3e;
+    }
+}
+.product-row__links {
+    font-size: 11px;
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: underline;
+        &:first-child { 
+            margin-right: 0;
+        }
+        &:hover {
+            text-decoration: none;
+        } 
+    } 
+    span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+.product-row__meta {
+    float: right;
+    width: 100px;
+}
+.prod-state {
+    width: 80px;
+    font-size: 12px;
+    color: #6aa916;
+    text-transform: uppercase;
+}
