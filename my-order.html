@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>loyalty-program</title>
+	<title>My order</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
@@ -534,303 +534,192 @@
 		<!-- END .l-sidebar -->
 		<!-- BEGIN .l-main -->
 		<div class="l-main">
-			<div class="title">cчастливая страница</div>
+			<div class="title">мой заказ</div>
 			<div class="section">
+				<div class="section__title">Ваш предзаказ <strong>№312</strong> успешно оформлен. <span>Спасибо!</span></div>
 				<div class="section__inner">
-					<table class="spec-table">                                                
-						<thead class="spec-table__head">
-							<tr>
-								<th>название покупок</th>
-								<th>примечание</th>
-								<th>сумма </th>
-							</tr>
-						</thead>
+					<p>В течение 15 минут с Вами свяжется наш менеджер, если предзаказ оформлен с 9-00 до 21-00. Если Вы оформили предзаказ в другое время, то мы обязательно перезвоним с 9-00 до 9-30.</p>
+					<table class="spec-table spec-table_order">                                                
+						<caption class="spec-table__head">
+							Информация о предзаказе
+						</caption>
 						<tbody class="spec-table__body">
 							<tr>
-								<td>Платиновая карта <i class="icon-card icon-card_platin"></i></td>
-								<td>0</td>
-								<td>* получаете сразу за регистрацию</td>
+								<td>Способ оплаты:</td>
+								<td>Банковская карта (VISA, MASTER, Приват24)</td>
+								<td></td>
 							</tr>
 							<tr>
-								<td>Платиновая карта <i class="icon-card icon-card_gold"></i></td>
-								<td>0</td>
-								<td>* получаете сразу за регистрацию</td>
+								<td>Чем доставим:</td>
+								<td>Курьером</td>
+								<td></td>
 							</tr>
 							<tr>
-								<td>Платиновая карта <i class="icon-card icon-card_silver"></i></td>
-								<td>0</td>
-								<td>* получаете сразу за регистрацию</td>
+								<td>Город:</td>
+								<td>Киев</td>
+								<td></td>
 							</tr>
 							<tr>
-								<td>Платиновая карта <i class="icon-card icon-card_bronz"></i></td>
-								<td>0</td>
-								<td>* получаете сразу за регистрацию</td>
+								<td>Статус:</td>
+								<td class="is-not-pay">Не оплачен</td><!-- add class .is-paid to change status -->
+								<td><a href="#" class="btn btn_smaller">оплатить через pay 24</a></td>
 							</tr>
 						</tbody>
 					</table>
-					<table class="spec-table spec-table_mod">
-					   	<caption class="spec-table__head">ТАБЛИЦА ВАШИХ СКИДОК</caption>
-					   	<thead class="spec-table__sub-head">
-					   		<th></th>
-					   		<th>Скидка </th>
-					   		<th>Бесплатная доставка по Киеву</th>
-					   		<th>Подарок на ДР</th>
-					   		<th>Доступ к аукциону</th>                                   
-					   	</thead>
-					   	<tbody class="spec-table__body">
-					   		<tr>
-					   			<td><i class="icon-card icon-card_bronz"></i></td>
-					   			<td>0 %</td>
-					   			<td><i class="icon-plus"></i></td>
-					   			<td><i class="icon-minus"></i></td>
-					   			<td><i class="icon-minus"></i></td>
-					   		</tr>
-					   		<tr>
-					   			<td><i class="icon-card icon-card_bronz"></i></td>
-					   			<td>0 %</td>
-					   			<td><i class="icon-plus"></i></td>
-					   			<td><i class="icon-minus"></i></td>
-					   			<td><i class="icon-minus"></i></td>
-					   		</tr>
-					   		<tr>
-					   			<td><i class="icon-card icon-card_bronz"></i></td>
-					   			<td>0 %</td>
-					   			<td><i class="icon-plus"></i></td>
-					   			<td><i class="icon-minus"></i></td>
-					   			<td><i class="icon-minus"></i></td>
-					   		</tr>
-					   	</tbody>
-					</table>
-					<div class="specific-message">* - точную скидку на конкретный товар вы можете узнать сразу после регистрации или при покупке в корзине</div>
 				</div>
-			</div>
-			<!-- pagin will be here -->
-			<div class="tabs js-tabs">
-				<div class="tabs__top">
-					<div class="tabs__nav">
-						<button class="is-active">самые интересные товары на сайте</button>
+				<!-- BEGIN .buy-discount -->
+				<div class="buy-discount">
+					<div class="buy-discount__title">
+						<span>купить со скидкой 15%</span>
+						<span>до конца акции осталось:</span>
 					</div>
-					<div class="tabs__all"><a href="#">посмотреть все</a><span class="js-tabs-count">(55)</span></div>
-				</div>
-				<div class="tabs__content">
-					<!-- BEGIN .product-list -->
-					<ul class="product-list">
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-										<span itemprop="ratingValue">3.5</span>
-									</div>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">предзаказ</button>
-									<link itemprop="availability" href="http://schema.org/InStock" />
-								</div>
-								<!-- END .product__info -->
-								<i class="badge badge_new" alt="Новый товар"></i>
-							</div>
+					<!-- BEGIN .counter -->
+					<ul class="counter">
+						<li>
+							<strong>11</strong>
+							<span>дней</span>
 						</li>
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">предзаказ</button>
-								</div>
-								<!-- END .product__info -->
-								<i class="badge badge_best" alt="Лучший товар"></i>
-							</div>
+						<li>
+							<strong>06</strong>
+							<span>часов</span>
 						</li>
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__label  label_best -->
-								<div class="product__label label_best"></div>
-								<!-- END .product__label  label_best -->
-								<!-- BEGIN .product__image -->
-								<div class="product__image">
-									<img src="img/noimage.jpg" width="100" height="130" alt="img">
-								</div>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn btn_added">Товар в корзине</button>
-								</div>
-								<!-- END .product__info -->
-								<i class="badge badge_top" alt="Популярный товар"></i>
-							</div>
+						<li>
+							<strong>57</strong>
+							<span>минут</span>
 						</li>
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__label  label_new -->
-								<div class="product__label label_new"></div>
-								<!-- END .product__label  label_new -->
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">купить</button>
-								</div>
-								<i class="badge badge_delivery" alt="Лучший товар"></i>
-								<!-- END .product__info -->
-							</div>
-						</li>
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__label  label_soon -->
-								<div class="product__label label_soon"></div>
-								<!-- END .product__label  label_soon -->
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">купить</button>
-								</div>
-								<!-- END .product__info -->
-							</div>
-						</li>
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__label  label_soon -->
-								<div class="product__label label_soon"></div>
-								<!-- END .product__label  label_soon -->
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">купить</button>
-								</div>
-								<!-- END .product__info -->
-							</div>
+						<li>
+							<strong>03</strong>
+							<span>секунд</span>
 						</li>
 					</ul>
-					<!-- END .product-list -->
+					<!-- END .counter -->
+				</div>
+				<!-- END .buy-discount -->
+				<!-- BEGIN .add-order -->
+				<ul class="add-order">
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Your Shape</a>
+						</div>				
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Your Shape</a>
+						</div>
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Your Shape: Fitness Evolved</a>
+						</div>
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Fitness Evolved</a>
+						</div>
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+				</ul>
+				<!-- END .add-order -->
+			</div>
+			<!-- BEGIN .offer -->
+			<div class="offer">
+				<div class="offer__bg">
+					<div class="offer__title">специальное предложение на 2 просмотренных товара</div>
+					<div class="offer__top">				
+						<div class="offer__slider">
+							<button id="offer__btn-prev" class="offer__btn-top"></button>	
+							<button id="offer__btn-next" class="offer__btn-down"></button>
+							<div class="offer__items cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".offer__prod" data-cycle-next="#offer__btn-next" data-cycle-prev="#offer__btn-prev" data-allow-wrap="true" data-cycle-carousel-visible="1" data-cycle-carousel-vertical="true">						
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Your Shape: Fitness Evolved </a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+							</div>				
+						</div>	
+						<div class="offer__plus"></div>
+						<div class="offer__slider offer__slider_right">
+							<button id="offer__btn-prev-1" class="offer__btn-top"></button>	
+							<button id="offer__btn-next-1" class="offer__btn-down"></button>
+							<div class="offer__items cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".offer__prod" data-cycle-next="#offer__btn-next-1" data-cycle-prev="#offer__btn-prev-1" data-allow-wrap="true" data-cycle-carousel-visible="1" data-cycle-carousel-vertical="true">						
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Your Shape: Fitness Evolved </a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>		
+				<div class="offer__down">
+					<p><ins>420 грн</ins> <strong>СКИДКА 15%</strong> ЭКОНОМИЯ 63 грн <span>357 грн</span></p>
+					<button class="btn btn_medium">КУПИТЬ сразу 2 товара</button>
 				</div>
 			</div>
+			<!-- END .offer -->
 			<div class="pagination">
 		     	<span class="paginator__nav paginator__prev">Ctrl + <a href="#"><i></i></a></span>
 		     	<span class="paginator__nav paginator__next">Ctrl + <a href="#"><i></i></a></span>
@@ -843,49 +732,7 @@
 		     	 	<li class="is-inactive">...</li>
 		     	 	<li><a href="#">34</a></li>
 		     	</ul>
-		    </div>
-			<!-- BEGIN Banner -->
-			<div class="banner">
-				<div class="banner__title">баннер</div>
-				<div class="popular">
-					<!-- BEGIN .popular__image -->
-					<a class="popular__image" href="#">
-						<img src="img/img-3.jpg" width="87" height="100" alt="img">
-					</a>
-					<!-- END .popular__image -->
-					<!-- BEGIN .popular__info -->
-					<div class="popular__info">
-						<h3 class="popular__sub-title" >
-							<a href="#">Far Cry 3 Коллекц. издание (рус.)</a>
-						</h3>
-						<a href="#" class="popular__price">
-							<strong itemprop="price">954</strong> грн.
-							<div class="popular__btn"><i class="icon icon_basket"></i></div>
-						</a>
-					</div>
-					<!-- END .popular__info -->
-				</div>
-			</div>
-			<!-- END Banner -->
-			<!-- BEGIN .info-block -->
-			<div class="info-block">
-				<!-- BEGIN .info-block__in -->
-				<div class="info-block__in">
-					<p>Вне зависимости от того, где вы находитесь на данный момент, вы сможете заказать товар, что, согласитесь, очень удобно. Какие же преимущества предлагает наш интернет-магазин электроники, телефонов и прочих товаров? Наиболее существенный факт – наличие тысяч позиций, которые гарантированно имеются на складе. Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
-					<p>Интернет магазин бытовой техники (Киев, Харьков, Донецк) поможет вам. Наличие множества решений позволит подобрать устройство с <a href="#">требуемыми характеристиками и стоимостью</a>. Интернет-магазин техники (Харьков, Днепропетровск, Донецк) Rozetka – это многообразие предложений на любой вкус. Чтобы заказать товар, вам не придется никуда ехать или идти, т.к. все операции совершаются в виртуальном режиме. Именно поэтому Rozetka – это интернет-магазин телевизоров, холодильников и иной техники, покупать в котором выгодно и приятно.</p>
-					<p>Вне зависимости от того, где вы находитесь на данный момент, вы сможете заказать товар, что, согласитесь, очень удобно. Какие же преимущества предлагает наш интернет-магазин электроники, телефонов и прочих товаров? Наиболее существенный факт – наличие тысяч позиций, которые гарантированно имеются на складе. Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
-					<!-- BEGIN .info-block__hide -->
-					<div class="info-block__hide js-hidden-block">
-						<p>Интернет магазин бытовой техники (Киев, Харьков, Донецк) поможет вам. Наличие множества решений позволит подобрать устройство с <a href="#">требуемыми характеристиками и стоимостью</a>. Интернет-магазин техники (Харьков, Днепропетровск, Донецк) Rozetka – это многообразие предложений на любой вкус. Чтобы заказать товар, вам не придется никуда ехать или идти, т.к. все операции совершаются в виртуальном режиме. Именно поэтому Rozetka – это интернет-магазин телевизоров, холодильников и иной техники, покупать в котором выгодно и приятно.</p>
-					</div>
-					<!-- END .info-block__hide -->
-				</div>
-				<!-- END .info-block__in -->
-				<!-- BEGIN .info-block__button -->
-				<button class="btn-show js-show-hidden"><i></i></button>
-				<!-- END .info-block__button -->
-			</div>
-			<!-- END .info-block -->			
+		    </div>			
 		</div>
 		<!-- END .l-main -->
 	</div>

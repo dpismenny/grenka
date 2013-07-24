@@ -350,12 +350,29 @@
 
 .section {
     margin-bottom: 20px;
-    padding: 40px 30px;
     border: 1px solid $brcl;
     font-size: 14px;
     color: #676767;
     p {
         margin-bottom: 14px;
+    }
+}
+.section__inner {
+    padding: 30px 30px 40px;
+}
+.section__title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 29px;
+    @include pm;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1;
+    strong {
+        color: #f47b01;
+    }
+    span {
+        color: #6dab1b;
     }
 }
 
@@ -528,11 +545,12 @@
     }
 }
 
-.loyalty {
+.spec-table {
     width: 100%;
+    font-size: 12px;
     margin-bottom: 22px;
 }
-.loyalty__head {
+.spec-table__head {
     font-size: 14px;
     text-align: left;
     text-transform: uppercase;
@@ -541,17 +559,17 @@
     border-bottom: 1px solid #d56c01;
     @include background-image(linear-gradient(#ff8b02, #f47c01));
     th {
-        padding: 10px 20px;
+        padding: 12px 20px;
         &:nth-child(2) {
             text-align: center;
         }
     }
 }
-.loyalty__body {
+.spec-table__body {
 
     td {
         position: relative;
-        padding: 8px 0;
+        padding: 10px 0;
         border-bottom: 1px solid $brcl;
         &:first-child {
             padding-left: 20px;
@@ -582,16 +600,16 @@
 .icon-card_bronz {
     @include s(card-bronz);
 }
-.loyalty_discount {
+.spec-table_mod {
     .icon-card {
         position: static;
     }
-    .loyalty__head {
+    .spec-table__head {
         padding: 7px;
         text-align: center;
         font-size: 18px;
     }
-    .loyalty__body {
+    .spec-table__body {
         text-align: center;
         td {
             border-left: 1px solid $brcl;
@@ -606,7 +624,7 @@
         
     }
 }
-.loyalty__sub-head {
+.spec-table__sub-head {
     background: #f0f0f0;
     font-size: 11px;
     color: #060606;
@@ -631,4 +649,37 @@
 .specific-message {
     font-size: 11px;
     color: #959595;
+}
+.spec-table_order {
+    .spec-table__head {
+        text-align: left;
+        padding: 7px 0 7px 20px;
+        font-size: 18px;
+    }
+    .spec-table__body {
+        td {
+            text-align: left;
+            padding: 8px 20px;
+            color: #000;
+            &:first-child {
+                color: #8c8c8c;
+            }
+            &:nth-child(2) {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+                padding: 8px 0;
+            }
+        }
+        .is-not-pay {
+            color: #fa0000;
+        }
+        .is-paid {
+            color: #69a915;
+        }
+    }
+}
+.paginatiom_mod {
+    margin-bottom: 30px;
 }

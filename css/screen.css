@@ -362,6 +362,8 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .btn_big { padding: 7px 50px; font-size: 26px; }
 
+.btn_smaller { padding: 1px 12px; font-size: 13px; }
+
 .btn_orange { color: #000; border: 1px solid #bf5f00; background: #f37b01; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.34); background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f37b01), color-stop(0.68%, #f37b01), color-stop(100%, #ff972f)); background-image: -webkit-linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #ff972f 100%); background-image: -moz-linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #ff972f 100%); background-image: -o-linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #ff972f 100%); background-image: linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #ff972f 100%); }
 .btn_orange:hover { border: 1px solid #d47b22; background: #f88f25; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f88f25), color-stop(0.68%, #f88f25), color-stop(100%, #ffb062)); background-image: -webkit-linear-gradient(bottom, #f88f25 0%, #f88f25 0.68%, #ffb062 100%); background-image: -moz-linear-gradient(bottom, #f88f25 0%, #f88f25 0.68%, #ffb062 100%); background-image: -o-linear-gradient(bottom, #f88f25 0%, #f88f25 0.68%, #ffb062 100%); background-image: linear-gradient(bottom, #f88f25 0%, #f88f25 0.68%, #ffb062 100%); }
 .btn_orange:active { border: 1px solid #d47b22; background: #ffb062; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ffb062), color-stop(99.32%, #f88f25), color-stop(100%, #f88f25)); background-image: -webkit-linear-gradient(bottom, #ffb062 0%, #f88f25 99.32%, #f88f25 100%); background-image: -moz-linear-gradient(bottom, #ffb062 0%, #f88f25 99.32%, #f88f25 100%); background-image: -o-linear-gradient(bottom, #ffb062 0%, #f88f25 99.32%, #f88f25 100%); background-image: linear-gradient(bottom, #ffb062 0%, #f88f25 99.32%, #f88f25 100%); }
@@ -1069,8 +1071,14 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .shadow-slider { position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 2; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #000000), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))); background-image: -webkit-linear-gradient(left, #000000, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%); background-image: -moz-linear-gradient(left, #000000, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%); background-image: -o-linear-gradient(left, #000000, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%); background-image: linear-gradient(left, #000000, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%); }
 
-.section { margin-bottom: 20px; padding: 40px 30px; border: 1px solid gainsboro; font-size: 14px; color: #676767; }
+.section { margin-bottom: 20px; border: 1px solid gainsboro; font-size: 14px; color: #676767; }
 .section p { margin-bottom: 14px; }
+
+.section__inner { padding: 30px 30px 40px; }
+
+.section__title { text-align: center; margin-top: 20px; font-size: 29px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; color: #000; text-transform: uppercase; line-height: 1; }
+.section__title strong { color: #f47b01; }
+.section__title span { color: #6dab1b; }
 
 .brand-info { width: 380px; }
 .brand-info img { float: left; margin: 0 23px 35px 0; }
@@ -1120,16 +1128,16 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 .bradn-logo a:hover img { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 .bradn-logo img { vertical-align: middle; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 
-.loyalty { width: 100%; margin-bottom: 22px; }
+.spec-table { width: 100%; font-size: 12px; margin-bottom: 22px; }
 
-.loyalty__head { font-size: 14px; text-align: left; text-transform: uppercase; color: #fff; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; border-bottom: 1px solid #d56c01; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8b02), color-stop(100%, #f47c01)); background-image: -webkit-linear-gradient(#ff8b02, #f47c01); background-image: -moz-linear-gradient(#ff8b02, #f47c01); background-image: -o-linear-gradient(#ff8b02, #f47c01); background-image: linear-gradient(#ff8b02, #f47c01); }
-.loyalty__head th { padding: 10px 20px; }
-.loyalty__head th:nth-child(2) { text-align: center; }
+.spec-table__head { font-size: 14px; text-align: left; text-transform: uppercase; color: #fff; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; border-bottom: 1px solid #d56c01; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8b02), color-stop(100%, #f47c01)); background-image: -webkit-linear-gradient(#ff8b02, #f47c01); background-image: -moz-linear-gradient(#ff8b02, #f47c01); background-image: -o-linear-gradient(#ff8b02, #f47c01); background-image: linear-gradient(#ff8b02, #f47c01); }
+.spec-table__head th { padding: 12px 20px; }
+.spec-table__head th:nth-child(2) { text-align: center; }
 
-.loyalty__body td { position: relative; padding: 8px 0; border-bottom: 1px solid gainsboro; }
-.loyalty__body td:first-child { padding-left: 20px; }
-.loyalty__body td:nth-child(2) { text-align: center; }
-.loyalty__body .icon-card { position: absolute; right: 0; top: 50%; margin-top: -9px; }
+.spec-table__body td { position: relative; padding: 10px 0; border-bottom: 1px solid gainsboro; }
+.spec-table__body td:first-child { padding-left: 20px; }
+.spec-table__body td:nth-child(2) { text-align: center; }
+.spec-table__body .icon-card { position: absolute; right: 0; top: 50%; margin-top: -9px; }
 
 .icon-card { display: inline-block; }
 
@@ -1141,22 +1149,32 @@ input { outline: 0; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .icon-card_bronz { background: url('../img/icons-s3f614f3301.png') 0 -1113px no-repeat; width: 32px; height: 19px; }
 
-.loyalty_discount .icon-card { position: static; }
-.loyalty_discount .loyalty__head { padding: 7px; text-align: center; font-size: 18px; }
-.loyalty_discount .loyalty__body { text-align: center; }
-.loyalty_discount .loyalty__body td { border-left: 1px solid gainsboro; }
-.loyalty_discount .loyalty__body td:first-child, .loyalty_discount .loyalty__body td:nth-child(2) { padding: 0 20px; }
-.loyalty_discount .loyalty__body td:first-child { border-left: 0; }
+.spec-table_mod .icon-card { position: static; }
+.spec-table_mod .spec-table__head { padding: 7px; text-align: center; font-size: 18px; }
+.spec-table_mod .spec-table__body { text-align: center; }
+.spec-table_mod .spec-table__body td { border-left: 1px solid gainsboro; }
+.spec-table_mod .spec-table__body td:first-child, .spec-table_mod .spec-table__body td:nth-child(2) { padding: 0 20px; }
+.spec-table_mod .spec-table__body td:first-child { border-left: 0; }
 
-.loyalty__sub-head { background: #f0f0f0; font-size: 11px; color: #060606; border-top: 1px solid #fff; }
-.loyalty__sub-head th { padding: 7px 0; border-left: 1px solid gainsboro; }
-.loyalty__sub-head th:first-child { border-left: 0; }
+.spec-table__sub-head { background: #f0f0f0; font-size: 11px; color: #060606; border-top: 1px solid #fff; }
+.spec-table__sub-head th { padding: 7px 0; border-left: 1px solid gainsboro; }
+.spec-table__sub-head th:first-child { border-left: 0; }
 
 .icon-plus { display: inline-block; background: url('../img/icons-s3f614f3301.png') 0 -3629px no-repeat; width: 16px; height: 16px; }
 
 .icon-minus { display: inline-block; background: url('../img/icons-s3f614f3301.png') 0 -3655px no-repeat; width: 16px; height: 16px; }
 
 .specific-message { font-size: 11px; color: #959595; }
+
+.spec-table_order .spec-table__head { text-align: left; padding: 7px 0 7px 20px; font-size: 18px; }
+.spec-table_order .spec-table__body td { text-align: left; padding: 8px 20px; color: #000; }
+.spec-table_order .spec-table__body td:first-child { color: #8c8c8c; }
+.spec-table_order .spec-table__body td:nth-child(2) { text-align: left; }
+.spec-table_order .spec-table__body td:last-child { text-align: right; padding: 8px 0; }
+.spec-table_order .spec-table__body .is-not-pay { color: #fa0000; }
+.spec-table_order .spec-table__body .is-paid { color: #69a915; }
+
+.paginatiom_mod { margin-bottom: 30px; }
 
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 
