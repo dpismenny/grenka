@@ -349,6 +349,7 @@
 }
 
 .section {
+    margin-bottom: 20px;
     padding: 40px 30px;
     border: 1px solid $brcl;
     font-size: 14px;
@@ -525,4 +526,109 @@
         @include opacity(.7);
         @include transition(all 0.2s linear);
     }
+}
+
+.loyalty {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.loyalty__head {
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    @include pm;
+    border-bottom: 1px solid #d56c01;
+    @include background-image(linear-gradient(#ff8b02, #f47c01));
+    th {
+        padding: 10px 20px;
+        &:nth-child(2) {
+            text-align: center;
+        }
+    }
+}
+.loyalty__body {
+
+    td {
+        position: relative;
+        padding: 8px 0;
+        border-bottom: 1px solid $brcl;
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:nth-child(2) {
+            text-align: center;
+        }
+    }
+    .icon-card {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -9px;
+    }
+}
+.icon-card {
+    display: inline-block;
+}
+.icon-card_platin {
+    @include s(card-platin);
+}
+.icon-card_gold {
+    @include s(card-gold);
+}
+.icon-card_silver {
+    @include s(card-silver);
+}
+.icon-card_bronz {
+    @include s(card-bronz);
+}
+.loyalty_discount {
+    .icon-card {
+        position: static;
+    }
+    .loyalty__head {
+        padding: 7px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .loyalty__body {
+        text-align: center;
+        td {
+            border-left: 1px solid $brcl;
+            &:first-child,
+            &:nth-child(2) {
+                padding: 0 20px;
+            }
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        
+    }
+}
+.loyalty__sub-head {
+    background: #f0f0f0;
+    font-size: 11px;
+    color: #060606;
+    border-top: 1px solid #fff;
+    th {
+        padding: 7px 0;
+        border-left: 1px solid $brcl;
+        &:first-child {
+            border-left: 0;
+        }
+    }
+    
+}
+.icon-plus {
+    display: inline-block;
+    @include s(plus);
+}
+.icon-minus {
+    display: inline-block;
+    @include s(minus);
+}
+.specific-message {
+    font-size: 11px;
+    color: #959595;
 }
