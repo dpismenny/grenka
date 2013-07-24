@@ -1,0 +1,88 @@
+.campare {
+}
+.compare__head {
+    th {
+        position: relative;
+        vertical-align: middle;
+        background: #fff5eb;
+        border: 1px solid $brcl;
+        &:first-child {
+            padding-top: 82px;
+            @include pm;
+            font-size: 16px;
+            background: #fff;
+            width: 190px;
+            text-transform: uppercase;
+            span {
+                color: #6cab1a;
+            }
+            .btn {
+                margin-top: 34px;
+            }
+        }
+        .btn_gray {
+            margin-bottom: 5px;
+        } 
+    }
+    .add-order__item {
+        float: none;
+        width: 100%;
+        background: none;
+        border: 0;
+    }
+
+}
+.add-order__saler {
+    display: block;  
+    font-size: 11px;
+    color: #929292;
+    font-weight: normal;
+}  
+.compare__counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    @include pm;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    @include border-radius(50%);
+    background: #f37b01;
+    font-size: 16px;
+    font-style: normal;
+    @include background-image(linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #f79703 100%));
+}
+.compare__del {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 15px;
+    @include border-radius(50%);
+    height: 15px;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    @include background-image(linear-gradient(bottom, #e3e3e3 0%, #fff 100%));
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -4px 0 0 -4px;
+        @include s(del2);
+    } 
+}
+.compare__body {
+    td {
+        padding: 15px 0;
+        border: 1px solid $brcl;
+        text-align: center;
+        &:first-child {
+            padding-left: 20px;
+            text-align: left;
+            background: #f0f0f0;
+        }
+    }
+}
