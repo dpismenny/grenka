@@ -14,15 +14,16 @@
 .icon_contact_skype{@include s(contact_skype);}
 .icon_contact_qrc{@include s(contact_qrc);}
 
-.inform{
+
+.superb{
 	border: 1px solid #dcdcdc;
-	border-width: 0 1px 1px 1px;
+	border-width: 1px 1px 0;
 	color: #5f5f5f;
 	li{
 		font-size: 12px;
-		color: #5f5f5f;
 		position: relative;
 		padding-left: 10px;
+		margin-bottom: 0.5em;
 		&:before{
 			position: absolute;
 			top: 0;
@@ -32,54 +33,45 @@
 			font-size: 12px;
 		}
 	}
-}
-.inform_pay{
-	border-width: 1px;
-	.inform__subtitle{
-		font-weight: normal;
-	}
-}
-.inform__item{
-	position: relative;
-	@extend %clr;
-	border-top: 1px solid #dcdcdc;
-	&:first-child{
-		border-top: 0;
-	}
 	p{
-		font-size: 12px;
-		color: #5f5f5f;
+		margin-bottom: 0.5em;
 	}
-	.btn-show{
-		&.is-active{
-			@include s(btn-close);
-			position: absolute;
-			top: 20px;
-			right: 20px;
-			border: none;
-			&:hover{
-				cursor: pointer;
-			}
-			i{
-				display: none;
-			}
+	a{
+		color: #f47b01;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
 		}
 	}
+	.marked{
+		color: #68a814;
+	}
+	.btn-show{
+		border: 1px solid #dcdcdc;
+		border-width: 1px 0;
+	}
 }
-.inform__in{
+.superb__item{
+	position: relative;
+}
+.superb__in{
 	padding: 30px;
 }
-.inform__head{
-	padding-left: 50px;
+.superb__head{
+	padding: 0 30px 0 50px;
+	p{
+		margin-top: 0.5em;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
 }
-.inform__title{
+.superb__title{
 	position: relative;
 	@include pm;
 	font-size: 30px;
 	text-transform: uppercase;
 	color: #f47b01;
 	line-height: 1;
-	margin-bottom: 15px;
 	span{
 		position: absolute;
 		top: 0;
@@ -95,125 +87,88 @@
 		font-size: 20px;
 		font-weight: bold;
 		@include pm;
-		@include border-radius(50%);  
+		@include border-radius(50%);
 	}
 }
-.inform__subtitle{
-	font-size: 12px;
-	a{
-		color: #f47b01;
-		text-decoration: underline;
-		&:hover{
-			text-decoration: none;
-		}
-	}
-	p{
-		margin-bottom: 0.5em;
-	}
-}
-.inform__marked{
-		font-weight: bold;
-		color: #68a814;
-}
-.inform__marked_mod{
-		font-weight: normal;
-		color: #68a814;
-		margin-bottom: 0.5em;
+.superb__content{
+	margin-top: 10px;
+	padding: 0 30px 0 50px;
+	ul+p{
 		margin-top: 1em;
-		&:first-child{
-			margin-top: 0;
-		}
-		ul{
-			margin-top: .5em;
-		}
-		li{
-			margin-bottom: 0.5em;
-		}
+	}
 }
-.inform__info{
-	margin-bottom: 45px;
-	margin-left: 50px;
-	margin-top: -30px;
+.superb__content_mod{
+	padding: 0;
 }
-.inform__content{
-	padding-top: 40px;
+.superb__city{
+	font-size: 11px;
 }
-.inform__cols{
+.superb__meta{
+	padding: 0 30px 0 50px;
+	margin-bottom: 1em;
+	p{
+		margin-bottom: 0;
+	}
+}
+.superb__info{
+	color: #68a814;
+	font-size: 11px;
+	strong{
+		text-transform: uppercase;
+		color: #f47b01;
+	}
+}
+.superb__cols{
 	@extend %clr;
+	padding-top: 25px;
 }
-.inform__col{
+.superb__col{
 	float: left;
 	width: 50%;
 	padding-left: 78px;
 	@include box-sizing(border-box);
 }
-.inform__payment{
+.superb__payment{
 	position: relative;
 	margin-bottom: 30px;
 }
-.inform__payment-title{
+.superb__payment-title{
 	font-weight: bold;
 	font-size: 14px;
 	color: #000;
 	margin-bottom: 10px;
 }
-.inform__warning{
-	margin-top: 10px;
-	font-size: 11px;
-	p{
-		color: #68a814;
-		margin-bottom: 1em;
-	}
-	strong{
-		text-transform: uppercase;
-		color: #f47b01;
-	}
-	a{
-		color: #f47b01;
-		text-decoration: underline;
-		&:hover{
-			text-decoration: none;
-		}
-	}
-}
-.inform__icon{
+.superb__icon{
 	position: absolute;
 	left: -78px;
 	top: -10px;
 }
-.inform__icon_cash{
+.superb__icon_cash{
 	@include s(cash)
 }
-.inform__icon_time{
+.superb__icon_time{
 	@include s(time)
 }
-.inform__icon_box{
+.superb__icon_box{
 	@include s(box)
 }
-.inform__button{
-	border-top: 1px solid #dcdcdc;
-	@include box-sizing(border-box);
-	height: 40px;
-	background-color: #fdfdfd;
-	@include background-image(linear-gradient(#fdfdfd, #f0f0f0));
-	a{
-		display: inline-block;
-		height: 100%;
-		width: 100%;
-		text-align: center;
-	}
-	i{
-		display: inline-block;
-		vertical-align: top;
-		margin-top: 16px;
-		@include s(arrow_cycle);
+.superb__hide{
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	content: "";
+	@include s(btn-close);
+	&:hover{
+		cursor: pointer;
 	}
 	&.is-active{
-		i{
-			@include rotate(180);
-		}
+		display: block;
 	}
 }
+
+
+
 
 
 .about{
@@ -953,10 +908,10 @@
 	}
 }
 
-.news__share{
+.socshare{
 	padding: 20px 30px;
 	border: 1px solid #dcdcdc;
-	border-width: 0 1px 1px 1px;
+	border-width: 0 1px 1px 1px; 
 }
 
 .news__vote{
@@ -1006,20 +961,21 @@
 	background-color: #f0f0f0;
 	@extend %clr;
 	padding: 11px;
+	text-align: center;
+	position: relative;
 }
 .pagination__pages{
-	float: right;
-	border: 1px solid #dcdcdc;
-	margin-right: 20px;
+	display: inline-block;
 	li{
 		float: left;
+		margin-left: -1px;
 		background-color: #fff;
 		line-height: 1;
 		font-size: 11px;
 		color: #676767;
-		border-left: 1px solid #dcdcdc;
+		border: 1px solid #dcdcdc;
 		&:first-child{
-			border-left: 0;
+			border-width: 1px;
 		}
 		a{
 			display: block;
@@ -1035,40 +991,43 @@
 				text-decoration: none;
 			}
 		}
-	}
-}
-.pagination__nav{
-	float: right;
-	border: 1px solid #dcdcdc;
-	li{
-		float: left;
-		background-color: #fff;
-		line-height: 1;
-		font-size: 11px;
-		color: #676767;
-		border-left: 1px solid #dcdcdc;
-		&:first-child{
-			border-left: 0;
+		&.is-inactive{
+			border: 0;
+			background-color: transparent;
+			padding: 4px 6px;
+			cursor: default;
+			&:hover{
+				color: #676767;
+			}
 		}
 	}
-	a{
-		display: block;
-		padding: 4px 6px;
-		color: #676767;
-		text-decoration: none;
-	}
+}
+.paginator__nav{
+	position: absolute;
+	top: 14px;
+	font-size: 11px;
+	display: inline-block;
+	color: #676767;
+	text-decoration: none;
 	i{
 		display: inline-block;
 		vertical-align: middle;
 		margin-top: -2px;
 	}
+	a{
+		padding: 3px 7px;
+		border: 1px solid #dcdcdc;
+		background-color: #fff;
+	}
 }
 .paginator__prev{
+	left: 10px;
 	i{
 		@include s(pag_prev);
 	}
 }
 .paginator__next{
+	right: 10px;
 	i{
 		@include s(pag_next);
 	}
@@ -1076,10 +1035,8 @@
 
 
 
-
-
 .pay{
-	
+
 }
 .pay__topper{
 	padding: 30px 20px 20px 35px;
