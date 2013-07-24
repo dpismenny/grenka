@@ -1061,7 +1061,7 @@
 		width: 400px;
 	}
 	.prod__links {
-		padding: 8px 4px;
+		padding: 0 0 8px 4px;
 		border-width: 0 0 1px 0;
 		text-align: left;
 	}
@@ -1108,6 +1108,9 @@
 .prod__left {
 	float: left;
 	width: 485px;
+	.gallery {
+		margin-bottom: 15px;
+	}
 }
 .prod__right {
 	float: right;
@@ -1176,6 +1179,8 @@
 }
 .prod__message {
 	padding-left: 15px;
+	margin-bottom: 7px;
+	@extend %clr;
 	a {
 		font-weight: bold;
 		color: $orange;
@@ -1183,6 +1188,15 @@
 		&:hover {
 			text-decoration: none;
 		}
+	}
+	.rating {
+		float: right;
+	}
+}
+.prod__message_mod {
+	margin-bottom: 17px;
+	a {
+		font-weight: normal;
 	}
 }
 .prod__pay {
@@ -1195,6 +1209,7 @@
 .prod__pay-left {
 	float: left;
 	width: 200px;
+	margin-right: 20px;
 }
 .prod__pay-title {
 	@include pm;
@@ -1223,15 +1238,179 @@
 .prod__pay-types {
 	li {
 		position: relative;
-		padding-left: 45px;
+		padding: 10px 0 10px 45px;
+		border-top: 1px solid $brcl;
+		box-shadow: 0 1px 0 #fff inset;
 		@extend %clr;
+		font-size: 11px;
+		color: #6e6e6e;
+		line-height: 1;
+		&:first-child {
+			border: none;
+			box-shadow: none;
+		}		
 	}
 	span {		
 		display: block;
 		overflow: hidden;
 	}
 	strong {
+		float: right;
+		margin-left: 5px;
+		@include pm;
+		font-size: 21px;
+		color: #000;
+	}
+	i {
+		position: absolute;
+		top: 11px;
+		left: 2px;
+	}	
+}
+.prod__pay-link {
+	a {
+		font-size: 11px;
+		color: $orange;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.prod__pay-right {
+	float: left;
+	width: 140px;
+	span {
+		display: block;
+		padding: 0 10px;
+		margin-bottom: 18px;
+		border: 1px solid #b7b7b7;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+		background: #fff;
+		@include background-image(linear-gradient(#fff, #e3e3e3));
+		border-radius: 4px;
+		font-size: 14px;
+	}
+	strong {
+		margin-right: 3px;
+		@include pm;
+		font-size: 42px;
+		letter-spacing: -2px;
+		line-height: 1;
+	}
+	.btn {
+		width: 100%;
+		padding: 7px 0;
+	}
+}
+.ico-card-silver {
+	@include s(card-silver);
+}
+.ico-card-gold {
+	@include s(card-gold);
+}
+.prod__scale {
+	position: relative;
+	margin: 0 15px 15px 15px;
+}
+.prod__scale-list {
+	font-size: 0;
+	li {
+		display: inline-block;
+		width: 20%;
+		padding: 0 5px;		
+		border-left: 1px solid $brcl;
+		@include box-sizing(border-box);
+		font-size: 11px;
+		color: #6e6e6e;
+		&:first-child {
+			border: none;
+		}
+		span {
+			display: block;
+			padding-top: 30px;
+			color: $green;
+		}
+	}
+}
+.prod__scale-line {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	right: 0;
+	height: 8px;
+	border-radius: 4px;
+	background: #f1f1f1;
+	@include background-image(linear-gradient(#f1f1f1, #dfdfdf));
+	box-shadow: 0 1px 1px rgba(0,0,0,.20) inset;
+	i {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 8px;
+		background: #96ce4c;
+		@include background-image(linear-gradient(#96ce4c, #6bab18));
+		border-radius: 4px;
+	}
+}
+.prod__prepay {
+	margin-bottom: 7px;
+	padding: 11px 0 14px 15px;
+	background: #f0f0f0;
+	border-bottom: 1px solid $brcl;
+	@extend %clr;
+}
+.prod__prepay_bonus {
+	padding: 0 0 0 15px;
+	margin-bottom: 17px;
+	background: #FFF;
+	border: none;
+	.prod__prepay-title {
+		margin-top: 7px;
+		color: $orange;
+	}
+	.prod__prepay-price {
+		width: 170px;
+		span {
+			margin-top: 4px;
+		}
+		strong {
+			font-size: 25px;
+		}
+	}
+}
+.prod__prepay-title {
+	float: left;
+	margin-right: 17px;
+	@include pm;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.prod__prepay-price {
+	float: left;
+	width: 221px;
+	height: 41px;
+	padding: 0 7px 0 10px;
+	border: 1px solid #b7b7b7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+	background: #fff;	
+	@include background-image(linear-gradient(#fff, #e3e3e3));
+	border-radius: 4px;
+	line-height: 41px;
+	span {
 		float: left;
+		font-size: 14px;
+	}
+	strong {
+		margin-right: 3px;
+		@include pm;
+		font-size: 42px;
+		letter-spacing: -2px;
+		line-height: 1;
+	}
+	.btn {
+		float: right;
+		margin-top: 5px;
 	}
 }
 .prod__price {
@@ -1464,7 +1643,17 @@
 	border: 2px solid $green;
 	@extend %clr;
 }
-.buy-click___title {
+.buy-click_less {
+	padding: 20px 0 20px 25px;
+	.buy-click__title, .buy-click__form {
+		float: none;
+	}
+	.buy-click__title {
+		padding-left: 40px;
+		margin-bottom: 25px;
+	}
+}
+.buy-click__title {
 	float: left;
 	@include pm;
 	font-size: 28px;
@@ -2153,5 +2342,20 @@
 		top: 4px;
 		right: 0;
 		@include s(go-top);
+	}
+}
+//rating
+.rating {
+	margin-bottom: 15px;
+	@extend %clr;
+	line-height: 1.1;
+	span {
+		float: left;
+	}
+}
+.rating__in {
+	float: left;
+	img {
+		float: left;
 	}
 }

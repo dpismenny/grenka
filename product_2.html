@@ -11,6 +11,7 @@
 	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.raty.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/common-moroz.js"></script>
 </head>
@@ -77,6 +78,24 @@
 						<a href="#"><img src="img/product.jpg" alt=""></a>
 					</div>
 				</div>
+				<!-- BEGIN .buy-click -->
+				<div class="buy-click buy-click_less">
+					<div class="buy-click__title">купить сейчас за один клик</div>
+					<div class="buy-click__form">
+						<div class="buy-click__pref">+38</div>
+						<label class="label buy-click__code">
+							<input class="label__input js-placeholder" type="text">
+							<span>Код<i>*</i></span>					
+						</label>
+						<label class="label buy-click__number">
+							<input class="label__input js-placeholder" type="text">
+							<span>Номер телефона<i>*</i></span>					
+						</label>
+						<div class="btn">купить за один клик</div>
+						<div class="buy-click__help">* - обязательные поля для заполнения</div>
+					</div>
+				</div>
+				<!-- END .buy-click -->
 			</div>				
 			<div class="prod__right">	
 				<div class="prod__action">
@@ -112,11 +131,43 @@
 							<span>Цены для постоянных клиентов<i></i></span>
 						</div>
 						<ul class="prod__pay-types">
-							<li><strong>1256</strong><span>Для держателей серебрянных карт</span></li>
-							<li><strong>1256</strong><span>Для держателей серебрянных карт</span></li>
+							<li><i class="ico-card-silver"></i><strong>1256</strong><span>Для держателей серебрянных карт</span></li>
+							<li><i class="ico-card-gold"></i><strong>1256</strong><span>Для держателей золотых карт</span></li>							
 						</ul>
+						<div class="prod__pay-link"><a href="#">Как стать постоянным клиентом?</a></div>
 					</div>
-				</div>		
+					<div class="prod__pay-right">
+						<span><strong>1559</strong>грн.</span>
+						<button class="btn btn_big">купить</button>
+					</div>
+				</div>	
+				<div class="prod__prepay">
+					<div class="prod__prepay-title">предоплата</div>
+					<div class="prod__prepay-price">						
+						<span><strong>1559</strong>грн.</span>
+						<button class="btn">оплатить</button>
+					</div>
+				</div>	
+				<div class="prod__message prod__message_mod">
+					<a href="#">Сообщить мне о скидках на этот товар!</a>
+				</div>
+				<div class="prod__scale">
+					<ul class="prod__scale-list">
+						<li>10.04<span>950 грн.</span></li>
+						<li>11.04<span>1050 грн.</span></li>
+						<li>12.04<span>1150 грн.</span></li>
+						<li>13.04<span>1250 грн.</span></li>
+						<li>14.04<span>1350 грн.</span></li>
+					</ul>
+					<div class="prod__scale-line"><i style="width: 30%"></i></div>
+				</div>
+				<div class="prod__prepay prod__prepay_bonus">
+					<div class="prod__prepay-title">бонус на предзаказ</div>
+					<div class="prod__prepay-price">						
+						<span><strong>1035</strong>грн.</span>
+						<button class="btn">оплатить</button>
+					</div>
+				</div>
 				<div class="prod__services">
 					<div class="prod__delivery">
 						<ul class="prod__services-list">
@@ -158,25 +209,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- BEGIN .buy-click -->
-		<div class="buy-click">
-			<div class="buy-click___title">купить сейчас за один клик</div>
-			<div class="buy-click__form">
-				<div class="buy-click__pref">+38</div>
-				<label class="label buy-click__code">
-					<input class="label__input js-placeholder" type="text">
-					<span>Код<i>*</i></span>					
-				</label>
-				<label class="label buy-click__number">
-					<input class="label__input js-placeholder" type="text">
-					<span>Номер телефона<i>*</i></span>					
-				</label>
-				<div class="btn">купить за один клик</div>
-				<div class="buy-click__help">* - обязательные поля для заполнения</div>
-			</div>
-		</div>
-		<!-- END .buy-click -->
+		</div>		
 	</div>
 	<!-- END .prod -->	
 </div>
