@@ -322,6 +322,7 @@
     border: 1px solid #b7b7b7;
     @include border-radius(50%);
     background: #000;
+    cursor: pointer;
     @include box-shadow(0 1px 1px rgba(0,0,0,.13));
     @include background-image(linear-gradient(bottom, #e3e3e3 0%, #fff 100%));
 
@@ -677,65 +678,3 @@
     }
 }
 
-.campare {
-    
-}
-.compare__head {
-    th {
-        position: relative;
-        vertical-align: middle;
-        background: #fff5eb;
-        &:first-child {
-           @include pm;
-           font-size: 16px;
-           background: #fff;
-           text-transform: uppercase;
-            span {
-                color: #6cab1a;
-            }
-        }
-        
-    }
-    .add-order__item {
-        float: none;
-        width: 100%;
-        background: none;
-    }
-}
-.add-order__saler {
-    display: block;  
-    font-size: 11px;
-    color: #929292;
-}  
-.compare__counter {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    @include pm;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    @include border-radius(50%);
-    background: #f37b01;
-    font-size: 16px;
-    font-style: normal;
-    @include background-image(linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #f79703 100%));
-}
-.compare__del {
-    position: absolute;
-    top: 6px;
-    right: 6px;
-    width: 15px;
-    @include border-radius(50%);
-    height: 15px;
-    line-height: 15px;
-    text-align: center;
-    border: 1px solid #dcdcdc;
-    @include background-image(linear-gradient(bottom, #e3e3e3 0%, #fff 100%));
-    i {
-        @include s(del2);
-    } 
-}

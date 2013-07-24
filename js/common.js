@@ -115,6 +115,7 @@ $('.js-select').click(function(event){
 
 //tabs
 function tabs() {
+  $('.tabs__top').next().show();
   $('.js-tabs-nav button').click(function() {
     if (!$(this).hasClass('active')) {
       $(this).parent().find('button').removeClass('is-active');

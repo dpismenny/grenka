@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Compare</title>
+	<title>My order</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
@@ -16,6 +16,8 @@
 </head>
 <body>
 <div class="code" title="Сообщите этот номер при заказе по телефону оператору и мы оформим заказ максимально быстро"> код клиента: <span>435435</span></div>
+
+
 <!-- BEGIN .top -->
 <div class="top">
 	<!-- BEGIN .top__in -->
@@ -167,7 +169,7 @@
 			<div class="search">
 				<!-- BEGIN .search__field -->
 				<div class="search__field">
-					<input type="text" class="search__input js-searc-input" name="" id="" placeholder="поиск...">
+					<input type="text" class="search__input js-searc-input" placeholder="поиск...">
 					<button type="submit" class="search__submit" value=""><i></i></button>
 					<!-- BEGIN .search__example -->
 					<div class="search__example js-search-example">
@@ -185,7 +187,7 @@
 							<a href="#"><span>пушками разом. <strong>геймер</strong> поливать врага свинцом из пары тяжелых </span><i>1</i></a>
 						</li>
 						<li>
-							<a href="#">пулеметов? Нет проблем! А может, вам больше <strong>геймер</strong> два </span><i>1</i></a>
+							<a href="#"><span>пулеметов? Нет проблем! А может, вам больше <strong>геймер</strong> два </span><i>1</i></a>
 						</li>
 					</ul>
 				</div>
@@ -227,6 +229,12 @@
 				<div class="drop-nav">
 					<div class="drop-nav__left game-promo">
 						<a href="#" class="game-promo__title">Metro: Last Light</a>
+						<a href="#" class="game-promo__img">
+							<img src="img/metro.jpg" alt="metro game">
+						</a>
+						<div class="game-promo__descr">
+							<p>Разработчики обещают сохранить все лучшее, что было в Metro 2033, и исправить некоторые существующие недостатки. Обещается так же продвинутый АИ и оптимизация графического движка. В игре станет доступен полноценный сетевой режим. </p>
+						</div>
 					</div>
 					<div class="drop-nav__right">
 						<ul class="sub-nav">
@@ -286,158 +294,447 @@
 		</ul>
 	</div>
 	<!-- END .nav -->
-
 	<!-- BEGIN .l -->
 	<div class="l">
-		<ul class="breadcrumbs">
-			<li><span>/</span><a href="#">Главная</a></li>
-			<li><span>/</span><a href="#">Программы</a></li>
-			<li><span>/</span>Антивирусы...</li>
-		</ul>
-		<div class="title">сравнение товаров</div>
-		<table class="compare">
-			<thead class="compare__head">
-				<tr>
-			    	<th>
-			    		<p>вы добавили <br>
-			    		<span>5 товаров</span></p>
-			    		<a href="#" class="btn">добавить еще</a>
-			    	</th>
-			    	<th>
-			    		<div class="add-order__item js-cat-slide">
-							<div class="add-order__pic">
-								<a href="#"><img src="img/img-1.jpg" alt=""></a>
-							</div>
-							<div class="add-order__title">
-								<a href="#">Your Shape: Fitness Evolved</a>
-							</div>				
-							<div class="add-order__price"><strong>735</strong>грн.</div>
-							<button class="btn btn_gray">сравнить цены</button>
-							<span class="add-order__saler">(4 предложения)</span>
-							<i class="compare__counter">1</i>
-							<button class="compare__del"><i></i></button>
+		<!-- BEGIN .l-sidebar -->
+		<div class="l-sidebar">
+			<!-- BEGIN .benefits -->
+			<div class="benefits">
+				<div class="benefits__title">5 преимуществ</div>
+				<ul class="benefits__list">
+					<li><a href="#"><span class="benefits__number">1</span>Возврат 21 день без вопросов</a></li>
+					<li><a href="#"><span class="benefits__number">2</span>Бесплатная доставка</a></li>
+					<li><a href="#"><span class="benefits__number">3</span>999 Эксклюзивных игр</a></li>
+					<li><a href="#"><span class="benefits__number">4</span>1500 городов с доставкой</a></li>
+					<li><a href="#"><span class="benefits__number">5</span>Отправка без предоплаты</a></li>
+				</ul>
+			</div>
+			<!-- END .benefits -->
+			<!-- BEGIN .comments-list -->
+			<div class="cycle">
+			  <!-- BEGIN .sidebar-head -->
+			  <div class="sidebar-head">
+			  	<div class="sidebar-title">Отзывы</div>
+			  </div>
+			  <!-- END .sidebar-head -->
+				<div class="cycle-slideshow"
+				    data-cycle-fx="carousel"
+				    data-cycle-timeout="0"
+				    data-cycle-slides=".js-cycle-slide"
+				    data-cycle-next="#next2"
+				    data-cycle-carousel-visible="2"
+				    data-cycle-carousel-vertical="true"
+				    >
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username" >
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">LEGO Властелин Колец</a>
+				    	</h3>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
 						</div>
-			    	</th>
-			    	<th>
-			    		<div class="add-order__item js-cat-slide">
-							<div class="add-order__pic">
-								<a href="#"><img src="img/img-1.jpg" alt=""></a>
-							</div>
-							<div class="add-order__title">
-								<a href="#">Your Shape: Fitness Evolved</a>
-							</div>				
-							<div class="add-order__price"><strong>735</strong>грн.</div>
-							<button class="btn btn_gray">сравнить цены</button>
-							<span class="add-order__saler">(4 предложения)</span>
-							<i class="compare__counter">1</i>
-							<button class="compare__del"><i></i></button>
+				    	<!-- END .rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">DMC: DEVIL MAY CRY</a>
+				    	</h3>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
 						</div>
-			    	</th>
-			    	<th>
-			    		<div class="add-order__item js-cat-slide">
-							<div class="add-order__pic">
-								<a href="#"><img src="img/img-1.jpg" alt=""></a>
-							</div>
-							<div class="add-order__title">
-								<a href="#">Your Shape: Fitness Evolved</a>
-							</div>				
-							<div class="add-order__price"><strong>735</strong>грн.</div>
-							<button class="btn btn_gray">сравнить цены</button>
-							<span class="add-order__saler">(4 предложения)</span>
-							<i class="compare__counter">1</i>
-							<button class="compare__del"><i></i></button>
+				    	<!-- END .rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">LEGO Властелин Колец</a>
+				    	</h3>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
 						</div>
-			    	</th>
-			    	<th>
-			    		<div class="add-order__item js-cat-slide">
-							<div class="add-order__pic">
-								<a href="#"><img src="img/img-1.jpg" alt=""></a>
-							</div>
-							<div class="add-order__title">
-								<a href="#">Your Shape: Fitness Evolved</a>
-							</div>				
-							<div class="add-order__price"><strong>735</strong>грн.</div>
-							<button class="btn btn_gray">сравнить цены</button>
-							<span class="add-order__saler">(4 предложения)</span>
-							<i class="compare__counter">1</i>
-							<button class="compare__del"><i></i></button>
+				    	<!-- END .rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">DMC: DEVIL MAY CRY</a>
+				    	</h3>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
 						</div>
-			    	</th>
-			    </tr>
-			</thead>
-			<tbody class="compare__body">
-				<tr>
-					<td>Платформа</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-				</tr>
-				<tr>
-					<td>Жанр</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-				</tr>
-				<tr>
-					<td>Платформа</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-				</tr>
-				<tr>
-					<td>Жанр</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-				</tr>
-				<tr>
-					<td>Платформа</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-				</tr>
-				<tr>
-					<td>Жанр</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-				</tr>
-				<tr>
-					<td>Платформа</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-				</tr>
-				<tr>
-					<td>Жанр</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-					<td>Action, FPS</td>
-				</tr>
-				<tr>
-					<td>Платформа</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-					<td>PC</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><a href="#" class="btn">купить</a></td>
-					<td><a href="#" class="btn">купить</a></td>
-					<td><a href="#" class="btn">купить</a></td>
-					<td><a href="#" class="btn">купить</a></td>
-				</tr>
-			</tbody>
-		</table>
+				    	<!-- END .rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">LEGO Властелин Колец</a>
+				    	</h3>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
+				    	<!-- END .rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				    <div class="js-cycle-slide comments-list" itemprop="review" itemscope itemtype="http://schema.org/Review">
+				    	<div class="comments-list__username">
+				    		<a href="#" itemprop="author"><i class="icon icon_user"></i>Юрий Нагорный</a>
+				    	</div>
+
+				    	<h3 class="comment-list__title" itemprop="name">
+				    		<a href="#" itemprop="url">DMC: DEVIL MAY CRY</a>
+				    	</h3>
+				    	<!-- BEGIN .rating -->
+				    	<ul class="rating">
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li class="is-active"><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    		<li><a href="#"></a></li>
+				    	</ul>
+				    	<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+							<span itemprop="ratingValue">3.5</span>
+						</div>
+				    	<!-- END .rating -->
+				    	<div class="comments-list__text">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме...</div>
+				    	<a href="#">подробнее</a>
+				    </div>
+				</div>
+				<div class="cycle-nav">
+				  <a href="#" class="next" id="next2"><i></i></a>
+				</div>
+			</div>
+			<!-- END .comments-list -->
+			<!-- BEGIN .reviews -->
+			<div class="reviews">
+				<div class="reviews__head">
+					<h1 class="h1">Обзоры</h1>
+					<div class="reviews__all"><a href="#">посмотреть все</a> (18)</div>
+				</div>
+				<div class="reviews__content">
+					<ul>
+						<li class="reviews__item" itemprop="review" itemscope itemtype="http://schema.org/Review">
+							<div class="reviews__info">
+								<h3 class="reviews__title" itemprop="name"><a href="#" itemprop="url">Far Cry 3</a></h3>
+								<p itemprop="reviewBody">Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры Far Cry 3  тропическом...</p>
+								<a href="#" itemprop="url">подробнее</a>
+							</div>
+							<a class="reviews__media" href="#" itemprop="url">
+								<img src="img/img-1.jpg" alt="img" itemprop="image">
+							</a>
+						</li>
+						<li class="reviews__item" itemprop="review" itemscope itemtype="http://schema.org/Review">
+							<div class="reviews__info">
+								<h3 class="reviews__title" itemprop="name"><a href="#" itemprop="url">Borderlands 2</a></h3>
+								<p itemprop="reviewBody">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режиме противостояния...</p>
+								<a href="#" itemprop="url">подробнее</a>
+							</div>
+							<a class="reviews__media" href="#" itemprop="url">
+								<img src="img/img-2.jpg" alt="img" itemprop="image">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- END .reviews -->
+			<!-- BEGIN .social -->
+			<!-- <div class="social">
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FGrenkaUA&amp;width=229&amp;height=262&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=true" scrolling="no" frameborder="0" style="border:1px solid #dcdcdc; overflow:hidden; width:229px; height:262px;" allowTransparency="true"></iframe>
+			</div>
+			<div class="social">
+				<script type="text/javascript" src="//vk.com/js/api/openapi.js?97"></script>
+				<div id="vk_groups" style="border: 1px solid #dcdcdc"></div>
+				<script type="text/javascript">
+				VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
+				</script>
+			</div>
+			<div class="social">
+				<a class="twitter-timeline" href="https://twitter.com/GrenkaUa" data-widget-id="354579017233469441">Твиты пользователя @GrenkaUa</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			<div class="social">
+				<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>
+			    <script type="text/javascript">
+			        window.___gcfg = {lang: 'ru'};
+
+			        (function() {
+			            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			            po.src = 'https://apis.google.com/js/plusone.js';
+			            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			        })();
+			    </script>
+
+			</div> -->
+			<!-- END .social -->
+		</div>
+		<!-- END .l-sidebar -->
+		<!-- BEGIN .l-main -->
+		<div class="l-main">
+			<div class="title">мой заказ</div>
+			<div class="section">
+				<div class="section__title">Ваш предзаказ <strong>№312</strong> успешно оформлен. <span>Спасибо!</span></div>
+				<div class="section__inner">
+					<p>В течение 15 минут с Вами свяжется наш менеджер, если предзаказ оформлен с 9-00 до 21-00. Если Вы оформили предзаказ в другое время, то мы обязательно перезвоним с 9-00 до 9-30.</p>
+					<table class="spec-table spec-table_order">                                                
+						<caption class="spec-table__head">
+							Информация о предзаказе
+						</caption>
+						<tbody class="spec-table__body">
+							<tr>
+								<td>Способ оплаты:</td>
+								<td>Банковская карта (VISA, MASTER, Приват24)</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Чем доставим:</td>
+								<td>Курьером</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Город:</td>
+								<td>Киев</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Статус:</td>
+								<td class="is-not-pay">Не оплачен</td><!-- add class .is-paid to change status -->
+								<td><a href="#" class="btn btn_smaller">оплатить через pay 24</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- BEGIN .buy-discount -->
+				<div class="buy-discount">
+					<div class="buy-discount__title">
+						<span>купить со скидкой 15%</span>
+						<span>до конца акции осталось:</span>
+					</div>
+					<!-- BEGIN .counter -->
+					<ul class="counter">
+						<li>
+							<strong>11</strong>
+							<span>дней</span>
+						</li>
+						<li>
+							<strong>06</strong>
+							<span>часов</span>
+						</li>
+						<li>
+							<strong>57</strong>
+							<span>минут</span>
+						</li>
+						<li>
+							<strong>03</strong>
+							<span>секунд</span>
+						</li>
+					</ul>
+					<!-- END .counter -->
+				</div>
+				<!-- END .buy-discount -->
+				<!-- BEGIN .add-order -->
+				<ul class="add-order">
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Your Shape</a>
+						</div>				
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Your Shape</a>
+						</div>
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Your Shape: Fitness Evolved</a>
+						</div>
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+					<li class="add-order__item">
+						<div class="add-order__pic">
+							<a href="#"><img src="img/img-1.jpg" alt=""></a>
+						</div>
+						<div class="add-order__title">
+							<a href="#">Fitness Evolved</a>
+						</div>
+						<div class="add-order__price"><strong>735</strong>грн.</div>
+						<button class="btn btn_gray">купить</button>
+					</li>
+				</ul>
+				<!-- END .add-order -->
+			</div>
+			<!-- BEGIN .offer -->
+			<div class="offer">
+				<div class="offer__bg">
+					<div class="offer__title">специальное предложение на 2 просмотренных товара</div>
+					<div class="offer__top">				
+						<div class="offer__slider">
+							<button id="offer__btn-prev" class="offer__btn-top"></button>	
+							<button id="offer__btn-next" class="offer__btn-down"></button>
+							<div class="offer__items cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".offer__prod" data-cycle-next="#offer__btn-next" data-cycle-prev="#offer__btn-prev" data-allow-wrap="true" data-cycle-carousel-visible="1" data-cycle-carousel-vertical="true">						
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Your Shape: Fitness Evolved </a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+							</div>				
+						</div>	
+						<div class="offer__plus"></div>
+						<div class="offer__slider offer__slider_right">
+							<button id="offer__btn-prev-1" class="offer__btn-top"></button>	
+							<button id="offer__btn-next-1" class="offer__btn-down"></button>
+							<div class="offer__items cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".offer__prod" data-cycle-next="#offer__btn-next-1" data-cycle-prev="#offer__btn-prev-1" data-allow-wrap="true" data-cycle-carousel-visible="1" data-cycle-carousel-vertical="true">						
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Your Shape: Fitness Evolved </a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+								<div class="offer__prod">
+									<div class="offer__prod-pic">
+										<a href="#"><img src="img/img-8.jpg" width="96" height="131" alt=""></a>
+									</div>					
+									<div class="offer__prod-desc">
+										<a href="#">Aliens: Colonial Marines</a>
+										<button class="btn btn_gray">купить</button>
+									</div>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>		
+				<div class="offer__down">
+					<p><ins>420 грн</ins> <strong>СКИДКА 15%</strong> ЭКОНОМИЯ 63 грн <span>357 грн</span></p>
+					<button class="btn btn_medium">КУПИТЬ сразу 2 товара</button>
+				</div>
+			</div>
+			<!-- END .offer -->
+			<div class="pagination">
+		     	<span class="paginator__nav paginator__prev">Ctrl + <a href="#"><i></i></a></span>
+		     	<span class="paginator__nav paginator__next">Ctrl + <a href="#"><i></i></a></span>
+		     	<ul class="pagination__pages">
+		     	 	<li><a href="#">1</a></li>
+		     	 	<li><a href="#">2</a></li>
+		     	 	<li><a href="#">3</a></li>
+		     	 	<li class="is-active"><a href="#">4</a></li>
+		     	 	<li><a href="#">5</a></li>
+		     	 	<li class="is-inactive">...</li>
+		     	 	<li><a href="#">34</a></li>
+		     	</ul>
+		    </div>			
+		</div>
+		<!-- END .l-main -->
 	</div>
 	<!-- END .l -->
 </div>
@@ -570,7 +867,7 @@
 			<div class="subscribe__field">
 				<input type="text" class="subscribe__input" placeholder="введите ваш е-мейл...">
 				<input type="submit" class="btn btn_orange" value="Да">
-				<div class="tooltip">
+				<div class="tooltip" style="display:block">
 					<strong class="tooltip__title">ПОДПИСКА НА РАССЫЛКУ</strong>
 					<div class="tooltip__text">
 						Система безопасности GRENKA запрещает подписывать так много разных адресов, пожалуйста, зарегистрируйтесь на сайте, напишите в онлайн-чат или попробуйте повторить попытку немного позднее.
@@ -583,7 +880,7 @@
 		<!-- BEGIN .footer__nav -->
 		<div class="footer__nav">
 			<ul>
-				<a href="#" class="footer__title">Игры</a></h3>
+				<li><a href="#" class="footer__title">Игры</a></li>
 				<li><a href="#">Стратегии</a></li>
 				<li><a href="#">Бродилки</a></li>
 				<li><a href="#">Аркады</a></li>
@@ -592,7 +889,7 @@
 				<li><a href="#">Леталки</a></li>
 			</ul>
 			<ul>
-				<a href="#" class="footer__title">Программы</a></h3>
+				<li><a href="#" class="footer__title">Программы</a></li>
 				<li><a href="#">Утилиты</a></li>
 				<li><a href="#">Финансовые</a></li>
 				<li><a href="#">Коммерческие</a></li>
@@ -600,7 +897,7 @@
 				<li><a href="#">Дизайн</a></li>
 			</ul>
 			<ul>
-				<a href="#" class="footer__title">Геймерам</a></h3>
+				<li><a href="#" class="footer__title">Геймерам</a></li>
 				<li><a href="#">Блоки питания</a></li>
 				<li><a href="#">Видеокарты</a></li>
 				<li><a href="#">Материнские платы</a></li>
@@ -612,14 +909,14 @@
 				<li><a href="#">3D-очки</a></li>
 			</ul>
 			<ul>
-				<a href="#" class="footer__title">Приставки</a></h3>
+				<li><a href="#" class="footer__title">Приставки</a></li>
 				<li><a href="#">Игровые приставки</a></li>
 				<li><a href="#">Игровые пакеты</a></li>
 				<li><a href="#">Игровые манипуляторы</a></li>
 				<li><a href="#">Аксессуары к приставкам</a></li>
 			</ul>
 			<ul>
-				<a href="#" class="footer__title">Планшеты</a></h3>
+				<li><a href="#" class="footer__title">Планшеты</a></li>
 				<li><a href="#">Офисные устройства</a></li>
 				<li><a href="#">USB-Лампочки</a></li>
 				<li><a href="#">Развлечения</a></li>
@@ -629,7 +926,7 @@
 				<li><a href="#">Логические игры</a></li>
 			</ul>
 			<ul>
-				<a href="#" class="footer__title">E-ключи</a></h3>
+				<li><a href="#" class="footer__title">E-ключи</a></li>
 				<li><a href="#">Операционные системы</a></li>
 				<li><a href="#">Офисные приложения</a></li>
 				<li><a href="#">Антивирусы</a></li>

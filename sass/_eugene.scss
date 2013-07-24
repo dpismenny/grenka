@@ -347,3 +347,339 @@
     z-index: 2;
 	@include background-image(linear-gradient(left, #000, rgba(0,0,0,.0) 50%, rgba(0,0,0,.0) 100%));
 }
+
+.section {
+    margin-bottom: 20px;
+    border: 1px solid $brcl;
+    font-size: 14px;
+    color: #676767;
+    p {
+        margin-bottom: 14px;
+    }
+}
+.section__inner {
+    padding: 30px 30px 40px;
+}
+.section__title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 29px;
+    @include pm;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1;
+    strong {
+        color: #f47b01;
+    }
+    span {
+        color: #6dab1b;
+    }
+}
+
+// Brand page
+.brand-info {
+    @extend %clr;
+    width: 380px;
+    img {
+        float: left;
+        margin: 0 23px 35px 0;
+    }
+}
+.brand-info__main {
+    position: relative;
+    top: -10px;
+    overflow: hidden;
+    font-size: 11px;
+    color: #676767;
+}
+.brand-info__title {
+    @include pm;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    span {
+        color: #818181;
+    }
+}
+.product-row {
+    position: relative;
+    padding: 30px 0 12px 30px;
+    @extend %clr;
+    border: 1px solid $brcl;
+    margin-bottom: -1px;
+    .badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.product-row__img {
+    float: left;
+    margin-right: 30px;
+}
+.product-row__descr {
+    float: left;
+    width: 400px;
+    color: #606060;
+    p {
+        margin-bottom: 7px;
+    }
+}
+.product-row__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    @include pm;
+    a {
+        color: #3e3e3e;
+    }
+}
+.product-row__links {
+    font-size: 11px;
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: underline;
+        &:first-child { 
+            margin-right: 0;
+        }
+        &:hover {
+            text-decoration: none;
+        } 
+    } 
+    span {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+.product-row__meta {
+    float: right;
+    width: 100px;
+    .prod-state {
+        margin-bottom: 24px;
+    }
+    .btn {
+        margin: 0 0 15px 5px;
+    }
+}
+.product-row__price {
+    margin-bottom: 9px;
+    color: #f47b01;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.prod-state {
+    font-size: 12px;
+    @include pm;
+    color: #6aa916;
+    text-transform: uppercase;
+    &.is-pre-order {
+        i {
+            @include s(in-stock);
+        }
+    }
+    &.is-no-stock {
+        i {
+            @include s(in-stock);
+        }
+    }
+    i {  
+        margin-right: 5px;
+        @include s(in-stock);
+    }
+    span, i {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    span {
+        width: 55px;
+    }
+}
+.product-row__deliv  {
+    i, span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    i {
+        @include s(add2);
+        margin-right: 5px;
+    }
+    span {
+        width: 55px;
+        color: #5e5e5e;
+        font-size: 10px;
+        text-transform: uppercase;
+        @include pm;
+    }
+}
+
+.bradn-logo {
+    @extend %clr;
+    a {
+        float: left;
+        width: 16.5%;
+        height: 86px;
+        line-height: 86px;
+        text-align: center;
+        border-left: 1px solid $brcl;
+        &:first-child,
+        &:nth-child(n+7) {
+            border-left: 0;
+        }
+        &:hover {
+            img {
+                @extend %gray-zero;
+                @include opacity(1);
+            }
+        }
+    }
+    img {
+        vertical-align: middle;
+        @extend %gray;
+        @include opacity(.7);
+        @include transition(all 0.2s linear);
+    }
+}
+
+.spec-table {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 22px;
+}
+.spec-table__head {
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    @include pm;
+    border-bottom: 1px solid #d56c01;
+    @include background-image(linear-gradient(#ff8b02, #f47c01));
+    th {
+        padding: 12px 20px;
+        &:nth-child(2) {
+            text-align: center;
+        }
+    }
+}
+.spec-table__body {
+
+    td {
+        position: relative;
+        padding: 10px 0;
+        border-bottom: 1px solid $brcl;
+        &:first-child {
+            padding-left: 20px;
+        }
+        &:nth-child(2) {
+            text-align: center;
+        }
+    }
+    .icon-card {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -9px;
+    }
+}
+.icon-card {
+    display: inline-block;
+}
+.icon-card_platin {
+    @include s(card-platin);
+}
+.icon-card_gold {
+    @include s(card-gold);
+}
+.icon-card_silver {
+    @include s(card-silver);
+}
+.icon-card_bronz {
+    @include s(card-bronz);
+}
+.spec-table_mod {
+    .icon-card {
+        position: static;
+    }
+    .spec-table__head {
+        padding: 7px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .spec-table__body {
+        text-align: center;
+        td {
+            border-left: 1px solid $brcl;
+            &:first-child,
+            &:nth-child(2) {
+                padding: 0 20px;
+            }
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        
+    }
+}
+.spec-table__sub-head {
+    background: #f0f0f0;
+    font-size: 11px;
+    color: #060606;
+    border-top: 1px solid #fff;
+    th {
+        padding: 7px 0;
+        border-left: 1px solid $brcl;
+        &:first-child {
+            border-left: 0;
+        }
+    }
+    
+}
+.icon-plus {
+    display: inline-block;
+    @include s(plus);
+}
+.icon-minus {
+    display: inline-block;
+    @include s(minus);
+}
+.specific-message {
+    font-size: 11px;
+    color: #959595;
+}
+.spec-table_order {
+    .spec-table__head {
+        text-align: left;
+        padding: 7px 0 7px 20px;
+        font-size: 18px;
+    }
+    .spec-table__body {
+        td {
+            text-align: left;
+            padding: 8px 20px;
+            color: #000;
+            &:first-child {
+                color: #8c8c8c;
+            }
+            &:nth-child(2) {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: right;
+                padding: 8px 0;
+            }
+        }
+        .is-not-pay {
+            color: #fa0000;
+        }
+        .is-paid {
+            color: #69a915;
+        }
+    }
+}
+.paginatiom_mod {
+    margin-bottom: 30px;
+}
