@@ -1175,13 +1175,26 @@
 
 //title
 .title {
+	position: relative;
 	padding: 7px 30px;
 	@include background-image(linear-gradient(bottom, #67a713 0%, #8ac143 100%));
-  box-shadow: 0 -1px 0 rgba(0,0,0,.2) inset;
+    box-shadow: 0 -1px 0 rgba(0,0,0,.2) inset;
 	@include pm;
 	font-size: 36px;
 	color: #FFF;
 	text-transform: uppercase;
+	a {
+		position: absolute;
+		right: 25px;
+		top: 35px;
+		color: #fff;
+		font: normal 11px Arial, sans-serif;
+		text-transform: capitalize;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 .title_big {
 	padding: 15px 30px;

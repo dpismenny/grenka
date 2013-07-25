@@ -361,7 +361,7 @@
     padding: 30px 30px 40px;
 }
 .section__title {
-    text-align: center;
+    padding: 0 30px;
     margin-top: 20px;
     font-size: 29px;
     @include pm;
@@ -684,8 +684,13 @@
     margin-bottom: 30px;
 }
 
-.title_yellow {
+.section_mod {
     @include background-image(linear-gradient(#ff8b02, #f47b01));
+    .section__title {
+        span {
+            color: #f47b01;
+        }
+    }  
 }
 
 .action-item {
