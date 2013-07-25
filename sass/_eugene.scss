@@ -357,6 +357,14 @@
         margin-bottom: 14px;
     }
 }
+.section_mod {
+    margin-bottom: 0;
+    .section__title {
+        span {
+            color: #f47b01;
+        }
+    }  
+}
 .section__inner {
     padding: 30px 30px 40px;
 }
@@ -374,6 +382,11 @@
     span {
         color: #6dab1b;
     }
+}
+.section__img {
+    display: block;
+    margin: 30px 0;
+    @include border-radius(5px);
 }
 
 // Brand page
@@ -684,14 +697,10 @@
     margin-bottom: 30px;
 }
 
-.section_mod {
+.title_yellow {
     @include background-image(linear-gradient(#ff8b02, #f47b01));
-    .section__title {
-        span {
-            color: #f47b01;
-        }
-    }  
 }
+
 
 .action-item {
     position: relative;
@@ -740,4 +749,28 @@
             text-decoration: none;
         }
     }
+}
+.buy-discount_mod {
+    background: none;
+    padding: 0;
+    .buy-discount__title {
+        float: none;
+        span {
+           font-size: 17px;
+           color: #69a915; 
+        }
+    }
+    .counter {
+        float: none;
+    }
+}
+.buy-discount__info {
+    float: right;
+    margin-top: 22px;
+    width: 390px;
+    color: #f47b01;
+    font-size: 18px;
+}
+.buy-discount__wrap {
+    float: left;
 }
