@@ -1,0 +1,218 @@
+//cabina
+.cabina {
+	.title {
+		position: relative;
+	}
+}
+.cabina__actions {
+	position: absolute;
+	top: 17px;
+	right: 21px;
+	font-size: 16px;
+	span {
+		margin-left: 5px;
+		color: #000;
+	}
+	strong, .btn {
+		vertical-align: top;
+	}
+	strong {
+		display: inline-block;
+		line-height: 29px;
+	}
+	.btn {
+		margin-left: 16px;
+	}
+}
+.cabina__cols {
+	padding: 25px 30px 20px 30px;
+	background: #2e2e2e;
+	@include background-image(linear-gradient(#2e2e2e, #000));
+	@extend %clr;
+}
+.cabina__left {
+	float: left;
+	width: 170px;
+	text-align: center;
+}
+.cabina__right {
+	float: right;
+	width: 450px;
+}
+.cabina__pic {
+	margin-bottom: 12px;
+	img {
+		display: block;
+		border: 1px solid #323232;
+	}
+}
+.cabina__hello {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	@include pm;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #6a6a6a;
+	line-height: 1.2;
+	span {
+		color: $green;
+	}
+	i {
+		position: absolute;
+		top: 3px;
+		left: 0;
+		@include s(cabina-user);
+	}
+}
+.cabina__links {
+	@extend %clr;
+	ul {
+		overflow: hidden;
+		&:first-child {
+			float: left;
+			li {
+				padding-right: 30px;
+			}
+		}
+	}
+	li {
+		position: relative;
+		padding: 5px 0 5px 15px;
+		border-top: 1px solid #4b4b4b;
+		font-size: 0;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 11px;
+			left: 0;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 3px 0 3px 4px;
+			border-color: transparent transparent transparent $green;
+		}
+	}
+	span {
+		margin-left: 5px;
+		font-size: 11px;
+		color: $green;
+	}
+	a {
+		@include pm;
+		font-size: 14px;
+		color: #FFF;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.cabina__cart {
+		display: inline-block;
+		font-size: 11px;
+		span {
+			margin: 0 5px 0 0;
+			color: #9f9f9f;
+		}
+		a {
+			font-family: Arial, Tahoma, sans-serif;
+			font-size: 11px;
+			color: $orange;
+			text-decoration: underline;
+			text-transform: none;
+			font-weight: normal;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+//bill
+.bill {
+	
+}
+.bill__in, .bill__update {
+	position: relative;
+	padding: 17px 30px 23px 110px;
+	border-top: 1px solid $brcl;
+	background: #f0f0f0;
+	@extend %clr;
+}
+.bill__in_bonus {
+	padding: 0 30px 10px 110px;
+	background: #FFF;
+	border: none;
+	.ico-bill {
+		top: 0;
+		left: 37px;
+		@include s(bill-ico-s);
+	}
+	.bill__title {
+		font-size: 22px;
+	}
+	.bill__money {
+		span, strong {
+			font-size: 18px;
+		}
+	}
+}
+.ico-bill {
+	position: absolute;
+	top: 14px;
+	left: 30px;
+	@include s(bill-ico);
+}
+.bill__money {
+	float: right;
+	padding: 4px 11px 4px 18px;
+	margin-left: 30px;
+	border: 1px solid #b7b7b7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+	background: #fff;
+	@include background-image(linear-gradient(#fff, #e3e3e3));
+	border-radius: 4px;
+	strong, span {
+		float: left;
+		margin-right: 7px;
+		@include pm;
+		font-size: 24px;
+	}
+	span {
+		color: #9b9b9b;
+	}
+}
+.bill__desc {	
+	overflow: hidden;
+	p {
+		color: #5f5f5f;
+	}
+}
+.bill__title {
+	margin-bottom: 5px;
+	@include pm;
+	font-size: 28px;
+	color: $green;
+	text-transform: uppercase;
+	line-height: 1.2;
+}
+.bill__update {
+	margin-bottom: 30px;
+	padding: 17px 30px 23px;
+	.label, .label__title, .label__select {
+		float: left;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.label__title {
+		width: 225px;
+		line-height: 29px;
+		@include pm;
+		text-transform: uppercase;
+		font-size: 18px;
+		color: #5f5f5f;
+	}
+	.label__select {
+		width: 321px;
+	}
+	.btn {
+		float: right;
+	}
+}

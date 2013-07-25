@@ -1,0 +1,241 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Registration 1</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.raty.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/common-moroz.js"></script>
+</head>
+<body>
+<!-- BEGIN  .page-->
+<div class="page">
+	<div class="title">дисконтная карта</div>
+	<!-- BEGIN .reg -->
+	<div class="reg">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs">
+			<li><span>/</span><a href="#">Главная</a></li>
+			<li><span>/</span><a href="#">Программы</a></li>
+			<li><span>/</span>Антивирусы...</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+		<div class="tabs js-tabs">
+			<div class="tabs__top">
+				<div class="tabs__nav js-tabs-nav">
+					<button class="is-active" data-tab="tab1">получаю на себя</button>
+					<button data-tab="tab2">оформляю на фирму</button>						
+				</div>
+			</div>
+			<div id="tab1" class="tabs__content js-tabs-content">
+				<label class="label">
+					<span class="label__title">Имя</span>
+					<input class="label__input" type="text">
+					<span class="label__help">Чтобы всегда могли к Вам правильно обратиться</span>
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<label class="label">
+					<span class="label__title">Фамилия</span>
+					<input class="label__input" type="text">
+					<span class="label__help">Для скидок и доставки лично Вам</span>
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<label class="label">
+					<span class="label__title">Отчество</span>
+					<input class="label__input" type="text">
+					<span class="label__help">Для Новой Почты, Автолюкса, УкрПочты, выдачи подарков</span>
+				</label>
+				<div class="label reg__phones">
+					<div class="label__title">Телефоны<span>Для отправки СМС о статусе заказа</span></div>
+					<span class="label__required"><span>обязательное поле</span></span>
+					<div class="reg__number">
+						<div class="label__title">+38</div>
+						<input class="label__input reg__code" type="text" placeholder="0">
+						<input class="label__input" type="text">
+						<div class="label__select js-select">
+							<div class="label__select-val">
+								<button></button>
+								<span>Мобильный</span>									
+							</div>
+							<ul class="label__select-options">
+								<li>Мобильный</li>
+								<li>Стационарный</li>
+							</ul>
+						</div>
+					</div>					
+					<div class="reg__number">
+						<div class="label__title">+38</div>
+						<input class="label__input reg__code" type="text" placeholder="0">
+						<input class="label__input" type="text">
+						<div class="label__select js-select">
+							<div class="label__select-val">
+								<button></button>
+								<span>Мобильный</span>									
+							</div>
+							<ul class="label__select-options">
+								<li>Мобильный</li>
+								<li>Стационарный</li>
+							</ul>
+						</div>
+						<button class="reg__number-del"><i></i></button>
+					</div>							
+				</div>
+				<button class="reg__add-btn">Добавить еще телефон</button>
+				<div class="label reg__birth">
+					<div class="label__title">Дата рождения</div>
+					<div class="reg__date">								
+						<input class="label__input reg__day" type="text">								
+						<div class="label__select js-select">
+							<div class="label__select-val">
+								<button></button>
+								<span>Месяц</span>									
+							</div>
+							<ul class="label__select-options">
+								<li>Месяц</li>
+								<li>Апрель</li>
+							</ul>
+						</div>
+						<input class="label__input" type="text">
+						<div class="label__title">года</div>
+					</div>
+					<span class="label__help">Чтобы мы могли подарить Вам подарок</span>
+				</div>
+				<div class="label">
+					<span class="label__title">Адрес доставки</span>
+					<div class="label__select js-select">
+						<div class="label__select-val">
+							<button></button>
+							<span>Киев</span>									
+						</div>
+						<ul class="label__select-options">
+							<li>Киев</li>
+							<li>Город 1</li>
+							<li>Город 2</li>
+							<li>Город 3</li>
+							<li>Город 4</li>
+							<li>Город 5</li>
+							<li>Город 6</li>
+						</ul>
+					</div>
+					<span class="label__required"><span>обязательное поле</span></span>
+				</div>
+				<div class="reg__address">
+					<label class="label">
+						<span class="label__title">Улица</span>
+						<input class="label__input" type="text">
+					</label>
+					<label class="label">
+						<span class="label__title">№ Дома</span>
+						<input class="label__input" type="text">
+					</label>
+					<label class="label">
+						<span class="label__title">№ Кв./Офиса</span>
+						<input class="label__input" type="text">
+					</label>
+					<span class="label__required"><span>обязательное поле</span></span>
+				</div>
+				<label class="label">
+					<span class="label__title">Дополнительная информация<span>*</span></span>
+					<textarea class="label__area"></textarea>
+					<span class="label__help">Дополнительная информация: район, лифт, этаж, домофон</span>
+				</label>
+				<button class="reg__add-btn">Добавить еще адрес</button>
+				<div class="reg__btns">
+					<button class="btn btn_gray">заполнить позже</button>
+					<button class="btn btn_big">сохранить</button>					
+				</div>
+			</div>
+			<div id="tab2" class="tabs__content js-tabs-content">
+				<label class="label">
+					<span class="label__title">Название и форма собственности</span>
+					<input class="label__input" type="text">
+					<span class="label__help">Например: ООО "ГРЕНКА", ЧАО "ГРЕНКА", ЧП "ГРЕНКА"</span>
+				</label>
+				<label class="label">
+					<span class="label__title">Код ЕДРПОУ</span>
+					<input class="label__input" type="text">
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<label class="label">
+					<span class="label__title">Название банка</span>
+					<input class="label__input" type="text">
+				</label>
+				<label class="label">
+					<span class="label__title">№ Р/С в банке</span>
+					<input class="label__input" type="text">
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<div class="reg__bank">
+					<label class="label">
+						<span class="label__title">МФО банка</span>
+						<input class="label__input" type="text">
+					</label>
+					<div class="label">
+						<span class="label__title">Плательщик НДС?</span>
+						<div class="label__select js-select">
+							<div class="label__select-val">
+								<button></button>
+								<span>да</span>									
+							</div>
+							<ul class="label__select-options" style="display: none;">
+								<li>да</li>
+								<li>нет</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<label class="label">
+					<span class="label__title">Свидетельство НДС №</span>
+					<input class="label__input" type="text">
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<label class="label">
+					<span class="label__title">Свидетельство о регистрации / ЕГР №</span>
+					<input class="label__input" type="text">
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<label class="label">
+					<span class="label__title">Юридический адрес</span>
+					<input class="label__input" type="text">
+				</label>
+				<label class="label">
+					<span class="label__title">Фактический адрес</span>
+					<input class="label__input" type="text">
+					<span class="label__required"><span>обязательное поле</span></span>
+				</label>
+				<div class="label">
+					<span class="label__title">Система налогообложения</span>
+					<div class="label__select js-select">
+						<div class="label__select-val">
+							<button></button>
+							<span>Общая</span>									
+						</div>
+						<ul class="label__select-options">
+							<li>Общая</li>
+							<li>Такая</li>
+							<li>Такая</li>
+							<li>Такая</li>
+							<li>Такая</li>
+							<li>Такая</li>
+							<li>Такая</li>
+						</ul>
+					</div>
+				</div>
+				<div class="reg__btns">						
+					<button class="btn btn_gray">заполнить позже</button>
+					<button class="btn btn_big">сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END .reg -->	
+</div>
+<!-- END .page-->
