@@ -648,7 +648,7 @@ textarea { font-family: Arial,sans-serif; }
 
 .title_search span { display: inline-block; vertical-align: middle; }
 
-.title__search-text { text-transform: none; margin-left: 30px; color: #000; font: normal 14px Arial,sans-serif; }
+.title__search-text { text-transform: none; margin-left: 25px; color: #000; font: normal 14px Arial,sans-serif; }
 .title__search-text strong { color: #fff; }
 
 .title_yellow { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff8b02), color-stop(100%, #f47b01)); background-image: -webkit-linear-gradient(#ff8b02, #f47b01); background-image: -moz-linear-gradient(#ff8b02, #f47b01); background-image: -o-linear-gradient(#ff8b02, #f47b01); background-image: linear-gradient(#ff8b02, #f47b01); }
@@ -1562,9 +1562,11 @@ textarea { font-family: Arial,sans-serif; }
 .action-item:first-child { border-top: 0; }
 .action-item:nth-child(2n) { background: #f0f0f0; }
 .action-item .badge { position: absolute; top: 0; right: 0; }
+.action-item .rating { font-size: 11px; }
 
 .action-item__main { overflow: hidden; }
 .action-item__main .socshare { position: absolute; bottom: 30px; left: 30px; padding: 0; width: 300px; border: 0; overflow: hidden; }
+.action-item__main .rating { margin-top: 10px; }
 
 .action-item__img { float: right; margin-left: 30px; }
 
@@ -1572,6 +1574,8 @@ textarea { font-family: Arial,sans-serif; }
 .action-item__title span { color: #f47b01; }
 .action-item__title a { color: #000; }
 .action-item__title a:hover { text-decoration: none; }
+
+.action-item__descr { color: #4f4f4f; line-height: 1.2; }
 
 .buy-discount_mod { background: none; padding: 0; }
 .buy-discount_mod .buy-discount__title { float: none; }
@@ -1581,6 +1585,8 @@ textarea { font-family: Arial,sans-serif; }
 .buy-discount__info { float: right; margin-top: 22px; width: 390px; color: #f47b01; font-size: 18px; }
 
 .buy-discount__wrap { float: left; }
+
+.rating__text { color: #7eb832; display: inline-block; margin-right: 7px; }
 
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
 

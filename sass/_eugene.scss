@@ -720,6 +720,9 @@
         top: 0;
         right: 0;
     }
+    .rating {
+        font-size: 11px;
+    }
 }
 .action-item__main {
     overflow: hidden;
@@ -731,6 +734,9 @@
         width: 300px;
         border: 0;
         overflow: hidden;
+    }
+    .rating {
+        margin-top: 10px;
     }
 } 
 .action-item__img {
@@ -750,6 +756,10 @@
             text-decoration: none;
         }
     }
+}
+.action-item__descr {
+    color: #4f4f4f;
+    line-height: 1.2;
 }
 .buy-discount_mod {
     background: none;
@@ -774,4 +784,9 @@
 }
 .buy-discount__wrap {
     float: left;
+}
+.rating__text {
+    color: #7eb832;
+    display: inline-block;
+    margin-right: 7px;
 }
