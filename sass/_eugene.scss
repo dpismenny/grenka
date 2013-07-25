@@ -683,3 +683,56 @@
 .paginatiom_mod {
     margin-bottom: 30px;
 }
+
+.title_yellow {
+    @include background-image(linear-gradient(#ff8b02, #f47b01));
+}
+
+.action-item {
+    position: relative;
+    @extend %clr;
+    margin-bottom: -1px;
+    padding: 30px 40px 30px 30px;
+    border: 1px solid $brcl;
+    &:first-child {
+        border-top: 0;
+    }
+    &:nth-child(2n) {
+        background: #f0f0f0;
+    }
+    .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.action-item__main {
+    overflow: hidden;
+    .socshare {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        padding: 0;
+        width: 300px;
+        border: 0;
+        overflow: hidden;
+    }
+} 
+.action-item__img {
+    float: right;
+    margin-left: 30px;
+}
+.action-item__title {
+    @include pm;
+    font-size: 25px;
+    text-transform: uppercase;
+    span {
+        color: #f47b01;
+    }
+    a {
+        color: #000;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

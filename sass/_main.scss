@@ -1208,8 +1208,9 @@
 .badge_hit-day {@include s(hit_day);}
 .badge_hit-hour {@include s(hit_hour);}
 .badge_action {@include s(badge_action);}
+.badge_action-small {@include s(badge_action-small);}
 .badge_top-sale {@include s(badge_top-sale);}
-.badge_soon {@include s(badge_soon);}
+.badge_soon {@include s(badge_soon);} 
 // Ie8
 .lteie8 {
 	.code {
