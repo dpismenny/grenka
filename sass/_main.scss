@@ -1175,13 +1175,26 @@
 
 //title
 .title {
+	position: relative;
 	padding: 7px 30px;
 	@include background-image(linear-gradient(bottom, #67a713 0%, #8ac143 100%));
-  box-shadow: 0 -1px 0 rgba(0,0,0,.2) inset;
+    box-shadow: 0 -1px 0 rgba(0,0,0,.2) inset;
 	@include pm;
 	font-size: 36px;
 	color: #FFF;
 	text-transform: uppercase;
+	a {
+		position: absolute;
+		right: 25px;
+		top: 35px;
+		color: #fff;
+		font: normal 11px Arial, sans-serif;
+		text-transform: capitalize;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 .title_big {
 	padding: 15px 30px;
@@ -1197,6 +1210,26 @@
 	height: 50px;
 	overflow: hidden;
 }
+.title_search {
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.title__search-text {
+	text-transform: none;
+	margin-left: 25px;
+	color: #000;
+	font: normal 14px Arial,sans-serif;
+	strong {
+		color: #fff;
+	}
+}
+.title_yellow {
+    @include background-image(linear-gradient(#ff8b02, #f47b01));
+}
+
+
 .badge {
 	position: absolute;
 }
@@ -1208,8 +1241,22 @@
 .badge_hit-day {@include s(hit_day);}
 .badge_hit-hour {@include s(hit_hour);}
 .badge_action {@include s(badge_action);}
+.badge_action-small {@include s(badge_action-small);}
 .badge_top-sale {@include s(badge_top-sale);}
-.badge_soon {@include s(badge_soon);}
+.badge_soon {@include s(badge_soon);} 
+.badge_counter {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 21px;
+	text-align: center;
+	@include pm;
+	color: #fff;
+	text-align: center;
+	@include border-radius(50%);
+	font-style: normal;  
+	@include background-image(linear-gradient(#ff8b02, #f47b01));
+}
 // Ie8
 .lteie8 {
 	.code {
