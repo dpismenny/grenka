@@ -349,6 +349,8 @@
 }
 
 .section {
+    position: relative;
+    z-index: 21;
     margin-bottom: 20px;
     border: 1px solid $brcl;
     font-size: 14px;
@@ -367,6 +369,10 @@
 }
 .section__inner {
     padding: 30px 30px 40px;
+    @extend %clr;
+    strong {
+        color: #000;
+    }
 }
 .section__title {
     padding: 0 30px;
@@ -696,11 +702,6 @@
 .paginatiom_mod {
     margin-bottom: 30px;
 }
-
-.title_yellow {
-    @include background-image(linear-gradient(#ff8b02, #f47b01));
-}
-
 
 .action-item {
     position: relative;
