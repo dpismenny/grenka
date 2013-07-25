@@ -1244,6 +1244,19 @@
 .badge_action-small {@include s(badge_action-small);}
 .badge_top-sale {@include s(badge_top-sale);}
 .badge_soon {@include s(badge_soon);} 
+.badge_counter {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 21px;
+	text-align: center;
+	@include pm;
+	color: #fff;
+	text-align: center;
+	@include border-radius(50%);
+	font-style: normal;  
+	@include background-image(linear-gradient(#ff8b02, #f47b01));
+}
 // Ie8
 .lteie8 {
 	.code {
