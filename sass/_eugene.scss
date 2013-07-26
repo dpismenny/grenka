@@ -373,6 +373,11 @@
         margin: 20px 0;
     }
 }
+.section_small {
+    .section__inner {
+        padding: 30px 18px 40px;
+    }
+}
 .section__inner {
     padding: 30px 30px 40px;
     @extend %clr;
@@ -860,3 +865,4 @@
         color: #f47b01;
     }
 }
+

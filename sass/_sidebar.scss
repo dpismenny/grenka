@@ -151,6 +151,7 @@
 .benefits_mod {
     margin-bottom: 20px;
 }
+
 .benefits__list {
     li{
         list-style-type: none;
@@ -162,6 +163,23 @@
                 color: #f47b01;
             }
         }
+    }
+}
+.benefits_interest {
+    font-size: 12px;
+    font-weight: normal;
+    .benefits__list {
+        padding-left: 65px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    strong {
+        display: block;
+        margin-bottom: 27px;
+        color: #5f5f5f;
+        font-size: 14px;
+        font-weight: bold;
     }
 }
 .benefits__title {
