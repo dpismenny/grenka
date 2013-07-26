@@ -1074,3 +1074,128 @@
 		margin-bottom: 0.5em;
 	}
 }
+
+.errorpage{
+	border: 1px solid #dcdcdc;
+	border-width: 1px 1px 0;
+	margin-bottom: 0;
+	@include box-sizing(border-box);
+}
+.errorpage__content{
+	width: 550px;
+	margin: 30px auto 0;
+	padding-bottom: 75px;
+	min-height: 240px;
+	background: url(../img/404.png) no-repeat;
+}
+.errorpage__message{
+	padding-top: 140px;
+	text-align: center;
+}
+.errorpage__title{
+	color: #000;
+	@include pm;
+	font-size: 37px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 0.2em;
+}
+.errorpage__code{
+	color: #000;
+	@include pm;
+	font-size: 24px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 0.6em;
+	span{
+		color: #f47b01;
+	}
+}
+.errorpage__text{
+	font-size: 11px;
+	color: #696969;
+	span{
+		color: #6dab1c;
+	}
+}
+
+.congrats{
+	background-color: #f0f0f0;
+	position: relative;
+}
+.congrats__counter{
+	position: absolute;
+	top: -50px;
+	left: 30px;
+	text-align: center;
+}
+.congrats__title{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #69a915;
+	@include pm;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.counter_congrats{
+	strong{
+		font-size: 43px;
+		width: 69px;
+		height: 72px;
+		line-height: 72px;
+		&:after{
+			bottom: 35px;
+		}
+	}
+}
+.congrats__message{
+	padding: 20px 0;
+	margin-left: 205px;
+	@include pm;
+	line-height: 1.2;
+}
+.congrats__info{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #69a915;
+	text-transform: uppercase;
+	margin-right: 40px;
+}
+.congrats__text{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 27px;
+	color: #797979;
+	text-transform: uppercase;
+	span{
+		color: #f47b01;
+	}
+}
+.popular_mod{
+	margin-bottom: 40px;
+	margin-left: -1px;
+	@extend %clr;
+	.popular{
+		float: left;
+		width: 319px;
+		margin-left: 1px;
+		&:first-child{
+			float: left;
+		}
+	}
+}
+
+.product-list_mod{
+	margin-bottom: 20px;
+	.product{
+		width: 320px;
+		@include box-sizing(border-box);
+		&:first-child{
+			width: 322px;
+		}
+	}
+	.product__inner{
+		// padding: 30px 45px 30px 40px;
+	}
+}
