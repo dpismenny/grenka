@@ -1612,6 +1612,8 @@ textarea { font-family: Arial,sans-serif; }
 .section_mod { margin-bottom: 0; }
 .section_mod .section__title span { color: #f47b01; }
 
+.section_single .section__title { margin: 20px 0; }
+
 .section__inner { padding: 30px 30px 40px; }
 .section__inner strong { color: #000; }
 

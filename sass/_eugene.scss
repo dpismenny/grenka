@@ -367,6 +367,12 @@
         }
     }  
 }
+.section_single {
+    
+    .section__title {
+        margin: 20px 0;
+    }
+}
 .section__inner {
     padding: 30px 30px 40px;
     @extend %clr;
