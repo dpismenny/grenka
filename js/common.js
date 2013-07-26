@@ -150,49 +150,67 @@ tabs();
 	);
 
 // ------------------- Fancybox ----------------------// 
-    $(".to-favorite").fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
-        padding: 0,
-        showCloseButton: true,
-        helpers : {
-            title : {
-                type : 'outside'
-            }
-        } 
-    });
+  $(".to-favorite").fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      padding: 0,
+      showCloseButton: true,
+      helpers : {
+          title : {
+              type : 'outside'
+          }
+      } 
+  });
 
-    if ($('#slider-left-main').length > 0) {
-        // Главный слайдер
-        $('#slider-left-main').veronica_slider(
-            {
-                active : true, // режим выбора активного элемента
-                autoplay : true, // автоматическая прокрутка
-                height: 107, // высота блока
-                step : 5000, // время в милисикундах для автоматического режима
-                callback : function(el)
-                {
-                    $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
-                }, // callback функция при смене активного элемента
-                stop: ['#main_slider_pause','table.main-menu'], // идентификаторы элментов, при наведении на которые автопрокрутка останавливается
-                fixed: true, // режим прокрутки если активный элемент вверху или внизу
-                click : function(el) {
-                    $('#slider-left-main').find('li.active').removeClass('active');
-                    $(el).addClass('active');
-                    $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
-                } // callback функция при клике
-            }
-        );
-    }
+  if ($('#slider-left-main').length > 0) {
+      // Главный слайдер
+      $('#slider-left-main').veronica_slider(
+          {
+              active : true, // режим выбора активного элемента
+              autoplay : true, // автоматическая прокрутка
+              height: 107, // высота блока
+              step : 5000, // время в милисикундах для автоматического режима
+              callback : function(el)
+              {
+                  $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
+              }, // callback функция при смене активного элемента
+              stop: ['#main_slider_pause','table.main-menu'], // идентификаторы элментов, при наведении на которые автопрокрутка останавливается
+              fixed: true, // режим прокрутки если активный элемент вверху или внизу
+              click : function(el) {
+                  $('#slider-left-main').find('li.active').removeClass('active');
+                  $(el).addClass('active');
+                  $('.slider-biggest').html($('#slider-left-main').find('ul li.active:first').find('div.big_info').html());
+              } // callback функция при клике
+          }
+      );
+  }
     
 
-    // Search example
-    $(".js-search-example a").click(function(){
-        var text = $(this).text();
-        $(".js-searc-input").val(text);
-        return false;
-    });
+  // Search example
+  $(".js-search-example a").click(function(){
+      var text = $(this).text();
+      $(".js-searc-input").val(text);
+      return false;
+  });
 
 
+  var btn_edit = $(".js-edit-input");
+  var btn_add = $(".js-add-field");
+  var field_edited = $(".js-edit-me");
+  var will_add_field = $(".js-will-add");
+  var new_field = $(".js-new-field");
+  will_add_field.hide();
+  btn_edit.live("click", function(event){
+    //$(this).parent().find(field_edited).removeAttr("disabled").removeClass("is-inactive").hide().fadeIn("fast").focus();
+    $(this).prev().children(field_edited).removeAttr("disabled").removeClass("is-inactive").hide().fadeIn("fast").focus();
+    console.log("edit");
+    return false;
+  });
+  btn_add.live("click", function(event){
+    var html = will_add_field.html();
+    console.log("add");
+    $(this).parent().find(new_field).last().after(html);
+    return false;
+  });
 
 });

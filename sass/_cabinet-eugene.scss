@@ -131,3 +131,81 @@
     text-transform: uppercase;
     @include pm;
 }
+
+.label__input {
+    &.is-inactive {
+        border: 0;
+        background: #fff;
+        @include box-shadow(none);
+    }
+}
+.btn-edit {
+    position: relative;
+    margin: 8px 20px 0 0;
+    font-size: 11px;
+    color: #f47b01;
+    background: none;
+    text-decoration: underline;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: -20px;
+        @include s(edit);  
+    }
+    &:hover {
+        text-decoration: none;
+    }
+   
+}
+.spec-table_edit-user {
+    font-size: 14px;
+    .spec-table__body {
+        td {
+            padding-left: 28px;
+            vertical-align: middle;
+            &:first-child {
+                width: 170px;
+                background: #f5f5f5;
+            }
+            &:last-child {
+                padding-left: 28px;
+            }
+        }
+    }
+    .label {
+        float: left;
+        width: 343px;
+    }
+    .btn-edit {
+        float: right;
+    }
+    .label, 
+    .label__input,
+    .label__select {
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+    .label__select {
+        margin-left: 10px;
+        width: 333px;
+        text-align: left;
+    }
+    .label__select-val {
+        span {
+            font-weight: normal;
+        }
+    }
+}
+.btn-add {
+    float: left;
+    font-size: 11px;
+    display: inline-block;
+    margin-left: 10px;
+    background: none;
+    color: #69a915;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
