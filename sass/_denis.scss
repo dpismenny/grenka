@@ -664,6 +664,7 @@
 .label__warning{
 	font-size: 11px;
 	color: #6dac1b;
+	margin-top: 20px;
 }
 .label__select{
 	&.is-inactive{
@@ -934,11 +935,12 @@
 	line-height: 22px;
 	margin-right: 20px;
 }
-.news__vote-rates{
+.rating_mod{
 	display: inline-block;
 	vertical-align: middle;
 	height: 22px;
 	line-height: 22px;
+	margin-bottom: 0;
 }
 .news__vote-detail{
 	float: right;
@@ -1198,4 +1200,55 @@
 	.product__inner{
 		// padding: 30px 45px 30px 40px;
 	}
+}
+
+.captcha{
+	position: relative;
+	margin-bottom: 10px;
+}
+.captcha__holder{
+	@extend %clr;
+	margin-bottom: 5px;
+}
+.captcha__image{
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #adadad;
+	@include border-radius(4px);
+	img{
+		display: block;
+		@include border-radius(4px);
+	}
+}
+.captcha__reload{
+	float: none !important;
+	margin-left: 32px;
+}
+.captcha__text{
+	margin-bottom: 5px;
+	font-size: 12px;
+	color: #5f5f5f;
+	position: absolute;
+	top: 7px;
+	left: 335px;
+	span{
+		color: #69a915;
+		margin-right: 5px;
+	}
+}
+.captcha__input {
+	float: left;
+	width: 150px;
+	border: 1px solid #adadad;
+	border-radius: 4px;
+	box-shadow: 2px 1px 2px rgba(0,0,0,.18);
+	@include box-sizing(border-box);
+	@include transition(all  .2s linear);
+	&:focus {
+		box-shadow: none;
+	}
+}
+.captcha__input {	
+	height: 29px;
+	padding: 0 10px;	
 }
