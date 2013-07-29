@@ -115,6 +115,7 @@ $('.js-select').click(function(event){
 
 //tabs
 function tabs() {
+  $(".js-tabs-content").first().show();
   $('.tabs__top').next().show();
   $('.js-tabs-nav button').click(function() {
     if (!$(this).hasClass('active')) {
@@ -132,22 +133,23 @@ tabs();
 
 // zomm product item on hover 
 
-	prod_image.hover(
-	  function () {
-	    $(this).parent().parent().addClass("is-hover");
-	  },
-	  function () {
-	    //$(this).parent().parent().removeClass("is-hover");
-	  }
-	);
-	prod.hover(
-	  function () {
-	    //$(this).parent().parent().addClass("is-hover");
-	  },
-	  function () {
-	    $(this).removeClass("is-hover");
-	  }
-	);
+    prod_image.hover(
+      function () {
+        $(this).parent().parent().addClass("is-hover");
+      },
+      function () {
+        //$(this).parent().parent().removeClass("is-hover");
+      }
+    );
+    prod.hover(
+      function () {
+        //$(this).parent().parent().addClass("is-hover");
+      },
+      function () {
+        $(this).removeClass("is-hover");
+      }
+    );
+	
 
 // ------------------- Fancybox ----------------------// 
   $(".to-favorite").fancybox({
@@ -216,6 +218,8 @@ tabs();
   if ($(".js-scroll-pane").length > 0) {
      $('.js-scroll-pane').jScrollPane();
   }
+
+  
     
 
 
