@@ -213,4 +213,11 @@ tabs();
     return false;
   });
 
+  if ($(".js-scroll-pane").length > 0) {
+     $('.js-scroll-pane').jScrollPane();
+  }
+    
+
+
+
 });
