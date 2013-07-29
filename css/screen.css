@@ -1726,7 +1726,7 @@ textarea { font-family: Arial,sans-serif; }
 .spec-table_order .spec-table__body .is-not-pay { color: #fa0000; }
 .spec-table_order .spec-table__body .is-paid { color: #69a915; }
 
-.paginatiom_mod { margin-bottom: 30px; }
+.pagination_mod { margin-bottom: 30px; }
 
 .action-item { position: relative; margin-bottom: -1px; padding: 30px 40px 30px 30px; border: 1px solid gainsboro; }
 .action-item:first-child { border-top: 0; }
@@ -2158,6 +2158,16 @@ textarea { font-family: Arial,sans-serif; }
 .btn-add { float: left; font-size: 11px; display: inline-block; margin-left: 10px; background: none; color: #69a915; text-decoration: underline; }
 .btn-add:hover { text-decoration: none; }
 
+.spec-table_order-cabinet .spec-table__head { font-size: 14px; }
+.spec-table_order-cabinet .spec-table__head th { padding: 12px 10px; }
+.spec-table_order-cabinet .spec-table__head th:nth-child(2) { text-align: left; }
+.spec-table_order-cabinet .spec-table__body td { padding: 10px; vertical-align: middle; }
+.spec-table_order-cabinet .spec-table__body td:first-child { padding-left: 13px; color: #f57c01; }
+.spec-table_order-cabinet .spec-table__body td:nth-child(2) { text-align: left; }
+.spec-table_order-cabinet .spec-table__body span { display: block; color: #a6a6a6; font-size: 10px; }
+.spec-table_order-cabinet .spec-table__body a { text-decoration: underline; }
+.spec-table_order-cabinet .spec-table__body tr:nth-child(2n) { background: #f4f4f4; }
+
 .icon_basket { background: url('../img/icons-s41872b8387.png') 0 -3169px no-repeat; width: 18px; height: 14px; }
 
 .icon_gift { background: url('../img/icons-s41872b8387.png') 0 -2601px no-repeat; width: 21px; height: 26px; }
@@ -2516,3 +2526,38 @@ textarea { font-family: Arial,sans-serif; }
 
 .compare__body td { padding: 15px 0; border: 1px solid gainsboro; text-align: center; }
 .compare__body td:first-child { padding-left: 20px; text-align: left; background: #f0f0f0; }
+
+/* CSS Styles that are needed by jScrollPane for it to operate correctly.  Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane may not operate correctly without them. */
+.jspContainer { overflow: hidden; position: relative; }
+
+.jspPane { position: absolute; }
+
+.jspVerticalBar { position: absolute; top: 0; right: 0; width: 16px; height: 100%; background: red; }
+
+.jspHorizontalBar { position: absolute; bottom: 0; left: 0; width: 100%; height: 16px; background: red; }
+
+.jspVerticalBar *, .jspHorizontalBar * { margin: 0; padding: 0; }
+
+.jspCap { display: none; }
+
+.jspHorizontalBar .jspCap { float: left; }
+
+.jspTrack { background: #dde; position: relative; }
+
+.jspDrag { background: #bbd; position: relative; top: 0; left: 0; cursor: pointer; }
+
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag { float: left; height: 100%; }
+
+.jspArrow { background: #50506d; text-indent: -20000px; display: block; cursor: pointer; }
+
+.jspArrow.jspDisabled { cursor: default; background: #80808d; }
+
+.jspVerticalBar .jspArrow { height: 16px; }
+
+.jspHorizontalBar .jspArrow { width: 16px; float: left; height: 100%; }
+
+.jspVerticalBar .jspArrow:focus { outline: none; }
+
+.jspCorner { background: #eeeef4; float: left; height: 100%; }
+
+.scroll-pane { width: 400px; height: 275px; overflow: auto; }

@@ -209,3 +209,43 @@
         text-decoration: none;
     }
 }
+
+.spec-table_order-cabinet {
+    //white-space: nowrap;
+    .spec-table__head {
+        font-size: 14px;
+        th {
+            padding: 12px 10px;
+            &:nth-child(2) {
+                text-align: left;
+            }
+        }
+    }
+    .spec-table__body {
+        td {
+            padding: 10px;
+            vertical-align: middle;
+            &:first-child {
+                padding-left: 13px;
+                color: #f57c01;
+            }
+            &:nth-child(2) {
+                text-align: left;
+            }
+        }
+        span {
+            display: block;
+            color: #a6a6a6;
+            font-size: 10px;
+        }
+        a {
+            text-decoration: underline;
+        }
+        tr {
+            &:nth-child(2n) {
+                background: #f4f4f4;
+            }
+        }
+    }
+    
+}
