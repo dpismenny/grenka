@@ -115,6 +115,7 @@ $('.js-select').click(function(event){
 
 //tabs
 function tabs() {
+  $(".js-tabs-content").first().show();
   $('.tabs__top').next().show();
   $('.js-tabs-nav button').click(function() {
     if (!$(this).hasClass('active')) {
@@ -132,22 +133,23 @@ tabs();
 
 // zomm product item on hover 
 
-	prod_image.hover(
-	  function () {
-	    $(this).parent().parent().addClass("is-hover");
-	  },
-	  function () {
-	    //$(this).parent().parent().removeClass("is-hover");
-	  }
-	);
-	prod.hover(
-	  function () {
-	    //$(this).parent().parent().addClass("is-hover");
-	  },
-	  function () {
-	    $(this).removeClass("is-hover");
-	  }
-	);
+    prod_image.hover(
+      function () {
+        $(this).parent().parent().addClass("is-hover");
+      },
+      function () {
+        //$(this).parent().parent().removeClass("is-hover");
+      }
+    );
+    prod.hover(
+      function () {
+        //$(this).parent().parent().addClass("is-hover");
+      },
+      function () {
+        $(this).removeClass("is-hover");
+      }
+    );
+	
 
 // ------------------- Fancybox ----------------------// 
   $(".to-favorite").fancybox({
@@ -212,5 +214,28 @@ tabs();
     $(this).parent().find(new_field).last().after(html);
     return false;
   });
+
+  if ($(".js-scroll-pane").length > 0) {
+     $('.js-scroll-pane').jScrollPane();
+  }
+
+  $(".js-show-order").click(function(){
+    if ($(this).hasClass("js-active")) {
+      $(this).text("Посмотреть");
+      $(this).removeClass("js-active");
+      $(this).parent().parent().next().find(".cart__table").hide();
+    }
+    else {
+      
+      $(this).text("Скрыть");
+      $(this).addClass("js-active");
+      $(this).parent().parent().next().find(".cart__table").show();
+    }
+    return false;
+  });
+  
+    
+
+
 
 });

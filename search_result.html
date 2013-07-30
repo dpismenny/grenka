@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Search</title>
+	<title>Search result</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
@@ -536,55 +536,57 @@
 		<div class="l-main">
 			<div class="title title_search">
 				<span>поиск </span>
-				<span class="title__search-text">Вы искали <strong>«ыйыц»</strong></span>
+				<span class="title__search-text">По запросу <strong>«samsung»</strong> найдено <strong>967 товаров</strong>  в категориях:</span>
 			</div>
 			<div class="section">
 				<div class="section__inner">
-					<p>Лучше всего по поводу <strong>"ыйыц"</strong> обратиться в онлайн чат или заказать обратный звонок</p>
-					<!-- BEGIN .callback -->
-					<div class="callback js-top-popup">
-						<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
-						<div class="callback__down">
-							<label class="label">
-								<span class="label__title">Ваше имя:</span>
-								<input class="label__input" type="text">
-							</label>
-							<label class="label">
-								<span class="label__title">Телефон:</span>
-								<input class="label__input" type="text">
-							</label>
-							<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
-							<div class="callback__time">
-								<strong>Когда перезвонить?</strong>
-								<div class="callback__cols">
-									<div class="callback__column">
-										<label class="label-radio">
-											<input type="radio" name="name">
-											<i></i>
-											<span>В указанное время</span>
-										</label>
-										<label class="label-radio">
-											<input type="radio" name="name">
-											<i></i>
-											<span>Сейчас</span>
-										</label>
-									</div>
-									<div class="callback__column">
-										<div class="label">
-											<input class="label__input" type="text">
-										</div>
-										<button class="btn btn_orange">перезвонить</button>
-									</div>
-								</div>										
-							</div>
+					<div class="search-result">
+					<!-- BEGIN .info-block__in -->
+					<div class="search-result__in">
+						<ul>
+							<li><a href="#">Блоки питания</a> <span>(15)</span></li>
+							<li><a href="#">Видеокарты</a> <span>(15)</span></li>
+							<li><a href="#">Материнские платы</a> <span>(15)</span></li>
+							<li><a href="#">Клавиатуры</a> <span>(15)</span></li>
+						</ul>
+						<ul>
+							<li><a href="#">Игровые приставки</a> <span>(15)</span></li>
+							<li><a href="#">Игровые пакеты</a> <span>(15)</span></li>
+							<li><a href="#">Игровые манипуляторы</a> <span>(15)</span></li>
+							<li><a href="#">Аксессуары к приставкам</a> <span>(15)</span></li>
+						</ul>
+						<ul>
+							<li><a href="#">Офисные устройства</a> <span>(15)</span></li>
+							<li><a href="#">USB-Лампочки</a> <span>(15)</span></li>
+							<li><a href="#">Новогодние сувениры</a> <span>(15)</span></li>
+						</ul>
+						<!-- BEGIN .info-block__hide -->
+						<div class="search-result__hide js-hidden-block">
+							<ul>
+								<li><a href="#">Блоки питания</a> <span>(15)</span></li>
+								<li><a href="#">Видеокарты</a> <span>(15)</span></li>
+								<li><a href="#">Материнские платы</a> <span>(15)</span></li>
+								<li><a href="#">Клавиатуры</a> <span>(15)</span></li>
+							</ul>
+							<ul>
+								<li><a href="#">Игровые приставки</a> <span>(15)</span></li>
+								<li><a href="#">Игровые пакеты</a> <span>(15)</span></li>
+								<li><a href="#">Игровые манипуляторы</a> <span>(15)</span></li>
+								<li><a href="#">Аксессуары к приставкам</a> <span>(15)</span></li>
+							</ul>
+							<ul>
+								<li><a href="#">Офисные устройства</a> <span>(15)</span></li>
+								<li><a href="#">USB-Лампочки</a> <span>(15)</span></li>
+								<li><a href="#">Новогодние сувениры</a> <span>(15)</span></li>
+							</ul>
 						</div>
+						<!-- END .info-block__hide -->
 					</div>
-					<!--END .callback -->
-				 	<!-- BEGIN .livechat -->
-					<div class="livechat">
-					   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
-					</div>
-				  	<!-- END .livechat -->
+					<!-- END .info-block__in -->
+					<!-- BEGIN .info-block__button -->
+					<button class="search-result__btn js-show-hidden"><i></i>все категории</button>
+					<!-- END .info-block__button -->
+				</div>					
 				</div>
 			</div>
 			<div class="sort">
@@ -637,8 +639,8 @@
 			    	</div>
 				</div>
 				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
+					<div class="prod-state is-pre-order">
+						<i></i><span>Предзаказ</span>
 					</div>
 					<div class="product-row__price">
 						<span>210</span> грн. 
@@ -673,8 +675,8 @@
 			    	</div>
 				</div>
 				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
+					<div class="prod-state is-no-stock">
+						<i></i><span>нет в наличии</span>
 					</div>
 					<div class="product-row__price">
 						<span>210</span> грн. 
@@ -777,7 +779,7 @@
 				</div>
 				<div class="tabs__content">
 					<!-- BEGIN .product-list -->
-					<ul class="product-list product-list_new">
+					<ul class="product-list">
 						<li class="product" itemscope itemtype="http://schema.org/Product">
 							<div class="product__inner">
 								<!-- BEGIN .product__image -->

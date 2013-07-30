@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Search</title>
+	<title>Cabinet Basket</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
@@ -534,229 +534,354 @@
 		<!-- END .l-sidebar -->
 		<!-- BEGIN .l-main -->
 		<div class="l-main">
-			<div class="title title_search">
-				<span>поиск </span>
-				<span class="title__search-text">Вы искали <strong>«ыйыц»</strong></span>
+			<!-- BEGIN .cabina -->
+			<div class="cabina">
+				<div class="title">
+					<span>мой кабинет</span>
+					<div class="cabina__actions">
+						<strong>Сейчас проходит<span>4 Акции</span></strong>
+						<button class="btn btn_orange">подробнее</button>
+					</div>
+				</div>
+				<div class="cabina__cols">
+					<div class="cabina__left">
+						<div class="cabina__pic">
+							<img src="img/cabina.jpg" alt="">
+						</div>
+						<button class="btn btn_gray">изменить фото</button>
+					</div>
+					<div class="cabina__right">
+						<div class="cabina__hello"><span>Сергей Брин</span>, мы рады видеть Вас в интернет магазине Гренка<i></i></div>
+						<div class="cabina__links">
+							<ul>
+								<li><a href="#">МОЯ ИНФОРМАЦИЯ</a></li>
+								<li><a href="#">ЗАКАЗЫ</a></li>
+								<li><a href="#">ПРЕДЗАКАЗЫ</a></li>
+								<li><a href="#">СПИСОК ЧУДЕС</a></li>
+								<li><a href="#">МОИ СКИДКИ</a></li>
+								<li><a href="#">СПИСОК ЖЕЛАНИЙ</a></li>
+								<li><a href="#">ПРОСМОТРЕННЫЕ ТОВАРЫ</a></li>					
+							</ul>
+							<ul>
+								<li><a href="#">МОИ ИНТЕРЕСЫ</a><span>+ БОНУС за добавление</span></li>
+								<li>
+									<a href="#">КОРЗИНА</a>
+									<span class="cabina__cart">
+										<span>1 незавершенный заказ</span>
+										<a href="#">завершить</a>								  
+									</span>
+								</li>
+								<li><a href="#">ИЗМЕНИТЬ ПАРОЛЬ</a></li>
+								<li><a href="#">МОЙ СЧЕТ</a></li>
+								<li><a href="#">ЗАКРЫТЫЙ АУКЦИОН</a></li>
+								<li><a href="#">ПАРТНЕРСКАЯ ПРОГРАММА</a></li>
+								<li><a href="#">ЛЮБИМЫЕ ТОВАРЫ</a></li>
+							</ul>
+						</div>				
+					</div>
+				</div>
 			</div>
+			<!-- END .cabina -->
 			<div class="section">
 				<div class="section__inner">
-					<p>Лучше всего по поводу <strong>"ыйыц"</strong> обратиться в онлайн чат или заказать обратный звонок</p>
-					<!-- BEGIN .callback -->
-					<div class="callback js-top-popup">
-						<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
-						<div class="callback__down">
-							<label class="label">
-								<span class="label__title">Ваше имя:</span>
-								<input class="label__input" type="text">
-							</label>
-							<label class="label">
-								<span class="label__title">Телефон:</span>
-								<input class="label__input" type="text">
-							</label>
-							<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
-							<div class="callback__time">
-								<strong>Когда перезвонить?</strong>
-								<div class="callback__cols">
-									<div class="callback__column">
-										<label class="label-radio">
-											<input type="radio" name="name">
-											<i></i>
-											<span>В указанное время</span>
-										</label>
-										<label class="label-radio">
-											<input type="radio" name="name">
-											<i></i>
-											<span>Сейчас</span>
-										</label>
+					<table class="spec-table spec-table_basket">
+						<thead class="spec-table__head">
+							<tr>
+								<th>Дата</th>
+								<th>№ заказа</th>
+								<th>Общая сумма</th>
+								<th>Действие</th>
+							</tr>
+						</thead>
+						<tbody class="spec-table__body">
+							<tr>
+								<td>12.02.2013</td>
+								<td>№1256</td>
+								<td>100 грн</td>
+								<td><a href="#" class="btn btn_gray js-show-order">посмотреть</a></td>
+							</tr>
+							<tr>
+								<td colspan="4" class="spec-table__drop">
+									<div class="cart__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Фото</th>
+													<th>Название товара</th>
+													<th>Количество</th>
+													<th>Цена</th>
+													<th>Скидка</th>
+													<th>Стоимость</th>
+													<th>Удалить</th>     
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+													<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+													<td>
+														2
+													</td>
+													<td class="cart__table-price">100 грн.</td>
+													<td class="cart__table-discount">30%</td>
+													<td class="cart__table-cost">100 грн</td>
+													<td class="cart__table-delete"><button><i></i></button></td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<div class="callback__column">
-										<div class="label">
-											<input class="label__input" type="text">
-										</div>
-										<button class="btn btn_orange">перезвонить</button>
+								</td>
+							</tr>
+							<tr class="spec-table__gray">
+								<td>12.02.2013</td>
+								<td>№1256</td>
+								<td>100 грн</td>
+								<td>
+									<a href="#" class="btn btn_gray js-show-order">посмотреть</a>
+									<a href="#" class="btn">завершить</a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="spec-table__drop">
+									<div class="cart__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Фото</th>
+													<th>Название товара</th>
+													<th>Количество</th>
+													<th>Цена</th>
+													<th>Скидка</th>
+													<th>Стоимость</th>
+													<th>Удалить</th>     
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+													<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+													<td>
+														1
+													</td>
+													<td class="cart__table-price">100 грн.</td>
+													<td class="cart__table-discount">30%</td>
+													<td class="cart__table-cost">100 грн</td>
+													<td class="cart__table-delete"><button><i></i></button></td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-								</div>										
+								</td>
+							</tr>
+							<tr>
+								<td>12.02.2013</td>
+								<td>№1256</td>
+								<td>100 грн</td>
+								<td><a href="#" class="btn btn_gray js-show-order">посмотреть</a></td>
+							</tr>
+							<tr>
+								<td colspan="4" class="spec-table__drop">
+									<div class="cart__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Фото</th>
+													<th>Название товара</th>
+													<th>Количество</th>
+													<th>Цена</th>
+													<th>Скидка</th>
+													<th>Стоимость</th>
+													<th>Удалить</th>     
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+													<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+													<td>
+														1
+													</td>
+													<td class="cart__table-price">100 грн.</td>
+													<td class="cart__table-discount">30%</td>
+													<td class="cart__table-cost">100 грн</td>
+													<td class="cart__table-delete"><button><i></i></button></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+							<tr class="spec-table__gray">
+								<td>12.02.2013</td>
+								<td>№1256</td>
+								<td>100 грн</td>
+								<td>
+									<a href="#" class="btn btn_gray js-show-order">посмотреть</a>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="spec-table__drop">
+									<div class="cart__table">
+										<table>
+											<thead>
+												<tr>
+													<th>Фото</th>
+													<th>Название товара</th>
+													<th>Количество</th>
+													<th>Цена</th>
+													<th>Скидка</th>
+													<th>Стоимость</th>
+													<th>Удалить</th>     
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#"><img src="img/pic2.jpg" alt=""></a></td>
+													<td class="cart__table-link"><a href="#">Your Shape: Fitness Evolved</a></td>
+													<td>
+														<div class="input-number js-input-number">
+															<input class="input-number__value" type="text" value="1">
+															<button class="input-number__plus"><i></i></button>
+															<button class="input-number__minus"><i></i></button>
+														</div>
+													</td>
+													<td class="cart__table-price">100 грн.</td>
+													<td class="cart__table-discount">30%</td>
+													<td class="cart__table-cost">100 грн</td>
+													<td class="cart__table-delete"><button><i></i></button></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr class="cart__table-total">
+								<td colspan="7">итого: <span>115 грн.</span></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>	
+			<div class="tabs js-tabs">
+				<div class="tabs__content js-tabs-content">
+					<!-- BEGIN .product-list -->
+					<ul class="product-list product-list_new">
+						<li class="product product_auction" itemscope itemtype="http://schema.org/Product">
+							<div class="product__inner">
+								<!-- BEGIN .product__image -->
+								<a itemprop="url" href="#" class="product__image">
+									<img itemprop="image" src="img/img-8.jpg" width="140" height="180" alt="img">
+								</a>
+								<!-- END .product__image -->
+								<!-- BEGIN .product__info -->
+								<div class="product__info">
+									<h3 class="product__title" itemprop="name">
+										<a href="#" itemprop="url">Sony ericcson k750 New</a>
+									</h3>
+									<a href="#" class="product__user">andrey 911</a>
+									<div class="clock">
+										<span>14</span> :
+										<span>03</span> :
+										<span>54</span>
+									</div>
+									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+									<button class="btn btn_bet">сделать ставку</button>
+									<link itemprop="availability" href="http://schema.org/InStock" />
+								</div>
+								<!-- END .product__info -->
+								<i class="badge badge_new" alt="Новый товар"></i>
 							</div>
-						</div>
-					</div>
-					<!--END .callback -->
-				 	<!-- BEGIN .livechat -->
-					<div class="livechat">
-					   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
-					</div>
-				  	<!-- END .livechat -->
+						</li>
+						<li class="product product_auction" itemscope itemtype="http://schema.org/Product">
+							<div class="product__inner">
+								<!-- BEGIN .product__image -->
+								<a itemprop="url" href="#" class="product__image">
+									<img itemprop="image" src="img/img-8.jpg" width="140" height="180" alt="img">
+								</a>
+								<!-- END .product__image -->
+								<!-- BEGIN .product__info -->
+								<div class="product__info">
+									<h3 class="product__title" itemprop="name">
+										<a href="#" itemprop="url">Sony ericcson k750 New</a>
+									</h3>
+									<a href="#" class="product__user">andrey 911</a>
+									<div class="clock">
+										<span>14</span> :
+										<span>03</span> :
+										<span>54</span>
+									</div>
+									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+									<button class="btn btn_bet">сделать ставку</button>
+									<link itemprop="availability" href="http://schema.org/InStock" />
+								</div>
+								<!-- END .product__info -->
+								<i class="badge badge_new" alt="Новый товар"></i>
+							</div>
+						</li>
+						<li class="product product_auction" itemscope itemtype="http://schema.org/Product">
+							<div class="product__inner">
+								<!-- BEGIN .product__image -->
+								<a itemprop="url" href="#" class="product__image">
+									<img itemprop="image" src="img/img-8.jpg" width="140" height="180" alt="img">
+								</a>
+								<!-- END .product__image -->
+								<!-- BEGIN .product__info -->
+								<div class="product__info">
+									<h3 class="product__title" itemprop="name">
+										<a href="#" itemprop="url">Sony ericcson k750 New</a>
+									</h3>
+									<a href="#" class="product__user">andrey 911</a>
+									<div class="clock">
+										<span>14</span> :
+										<span>03</span> :
+										<span>54</span>
+									</div>
+									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+									<button class="btn btn_bet">сделать ставку</button>
+									<link itemprop="availability" href="http://schema.org/InStock" />
+								</div>
+								<!-- END .product__info -->
+								<i class="badge badge_new" alt="Новый товар"></i>
+							</div>
+						</li>
+						<li class="product product_auction" itemscope itemtype="http://schema.org/Product">
+							<div class="product__inner">
+								<!-- BEGIN .product__image -->
+								<a itemprop="url" href="#" class="product__image">
+									<img itemprop="image" src="img/img-8.jpg" width="140" height="180" alt="img">
+								</a>
+								<!-- END .product__image -->
+								<!-- BEGIN .product__info -->
+								<div class="product__info">
+									<h3 class="product__title" itemprop="name">
+										<a href="#" itemprop="url">Sony ericcson k750 New</a>
+									</h3>
+									<a href="#" class="product__user">andrey 911</a>
+									<div class="clock">
+										<span>14</span> :
+										<span>03</span> :
+										<span>54</span>
+									</div>
+									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+									<button class="btn btn_bet">сделать ставку</button>
+									<link itemprop="availability" href="http://schema.org/InStock" />
+								</div>
+								<!-- END .product__info -->
+								<i class="badge badge_new" alt="Новый товар"></i>
+								<div class="prod-popup" style="display:block;">
+									<div class="prod-popup__title">ошибка</div>
+									<p>Только пользователи с <a href="#">дисконтной картой</a> могут принять участие в аукционе и чате. Для получения дисконтной карты сделайте покупку в нашем интернет-магазине на сумму свыше 800 грн. Если у вас уже есть дисконтная карта вы можете активировать ее в вашем <a href="#">личном кабинете</a></p>
+									<button class="btn btn_orange">закрыть</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- END .product-list -->
 				</div>
 			</div>
-			<div class="sort">
-				<div class="label">
-					<span class="label__title">сортировать по:</span>
-					<div class="label__select js-select">
-						<div class="label__select-val">
-							<button></button>
-							<span>по количеству просмотров</span>									
-						</div>
-						<ul class="label__select-options" style="display: none;">
-							<li>по количеству просмотров</li>
-							<li>...</li>
-							<li>...</li>
-							<li>...</li>
-							<li>...</li>
-							<li>...</li>
-							<li>...</li>
-						</ul>
-					</div>
-				</div>
-				<div class="sort-view">
-					<span>вид:</span>
-					<button><i class="icon-list"></i></button>
-					<button class="is-active"><i class="icon-grid"></i></button>
-				</div>
-			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_action" alt="Новый товар"></i>
-			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_top-sale" alt="Новый товар"></i>
-			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_soon" alt="Новый товар"></i>
-			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_action" alt="Новый товар"></i>
-			</div>
-			<div class="pagination pagination_mod">
+			<div class="pagination pagination_mod-top pagination_mod">
 		     	<span class="paginator__nav paginator__prev">Ctrl + <a href="#"><i></i></a></span>
 		     	<span class="paginator__nav paginator__next">Ctrl + <a href="#"><i></i></a></span>
 		     	<ul class="pagination__pages">
@@ -769,112 +894,173 @@
 		     	 	<li><a href="#">34</a></li>
 		     	</ul>
 		    </div>
-			<div class="tabs js-tabs">
-				<div class="tabs__top">
-					<div class="tabs__nav">
-						<button class="is-active">искавшие “samsung” покупают</button>
-					</div>
+		    <div class="qq qq_auction">
+				<div class="qq__top">
+					<div class="qq__type">вопросы</div>
 				</div>
-				<div class="tabs__content">
-					<!-- BEGIN .product-list -->
-					<ul class="product-list product-list_new">
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-										<span itemprop="ratingValue">3.5</span>
-									</div>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">В корзину</button>
-									<link itemprop="availability" href="http://schema.org/InStock" />
-								</div>
-								<!-- END .product__info -->
-								<i class="badge badge_new" alt="Новый товар"></i>
-							</div>
-						</li>
-						<li class="product" itemscope itemtype="http://schema.org/Product">
-							<div class="product__inner">
-								<!-- BEGIN .product__image -->
-								<a itemprop="url" href="#" class="product__image">
-									<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
-								</a>
-								<!-- END .product__image -->
-								<!-- BEGIN .product__info -->
-								<div class="product__info">
-									<h3 class="product__title" itemprop="name">
-										<a href="#" itemprop="url">DMC: Devil new May Cry</a>
-									</h3>
-									
-									<!-- BEGIN .rating -->
-									<ul class="rating">
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li class="is-active"><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-									<!-- END .rating -->
-									<div class="product__descr" itemprop="description">
-										<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
-										<p><a href="#">подробнее</a></p>
-									</div>
-									<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
-									<button class="btn">В корзину</button>
-								</div>
-								<!-- END .product__info -->
-								<i class="badge badge_best" alt="Лучший товар"></i>
-							</div>
-						</li>
-					</ul>
-					<!-- END .product-list -->
-				</div>
-			</div>	
-			<!-- BEGIN Banner -->
-			<div class="banner">
-				<div class="banner__title">баннер</div>
-				<div class="popular">
-					<!-- BEGIN .popular__image -->
-					<a class="popular__image" href="#">
-						<img src="img/img-3.jpg" width="87" height="100" alt="img">
-					</a>
-					<!-- END .popular__image -->
-					<!-- BEGIN .popular__info -->
-					<div class="popular__info">
-						<h3 class="popular__sub-title" >
-							<a href="#">Far Cry 3 Коллекц. издание (рус.)</a>
-						</h3>
-						<a href="#" class="popular__price">
-							<strong itemprop="price">954</strong> грн.
-							<div class="popular__btn"><i class="icon icon_basket"></i></div>
-						</a>
+				<div class="qq__content">
+					<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+					<div class="qq__center">
+						<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+						<div class="qq__theme">купил со <span>скидкой 30%</span> за 7грн.</div>
 					</div>
-					<!-- END .popular__info -->
+					<div class="qq__right">
+						<i class="icon-big-arrow"></i>
+						<a href="#" class="qq__prod-img"><img src="img/img-1.jpg" alt="img" width="80" height="90"></a>
+						<a href="#" class="qq__prod-name">Sony ericcson k750 New</a>
+					</div>
 				</div>
 			</div>
-			<!-- END Banner -->			
+		    <div class="qq">
+				<div class="qq__top">
+					<div class="qq__type">вопросы</div>
+					<div class="qq__all-link"><a href="#">Все отзывы</a></div>
+				</div>
+				<div class="qq__content">
+					<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+					<div class="qq__right">
+						<!-- BEGIN .rating -->
+						<div class="rating">
+							<div class="rating__in js-rating" data-score="4" style="cursor: pointer; width: 80px;"><img src="img/icons/rating-act.png" alt="1" title="bad"><img src="img/icons/rating-act.png" alt="2" title="poor"><img src="img/icons/rating-act.png" alt="3" title="regular"><img src="img/icons/rating-act.png" alt="4" title="good"><img src="img/icons/rating.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="4"></div>
+						</div>
+						<!-- END .rating -->
+						<div class="qq__useful">
+							<span>Вопрос полезен?</span>
+							<ul>
+								<li><button class="btn btn_gray">ДА</button><i>41</i></li>
+								<li><button class="btn btn_gray">НЕТ</button><i>42</i></li>
+							</ul>
+						</div>
+					</div>
+					<div class="qq__center">
+						<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+						<div class="qq__theme">какая-то очень длинная тема для вопроса</div>
+						<div class="qq__txt">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режимеe ngaging</div>
+						<div class="qq__links">
+							<a href="#">Ответить</a>
+							<div class="share">
+								<span class="share__link">Поделиться</span>
+								<div class="share__list">
+									<div class="share__list-in">
+										<button class="share__fb"><i></i></button>
+										<button class="share__vk"><i></i></button>
+										<button class="share__tw"><i></i></button>
+										<button class="share__ml"><i></i></button>
+									</div>										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qq__content qq__content_review">
+					<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+					<div class="qq__right">
+						<!-- BEGIN .rating -->
+						<div class="rating">
+							<div class="rating__in js-rating" data-score="4" style="cursor: pointer; width: 80px;"><img src="img/icons/rating-act.png" alt="1" title="bad"><img src="img/icons/rating-act.png" alt="2" title="poor"><img src="img/icons/rating-act.png" alt="3" title="regular"><img src="img/icons/rating-act.png" alt="4" title="good"><img src="img/icons/rating.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="4"></div>
+						</div>
+						<!-- END .rating -->
+						<div class="qq__useful">
+							<span>Вопрос полезен?</span>
+							<ul>
+								<li><button class="btn btn_gray">ДА</button><i>41</i></li>
+								<li><button class="btn btn_gray">НЕТ</button><i>42</i></li>
+							</ul>
+						</div>
+					</div>
+					<div class="qq__center">
+						<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+						<div class="qq__theme">какая-то очень длинная тема для вопроса</div>
+						<div class="qq__txt">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режимеe ngaging</div>
+						<div class="qq__links">
+							<a href="#">Ответить</a>
+							<div class="share">
+								<span class="share__link">Поделиться</span>
+								<div class="share__list">
+									<div class="share__list-in">
+										<button class="share__fb"><i></i></button>
+										<button class="share__vk"><i></i></button>
+										<button class="share__tw"><i></i></button>
+										<button class="share__ml"><i></i></button>
+									</div>										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qq__content">
+					<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+					<div class="qq__right">
+						<!-- BEGIN .rating -->
+						<div class="rating">
+							<div class="rating__in js-rating" data-score="4" style="cursor: pointer; width: 80px;"><img src="img/icons/rating-act.png" alt="1" title="bad"><img src="img/icons/rating-act.png" alt="2" title="poor"><img src="img/icons/rating-act.png" alt="3" title="regular"><img src="img/icons/rating-act.png" alt="4" title="good"><img src="img/icons/rating.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="4"></div>
+						</div>
+						<!-- END .rating -->
+						<div class="qq__useful">
+							<span>Вопрос полезен?</span>
+							<ul>
+								<li><button class="btn btn_gray">ДА</button><i>41</i></li>
+								<li><button class="btn btn_gray">НЕТ</button><i>42</i></li>
+							</ul>
+						</div>
+					</div>
+					<div class="qq__center">
+						<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+						<div class="qq__theme">какая-то очень длинная тема для вопроса</div>
+						<div class="qq__txt">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режимеe ngaging</div>
+						<div class="qq__links">
+							<a href="#">Ответить</a>
+							<div class="share">
+								<span class="share__link">Поделиться</span>
+								<div class="share__list">
+									<div class="share__list-in">
+										<button class="share__fb"><i></i></button>
+										<button class="share__vk"><i></i></button>
+										<button class="share__tw"><i></i></button>
+										<button class="share__ml"><i></i></button>
+									</div>										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="qq__add">
+					<div class="qq__top">
+						<div class="qq__type">оставить комментарий</div>
+					</div>
+					<div class="qq__content">
+						<div class="label">
+							<span class="label__title">Написать от</span>
+							<div class="label__select js-select">
+								<div class="label__select-val">
+									<button></button>
+									<span>Chuck</span>									
+								</div>
+								<ul class="label__select-options" style="display: none;">
+									<li>Chuck</li>
+									<li>Terminator</li>
+								</ul>
+							</div>
+						</div>
+						<label class="label">
+							<span class="label__title">Эл.почта</span>
+							<input class="label__input" type="text">								
+						</label>
+						<label class="label-check">
+							<input type="checkbox">
+							<i></i>
+							<span>Уведомлять об ответах на e-mail</span>
+						</label>
+						<label class="label">
+							<span class="label__title">Комментарий</span>
+							<textarea class="label__area"></textarea>
+						</label>
+						<div class="qq__add-btn">
+							<button class="btn">добавить комментарий</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- END .l-main -->
 	</div>
