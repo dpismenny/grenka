@@ -219,6 +219,20 @@ tabs();
      $('.js-scroll-pane').jScrollPane();
   }
 
+  $(".js-show-order").click(function(){
+    if ($(this).hasClass("js-active")) {
+      $(this).text("Посмотреть");
+      $(this).removeClass("js-active");
+      $(this).parent().parent().next().find(".cart__table").hide();
+    }
+    else {
+      
+      $(this).text("Скрыть");
+      $(this).addClass("js-active");
+      $(this).parent().parent().next().find(".cart__table").show();
+    }
+    return false;
+  });
   
     
 

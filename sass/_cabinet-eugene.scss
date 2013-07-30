@@ -249,3 +249,124 @@
     }
     
 }
+
+
+.auction-info {
+    font-size: 12px;
+    .title_orange {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+.auction-info__title {
+    position: relative;
+    margin-bottom: 18px;
+    padding-left: 40px;
+    font-size: 27px;
+    @include pm;
+    text-transform: uppercase;
+    color: #000;
+    &.is-privat {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            @include s(key);
+        }
+    }
+}
+.rules-list {
+    margin-bottom: 37px;
+    padding-left: 20px;
+    li {  
+        margin-bottom: 15px;
+        padding-left: 20px;
+        position: relative;
+        &:after {  
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            @include s(list-type);   
+        }
+        li {
+            padding-left: 0;
+            &:after {
+                left: -20px;
+            }
+        }
+    }
+}
+
+.spec-table_basket {
+    .spec-table__body {
+        tr {
+            position: relative;
+            &.spec-table__gray {
+                background: #f0f0f0;
+            }
+            // &:after {
+            //     content: "";
+            //     position: absolute;
+            //     top: 50%;
+            //     right: 0;
+            //     margin-top: -2px;
+            //     @include s(arrow2-big);
+            // }        
+        }
+        td {
+            &:nth-child(3) {
+                color: #000;
+                font-weight: bold;
+            }
+        }
+    }
+    table {
+        width: 100%;
+        border-bottom: 1px solid $brcl;
+        tr {
+            background: #fff !important;
+            &:after {
+                display: none;
+            }
+        }
+        td {
+            vertical-align: middle;
+            text-align: left !important;
+            &:first-child {
+                
+            }
+        }
+    }  
+    .btn_gray {
+            margin-right: 5px;
+        }
+}
+.spec-table__drop {
+    padding: 0 !important;
+    border-bottom: none !important;
+    td,th {
+        border-bottom: none !important;
+    }
+    .cart__table {
+        display: none;
+        margin-bottom: 0;
+        
+    }
+    .cart__table th, 
+    .cart__table td {
+        &:first-child {
+            padding-left: 15px;
+        }
+        &:nth-child(2) {
+            width: 130px;
+        }
+    }
+    .cart__table td {
+        padding: 13px 15px !important;
+    }
+    .cart__table th {
+        padding: 2px 15px !important;
+    }
+}
