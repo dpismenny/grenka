@@ -523,13 +523,15 @@
     color: #6aa916;
     text-transform: uppercase;
     &.is-pre-order {
+        color: #f4b801;
         i {
-            @include s(in-stock);
+            @include s(preorder);
         }
     }
     &.is-no-stock {
+        color: #929292;
         i {
-            @include s(in-stock);
+            @include s(not-stock);
         }
     }
     i {  
@@ -551,6 +553,37 @@
         }
     }
 }
+.prod-popup {
+    display: none;
+    position: absolute;
+    bottom: 64px;
+    left: -99px;
+    text-align: center;
+    @include box-sizing(border-box);
+    padding: 12px 30px 28px;
+    width: 350px;
+    border: 1px solid #bcbcbc;
+    @include box-shadow(0 1px 16px rgba(0,0,0,.26));
+    @include background-image(linear-gradient(#fff, #e8e8e8));
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        margin-left: -10px;
+        @include s(arrow5);
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+.prod-popup__title {
+    margin-bottom: 13px;
+    color: #f24800;
+    font-size: 20px;
+    text-transform: uppercase;
+    @include pm;
+}  
 .product-row__deliv  {
     i, span {
         display: inline-block;
@@ -560,13 +593,16 @@
         @include s(add2);
         margin-right: 5px;
     }
-    span {
+    span {   
         width: 55px;
         color: #5e5e5e;
         font-size: 10px;
         text-transform: uppercase;
         @include pm;
     }
+}
+.pagination_mod-top {
+    margin-top: -20px;
 }
 
 .bradn-logo {
@@ -960,4 +996,7 @@
         @include s(arrow);
         
     }
+}
+.product-list_new {
+    margin-bottom: 0;
 }

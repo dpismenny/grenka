@@ -2037,6 +2037,19 @@
 .qq {
 	margin-bottom: 30px;
 }
+.qq_auction {
+	.qq__left,
+	.qq__right,
+	.qq__ava,
+	.qq__center {
+		float: none;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.qq__center {
+		margin-right: 20px;
+	}
+}
 .qq_mod {
 	display: table;
 	min-width: 585px;
@@ -2210,6 +2223,9 @@
 	font-size: 16px;
 	color: #303030;
 	text-transform: uppercase;
+	span {
+		color: #f47e01;
+	}
 }
 .qq__txt {
 	font-size: 12px;
@@ -2228,6 +2244,26 @@
 			text-decoration: none;
 		}
 	}
+}
+.icon-big-arrow {
+	display: inline-block;
+	margin-right: 45px;
+	vertical-align: middle;
+	@include s(big-arrow);
+}
+.qq__prod-img,
+.qq__prod-name {
+	display: inline-block;
+	vertical-align: middle;
+}
+.qq__prod-name {
+	margin-left: 20px;
+	width: 125px;
+	font-size: 18px;
+	text-transform: uppercase;
+	@include pm;
+	line-height: 1.1;
+	color: #000;
 }
 .qq__add {
 	.qq__type {
