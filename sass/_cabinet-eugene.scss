@@ -9,7 +9,7 @@
 .progress-main__percent {
     display: inline-block; 
     vertical-align: middle;
-    @include pm;
+    @include pm; 
     font-size: 18px;
     color: #6baa19;
     text-transform: uppercase;
