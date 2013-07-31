@@ -1038,6 +1038,10 @@
 	display: none;
 	border: 1px solid $brcl;
 	@extend %clr;
+	.product-row {
+		border-left: 0;
+		border-right: 0;
+	}
 }
 //prod
 .prod {
@@ -2070,7 +2074,7 @@
 	text-align: center;
 }
 .product-list {
-	margin-bottom: 35px;
+	//margin-bottom: 35px;
 	.add-order {
 		position: relative;
 		top: -1px;

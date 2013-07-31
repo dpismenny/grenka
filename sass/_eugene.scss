@@ -958,3 +958,16 @@
 .product-list_new {
     margin-bottom: 0 !important;
 }
+
+.is-brand-page {
+    background: #000;
+}
+.branding {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1200px;
+    background: url(../img/brand.jpg) no-repeat 0 0;
+    z-index: 0;
+}

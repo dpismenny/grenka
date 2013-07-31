@@ -451,8 +451,12 @@
 	}
 }
 .page{
+	position: relative;
+	z-index: 2;
+	padding: 0 10px;
 	@extend %site;
 	margin-bottom: 5px;
+	background: #fff;
 }
 .recent-buy__title {
 	@include pm;

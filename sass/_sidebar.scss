@@ -492,6 +492,9 @@
     margin-bottom: -10px;
     padding: 0 20px;
     border-bottom: 1px solid $brcl;
+    .label__title {
+        font-size: 12px;
+    }
     @extend %clr;
     .label {
         float: left;
