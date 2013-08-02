@@ -1902,8 +1902,9 @@ textarea { font-family: Arial,sans-serif; }
 .top-prod { float: left; margin-left: 30px; width: 195px; text-align: center; }
 .top-prod:first-child { margin-left: 0; }
 
-.top-prod__img { display: block; margin-bottom: 25px; position: relative; }
+.top-prod__img { display: block; margin-bottom: 25px; position: relative; height: 228px; width: 195px; }
 .top-prod__img img { display: block; }
+.top-prod__img img:hover { position: absolute; right: -30px; top: -30px; bottom: -30px; left: -30px; width: 255px; height: 288px; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; -webkit-box-shadow: 0 0 30px black; -moz-box-shadow: 0 0 30px black; box-shadow: 0 0 30px black; }
 .top-prod__img .badge_counter { top: -11px; left: -8px; width: 42px; height: 42px; line-height: 42px; font-size: 26px; }
 
 .top-prod__pre-order { margin-top: 5px; color: #747474; font-size: 14px; text-transform: uppercase; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; }

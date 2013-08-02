@@ -879,13 +879,32 @@
     &:first-child {
         margin-left: 0;
     }
+    &.is-hover {
+        img {
+            
+        }
+    }
 }
 .top-prod__img {
     display: block;
     margin-bottom: 25px;
     position: relative;
+    height: 228px;
+    width: 195px;
     img {
         display: block;
+        
+        &:hover {
+            position: absolute;
+            right: -30px;
+            top: -30px;
+            bottom: -30px;
+            left: -30px;
+            width: 255px;
+            height: 288px;
+            @include transition(all .3s linear);
+            @include box-shadow(0 0 30px #000);
+        }
     }
     .badge_counter {
         top: -11px;
