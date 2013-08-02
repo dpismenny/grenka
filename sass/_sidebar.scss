@@ -528,6 +528,7 @@
     @include background-image(linear-gradient(top, #fdfdfd 0%, #f3f3f3 100%));
 }
 .s-delivery {
+    margin-bottom: 20px;
     background: #f0f0f0;
     .sidebar-head {
         @include background-image(linear-gradient(top, #8ac143 0%, #69a915 100%));

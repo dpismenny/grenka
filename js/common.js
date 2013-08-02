@@ -150,6 +150,22 @@ tabs();
       }
     );
 	
+  $(".add-order__pic img").hover(
+      function () {
+        $(this).addClass("is-hover");
+      },
+      function () {
+        $(this).removeClass("is-hover");
+      }
+    );
+    // prod.hover(
+    //   function () {
+    //     //$(this).parent().parent().addClass("is-hover");
+    //   },
+    //   function () {
+    //     $(this).removeClass("is-hover");
+    //   }
+    // );
 
 // ------------------- Fancybox ----------------------// 
   $(".to-favorite").fancybox({
