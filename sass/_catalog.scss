@@ -131,7 +131,8 @@
 			color: #000;
 		}
 	}
-	&:first-child {
+	&:first-child,
+	&:nth-child(6n+1) {
 		width: 17.5%;
 		.categ-block__link {
 			border-left: 0;
