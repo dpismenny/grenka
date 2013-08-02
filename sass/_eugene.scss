@@ -791,6 +791,33 @@
         }
     }
 }
+.spec-table_cards {
+    div {
+        position: relative;
+    }
+}
+.spec-table_loyalty {
+    th {
+        max-width: 47px;
+        padding: 7px 2px;
+        font-size: 10px;
+        font-weight: normal;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .spec-table__body {
+        td {
+            &:first-child {
+                padding: 0 12px;
+            }
+            &:nth-child(2) {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
 .pagination_mod {
     margin-bottom: 30px;
 }

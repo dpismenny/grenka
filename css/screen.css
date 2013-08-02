@@ -1869,6 +1869,12 @@ textarea { font-family: Arial,sans-serif; }
 .spec-table_order .spec-table__body .is-not-pay { color: #fa0000; }
 .spec-table_order .spec-table__body .is-paid { color: #69a915; }
 
+.spec-table_cards div { position: relative; }
+
+.spec-table_loyalty th { max-width: 47px; padding: 7px 2px; font-size: 10px; font-weight: normal; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.spec-table_loyalty .spec-table__body td:first-child { padding: 0 12px; }
+.spec-table_loyalty .spec-table__body td:nth-child(2) { padding: 0 5px; }
+
 .pagination_mod { margin-bottom: 30px; }
 
 .action-item { position: relative; margin-bottom: -1px; padding: 30px 40px 30px 30px; border: 1px solid gainsboro; }
