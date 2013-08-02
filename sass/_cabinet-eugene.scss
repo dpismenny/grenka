@@ -75,7 +75,8 @@
     margin-bottom: 16px;
     white-space: nowrap;
     .label-check,
-    .progress {
+    .progress,
+    .label__select {
         display: inline-block;
         vertical-align: middle;
     }
@@ -84,8 +85,10 @@
         line-height: 1;
         margin-right: 3px;
     }
-    .progress {
+    .progress,
+    .label__select {
         width: 490px;
+        margin-bottom: 0;
     }
 }
 
@@ -242,7 +245,7 @@
             text-decoration: underline;
         }
         tr {
-            &:nth-child(2n) {
+            &:nth-child(4n-3) {
                 background: #f4f4f4;
             }
         }
@@ -303,17 +306,9 @@
     .spec-table__body {
         tr {
             position: relative;
-            &.spec-table__gray {
+            &:nth-child(4n-3) {
                 background: #f0f0f0;
-            }
-            // &:after {
-            //     content: "";
-            //     position: absolute;
-            //     top: 50%;
-            //     right: 0;
-            //     margin-top: -2px;
-            //     @include s(arrow2-big);
-            // }        
+            }      
         }
         td {
             &:nth-child(3) {
@@ -334,14 +329,11 @@
         td {
             vertical-align: middle;
             text-align: left !important;
-            &:first-child {
-                
-            }
         }
     }  
     .btn_gray {
-            margin-right: 5px;
-        }
+        margin-right: 5px;
+    }
 }
 .spec-table__drop {
     padding: 0 !important;

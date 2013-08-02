@@ -1769,7 +1769,9 @@ textarea { font-family: Arial,sans-serif; }
 .product-row_top .product-row__meta { width: 117px; }
 .product-row_top .product-row__deliv span { font-size: 18px; }
 
-.product-row__img { float: left; margin-right: 30px; }
+.product-row__img { position: relative; float: left; margin-right: 30px; width: 96px; height: 131px; }
+.product-row__img img { display: block; }
+.product-row__img img:hover { position: absolute; top: -30px; right: -30px; bottom: -30px; left: -30px; width: 156px; height: 191px; z-index: 2; -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; transition: all 0.3s linear; -webkit-box-shadow: 0 0 20px black; -moz-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
 
 .product-row__descr { float: left; width: 400px; color: #606060; }
 .product-row__descr p { margin-bottom: 7px; }
@@ -2284,9 +2286,9 @@ textarea { font-family: Arial,sans-serif; }
 .interest-wrap { margin-bottom: 40px; }
 
 .interest { margin-bottom: 16px; white-space: nowrap; }
-.interest .label-check, .interest .progress { display: inline-block; vertical-align: middle; }
+.interest .label-check, .interest .progress, .interest .label__select { display: inline-block; vertical-align: middle; }
 .interest .label-check { width: 150px; line-height: 1; margin-right: 3px; }
-.interest .progress { width: 490px; }
+.interest .progress, .interest .label__select { width: 490px; margin-bottom: 0; }
 
 .progress { font-size: 0; }
 
@@ -2327,7 +2329,7 @@ textarea { font-family: Arial,sans-serif; }
 .spec-table_order-cabinet .spec-table__body td:nth-child(2) { text-align: left; }
 .spec-table_order-cabinet .spec-table__body span { display: block; color: #a6a6a6; font-size: 10px; }
 .spec-table_order-cabinet .spec-table__body a { text-decoration: underline; }
-.spec-table_order-cabinet .spec-table__body tr:nth-child(2n) { background: #f4f4f4; }
+.spec-table_order-cabinet .spec-table__body tr:nth-child(4n-3) { background: #f4f4f4; }
 
 .auction-info { font-size: 12px; }
 .auction-info .title_orange { font-size: 20px; text-align: center; }
@@ -2342,7 +2344,7 @@ textarea { font-family: Arial,sans-serif; }
 .rules-list li li:after { left: -20px; }
 
 .spec-table_basket .spec-table__body tr { position: relative; }
-.spec-table_basket .spec-table__body tr.spec-table__gray { background: #f0f0f0; }
+.spec-table_basket .spec-table__body tr:nth-child(4n-3) { background: #f0f0f0; }
 .spec-table_basket .spec-table__body td:nth-child(3) { color: #000; font-weight: bold; }
 .spec-table_basket table { width: 100%; border-bottom: 1px solid gainsboro; }
 .spec-table_basket table tr { background: #fff !important; }

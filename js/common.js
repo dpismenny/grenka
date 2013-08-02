@@ -216,7 +216,9 @@ tabs();
   });
 
   if ($(".js-scroll-pane").length > 0) {
-     $('.js-scroll-pane').jScrollPane();
+     $('.js-scroll-pane').jScrollPane({
+      autoReinitialise: true
+     });
   }
 
   $(".js-show-order").click(function(){
@@ -232,6 +234,10 @@ tabs();
       $(this).parent().parent().next().find(".cart__table").show();
     }
     return false;
+  });
+  $(".js-detail-order").click(function(){
+      $(this).parent().parent().next().find(".cart__table").toggle();
+      return false;
   });
   
     

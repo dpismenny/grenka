@@ -99,6 +99,9 @@
 	}
 }
 .gallery__slide {
+	&.is-inactive {
+			
+	}
 	a {
 		position: relative;
 		display: block;

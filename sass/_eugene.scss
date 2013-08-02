@@ -462,8 +462,26 @@
     }
 }
 .product-row__img {
+    position: relative;
     float: left;
     margin-right: 30px;
+    width: 96px;
+    height: 131px;
+    img {
+        display: block;
+        &:hover {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            bottom: -30px;
+            left: -30px;
+            width: 156px;  
+            height: 191px;
+            z-index: 2;
+            @include transition(all .3s linear);
+            @include box-shadow(0 0 20px #000);
+        }
+    }
 }
 .product-row__descr {
     float: left;
