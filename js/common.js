@@ -255,36 +255,44 @@ tabs();
       $(this).parent().parent().next().find(".cart__table").toggle();
       return false;
   });
+
   
     
-// Created by Artur Moroz!
+//  -------------------------------- Created by Artur Moroz!
 //rating
-$('.js-rating').raty({
-  width: 80,
-  starOff: 'img/icons/rating.png',
-  starOn : 'img/icons/rating-act.png',
-  score: function() {
-    return $(this).attr('data-score');
-  }
-});
-$('.js-rating-big').raty({
-  width: 130,
-  starOff: 'img/icons/rating-big.png',
-  starOn : 'img/icons/rating-big-act.png',
-  score: function() {
-    return $(this).attr('data-score');
-  }
-});
-$('.js-rating-read').raty({
-  readOnly: true,
-  noRatedMsg: "",
-  width: 80,
-  starOff: 'img/icons/rating.png',
-  starOn : 'img/icons/rating-act.png',
-  score: function() {
-    return $(this).attr('data-score');
-  }
-});
+ if ($('.js-rating').length > 0) {
+  $('.js-rating').raty({
+    width: 80,
+    starOff: 'img/icons/rating.png',
+    starOn : 'img/icons/rating-act.png',
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+ }
+
+if ($('.js-rating-big').length > 0) {
+  $('.js-rating-big').raty({
+    width: 130,
+    starOff: 'img/icons/rating-big.png',
+    starOn : 'img/icons/rating-big-act.png',
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+ }
+if ($('.js-rating-read').length > 0) {
+  $('.js-rating-read').raty({
+    readOnly: true,
+    noRatedMsg: "",
+    width: 80,
+    starOff: 'img/icons/rating.png',
+    starOn : 'img/icons/rating-act.png',
+    score: function() {
+      return $(this).attr('data-score');
+    }
+  });
+}
 
 //hide address on cart
 $('.js-hide-address').click(function() {

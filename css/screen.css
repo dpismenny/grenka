@@ -1936,8 +1936,6 @@ textarea { font-family: Arial,sans-serif; }
 
 .product-list_new { margin-bottom: 0 !important; }
 
-.is-brand-page { background: #000; }
-
 .branding { position: absolute; top: 0; left: 0; right: 0; height: 1200px; background: url(../img/brand.jpg) no-repeat 0 0; z-index: 0; }
 
 .fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-nav, .fancybox-nav span, .fancybox-tmp { padding: 0; margin: 0; border: 0; outline: none; vertical-align: top; }
@@ -2952,10 +2950,11 @@ textarea { font-family: Arial,sans-serif; }
 .compare__counter { position: absolute; top: 10px; left: 10px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 16px; color: #fff; text-align: center; width: 25px; height: 25px; line-height: 25px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #f37b01; font-size: 16px; font-style: normal; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f37b01), color-stop(0.68%, #f37b01), color-stop(100%, #f79703)); background-image: -webkit-linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #f79703 100%); background-image: -moz-linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #f79703 100%); background-image: -o-linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #f79703 100%); background-image: linear-gradient(bottom, #f37b01 0%, #f37b01 0.68%, #f79703 100%); }
 
 .compare__del { position: absolute; top: 6px; right: 6px; width: 15px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 15px; line-height: 1; text-align: center; border: 1px solid #dcdcdc; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #e3e3e3), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(bottom, #e3e3e3 0%, #ffffff 100%); background-image: -moz-linear-gradient(bottom, #e3e3e3 0%, #ffffff 100%); background-image: -o-linear-gradient(bottom, #e3e3e3 0%, #ffffff 100%); background-image: linear-gradient(bottom, #e3e3e3 0%, #ffffff 100%); }
+.compare__del:hover i { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); opacity: 0.6; }
 .compare__del i { position: absolute; top: 50%; left: 50%; margin: -4px 0 0 -4px; background: url('../img/icons-s2e9ba04c0d.png') 0 -5057px no-repeat; width: 8px; height: 7px; }
 
 .compare__body td { padding: 15px 0; border: 1px solid gainsboro; text-align: center; }
-.compare__body td:first-child { padding-left: 20px; text-align: left; background: #f0f0f0; }
+.compare__body td:first-child { padding-left: 20px; text-align: left; background: #f0f0f0; color: #6cab1a; }
 
 /* CSS Styles that are needed by jScrollPane for it to operate correctly.  Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane may not operate correctly without them. */
 .jspContainer { overflow: hidden; position: relative; }
