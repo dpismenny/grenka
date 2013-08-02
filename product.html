@@ -16,6 +16,136 @@
 	<script src="js/common-moroz.js"></script>
 </head>
 <body>
+<!-- BEGIN .top -->
+<div class="top">
+	<!-- BEGIN .top__in -->
+	<div class="top__in">
+		<!-- BEGIN .location -->
+		<div class="location js-top-popup">
+			<div class="location__city">
+				<span>Ваш город:</span>
+				<strong>Киев</strong>
+				<i class="ico-arr"><i></i></i>
+			</div>
+			<div class="location__down">
+				<div class="location__title">Изменить местоположение</div>
+				<label class="label">
+					<span class="label__title">Введите название:</span>
+					<input class="label__input" type="text">
+				</label>
+				<div class="location__cities">
+					<span>Часто используемые города:</span>
+					<a href="#" class="#">Киев</a>
+					<a href="#" class="#">Донецк</a>
+					<a href="#" class="#">Днепропетровск</a>
+					<a href="#" class="#">Запорожье</a>
+					<a href="#" class="#">Харьков</a>
+					<a href="#" class="#">Бердянск</a>
+					<a href="#" class="#">Полтава</a>
+					<a href="#" class="#">Днепродзержинск</a>
+					<a href="#" class="#">Винница</a>
+					<a href="#" class="#">Хмельницкий</a>
+					<a href="#" class="#">Одесса</a>
+					<a href="#" class="#">Симферополь</a>
+				</div>
+				<button class="btn btn_orange">запомнить</button>
+			</div>	
+		</div>	
+		<!-- BEGIN .top__nav -->
+		<nav class="top__nav">
+			<ul>
+				<li><a href="#">Категории</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>		
+		<!-- END .topper__nav -->
+		<!-- BEGIN .callback -->
+		<div class="callback js-top-popup">
+			<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
+			<div class="callback__down">
+				<label class="label">
+					<span class="label__title">Ваше имя:</span>
+					<input class="label__input" type="text">
+				</label>
+				<label class="label">
+					<span class="label__title">Телефон:</span>
+					<input class="label__input" type="text">
+				</label>
+				<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
+				<div class="callback__time">
+					<strong>Когда перезвонить?</strong>
+					<div class="callback__cols">
+						<div class="callback__column">
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>В указанное время</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>Сейчас</span>
+							</label>
+						</div>
+						<div class="callback__column">
+							<div class="label">
+								<input class="label__input" type="text">
+							</div>
+							<button class="btn btn_orange">перезвонить</button>
+						</div>
+					</div>										
+				</div>
+			</div>
+		</div>
+		<!--END .callback -->
+	 <!-- BEGIN .livechat -->
+		<div class="livechat">
+		   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+		</div>
+	  <!-- END .livechat -->
+		<!-- BEGIN .enter -->
+		<div class="enter">
+			<a class="enter__reg" href="#">Регистрация</a>
+			<div class="enter__go js-top-popup">
+				<button class="btn btn_gray">Вход</button>
+				<div class="enter__down">
+					<div class="enter__login">
+						<label class="label label_error">
+							<input class="label__input" type="text" placeholder="Логин">
+							<span class="label__tooltip">Неверный логин</span>
+						</label>
+						<label class="label label_error">
+							<input class="label__input" type="password" placeholder="Пароль">
+							<span class="label__tooltip">Неверный пароль</span>
+						</label>
+					</div>
+					<label class="label-check">
+						<input type="checkbox">
+						<i></i>
+						<span>Запомнить</span>
+						<a href="#">Забыли пароль?</a>
+					</label>
+					<div class="enter-soc">
+						<span class="enter-soc__text">Войти через:</span>
+						<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+					</div>
+					<div class="btn-wrap">
+						<button class="btn btn_orange">Войти на сайт</button>
+					</div>
+					<a href="#" class="btn-simple">зарегистрируйся и получи скидку</a>
+				</div>
+			</div>			
+		</div>
+		<!-- END .enter -->
+	</div>
+</div>
+<!-- END .top -->
 	<!-- BEGIN  page-->
 <div class="page">
 	<!-- BEGIN .header -->
@@ -277,13 +407,15 @@
 			<div class="buy-click__title">купить сейчас за один клик</div>
 			<div class="buy-click__form">
 				<div class="buy-click__pref">+38</div>
-				<label class="label buy-click__code">
+				<label class="label buy-click__code label_error">
 					<input class="label__input js-placeholder" type="text">
-					<span>Код<i>*</i></span>					
+					<span>Код<i>*</i></span>		
+					<span class="label__tooltip">Неверный Код</span>		
 				</label>
-				<label class="label buy-click__number">
+				<label class="label buy-click__number label_error">
 					<input class="label__input js-placeholder" type="text">
-					<span>Номер телефона<i>*</i></span>					
+					<span>Номер телефона<i>*</i></span>		
+					<span class="label__tooltip">Неверный номер</span>			
 				</label>
 				<div class="btn">купить за один клик</div>
 				<div class="buy-click__help">* - обязательные поля для заполнения</div>
@@ -363,9 +495,11 @@
 				<div class="description__content">
 					<div class="description__title">Описание Battlefield 3 Русская версия (PC) Jewel Case</div>
 					<div class="description__txt">
+						<p>В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...
+						В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...</p>
 						<p>В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...</p>
 						<p>В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...</p>
-						<p>В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...</p>
+
 					</div>
 					<div class="description__open"><button class="js-read-all">Читать полностью...</button></div>
 				</div>
@@ -417,7 +551,7 @@
 					</div>
 				</div>
 				<!-- BEGIN .qq -->
-				<div class="qq qq_mod">
+				<div class="qq">
 					<div class="qq__top">
 						<div class="qq__type">отзывы</div>
 						<div class="qq__all-link"><a href="#">Все отзывы</a></div>
@@ -449,7 +583,7 @@
 				<!-- BEGIN .qq -->
 				<div class="qq">
 					<div class="qq__top">
-						<div class="qq__type">вопросы</div>
+						<div class="qq__type">Все вопросы</div>
 						<div class="qq__all-link"><a href="#">Все отзывы</a></div>
 					</div>
 					<div class="qq__content">
@@ -562,7 +696,7 @@
 					</div>
 					<div class="qq__add">
 						<div class="qq__top">
-							<div class="qq__type">оставить комментарий</div>
+							<div class="qq__type">оставить вопрос</div>
 						</div>
 						<div class="qq__content">
 							<div class="label">

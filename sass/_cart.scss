@@ -1863,9 +1863,19 @@
 }
 .buy-click__code {
 	width: 76px;
+	.label__tooltip {
+		top: -24px !important;
+		width: 100px;
+		left: -55px !important;
+	}
 }
 .buy-click__number {
 	width: 166px;
+	.label__tooltip {
+		top: -24px !important;
+		width: 100px;
+		left: 0;
+	}
 }
 .buy-click__help {
 	padding-left: 30px;
@@ -1960,7 +1970,7 @@
 	line-height: 1.2;
 }
 .description__txt {	
-	height: 135px;
+	height: 275px;
 	margin-bottom: 10px;
 	overflow: hidden;
 }
@@ -1986,7 +1996,14 @@
 		}
 		&:hover {
 			text-decoration: none;
-		}		
+		}
+		&.is-open {
+			&:before {
+				content: "";
+				border-width: 0 3px 4px 3px; 
+				border-color: transparent transparent $green transparent;
+			}
+		}
 	}
 }
 .description__detail {
@@ -2063,6 +2080,7 @@
 //qq
 .qq {
 	margin-bottom: 30px;
+	clear: both;
 }
 .qq_auction {
 	.qq__left,

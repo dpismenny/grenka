@@ -1214,8 +1214,10 @@ textarea { font-family: Arial,sans-serif; }
 .buy-click__pref { float: left; margin: 6px 10px 0 0; font-weight: bold; }
 
 .buy-click__code { width: 76px; }
+.buy-click__code .label__tooltip { top: -24px !important; width: 100px; left: -55px !important; }
 
 .buy-click__number { width: 166px; }
+.buy-click__number .label__tooltip { top: -24px !important; width: 100px; left: 0; }
 
 .buy-click__help { padding-left: 30px; clear: both; font-size: 10px; color: #949494; }
 
@@ -1242,11 +1244,12 @@ textarea { font-family: Arial,sans-serif; }
 
 .description__title { margin: 0 160px 20px 0; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 24px; color: #303030; text-transform: uppercase; line-height: 1.2; }
 
-.description__txt { height: 135px; margin-bottom: 10px; overflow: hidden; }
+.description__txt { height: 275px; margin-bottom: 10px; overflow: hidden; }
 
 .description__open button { position: relative; padding-left: 13px; font-size: 11px; background: none; color: #69a915; text-decoration: underline; overflow: visible; }
 .description__open button:before { content: ""; position: absolute; top: 5px; left: 0; width: 0px; height: 0px; border-style: solid; border-width: 4px 3px 0 3px; border-color: #69a915 transparent transparent transparent; }
 .description__open button:hover { text-decoration: none; }
+.description__open button.is-open:before { content: ""; border-width: 0 3px 4px 3px; border-color: transparent transparent #69a915 transparent; }
 
 .description__detail { margin-bottom: 34px; overflow: hidden; }
 .description__detail .table { float: left; width: 315px; margin-right: 10px; }
@@ -1270,7 +1273,7 @@ textarea { font-family: Arial,sans-serif; }
 .description__buy-link a { font-size: 11px; color: #f47b01; text-decoration: underline; }
 .description__buy-link a:hover { text-decoration: none; }
 
-.qq { margin-bottom: 30px; }
+.qq { margin-bottom: 30px; clear: both; }
 
 .qq_auction .qq__left, .qq_auction .qq__right, .qq_auction .qq__ava, .qq_auction .qq__center { float: none; display: inline-block; vertical-align: middle; }
 .qq_auction .qq__center { margin-right: 20px; }
