@@ -767,6 +767,11 @@ textarea {
 			font-weight: bold;
 		}
 	}
+	.basket__text-order {
+		margin-left: 16px;
+		@include pm;
+		text-transform: uppercase;
+	}
 }
 .nav {
 	display: table;

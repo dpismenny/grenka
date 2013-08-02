@@ -215,6 +215,7 @@ textarea { font-family: Arial,sans-serif; }
 .basket .basket__in { position: relative; z-index: 2; padding: 32px 17px 10px; line-height: 1.2; }
 .basket .basket__text { overflow: hidden; }
 .basket .basket__text span { color: #f47b01; font-weight: bold; }
+.basket .basket__text-order { margin-left: 16px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; text-transform: uppercase; }
 
 .nav { display: table; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #2e2e2e; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2e2e2e), color-stop(100%, #010101)); background-image: -webkit-linear-gradient(#2e2e2e, #010101); background-image: -moz-linear-gradient(#2e2e2e, #010101); background-image: -o-linear-gradient(#2e2e2e, #010101); background-image: linear-gradient(#2e2e2e, #010101); border-top: 2px solid #141414; height: 51px; margin-bottom: 21px; }
 .nav .icon { vertical-align: top; margin-top: 20px; margin-left: 8px; }
