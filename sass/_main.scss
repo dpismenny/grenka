@@ -74,6 +74,9 @@
 	color: #7d7d7d;
 	margin: 10px 0;
 }
+.is-hidden {
+	display: none;
+} 
 // .btn_medium {
 // 	padding: 6px 30px 5px;
 // 	font-size: 20px;
@@ -1056,6 +1059,12 @@
 		.product__price {
 			margin-bottom: 67px;
 		}
+	}
+}
+.product_auction-width {
+	
+	.product__inner {
+		padding: 30px;
 	}
 }
 .product-list_funny {

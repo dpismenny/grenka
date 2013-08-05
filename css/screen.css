@@ -363,6 +363,8 @@ textarea { font-family: Arial,sans-serif; }
 
 .btn-wrap__info { font-size: 10px; color: #7d7d7d; margin: 10px 0; }
 
+.is-hidden { display: none; }
+
 .btn_big { padding: 7px 50px; font-size: 26px; }
 
 .btn_smaller { padding: 1px 12px; font-size: 13px; }
@@ -610,6 +612,8 @@ textarea { font-family: Arial,sans-serif; }
 .product_auction.is-hover .product__inner { height: 303px; }
 .product_auction.is-hover .product__price { margin-bottom: 67px; }
 
+.product_auction-width .product__inner { padding: 30px; }
+
 .product-list_funny { margin-bottom: 0 !important; }
 
 .product__inner { position: relative; background: #fff; padding: 30px 60px 30px 50px; height: 200px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: box-shadow 0.2s linear; -moz-transition: box-shadow 0.2s linear; -o-transition: box-shadow 0.2s linear; transition: box-shadow 0.2s linear; }
@@ -701,10 +705,10 @@ textarea { font-family: Arial,sans-serif; }
 .lteie8 .label-check i, .lteie8 .label-radio i { display: none; }
 .lteie8 .label__input { line-height: 25px; }
 
-.counter_small strong { width: 39px; height: 40px; line-height: 40px; font-size: 25px; }
-.counter_small strong:after { bottom: 20px; }
+.counter_small strong, .counter_small .part { width: 39px; height: 40px; line-height: 40px; font-size: 25px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 14px; color: #5d5d5d; text-transform: uppercase; }
+.counter_small strong:after, .counter_small .part:after { bottom: 20px; }
 
-.counter__title, .counter-title { margin-bottom: 5px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 14px; color: #5d5d5d; text-transform: uppercase; }
+.counter__title, .counter-title { margin-bottom: 5px; }
 
 .breadcrumbs { margin-bottom: 25px; }
 .breadcrumbs li { float: left; color: #676767; font-size: 11px; }
@@ -1041,7 +1045,7 @@ textarea { font-family: Arial,sans-serif; }
 .prod__info { margin-bottom: 22px; background: #f0f0f0; border-bottom: 1px solid gainsboro; }
 .prod__info .prod__buy { float: right; width: 225px; padding-top: 20px; margin: 0; text-align: center; }
 .prod__info .prod__buy .btn { float: none; margin: 0 0 18px 0; }
-.prod__info .prod__buy .label-in-stock { margin-bottom: 7px; }
+.prod__info .prod__buy .label-in-stock { margin-bottom: 7px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; }
 
 .prod__info-price { float: left; width: 140px; padding: 10px 16px; border-right: 1px solid gainsboro; box-shadow: 1px 0 0 #fff; }
 .prod__info-price li { padding-left: 15px; font-size: 14px; color: #303030; }
@@ -1139,7 +1143,7 @@ textarea { font-family: Arial,sans-serif; }
 
 .prod__buy { margin-bottom: 23px; }
 .prod__buy .btn { float: left; margin-right: 32px; }
-.prod__buy .label-in-stock { margin-bottom: 5px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-weight: normal; text-transform: uppercase; }
+.prod__buy .label-in-stock { margin-bottom: 5px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; text-transform: uppercase; }
 .prod__buy .label-in-stock i { top: 2px; }
 
 .prod__similar-top { position: relative; padding: 7px 0; background: #e5e5e5; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e5e5e5), color-stop(100%, #cbcbcb)); background-image: -webkit-linear-gradient(#e5e5e5, #cbcbcb); background-image: -moz-linear-gradient(#e5e5e5, #cbcbcb); background-image: -o-linear-gradient(#e5e5e5, #cbcbcb); background-image: linear-gradient(#e5e5e5, #cbcbcb); border-bottom: 1px solid #b1b1b1; box-shadow: none; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 14px; color: #464646; text-align: center; }
@@ -1164,7 +1168,7 @@ textarea { font-family: Arial,sans-serif; }
 .prod__buy-links a:hover { text-decoration: none; }
 
 .prod__links { padding: 8px 0; margin-bottom: 23px; border: 1px solid gainsboro; border-width: 1px 0; font-size: 0; text-align: center; }
-.prod__links li { position: relative; display: inline-block; margin: 0 11px; font-size: 11px; }
+.prod__links li { position: relative; display: inline-block; margin: 0 11px; font-size: 11px; font-weight: bold; }
 .prod__links a { padding-left: 7px; color: #69a915; text-decoration: underline; }
 .prod__links a:hover { text-decoration: none; }
 .prod__links a:before { content: ""; position: absolute; top: 4px; left: 0; width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 4px; border-color: transparent transparent transparent #69a915; }
@@ -1274,8 +1278,10 @@ textarea { font-family: Arial,sans-serif; }
 
 .qq { margin-bottom: 30px; clear: both; }
 
-.qq_auction .qq__left, .qq_auction .qq__right, .qq_auction .qq__ava, .qq_auction .qq__center { float: none; display: inline-block; vertical-align: middle; }
-.qq_auction .qq__center { margin-right: 20px; }
+.qq_auction .qq__left, .qq_auction .qq__ava, .qq_auction .qq__center { float: none; display: inline-block; }
+.qq_auction .qq__ava { position: relative; top: 24px; }
+.qq_auction .qq__center { position: relative; top: 15px; margin-right: 20px; }
+.qq_auction .qq__right { float: right; }
 
 .qq_mod { display: table; min-width: 585px; }
 
@@ -2999,3 +3005,103 @@ textarea { font-family: Arial,sans-serif; }
 .order-sum span { font-size: 29px; color: #6dab1b; }
 .order-sum strong { font-size: 29px; color: #000; }
 .order-sum em { text-transform: capitalize; font-style: normal; }
+
+/* Reset */
+.flip-clock-wrapper * { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+
+.flip-clock-wrapper a { cursor: pointer; text-decoration: none; color: #ccc; }
+
+.flip-clock-wrapper a:hover { color: #fff; }
+
+.flip-clock-wrapper ul { list-style: none; }
+
+.flip-clock-wrapper.clearfix:before, .flip-clock-wrapper.clearfix:after { content: " "; display: table; }
+
+.flip-clock-wrapper.clearfix:after { clear: both; }
+
+.flip-clock-wrapper.clearfix { *zoom: 1; }
+
+/* Main */
+.flip-clock-wrapper { min-height: 100%; font: normal 11px "Helvetica Neue", Helvetica, sans-serif; -webkit-user-select: none; }
+
+.flip-clock-meridium { background: none; box-shadow: 0 0 0 !important; font-size: 36px !important; color: #313333; bottom: 10px; }
+
+.flip-clock-wrapper { text-align: center; position: relative; width: 100%; margin: 1em; }
+
+/* Skeleton */
+.flip-clock-wrapper ul { position: relative; float: left; margin: 5px; width: 60px; height: 90px; font-size: 80px; font-weight: bold; line-height: 87px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+.flip-clock-wrapper ul li { z-index: 1; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+.flip-clock-wrapper ul li:first-child { z-index: 2; }
+
+.flip-clock-wrapper ul li a { display: block; height: 100%; perspective: 200px; margin: 0 !important; overflow: visible !important; }
+
+.flip-clock-wrapper ul li a div { z-index: 1; position: absolute; left: 0; width: 100%; height: 50%; overflow: hidden; }
+
+.flip-clock-wrapper ul li a div .shadow { position: absolute; width: 100%; height: 100%; z-index: 2; }
+
+.flip-clock-wrapper ul li a div.up { transform-origin: 50% 100%; top: 0; }
+
+.flip-clock-wrapper ul li a div.up:after { content: ""; position: absolute; top: 44px; left: 0; z-index: 5; width: 100%; height: 3px; background-color: rgba(0, 0, 0, 0.4); }
+
+.flip-clock-wrapper ul li a div.down { transform-origin: 50% 0%; bottom: 0; }
+
+.flip-clock-wrapper ul li a div div.inn { position: absolute; left: 0; z-index: 1; width: 100%; height: 200%; color: #ccc; text-shadow: 0 1px 2px #000; text-align: center; background-color: #333; border-radius: 6px; font-size: 70px; }
+
+.flip-clock-wrapper ul li a div.up div.inn { top: 0; }
+
+.flip-clock-wrapper ul li a div.down div.inn { bottom: 0; }
+
+/* PLAY */
+.flip-clock-wrapper ul.play li.flip-clock-before { z-index: 3; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active { animation: asd .5s .5s linear both; z-index: 2; }
+
+.flip-clock-divider { float: left; display: inline-block; position: relative; width: 20px; height: 100px; }
+
+.flip-clock-divider:first-child { width: 0; }
+
+.flip-clock-dot { display: block; background: #323434; width: 10px; height: 10px; position: absolute; border-radius: 1000px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+.flip-clock-divider .flip-clock-label { position: absolute; top: -1.5em; right: -86px; color: black; text-shadow: none; }
+
+.flip-clock-divider.minutes .flip-clock-label { right: -88px; }
+
+.flip-clock-divider.seconds .flip-clock-label { right: -91px; }
+
+.flip-clock-dot.top { top: 30px; left: 5px; }
+
+.flip-clock-dot.bottom { bottom: 30px; left: 5px; }
+
+@keyframes asd { 0% { z-index: 2; }
+  5% { z-index: 4; }
+  100% { z-index: 4; } }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down { z-index: 2; animation: turn .5s .5s linear both; }
+
+@keyframes turn { 0% { transform: rotateX(90deg); }
+  100% { transform: rotateX(0deg); } }
+
+.flip-clock-wrapper ul.play li.flip-clock-before .up { z-index: 2; animation: turn2 .5s linear both; }
+
+@keyframes turn2 { 0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(-90deg); } }
+
+.flip-clock-wrapper ul li.flip-clock-active { z-index: 3; }
+
+/* SHADOW */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow { background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black)); background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000000 100%); background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%); background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, #000000 100%); animation: show .5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow { background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black)); background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000000 100%); background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%); background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, #000000 100%); animation: hide .5s .3s linear both; }
+
+/*DOWN*/
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow { background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1))); background: linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.1) 100%); background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%); background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%); background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.1) 100%); animation: show .5s linear both; }
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow { background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1))); background: linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.1) 100%); background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%); background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%); background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.1) 100%); animation: hide .5s .3s linear both; }
+
+@keyframes show { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes hide { 0% { opacity: 1; }
+  100% { opacity: 0; } }

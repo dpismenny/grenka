@@ -256,7 +256,21 @@ tabs();
       return false;
   });
 
-  
+  // if ($(".js-counter").length > 0) {
+  //   $(".js-counter").each(function(){
+  //     $(this).counter();
+  //   });
+  // }
+  //var c_year = $(".js-counter").attr("data-year");
+  //var c_month = $(".js-counter").attr("data-month");
+  //var c_day = $(".js-counter").attr("data-day");
+  date = new Date(2015, 8-1, 25);
+  $('.js-counter').countdown({
+      until: date, 
+      format: 'YOWDHMS',
+      layout: $('.js-counter-list').html()
+  });
+
     
 //  -------------------------------- Created by Artur Moroz!
 //rating

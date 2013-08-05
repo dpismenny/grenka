@@ -1,9 +1,13 @@
 .counter_small {
-	strong {
+	strong, .part {
 		width: 39px;
 		height: 40px;
 		line-height: 40px;
 		font-size: 25px;
+		@include pm;
+		font-size: 14px;
+		color: #5d5d5d;
+		text-transform: uppercase;
 		&:after { 
 			bottom: 20px;
 		}
@@ -11,10 +15,7 @@
 }
 .counter__title, .counter-title {
 	margin-bottom: 5px; 
-	@include pm;
-	font-size: 14px;
-	color: #5d5d5d;
-	text-transform: uppercase;
+	
 }
 //breadcrumbs
 .breadcrumbs {
@@ -1197,6 +1198,7 @@
 		}
 		.label-in-stock {
 			margin-bottom: 7px;
+			@include pm;
 		}
 	}
 }
@@ -1581,7 +1583,6 @@
 	.label-in-stock {
 		margin-bottom: 5px;
 		@include pm;
-		font-weight: normal;
 		text-transform: uppercase;
 		i {
 			top: 2px;
@@ -1674,9 +1675,11 @@
 		display: inline-block;
 		margin: 0 11px;
 		font-size: 11px;
+		font-weight: bold;
 	}
 	a {		
 		padding-left: 7px;		
+		
 		color: $green;
 		text-decoration: underline;
 		&:hover {
@@ -2084,15 +2087,22 @@
 }
 .qq_auction {
 	.qq__left,
-	.qq__right,
 	.qq__ava,
 	.qq__center {
 		float: none;
 		display: inline-block;
-		vertical-align: middle;
+	}
+	.qq__ava {
+		position: relative;
+		top: 24px;
 	}
 	.qq__center {
+		position: relative;
+		top: 15px;
 		margin-right: 20px;
+	}
+	.qq__right {
+		float: right;
 	}
 }
 .qq_mod {

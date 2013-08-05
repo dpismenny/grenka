@@ -12,6 +12,7 @@
 	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.raty.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/common-moroz.js"></script>
 </head>
@@ -368,8 +369,8 @@
 					<button class="btn btn_big">купить</button>
 					<div class="label-in-stock">наличие гарантировано<i></i></div>
 					<div class="prod__buy-links">
-						<a href="#">Узнать о снижении цены</a>
-						<a href="№">Сообщить о скидках!</a>
+						<a href="#">Узнать о снижении цены
+							Сообщить о скидках!</a>
 					</div>					
 				</div>
 				<ul class="prod__links">
@@ -379,27 +380,28 @@
 				</ul>
 				<div class="prod__action">
 					<div class="prod__price-super"><span>супер цена!</span><strong>1209</strong>грн.</div>
-					<div class="counter counter_small">
-						<div class="counter__title">до конца акции осталось:</div>
-						<ul class="counter__list">
-							<li>
-								<strong>11</strong>
-								<span>дней</span>
-							</li>
-							<li>
-								<strong>06</strong>
-								<span>часов</span>
-							</li>
-							<li>
-								<strong>57</strong>
-								<span>минут</span>
-							</li>
-							<li>
-								<strong>03</strong>
-								<span>секунд</span>
-							</li>
-						</ul>
-					</div>
+					<!-- BEGIN .counter -->
+					<ul class="is-hidden js-counter-list">
+						<li>
+							<strong>{dn} </strong>
+							<span>{dl}</span>
+						</li>
+						<li>
+							<strong>{hn}</strong>
+							<span>{hl}</span>
+						</li>
+						<li>
+							<strong>{mn}</strong>
+							<span>{ml}</span>
+						</li>
+						<li>
+							<strong>{sn}</strong>
+							<span>{sl}</span>
+						</li>
+					</ul>
+					
+					<div class="counter counter_small js-counter" data-year="2015" data-month="1" data-day="25"></div>
+					<!-- END .counter -->
 				</div>
 			</div>
 		</div>
