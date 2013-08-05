@@ -27,7 +27,7 @@
 	position: relative;
 	@include border-radius(4px);   
 	@include box-shadow(0 1px 3px rgba(0,0,0,.08));
-	@include background-image(linear-gradient(#fbfbfb, #e3e3e3));  
+	background: #fbfbfb;
 }
 
 .fancybox-opened {

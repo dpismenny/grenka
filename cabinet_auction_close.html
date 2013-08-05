@@ -3,7 +3,7 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Product -> Page 3</title>
+	<title>Cabinet Auction</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.tools.min.js"></script>
@@ -11,11 +11,13 @@
 	<script src="js/jquery.cycle2.carousel.min.js"></script>
 	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
-	<script src="js/jquery.raty.js"></script>
+	<script src="js/jquery.veronica_slider.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/common-moroz.js"></script>
 </head>
 <body>
+<div class="code" title="Сообщите этот номер при заказе по телефону оператору и мы оформим заказ максимально быстро"> код клиента: <span>435435</span></div>
+
+
 <!-- BEGIN .top -->
 <div class="top">
 	<!-- BEGIN .top__in -->
@@ -146,8 +148,10 @@
 	</div>
 </div>
 <!-- END .top -->
-<!-- BEGIN  .page-->
+
+<!-- BEGIN  page-->
 <div class="page">
+
 	<!-- BEGIN .header -->
 	<div class="header">
 		<!-- BEGIN .header__logo -->
@@ -291,201 +295,394 @@
 		</ul>
 	</div>
 	<!-- END .nav -->
-	<!-- BEGIN .prod -->
-	<div class="prod">
-		<!-- BEGIN .breadcrumbs -->
-		<ul class="breadcrumbs">
-			<li><span>/</span><a href="#">Главная</a></li>
-			<li><span>/</span><a href="#">Программы</a></li>
-			<li><span>/</span>Антивирусы...</li>
-		</ul>
-		<!-- END .breadcrumbs -->
-		<div class="prod__articul">Артикул товара:<strong>00000011</strong></div>		
-		<div class="prod__content">
-			<div class="prod__left">
-				<div class="gallery js-gallery">
-					<div class="gallery__nav">
-						<button id="gallery-up" class="gallery__up"><i></i></button>
-						<button id="gallery-down" class="gallery__down"><i></i></button>
-						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next="#gallery-down" data-cycle-prev="#gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
-							<div class="gallery__slide">
-								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a class="is-active" href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide is-inactive">
-								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-							<div class="gallery__slide">
-								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-							</div>
-						</div>
-					</div>
-					<div class="gallery__pic js-gallery-pic">
-						<a href="#gallery-popup"><img src="img/product.jpg" alt=""></a>
-					</div>
+	<div class="section">
+		<div class="section__inner">
+			<div class="auction-info">
+				<div class="auction-info__title is-privat">закрытый аукцион</div>	
+				<ul class="rules-list">
+					<li>6.1. Победитель торгов не вправе отказаться от оплаты в связи с обнаружением после размещения ставки на странице лота каких-либо недостатков, повреждений, наличия/отсутствия элементов в комплектации лота.</li>
+					<li>6.2. В случае отказа Победителя аукциона от оплаты лота право покупки лота переходит к Участнику торгов, который, согласно шагу аукциона, подал заявку на приобретение лота по второй ставке, но не позднее 5 (пяти) рабочих дней с даты окончания торгов.
+						<ul>
+							<li>6.2.1. Если Победитель торгов, прописанный по паспорту в том же регионе, где хранится ТС, в течение 3 (трех) рабочих дней не произвел оплату по договору купли-продажи данного лота либо отказался от его оплаты, то Участник лишается права на приобретение лота и статуса Участника торгов на срок не менее 6 (шести) месяцев.</li>
+							<li>6.2.2. Если Победитель торгов, прописанный по паспорту в регионе, отличном от места, где хранится ТС, в течение 5 (пяти) рабочих дней не произвел оплату по договору купли-продажи данного лота либо отказался от его оплаты, то Участник лишается права на приобретение лота и статуса Участника торгов на срок не менее 6 (шести) месяцев.</li>
+						</ul>
+					</li>
+					<li>6.3. Участник торгов освобождается от ответственности за полное или частичное неисполнение принятых на себя по настоящим правилам обязательств, если такое неисполнение явилось следствием обстоятельств непреодолимой силы, а именно: стихийных бедствий, эпидемий и иных чрезвычайных обстоятельств. При этом срок исполнения обязательств, согласно правилам аукциона, отодвигается соразмерно времени, в течение которого действовали такие обстоятельства.</li>
+					<li>6.4. В случае неисполнения Участником, предложившим вторую ставку и признанным Победителем торгов,  в установленный в п.п. 6.2. срок обязательства по оплате выигранного аукционного лота, он (они) лишаются права на его приобретение и статуса Участника торгов на срок не менее 1 (одного) месяца. Торги признаются несостоявшимися.</li>
+					<li>6.5. Участник торгов, предложивший вторую ставку, освобождается от ответственности за полное или частичное неисполнение принятых на себя по настоящим правилам обязательств, если Организатор уведомил его о признании Победителем в срок  не более чем 5 (пять) рабочих дней с даты окончания торгов.</li>
+				</ul>
+				<div class="title title_orange">
+					ВЫ НЕ можете участвовать в закрытом аукционе!
 				</div>
-			</div>				
-			<div class="prod__right">	
-				<div class="prod__title">Assassin's Creed II for PS3 очень лимитированое издание в две строки</div>
+			</div>
+		</div>
+	</div>	
+	<!-- BEGIN .product-list -->
+	<ul class="product-list product-list_mod">
+		<li class="product product_auction product_auction-width" itemscope="" itemtype="http://schema.org/Product">
+			<div class="product__inner">
+				<!-- BEGIN .product__image -->
+				<a itemprop="url" href="#" class="product__image">
+					<img itemprop="image" src="img/img-8.jpg" width="100" height="140" alt="img">
+				</a>
+				<!-- END .product__image -->
+				<!-- BEGIN .product__info -->
+				<div class="product__info">
+					<h3 class="product__title" itemprop="name">
+						<a href="#" itemprop="url">Sony ericcson k750 New</a>
+					</h3>
+					<a href="#" class="product__user">andrey 911</a>
+					<div class="clock">
+						<span>14</span> :
+						<span>03</span> :
+						<span>54</span>
+					</div>
+					<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+					<button class="btn btn_bet">сделать ставку</button>
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</div>
+				<!-- END .product__info -->
+				<i class="badge badge_new" alt="Новый товар"></i>
+			</div>
+		</li>
+		<li class="product product_auction product_auction-width" itemscope="" itemtype="http://schema.org/Product">
+			<div class="product__inner">
+				<!-- BEGIN .product__image -->
+				<a itemprop="url" href="#" class="product__image">
+					<img itemprop="image" src="img/img-8.jpg" width="100" height="140" alt="img">
+				</a>
+				<!-- END .product__image -->
+				<!-- BEGIN .product__info -->
+				<div class="product__info">
+					<h3 class="product__title" itemprop="name">
+						<a href="#" itemprop="url">Sony ericcson k750 New</a>
+					</h3>
+					<a href="#" class="product__user">andrey 911</a>
+					<div class="clock">
+						<span>14</span> :
+						<span>03</span> :
+						<span>54</span>
+					</div>
+					<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+					<button class="btn btn_bet">сделать ставку</button>
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</div>
+				<!-- END .product__info -->
+				<i class="badge badge_new" alt="Новый товар"></i>
+			</div>
+		</li>
+		<li class="product product_auction product_auction-width" itemscope="" itemtype="http://schema.org/Product">
+			<div class="product__inner">
+				<!-- BEGIN .product__image -->
+				<a itemprop="url" href="#" class="product__image">
+					<img itemprop="image" src="img/img-8.jpg" width="100" height="140" alt="img">
+				</a>
+				<!-- END .product__image -->
+				<!-- BEGIN .product__info -->
+				<div class="product__info">
+					<h3 class="product__title" itemprop="name">
+						<a href="#" itemprop="url">Sony ericcson k750 New</a>
+					</h3>
+					<a href="#" class="product__user">andrey 911</a>
+					<div class="clock">
+						<span>14</span> :
+						<span>03</span> :
+						<span>54</span>
+					</div>
+					<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+					<button class="btn btn_bet">сделать ставку</button>
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</div>
+				<!-- END .product__info -->
+				<i class="badge badge_new" alt="Новый товар"></i>
+			</div>
+		</li>
+		<li class="product product_auction product_auction-width" itemscope="" itemtype="http://schema.org/Product">
+			<div class="product__inner">
+				<!-- BEGIN .product__image -->
+				<a itemprop="url" href="#" class="product__image">
+					<img itemprop="image" src="img/img-8.jpg" width="100" height="140" alt="img">
+				</a>
+				<!-- END .product__image -->
+				<!-- BEGIN .product__info -->
+				<div class="product__info">
+					<h3 class="product__title" itemprop="name">
+						<a href="#" itemprop="url">Sony ericcson k750 New</a>
+					</h3>
+					<a href="#" class="product__user">andrey 911</a>
+					<div class="clock">
+						<span>14</span> :
+						<span>03</span> :
+						<span>54</span>
+					</div>
+					<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+					<button class="btn btn_bet">сделать ставку</button>
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</div>
+				<!-- END .product__info -->
+				<i class="badge badge_new" alt="Новый товар"></i>
+			</div>
+		</li>
+		<li class="product product_auction product_auction-width" itemscope="" itemtype="http://schema.org/Product">
+			<div class="product__inner">
+				<!-- BEGIN .product__image -->
+				<a itemprop="url" href="#" class="product__image">
+					<img itemprop="image" src="img/img-8.jpg" width="100" height="140" alt="img">
+				</a>
+				<!-- END .product__image -->
+				<!-- BEGIN .product__info -->
+				<div class="product__info">
+					<h3 class="product__title" itemprop="name">
+						<a href="#" itemprop="url">Sony ericcson k750 New</a>
+					</h3>
+					<a href="#" class="product__user">andrey 911</a>
+					<div class="clock">
+						<span>14</span> :
+						<span>03</span> :
+						<span>54</span>
+					</div>
+					<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+					<button class="btn btn_bet">сделать ставку</button>
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</div>
+				<!-- END .product__info -->
+				<i class="badge badge_new" alt="Новый товар"></i>
+			</div>
+		</li>
+		<li class="product product_auction product_auction-width" itemscope="" itemtype="http://schema.org/Product">
+			<div class="product__inner">
+				<!-- BEGIN .product__image -->
+				<a itemprop="url" href="#" class="product__image">
+					<img itemprop="image" src="img/img-8.jpg" width="100" height="140" alt="img">
+				</a>
+				<!-- END .product__image -->
+				<!-- BEGIN .product__info -->
+				<div class="product__info">
+					<h3 class="product__title" itemprop="name">
+						<a href="#" itemprop="url">Sony ericcson k750 New</a>
+					</h3>
+					<a href="#" class="product__user">andrey 911</a>
+					<div class="clock">
+						<span>14</span> :
+						<span>03</span> :
+						<span>54</span>
+					</div>
+					<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+					<button class="btn btn_bet">сделать ставку</button>
+					<link itemprop="availability" href="http://schema.org/InStock">
+				</div>
+				<!-- END .product__info -->
+				<i class="badge badge_new" alt="Новый товар"></i>
+			</div>
+		</li>
+	</ul>
+	<!-- END .product-list -->
+	<div class="pagination pagination_mod-top pagination_mod">
+     	<span class="paginator__nav paginator__prev">Ctrl + <a href="#"><i></i></a></span>
+     	<span class="paginator__nav paginator__next">Ctrl + <a href="#"><i></i></a></span>
+     	<ul class="pagination__pages">
+     	 	<li><a href="#">1</a></li>
+     	 	<li><a href="#">2</a></li>
+     	 	<li><a href="#">3</a></li>
+     	 	<li class="is-active"><a href="#">4</a></li>
+     	 	<li><a href="#">5</a></li>
+     	 	<li class="is-inactive">...</li>
+     	 	<li><a href="#">34</a></li>
+     	</ul>
+    </div>
+    <div class="qq qq_auction">
+		<div class="qq__top">
+			<div class="qq__type">вопросы</div>
+		</div>
+		<div class="qq__content">
+			<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+			<div class="qq__center">
+				<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+				<div class="qq__theme">купил со <span>скидкой 30%</span> за 7грн.</div>
+			</div>
+			<div class="qq__right">
+				<i class="icon-big-arrow"></i>
+				<a href="#" class="qq__prod-img"><img src="img/img-1.jpg" alt="img" width="80" height="90"></a>
+				<a href="#" class="qq__prod-name">Sony ericcson k750 New</a>
+			</div>
+		</div>
+		<div class="qq__content">
+			<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+			<div class="qq__center">
+				<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+				<div class="qq__theme">купил со <span>скидкой 30%</span> за 7грн.</div>
+			</div>
+			<div class="qq__right">
+				<i class="icon-big-arrow"></i>
+				<a href="#" class="qq__prod-img"><img src="img/img-1.jpg" alt="img" width="80" height="90"></a>
+				<a href="#" class="qq__prod-name">Sony ericcson k750 New</a>
+			</div>
+		</div>
+		<div class="qq__content">
+			<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+			<div class="qq__center">
+				<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+				<div class="qq__theme">купил со <span>скидкой 30%</span> за 7грн.</div>
+			</div>
+			<div class="qq__right">
+				<i class="icon-big-arrow"></i>
+				<a href="#" class="qq__prod-img"><img src="img/img-1.jpg" alt="img" width="80" height="90"></a>
+				<a href="#" class="qq__prod-name">Sony ericcson k750 New</a>
+			</div>
+		</div>
+	</div>
+    <div class="qq">
+		<div class="qq__top">
+			<div class="qq__type">вопросы</div>
+			<div class="qq__all-link"><a href="#">Все отзывы</a></div>
+		</div>
+		<div class="qq__content">
+			<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+			<div class="qq__right">
 				<!-- BEGIN .rating -->
 				<div class="rating">
-					<div class="rating__in js-rating" data-score="4"></div>
-					<span>(15)</span>
+					<div class="rating__in js-rating" data-score="4" style="cursor: pointer; width: 80px;"><img src="img/icons/rating-act.png" alt="1" title="bad"><img src="img/icons/rating-act.png" alt="2" title="poor"><img src="img/icons/rating-act.png" alt="3" title="regular"><img src="img/icons/rating-act.png" alt="4" title="good"><img src="img/icons/rating.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="4"></div>
 				</div>
 				<!-- END .rating -->
-				<ul class="prod__price prod__price_mod">
-					<li class="prod__price-super"><span>Последняя цена</span></li>
-					<li class="prod__price-new"><strong>1559</strong>грн.</li>
-					<li class="prod__price-links">	
-						<a href="#">Узнать о снижении цены</a>
-						<a href="#">Сообщить о скидках!</a>
-					</li>						
-				</ul>
-				<div class="prod__empty">
-					<strong>товар закончился</strong>
-					<button class="btn btn_gray">Сообщить о наличии</button>
+				<div class="qq__useful">
+					<span>Вопрос полезен?</span>
+					<ul>
+						<li><button class="btn btn_gray">ДА</button><i>41</i></li>
+						<li><button class="btn btn_gray">НЕТ</button><i>42</i></li>
+					</ul>
 				</div>
-				<ul class="prod__links">
-					<li><a href="#">Отзывов</a><span>(68)</span></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">В список желаний</a></li>
-				</ul>			
-				<div class="prod__similar">
-					<div class="prod__similar-top">
-						<strong>похожие товары в наличии</strong>
-						<button id="prod-similar-next" class="prod__similar-next"></button>
-						<button id="prod-similar-prev" class="prod__similar-prev"></button>
-					</div>
-					<div class="prod__similar-slider cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-cycle-next="#prod-similar-next" data-cycle-prev="#prod-similar-prev">
-						<div class="prod__similar-item">
-							<a href="#">
-								<img src="img/pic1.jpg" width="46" height="64" alt="">
-								<span>Your Shape: Fitness Evolved</span>
-								<div class="label-in-stock">в наличии<i></i></div>
-							</a>
-							<a href="#">
-								<img src="img/pic1.jpg" width="46" height="64" alt="">
-								<span>Your Shape: Fitness Evolved</span>
-								<div class="label-in-stock">в наличии<i></i></div>
-							</a>
-						</div>
-						<div class="prod__similar-item">
-							<a href="#">
-								<img src="img/pic1.jpg" width="46" height="64" alt="">
-								<span>Your Shape: Fitness Evolved</span>
-								<div class="label-in-stock">в наличии<i></i></div>
-							</a>
-							<a href="#">
-								<img src="img/pic1.jpg" width="46" height="64" alt="">
-								<span>Your Shape: Fitness Evolved</span>
-								<div class="label-in-stock">в наличии<i></i></div>
-							</a>
-						</div>
-						<div class="prod__similar-item">
-							<a href="#">
-								<img src="img/pic1.jpg" width="46" height="64" alt="">
-								<span>Your Shape: Fitness Evolved</span>
-								<div class="label-in-stock">в наличии<i></i></div>
-							</a>
-							<a href="#">
-								<img src="img/pic1.jpg" width="46" height="64" alt="">
-								<span>Your Shape: Fitness Evolved</span>
-								<div class="label-in-stock">в наличии<i></i></div>
-							</a>
+			</div>
+			<div class="qq__center">
+				<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+				<div class="qq__theme">какая-то очень длинная тема для вопроса</div>
+				<div class="qq__txt">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режимеe ngaging</div>
+				<div class="qq__links">
+					<a href="#">Ответить</a>
+					<div class="share">
+						<span class="share__link">Поделиться</span>
+						<div class="share__list">
+							<div class="share__list-in">
+								<button class="share__fb"><i></i></button>
+								<button class="share__vk"><i></i></button>
+								<button class="share__tw"><i></i></button>
+								<button class="share__ml"><i></i></button>
+							</div>										
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- END .prod -->	
-	<!-- BEGIN .product-list -->
-	<div class="product-list">
-		<div class="product-list__top">
-			<h2 class="product-list__title">похожии товары в наличии</h2>
-		</div>
-		<div class="add-order">
-			<div class="add-order__item">
-				<div class="add-order__pic">
-					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+		<div class="qq__content qq__content_review">
+			<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+			<div class="qq__right">
+				<!-- BEGIN .rating -->
+				<div class="rating">
+					<div class="rating__in js-rating" data-score="4" style="cursor: pointer; width: 80px;"><img src="img/icons/rating-act.png" alt="1" title="bad"><img src="img/icons/rating-act.png" alt="2" title="poor"><img src="img/icons/rating-act.png" alt="3" title="regular"><img src="img/icons/rating-act.png" alt="4" title="good"><img src="img/icons/rating.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="4"></div>
 				</div>
-				<div class="add-order__title">
-					<a href="#">Your Shape</a>
-				</div>				
-				<div class="add-order__price"><strong>735</strong>грн.</div>
-				<button class="btn">в корзину</button>
+				<!-- END .rating -->
+				<div class="qq__useful">
+					<span>Вопрос полезен?</span>
+					<ul>
+						<li><button class="btn btn_gray">ДА</button><i>41</i></li>
+						<li><button class="btn btn_gray">НЕТ</button><i>42</i></li>
+					</ul>
+				</div>
 			</div>
-			<div class="add-order__item">
-				<div class="add-order__pic">
-					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+			<div class="qq__center">
+				<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+				<div class="qq__theme">какая-то очень длинная тема для вопроса</div>
+				<div class="qq__txt">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режимеe ngaging</div>
+				<div class="qq__links">
+					<a href="#">Ответить</a>
+					<div class="share">
+						<span class="share__link">Поделиться</span>
+						<div class="share__list">
+							<div class="share__list-in">
+								<button class="share__fb"><i></i></button>
+								<button class="share__vk"><i></i></button>
+								<button class="share__tw"><i></i></button>
+								<button class="share__ml"><i></i></button>
+							</div>										
+						</div>
+					</div>
 				</div>
-				<div class="add-order__title">
-					<a href="#">Your Shape</a>
-				</div>				
-				<div class="add-order__price"><strong>735</strong>грн.</div>
-				<button class="btn">в корзину</button>
-			</div>
-			<div class="add-order__item">
-				<div class="add-order__pic">
-					<a href="#"><img src="img/img-1.jpg" alt=""></a>
-				</div>
-				<div class="add-order__title">
-					<a href="#">Your Shape</a>
-				</div>				
-				<div class="add-order__price"><strong>735</strong>грн.</div>
-				<button class="btn">в корзину</button>
-			</div>
-			<div class="add-order__item">
-				<div class="add-order__pic">
-					<a href="#"><img src="img/img-1.jpg" alt=""></a>
-				</div>
-				<div class="add-order__title">
-					<a href="#">Your Shape</a>
-				</div>				
-				<div class="add-order__price"><strong>735</strong>грн.</div>
-				<button class="btn">в корзину</button>
-			</div>
-			<div class="add-order__item">
-				<div class="add-order__pic">
-					<a href="#"><img src="img/img-1.jpg" alt=""></a>
-				</div>
-				<div class="add-order__title">
-					<a href="#">Your Shape</a>
-				</div>				
-				<div class="add-order__price"><strong>735</strong>грн.</div>
-				<button class="btn">в корзину</button>
 			</div>
 		</div>
+		<div class="qq__content">
+			<div class="qq__ava"><a href="#"><img src="img/pic4.jpg" alt=""></a></div>
+			<div class="qq__right">
+				<!-- BEGIN .rating -->
+				<div class="rating">
+					<div class="rating__in js-rating" data-score="4" style="cursor: pointer; width: 80px;"><img src="img/icons/rating-act.png" alt="1" title="bad"><img src="img/icons/rating-act.png" alt="2" title="poor"><img src="img/icons/rating-act.png" alt="3" title="regular"><img src="img/icons/rating-act.png" alt="4" title="good"><img src="img/icons/rating.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="4"></div>
+				</div>
+				<!-- END .rating -->
+				<div class="qq__useful">
+					<span>Вопрос полезен?</span>
+					<ul>
+						<li><button class="btn btn_gray">ДА</button><i>41</i></li>
+						<li><button class="btn btn_gray">НЕТ</button><i>42</i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="qq__center">
+				<div class="qq__user"><a href="#">Юрий Нагорный<i></i></a></div>
+				<div class="qq__theme">какая-то очень длинная тема для вопроса</div>
+				<div class="qq__txt">В команде с тремя соратниками по сети или же вдвоем с другом в старом добром режимеe ngaging</div>
+				<div class="qq__links">
+					<a href="#">Ответить</a>
+					<div class="share">
+						<span class="share__link">Поделиться</span>
+						<div class="share__list">
+							<div class="share__list-in">
+								<button class="share__fb"><i></i></button>
+								<button class="share__vk"><i></i></button>
+								<button class="share__tw"><i></i></button>
+								<button class="share__ml"><i></i></button>
+							</div>										
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="qq__add">
+			<div class="qq__top">
+				<div class="qq__type">оставить комментарий</div>
+			</div>
+			<div class="qq__content">
+				<div class="label">
+					<span class="label__title">Написать от</span>
+					<div class="label__select js-select">
+						<div class="label__select-val">
+							<button></button>
+							<span>Chuck</span>									
+						</div>
+						<ul class="label__select-options" style="display: none;">
+							<li>Chuck</li>
+							<li>Terminator</li>
+						</ul>
+					</div>
+				</div>
+				<label class="label">
+					<span class="label__title">Эл.почта</span>
+					<input class="label__input" type="text">								
+				</label>
+				<label class="label-check">
+					<input type="checkbox">
+					<i></i>
+					<span>Уведомлять об ответах на e-mail</span>
+				</label>
+				<label class="label">
+					<span class="label__title">Комментарий</span>
+					<textarea class="label__area"></textarea>
+				</label>
+				<div class="qq__add-btn">
+					<button class="btn">добавить комментарий</button>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- END .product-list -->
 </div>
-<!-- END .page-->
+<!-- END page-->
 <!-- BEGIN .recent -->
 <div class="recent">
 	<div class="recent__head">
@@ -793,62 +990,80 @@
 	<!-- END .footer__in -->
 </div>
 <!-- END .footer -->
-<div class="popup" id="gallery-popup">
+<!-- 
+<div class="popup popup_s" id="to-favorite1">
 	<div class="popup__header">
 		<div class="popup__title">
-			Assassin's Creed II for PS3
+			Список желаний
 		</div>
 	</div>
 	<div class="popup__body">
-		<div class="gallery js-gallery">
-			<div class="gallery__nav">
-				<button id="gallery-up" class="gallery__up"><i></i></button>
-				<button id="gallery-down" class="gallery__down"><i></i></button>
-				<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next="#gallery-down" data-cycle-prev="#gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
-					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a class="is-active" href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide is-inactive">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<div class="gallery__pic">
-				<img src="img/product.jpg" alt="" width="540">
-			</div>
-		</div>
+		<label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+		<label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+       <label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+       <label class="label-radio">
+        	<input type="radio" name="name">
+        	<i></i>
+        	<span>Мой список желаний</span>
+       </label>
+		<div class="label label_">
+			<label class="label-radio">
+	        	<input type="radio" name="name">
+	        	<i></i>
+	       </label>
+        	<input class="label__input" type="text">
+        	<span class="label__help">Или например, "Желаю на День рождения"</span>
+       </div>
+		<input class="btn" type="submit">
 	</div>
 </div>
+<div class="popup popup_s" id="to-favorite2">
+	<div class="popup__header">
+		<div class="popup__title">
+			Список желаний
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<span>Мой список желаний</span>
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<span>Мой список желаний</span>
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<span>Мой список желаний</span>
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="name">
+				<input type="text" class="input">
+			</label>
+			<p>Или например, "Желаю на День рождения"</p>
+		</div>
+		<input class="btn" type="submit">
+	</div>
+</div> -->
+
 </body>
 </html>
-
