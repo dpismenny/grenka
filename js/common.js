@@ -286,6 +286,12 @@ tabs();
     $(this).parent().parent().remove();
     return false;
   }); 
+
+// accordion filter
+  $(".js-accord-body").hide();
+  $(".js-accord-key").click(function(){
+    $(this).next().slideToggle("fast");
+  });
     
 //  -------------------------------- Created by Artur Moroz!
 //rating

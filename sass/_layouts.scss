@@ -17,6 +17,9 @@
 		z-index: 1;
 		float:left;
 		width: 230px;
+		&:hover {
+			z-index: 3;
+		}
 	}
 
 	.l-main{
