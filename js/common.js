@@ -168,19 +168,17 @@ tabs();
     // );
 
 // ------------------- Fancybox ----------------------// 
-  $(".js-gallery-pic a").fancybox({
+  $(".header__logo a").fancybox({
       openEffect  : 'none',
       closeEffect : 'none',
       padding: 0,
       showCloseButton: true,
-      helpers : {
-          title : {
-              type : 'outside'
-          }
-      },
-      afterLoad:function(){
-        
-      }
+  });
+  $(".js-forgot-pass").fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      padding: 0,
+      showCloseButton: true,
   });
 
   if ($('#slider-left-main').length > 0) {

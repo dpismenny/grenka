@@ -539,7 +539,7 @@ textarea { font-family: Arial,sans-serif; }
 .popular__title { color: #000; font-size: 22px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; text-transform: uppercase; margin-bottom: 0.3em; }
 
 .popular__sub-title { height: 44px; overflow: hidden; margin-bottom: 10px; }
-.popular__sub-title a { color: #fff; font-size: 18px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; text-transform: uppercase; font-weight: normal; line-height: 1.2; }
+.popular__sub-title a { color: #fff; font-size: 18px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; text-transform: uppercase; line-height: 1.2; }
 
 .popular__platform { color: #000; font-size: 14px; text-transform: uppercase; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; }
 
@@ -3123,3 +3123,9 @@ textarea { font-family: Arial,sans-serif; }
 
 .link-to-favor { position: relative; display: inline-block; margin-left: 10px; }
 .link-to-favor i { position: absolute; right: -15px; top: 3px; background: url('../img/icons-sbfd698d905.png') 0 -3009px no-repeat; width: 10px; height: 10px; }
+
+.popup_agree .btn-wrap { margin-top: 18px; }
+
+.scroll-pane_agree { width: 557px; height: 287px; border: 1px solid #adadad; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; background: #fff; -webkit-box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.18); -moz-box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.18); box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.18); }
+.scroll-pane_agree .agree { padding: 15px 22px; color: #676767; }
+.scroll-pane_agree .jspVerticalBar { right: 12px; }
