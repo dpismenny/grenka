@@ -107,6 +107,9 @@
 		color: #FFF;
 		text-transform: uppercase;
 		text-decoration: none;
+		&:hover {
+			color: #f47b01;
+		}
 	}
 	.cabina__cart {
 		display: inline-block;

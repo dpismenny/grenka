@@ -1555,6 +1555,7 @@ textarea { font-family: Arial,sans-serif; }
 .cabina__links li:before { content: ""; position: absolute; top: 11px; left: 0; width: 0px; height: 0px; border-style: solid; border-width: 3px 0 3px 4px; border-color: transparent transparent transparent #69a915; }
 .cabina__links span { margin-left: 5px; font-size: 11px; color: #69a915; }
 .cabina__links a { font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 14px; color: #FFF; text-transform: uppercase; text-decoration: none; }
+.cabina__links a:hover { color: #f47b01; }
 .cabina__links .cabina__cart { display: inline-block; font-size: 11px; }
 .cabina__links .cabina__cart span { margin: 0 5px 0 0; color: #9f9f9f; }
 .cabina__links .cabina__cart a { font-family: Arial, Tahoma, sans-serif; font-size: 11px; color: #f47b01; text-decoration: underline; text-transform: none; font-weight: normal; }
