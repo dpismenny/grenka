@@ -304,11 +304,11 @@
 		<div class="prod__articul">Артикул товара:<strong>00000011</strong></div>
 		<div class="prod__content">
 			<div class="prod__left">
-				<div class="gallery js-gallery">
+				<div class="gallery js-gallery js-gallery-1">
 					<div class="gallery__nav">
 						<button class="gallery__up js-gallery-up"><i></i></button>
 						<button class="gallery__down js-gallery-down"><i></i></button>
-						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-down" data-cycle-prev=".js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
+						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-1 .js-gallery-down" data-cycle-prev=".js-gallery-1 .js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
 							<div class="gallery__slide">
 								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
 							</div>
@@ -318,7 +318,7 @@
 							<div class="gallery__slide">
 								<a class="is-active" href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
 							</div>
-							<div class="gallery__slide">
+							<div class="gallery__slide is-inactive">
 								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
 							</div>
 							<div class="gallery__slide">
@@ -347,8 +347,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="gallery__pic">
-						<a href="#"><img src="img/product.jpg" alt=""></a>
+					<div class="gallery__pic js-gallery-pic">
+						<a href="#gallery-popup"><img src="img/product.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>				
@@ -1927,4 +1927,70 @@
 	<!-- END .footer__in -->
 </div>
 <!-- END .footer -->
+<div class="popup" id="gallery-popup">
+	<div class="popup__header">
+		<div class="popup__title">
+			Assassin's Creed II for PS3
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="gallery js-gallery js-gallery-popup">
+			<div class="gallery__nav">
+				<button class="gallery__up js-gallery-up"><i></i></button>
+				<button class="gallery__down js-gallery-down"><i></i></button>
+				<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-popup .js-gallery-down" data-cycle-prev=".js-gallery-popup .js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
+					<div class="gallery__slide">
+						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a class="is-active" href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide is-inactive">
+						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+					<div class="gallery__slide">
+						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="gallery__pic js-gallery-pic">
+				<a href="#gallery-popup"><img src="img/product.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<div class="popup__footer">
+		<div class="popup__footer-links">
+			<a href="#">Сравнить</a>
+			<a href="#" class="link-to-favor">В список желаний <i></i></a>
+		</div>
+		<div class="prod__prepay-price">						
+			<span><strong>1559</strong>грн.</span>
+			<button class="btn">оплатить</button>
+		</div>
+	</div>
+</div>
 </body>

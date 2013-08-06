@@ -45,18 +45,35 @@
 .popup__footer {
 	padding: 15px 25px;
 	background: #fff;
+    @extend %clr;
 	border-top: 1px solid $brcl;
-}
-.link-to-favor {
-	span, i {
-		vertical-align: middle;
-	}
-	span {
+	a {
 		text-decoration: underline;
-	}
-	&:hover {
-		span {
+		&:hover {
 			text-decoration: none;
 		}
+	}
+    .prod__prepay-price {
+        float: right;
+    }
+    .prod__prepay-price  {
+        strong {
+            font-size: 37px;
+        }
+    }
+}
+.popup__footer-links {
+    float: left;
+    margin-top: 13px;
+}
+.link-to-favor {
+    position: relative;
+	display: inline-block;
+	margin-left: 10px;
+	i {
+		position: absolute;
+		right: -15px;
+        top: 3px;
+		@include s(star2);
 	}
 }
