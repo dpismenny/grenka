@@ -33,6 +33,7 @@
 	.icon_user{@include s(ico_user);}
 	.icon_basket{@include s(ico_basket);}
 	.icon_gift{@include s(ico_gift);}
+	.icon_star-green{@include s(star2);}
 
 .btn {
 	display: inline-block;
@@ -734,6 +735,9 @@
 
 .popular-wrap {
 	@extend %clr;
+}
+.popular-wrap_mod {
+	margin: 20px 0;
 }
 .popular {
 	width: 354px;

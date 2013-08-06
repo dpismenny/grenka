@@ -1,6 +1,9 @@
 
 .popup {
-	display: none;  
+	display: none; 
+	.gallery {
+		padding: 20px 0;
+	} 
     .gallery__slide {
         a {
             &:after {
@@ -8,6 +11,10 @@
                 border-color: transparent transparent transparent #fbfbfb;
             }
         }
+    }
+    .gallery__pic {
+    	height: 449px;
+    	border: 0;
     }
 }
 .popup_s {
@@ -34,4 +41,22 @@
 }
 .popup__body {
 	padding: 25px 30px;
+}
+.popup__footer {
+	padding: 15px 25px;
+	background: #fff;
+	border-top: 1px solid $brcl;
+}
+.link-to-favor {
+	span, i {
+		vertical-align: middle;
+	}
+	span {
+		text-decoration: underline;
+	}
+	&:hover {
+		span {
+			text-decoration: none;
+		}
+	}
 }

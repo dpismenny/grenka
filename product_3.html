@@ -303,11 +303,11 @@
 		<div class="prod__articul">Артикул товара:<strong>00000011</strong></div>		
 		<div class="prod__content">
 			<div class="prod__left">
-				<div class="gallery js-gallery">
+				<div class="gallery js-gallery js-gallery-1">
 					<div class="gallery__nav">
-						<button id="gallery-up" class="gallery__up"><i></i></button>
-						<button id="gallery-down" class="gallery__down"><i></i></button>
-						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next="#gallery-down" data-cycle-prev="#gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
+						<button class="gallery__up js-gallery-up"><i></i></button>
+						<button class="gallery__down js-gallery-down"><i></i></button>
+						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-1 .js-gallery-down" data-cycle-prev=".js-gallery-1 .js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
 							<div class="gallery__slide">
 								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
 							</div>
@@ -800,11 +800,11 @@
 		</div>
 	</div>
 	<div class="popup__body">
-		<div class="gallery js-gallery">
+		<div class="gallery js-gallery js-gallery-popup">
 			<div class="gallery__nav">
-				<button id="gallery-up" class="gallery__up"><i></i></button>
-				<button id="gallery-down" class="gallery__down"><i></i></button>
-				<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next="#gallery-down" data-cycle-prev="#gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
+				<button class="gallery__up js-gallery-up"><i></i></button>
+				<button class="gallery__down js-gallery-down"><i></i></button>
+				<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-popup .js-gallery-down" data-cycle-prev=".js-gallery-popup .js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
 					<div class="gallery__slide">
 						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
 					</div>
@@ -843,10 +843,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="gallery__pic">
-				<img src="img/product.jpg" alt="" width="540">
+			<div class="gallery__pic js-gallery-pic">
+				<a href="#gallery-popup"><img src="img/product.jpg" alt=""></a>
 			</div>
 		</div>
+	</div>
+	<div class="popup__footer">
+		<a href="#">Сравнить</a>
+		<a href="#" class="link-to-favor"><span>В список желаний</span> <i class="icon icon_star-green"></i></a>
 	</div>
 </div>
 </body>
