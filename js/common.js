@@ -231,11 +231,13 @@ tabs();
     return false;
   });
 
+// scrollpane
   if ($(".js-scroll-pane").length > 0) {
      $('.js-scroll-pane').jScrollPane({
       autoReinitialise: true
      });
   }
+
 
   $(".js-show-order").click(function(){
     if ($(this).hasClass("js-active")) {
@@ -267,6 +269,7 @@ tabs();
     });
   }
   
+// delite compare product
   $(".js-del-compare").click(function(){
       var index = $(this).parent().parent().index();
       $(this).parent().parent().hide();
@@ -274,6 +277,15 @@ tabs();
           $(this).children("td").eq(index).hide();
       }); 
   });
+
+// delite filter
+  $(".js-del-filter").click(function(){
+    $(this).parent().hide();
+  });
+  $(".js-del-all-filters").click(function(){
+    $(this).parent().parent().remove();
+    return false;
+  }); 
     
 //  -------------------------------- Created by Artur Moroz!
 //rating
