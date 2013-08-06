@@ -2852,7 +2852,6 @@ textarea { font-family: Arial,sans-serif; }
 
 .wishlist__new { position: relative; clear: both; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #dcdcdc; }
 .wishlist__new:before { position: absolute; top: -9px; right: 104px; content: ""; background: url('../img/icons-s2e9ba04c0d.png') 0 -3574px no-repeat; width: 17px; height: 9px; }
-.wishlist__new i { display: inline-block; vertical-align: middle; background: url('../img/icons-s2e9ba04c0d.png') 0 -2316px no-repeat; width: 24px; height: 19px; }
 
 .wishlist__create { width: 455px; position: relative; display: inline-block; margin-right: 5px; }
 .wishlist__create .btn { position: absolute; top: 0; right: 0; margin: 0; }
@@ -2868,7 +2867,6 @@ textarea { font-family: Arial,sans-serif; }
 .wishlist-box__top { background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f37b01), color-stop(100%, #ff8a02)); background-image: -webkit-linear-gradient(bottom, #f37b01 0%, #ff8a02 100%); background-image: -moz-linear-gradient(bottom, #f37b01 0%, #ff8a02 100%); background-image: -o-linear-gradient(bottom, #f37b01 0%, #ff8a02 100%); background-image: linear-gradient(bottom, #f37b01 0%, #ff8a02 100%); padding: 10px 22px 10px 13px; border-bottom: 1px solid #d56c01; }
 
 .wishlist-box__title { float: left; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-transform: uppercase; line-height: 1; }
-.wishlist-box__title i { display: inline-block; vertical-align: middle; background: url('../img/icons-s2e9ba04c0d.png') 0 -2316px no-repeat; width: 24px; height: 19px; margin-right: 10px; margin-top: -2px; }
 
 .wishlist-box__control { position: relative; float: right; }
 .wishlist-box__control a { position: relative; margin-left: 15px; font-size: 11px; color: #010101; text-decoration: underline; }
@@ -2939,7 +2937,7 @@ textarea { font-family: Arial,sans-serif; }
 .compare__head th { position: relative; vertical-align: middle; background: #fff5eb; border: 1px solid gainsboro; }
 .compare__head th:first-child { padding-top: 82px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 700; font-size: 16px; background: #fff; width: 190px; text-transform: uppercase; }
 .compare__head th:first-child span { color: #6cab1a; }
-.compare__head th:first-child .btn { margin-top: 34px; }
+.compare__head th:first-child .btn { margin: 34px 0 15px; }
 .compare__head th .btn_gray { margin-bottom: 5px; }
 .compare__head .add-order__item { float: none; width: 100%; background: none; border: 0; }
 

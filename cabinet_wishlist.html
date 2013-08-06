@@ -12,6 +12,7 @@
 	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.veronica_slider.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -587,10 +588,10 @@
 				<!-- BEGIN .section__inner -->
 				<div class="section__inner">
 					<div class="wishlist__top">
-						<h2 class="wishlist__title section__title">список желаний</h2>
+						<h2 class="wishlist__title section__title">список чудес</h2>
 						<button class="btn btn_medium"><i class="icon_plus"></i>создать новый список</button>
 						<div class="wishlist__new">
-							<i></i>
+							
 							<div class="wishlist__create">
 								<input type="text" class="wishlist__input label__input" placeholder="Название нового списка желаний">
 								<input type="submit" class="btn" value="Создать">
@@ -602,7 +603,7 @@
 						<a href="#" class="wishlist-box__default">Список по умолчанию</a>
 						<div class="wishlist-box__table">
 							<div class="wishlist-box__top">
-								<div class="wishlist-box__title"><i></i>товары на день рождения</div>
+								<div class="wishlist-box__title">товары на день рождения</div>
 								<div class="wishlist-box__control">
 									<div class="share">
 										<span class="share__link"><b></b>опубликовать</span>
@@ -628,7 +629,7 @@
 						<a href="#" class="wishlist-box__default">Сделать по умолчанию</a>
 						<div class="wishlist-box__table">
 							<div class="wishlist-box__top">
-								<div class="wishlist-box__title"><i></i>мой список товаров на 2014 год</div>
+								<div class="wishlist-box__title">мой список товаров на 2014 год</div>
 								<div class="wishlist-box__control">
 									<div class="share">
 										<span class="share__link"><b></b>опубликовать</span>
@@ -785,7 +786,7 @@
 						<a href="#" class="wishlist-box__default">Сделать по умолчанию</a>
 						<div class="wishlist-box__table">
 							<div class="wishlist-box__top">
-								<div class="wishlist-box__title"><i></i>мой список товаров на 2015 год</div>
+								<div class="wishlist-box__title">мой список товаров на 2015 год</div>
 								<div class="wishlist-box__control">
 									<div class="share">
 										<span class="share__link"><b></b>опубликовать</span>
@@ -893,26 +894,26 @@
 													<span>до конца акции осталось:</span>
 												</div>
 												<!-- BEGIN .counter -->
-												<div class="counter">
-													<ul class="counter__list">
-														<li>
-															<strong>11</strong>
-															<span>дней</span>
-														</li>
-														<li>
-															<strong>06</strong>
-															<span>часов</span>
-														</li>
-														<li>
-															<strong>57</strong>
-															<span>минут</span>
-														</li>
-														<li>
-															<strong>03</strong>
-															<span>секунд</span>
-														</li>
-													</ul>
-												</div>
+												<ul class="is-hidden js-counter-list">
+													<li>
+														<strong>{dn} </strong>
+														<span>{dl}</span>
+													</li>
+													<li>
+														<strong>{hn}</strong>
+														<span>{hl}</span>
+													</li>
+													<li>
+														<strong>{mn}</strong>
+														<span>{ml}</span>
+													</li>
+													<li>
+														<strong>{sn}</strong>
+														<span>{sl}</span>
+													</li>
+												</ul>
+												
+												<div class="counter js-counter" data-days="3d" data-hours="5h" data-minutes="34m"></div>
 												<!-- END .counter -->
 											</div>
 									</li>
@@ -1433,22 +1434,22 @@
 		<label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список желаний</span>
+        	<span>Мой список чудес</span>
        </label>
 		<label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список желаний</span>
+        	<span>Мой список чудес</span>
        </label>
        <label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список желаний</span>
+        	<span>Мой список чудес</span>
        </label>
        <label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список желаний</span>
+        	<span>Мой список чудес</span>
        </label>
 		<div class="label label_">
 			<label class="label-radio">
@@ -1471,19 +1472,19 @@
 		<div class="radio">
 			<label>
 				<input type="radio" name="name">
-				<span>Мой список желаний</span>
+				<span>Мой список чудес</span>
 			</label>
 		</div>
 		<div class="radio">
 			<label>
 				<input type="radio" name="name">
-				<span>Мой список желаний</span>
+				<span>Мой список чудес</span>
 			</label>
 		</div>
 		<div class="radio">
 			<label>
 				<input type="radio" name="name">
-				<span>Мой список желаний</span>
+				<span>Мой список чудес</span>
 			</label>
 		</div>
 		<div class="radio">

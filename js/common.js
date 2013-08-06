@@ -256,24 +256,24 @@ tabs();
       return false;
   });
 
-  // if ($(".js-counter").length > 0) {
-  //   $(".js-counter").each(function(){
-  //     $(this).counter();
-  //   });
-  // }
-  //var c_year = $(".js-counter").attr("data-year");
-  //var c_month = $(".js-counter").attr("data-month");
-  //var c_day = $(".js-counter").attr("data-day");
-  date = new Date(2015, 8-1, 25);
+  var c_days = $(".js-counter").attr("data-days");
+  var c_hours = $(".js-counter").attr("data-hours");
+  var c_minutes = $(".js-counter").attr("data-minutes");
   if ($(".js-counter").length > 0) {
     $('.js-counter').countdown({
-      until: date, 
+      until: '+'+c_days +' '+ '+'+c_hours + ' ' + '+'+c_minutes,
       format: 'YOWDHMS',
       layout: $('.js-counter-list').html()
     });
   }
   
-
+  $(".js-del-compare").click(function(){
+      var index = $(this).parent().parent().index();
+      $(this).parent().parent().hide();
+      $(".js-compare tr").each(function(){
+          $(this).children("td").eq(index).hide();
+      }); 
+  });
     
 //  -------------------------------- Created by Artur Moroz!
 //rating

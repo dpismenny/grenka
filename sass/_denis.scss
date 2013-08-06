@@ -1600,11 +1600,6 @@
 		content: "";
 		@include s(arrwish);
 	}
-	i{
-		display: inline-block;
-		vertical-align: middle;
-		@include s(heart);
-	}
 }
 .wishlist__create{
 	width: 455px;
@@ -1651,13 +1646,6 @@
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 1;
-	i{
-		display: inline-block;
-		vertical-align: middle;
-		@include s(heart);
-		margin-right: 10px;
-		margin-top: -2px;
-	}
 }
 .wishlist-box__control{
 	position: relative;
