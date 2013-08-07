@@ -170,31 +170,7 @@ tabs();
 
 // ------------------- Fancybox ----------------------// 
 
-  $('.js-reg-link').on('click', function() {
-    $this = $(this);
-    $.fancybox({
-        href: $this.attr('href'),
-        padding: 0
-    });
-    return false;
-  });
-  $('.js-gallery-pic a').on('click', function() {
-    $this = $(this);
-    $.fancybox({
-        href: $this.attr('href'),
-        padding: 0
-    });
-    return false;
-  });
-  $('.js-agree-term').on('click', function() {
-    $this = $(this);
-    $.fancybox({
-        href: $this.attr('href'),
-        padding: 0
-    });
-    return false;
-  });
-  $('.js-remind-pass').on('click', function() {
+  $('.js-popup-link').on('click', function() {
     $this = $(this);
     $.fancybox({
         href: $this.attr('href'),
@@ -203,9 +179,9 @@ tabs();
     return false;
   });
 
-    if ($('#recovery_pass').length > 0) {
-      $.fancybox.open('#recovery_pass');
-    }
+  if ($('#recovery_pass').length > 0) {
+    $.fancybox.open('#recovery_pass');
+  }
     
 
   if ($('#slider-left-main').length > 0) {

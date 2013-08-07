@@ -134,7 +134,11 @@
         width: 100%;
     }
 }   
-
+.btn-wrap {
+    .label-check {
+        display: inline-block;
+    }
+}
 .tooltip_agree {
     width: auto;
     height: auto;
