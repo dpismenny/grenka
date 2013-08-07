@@ -589,7 +589,7 @@
 				<div class="section__inner">
 					<div class="wishlist__top">
 						<h2 class="wishlist__title section__title">список чудес</h2>
-						<button class="btn btn_medium"><i class="icon_plus"></i>создать новый список</button>
+						<a class="btn btn_medium js-popup-link" href="#to-favorite1"><i class="icon_plus"></i>создать новый список</a>
 						<div class="wishlist__new">
 							
 							<div class="wishlist__create">
@@ -660,10 +660,10 @@
 										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -686,7 +686,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="wishlist-box__item">
@@ -701,10 +712,10 @@
 										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup" style="display:none;">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -727,7 +738,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="wishlist-box__item">
@@ -742,10 +764,10 @@
 										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup" style="display:none;">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -768,7 +790,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 								</ul>
@@ -1423,7 +1456,6 @@
 	<!-- END .footer__in -->
 </div>
 <!-- END .footer -->
-<!-- 
 <div class="popup popup_s" id="to-favorite1">
 	<div class="popup__header">
 		<div class="popup__title">
@@ -1434,24 +1466,24 @@
 		<label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список чудес</span>
+        	<span>Мой список желаний</span>
        </label>
 		<label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список чудес</span>
+        	<span>Мой список желаний</span>
        </label>
        <label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список чудес</span>
+        	<span>Мой список желаний</span>
        </label>
        <label class="label-radio">
         	<input type="radio" name="name">
         	<i></i>
-        	<span>Мой список чудес</span>
+        	<span>Мой список желаний</span>
        </label>
-		<div class="label label_">
+		<div class="label label_radio-input-text">
 			<label class="label-radio">
 	        	<input type="radio" name="name">
 	        	<i></i>
@@ -1462,41 +1494,6 @@
 		<input class="btn" type="submit">
 	</div>
 </div>
-<div class="popup popup_s" id="to-favorite2">
-	<div class="popup__header">
-		<div class="popup__title">
-			Список желаний
-		</div>
-	</div>
-	<div class="popup__body">
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список чудес</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список чудес</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список чудес</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<input type="text" class="input">
-			</label>
-			<p>Или например, "Желаю на День рождения"</p>
-		</div>
-		<input class="btn" type="submit">
-	</div>
-</div> -->
 
 </body>
 </html>

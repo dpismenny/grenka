@@ -1788,6 +1788,7 @@
 	position: relative;
 }
 .product__remove-popup{
+	display: none;
 	position: absolute;
 	bottom: 30px;
 	right: 50%;
@@ -1801,6 +1802,10 @@
 	color: #000;
 	font-size: 12px;
 	cursor: default;
+}
+.product__del-popup {
+	bottom: 22px;
+	margin-right: -98px;
 }
 .product__remove-in{
 	position: relative;

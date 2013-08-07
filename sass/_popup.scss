@@ -53,6 +53,25 @@
             margin-bottom: 10px;
         }
     }
+    .label-radio {
+        margin-bottom: 10px;
+    }
+}
+.label_radio-input-text {
+    @extend %clr;
+    .label-radio,
+    .label__input {
+        float: left;
+    }
+    .label__help {
+        clear: both;
+    }
+    .label-radio {
+        margin-top: 7px;
+    }
+    .label__input {
+        width: 90%;
+    }
 }
 .popup__footer {
 	padding: 15px 25px;

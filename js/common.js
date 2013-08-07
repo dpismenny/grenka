@@ -186,6 +186,25 @@ tabs();
     $.fancybox.open('#recovery_pass');
   }
     
+  var replace_popup = $(".js-replace-popup");
+  $(".js-replace-wish-link").click(function(){
+    $(".product__remove-popup").hide();
+    $(this).parent().find(replace_popup).toggle();
+    return false;
+  });
+  $(".js-replace-close").click(function(){
+    replace_popup.hide();
+  })
+
+  var del_popup = $(".js-del-popup");
+  $(".js-del-wish-link").click(function(){
+    $(".product__remove-popup").hide();
+    $(this).parent().find(del_popup).toggle();
+    return false;
+  });
+  $(".js-del-close").click(function(){
+    del_popup.hide();
+  })
 
   if ($('#slider-left-main').length > 0) {
       // Главный слайдер
