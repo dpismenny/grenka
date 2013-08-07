@@ -179,6 +179,9 @@ tabs();
     return false;
   });
 
+  if ($('#reg-message').length > 0) {
+    $.fancybox.open('#reg-message');
+  }
   if ($('#recovery_pass').length > 0) {
     $.fancybox.open('#recovery_pass');
   }

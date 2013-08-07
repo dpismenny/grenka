@@ -157,7 +157,17 @@
 .popup__text {
     font-size: 18px;
     margin-bottom: 20px;
+    span {
+        color: #74b125;
+    }
 }
 .popup__text-center {
     text-align: center;
+}
+.popup-text__title {
+    margin-bottom: 15px;
+    color: #f47b01;
+    @include pm;
+    font-size: 20px;
+    text-transform: uppercase;
 }
