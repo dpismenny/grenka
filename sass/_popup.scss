@@ -1,5 +1,6 @@
 
 .popup {
+    width: 620px;
 	display: none; 
 	.gallery {
 		padding: 20px 0;
@@ -15,6 +16,9 @@
     .gallery__pic {
     	height: 449px;
     	border: 0;
+    }
+    .label__input {
+        margin-bottom: 0;
     }
 }
 .popup_s {
@@ -41,6 +45,14 @@
 }
 .popup__body {
 	padding: 25px 30px;
+    .enter-soc {
+        text-align: center;
+        font-size: 11px;
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
 }
 .popup__footer {
 	padding: 15px 25px;
@@ -98,4 +110,32 @@
         right: 12px;
     }
     
+}
+
+.popup__form {
+    margin: 0 auto;
+    width: 280px;    
+    .label__tooltip {
+        right: -70px;
+        left: auto;
+        &:before {
+            right: auto;
+            left: 28px;
+        }
+        &:after {
+            left: 29px;
+            right: auto;
+        }
+    }
+    .label-check {
+        margin-bottom: 10px;
+    }
+    .btn_medium {
+        width: 100%;
+    }
+}   
+
+.tooltip_agree {
+    width: auto;
+    height: auto;
 }

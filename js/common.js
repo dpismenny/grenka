@@ -49,6 +49,7 @@ $('.js-top-popup').click(function(event){
 $('.js-top-popup').click(function() {
     $('.js-top-popup').removeClass('is-active');
     $(this).toggleClass('is-active');
+    return false;
 });
 
 //select
@@ -168,18 +169,25 @@ tabs();
     // );
 
 // ------------------- Fancybox ----------------------// 
-  $(".header__logo a").fancybox({
+  $(".js-reg-link").fancybox({
       openEffect  : 'none',
       closeEffect : 'none',
       padding: 0,
       showCloseButton: true,
   });
-  $(".js-forgot-pass").fancybox({
+  $(".js-agree-term").fancybox({
       openEffect  : 'none',
       closeEffect : 'none',
       padding: 0,
       showCloseButton: true,
   });
+  $(".js-remind-pass").fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      padding: 0,
+      showCloseButton: true,
+  });
+  
 
   if ($('#slider-left-main').length > 0) {
       // Главный слайдер
