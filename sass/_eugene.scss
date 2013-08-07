@@ -575,6 +575,9 @@
     font-size: 20px;
     text-transform: uppercase;
     @include pm;
+    &.is-ok {
+        color: #6baa18;
+    }
 }  
 .product-row__deliv  {
     i, span {
