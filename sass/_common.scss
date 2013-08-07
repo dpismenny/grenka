@@ -545,7 +545,7 @@ textarea {
 		@include s(ico_search);
 	}
 }
-.search__list {
+.search__list {   
 	display: none;
 	position: absolute;
 	top: 25px;
@@ -553,19 +553,20 @@ textarea {
 	right: 0;
 	list-style: none;
 	border: 1px solid #adadad;
-	border-bottom: none;
 	z-index: 1000;
+	@include box-shadow(0 0 7px rgba(0,0,0,.1));
 	li {
 		&:first-child {
 			a {
 				padding-top: 12px;
+				border-top: 0;
 			}
 		}
 	}
 	a {
 		display: block;
 		padding: 8px 10px;
-		border-bottom: 1px solid #dadada;
+		border-top: 1px solid #dadada;
 		@extend %clr;
 		color: #7a7a7a;
 		text-decoration: none;
