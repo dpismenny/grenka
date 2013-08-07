@@ -1,0 +1,878 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>popup remind pass</title>
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.cycle2.js"></script>
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.raty.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/common-moroz.js"></script>
+</head>
+<body>
+<!-- BEGIN .top -->
+<div class="top">
+	<!-- BEGIN .top__in -->
+	<div class="top__in">
+		<!-- BEGIN .location -->
+		<div class="location js-top-popup">
+			<div class="location__city">
+				<span>Ваш город:</span>
+				<strong>Киев</strong>
+				<i class="ico-arr"><i></i></i>
+			</div>
+			<div class="location__down">
+				<div class="location__title">Изменить местоположение</div>
+				<label class="label">
+					<span class="label__title">Введите название:</span>
+					<input class="label__input" type="text">
+				</label>
+				<div class="location__cities">
+					<span>Часто используемые города:</span>
+					<a href="#" class="#">Киев</a>
+					<a href="#" class="#">Донецк</a>
+					<a href="#" class="#">Днепропетровск</a>
+					<a href="#" class="#">Запорожье</a>
+					<a href="#" class="#">Харьков</a>
+					<a href="#" class="#">Бердянск</a>
+					<a href="#" class="#">Полтава</a>
+					<a href="#" class="#">Днепродзержинск</a>
+					<a href="#" class="#">Винница</a>
+					<a href="#" class="#">Хмельницкий</a>
+					<a href="#" class="#">Одесса</a>
+					<a href="#" class="#">Симферополь</a>
+				</div>
+				<button class="btn btn_orange">запомнить</button>
+			</div>	
+		</div>	
+		<!-- BEGIN .top__nav -->
+		<nav class="top__nav">
+			<ul>
+				<li><a href="#">Категории</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>		
+		<!-- END .topper__nav -->
+		<!-- BEGIN .callback -->
+		<div class="callback js-top-popup">
+			<div class="callback__title">Обратный звонок<i class="ico-phone"></i><i class="ico-arr"></i></div>
+			<div class="callback__down">
+				<label class="label">
+					<span class="label__title">Ваше имя:</span>
+					<input class="label__input" type="text">
+				</label>
+				<label class="label">
+					<span class="label__title">Телефон:</span>
+					<input class="label__input" type="text">
+				</label>
+				<div class="callback__adv"><i class="ico-attention"></i>не забудьте указать код города/оператора</div>
+				<div class="callback__time">
+					<strong>Когда перезвонить?</strong>
+					<div class="callback__cols">
+						<div class="callback__column">
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>В указанное время</span>
+							</label>
+							<label class="label-radio">
+								<input type="radio" name="name">
+								<i></i>
+								<span>Сейчас</span>
+							</label>
+						</div>
+						<div class="callback__column">
+							<div class="label">
+								<input class="label__input" type="text">
+							</div>
+							<button class="btn btn_orange">перезвонить</button>
+						</div>
+					</div>										
+				</div>
+			</div>
+		</div>
+		<!--END .callback -->
+	 <!-- BEGIN .livechat -->
+		<div class="livechat">
+		   <a href="https://siteheart.com/webconsultation/567940?" target="siteheart_sitepopup_567940" onclick="o=popup.open;o('https://siteheart.com/webconsultation/567940?', 'siteheart_sitepopup_567940', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;"><img src="http://webindicator.siteheart.com/webindicator/image/1371825580?ent=567940&amp;company=567940" border="0" margin-right="5px" alt="SiteHeart">Он-лайн чат</a>
+		</div>
+	  <!-- END .livechat -->
+		<!-- BEGIN .enter -->
+		<div class="enter">
+			<a class="enter__reg js-reg-link" href="#reg">Регистрация</a>
+			<div class="enter__go js-top-popup">
+				<button class="btn btn_gray">Вход</button>
+				<div class="enter__down">
+					<div class="enter__login">
+						<label class="label label_error">
+							<input class="label__input" type="text" placeholder="Логин">
+							<span class="label__tooltip">Неверный логин</span>
+						</label>
+						<label class="label label_error">
+							<input class="label__input" type="password" placeholder="Пароль">
+							<span class="label__tooltip">Неверный пароль</span>
+						</label>
+					</div>
+					<label class="label-check">
+						<input type="checkbox">
+						<i></i>
+						<span>Запомнить</span>
+						<a href="#remind" class="js-remind-pass">Забыли пароль?</a>
+					</label>
+					<div class="enter-soc">
+						<span class="enter-soc__text">Войти через:</span>
+						<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+						<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+					</div>
+					<div class="btn-wrap">
+						<button class="btn btn_orange">Войти на сайт</button>
+					</div>
+					<a href="#" class="btn-simple">зарегистрируйся и получи скидку</a>
+				</div>
+			</div>			
+		</div>
+		<!-- END .enter -->
+	</div>
+</div>
+<!-- END .top -->
+<!-- BEGIN  .page-->
+<div class="page">
+	<!-- BEGIN .header -->
+	<div class="header">
+		<!-- BEGIN .header__logo -->
+		<h1 class="header__logo"><a href="#" title="Интернет-магазин GRENKA.ua">Интернет-магазин GRENKA.ua</a></h1>
+		<!-- END .header__logo -->
+		<!-- BEGIN .header__info -->
+		<div class="header__info">
+			<!-- BEGIN .header__contacts -->
+			<div class="header__contacts">
+				<div class="header__tel"><span>044</span> 359 05 055 <i class="icon icon_tel"></i></div>
+				Звоните нам с <strong>9:00</strong> до <strong>21:00</strong> <span>ежедневно</span>
+			</div>
+			<!-- END .header__contacts -->
+			<!-- BEGIN .search -->
+			<div class="search">
+				<!-- BEGIN .search__field -->
+				<div class="search__field">
+					<input type="text" class="search__input js-searc-input" placeholder="поиск...">
+					<button type="submit" class="search__submit" value=""><i></i></button>
+					<!-- BEGIN .search__example -->
+					<div class="search__example js-search-example">
+						Например: <a href="#">нокия x5</a>, <a href="#">Jiayu G3s</a>
+					</div>
+					<!-- END .search__example -->
+					<ul class="search__list">
+						<li>
+							<a href="#"><span>Испытайте в деле бойца <strong>геймер</strong> класса под названием Gunzerker. Этот </span><i>1</i></a>
+						</li>
+						<li>
+							<a href="#"><span>здоровяк-коротышка так силен, что легко управляется <strong>геймер</strong> любыми </span><i>1</i></a>
+						</li>
+						<li>
+							<a href="#"><span>пушками разом. <strong>геймер</strong> поливать врага свинцом из пары тяжелых </span><i>1</i></a>
+						</li>
+						<li>
+							<a href="#"><span>пулеметов? Нет проблем! А может, вам больше <strong>геймер</strong> два </span><i>1</i></a>
+						</li>
+					</ul>
+				</div>
+				<!-- END .search__field -->
+			</div>
+			<!-- END .search -->
+		</div>
+		<!-- END .header__info -->
+		<!-- BEGIN .basket -->
+		<div class="basket is-active">
+			<i class="icon-basket"></i>
+			<!-- BEGIN .basket__in -->
+			<div class="basket__in">
+				<!-- BEGIN .basket__content -->
+				<div class="basket__content" style="display:none;">
+					<i class="icon icon_gift"></i>
+					<div class="basket__text">В <a href="#">корзине</a> Вас ожидает подарок</div>
+				</div>
+				<!-- END .basket__content -->
+				<!-- BEGIN .basket__content -->
+				<div class="basket__content"  style="display:block;">
+					<div class="basket__text">
+						<p>В <a href="#">корзине</a> <span>5</span> товаров</p>
+						<p>На сумму: <span>4790 грн.</span></p>
+						<p class="basket__text-order"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></p>
+					</div>
+				</div>
+				<!-- END .basket__content -->
+			</div>
+			<!-- END .basket__in -->
+		</div>
+		<!-- END .basket -->
+	</div>
+	<!-- END .header -->
+	<!-- BEGIN .nav -->
+	<div class="nav-wrap">
+		<ul class="nav">
+			<li class="nav__item">
+				<a href="#" class="nav__link">Игры<i class="icon icon_arrow3"></i></a>
+				<div class="drop-nav">
+					<div class="drop-nav__left game-promo">
+						<a href="#" class="game-promo__title">Metro: Last Light</a>
+						<a href="#" class="game-promo__img">
+							<img src="img/metro.jpg" alt="metro game">
+						</a>
+						<div class="game-promo__descr">
+							<p>Разработчики обещают сохранить все лучшее, что было в Metro 2033, и исправить некоторые существующие недостатки. Обещается так же продвинутый АИ и оптимизация графического движка. В игре станет доступен полноценный сетевой режим. </p>
+						</div>
+					</div>
+					<div class="drop-nav__right">
+						<ul class="sub-nav">
+							<li><a href="#">Блоки питания</a></li>
+							<li><a href="#">Видеокарты</a></li>
+							<li><a href="#">Материнские платы</a></li>
+							<li><a href="#">Клавиатуры</a></li>
+							<li><a href="#">Мыши</a></li>
+							<li><a href="#">Корпуса</a></li>
+							<li>
+								<a href="#">Игровые поверхности</a>
+								<ul>
+									<li><a href="#">подкатегория</a></li>
+									<li><a href="#">еще-то категория</a></li>
+									<li><a href="#">просто название</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Системы охлаждения</a></li>
+							<li><a href="#">3D-очки</a></li>
+						</ul>
+						<ul class="sub-nav">
+							<li><a href="#">Игровые приставки</a></li>
+							<li><a href="#">Игровые пакеты</a></li>
+							<li><a href="#">Игровые манипуляторы</a></li>
+							<li><a href="#">Аксессуары к приставкам</a></li>
+						</ul>
+						<ul class="sub-nav">
+							<li><a href="#">Офисные устройства</a></li>
+							<li><a href="#">USB-Лампочки</a></li>
+							<li><a href="#">Развлечения</a></li>
+							<li><a href="#">Новогодние сувениры</a></li>
+							<li><a href="#">Аудио. Видео</a></li>
+							<li><a href="#">Дом. Интерьер</a></li>
+							<li><a href="#">Логические игры</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Программы<i class="icon icon_arrow3"></i></a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Геймерам<i class="icon icon_arrow3"></i></a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Приставки<i class="icon icon_arrow3"></i></a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Техника<i class="icon icon_arrow3"></i></a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">E-ключи<i class="icon icon_arrow3"></i></a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Акции<i class="icon icon_arrow3"></i></a>
+			</li>
+		</ul>
+	</div>
+	<!-- END .nav -->
+	<!-- BEGIN .prod -->
+	<div class="prod">
+		<!-- BEGIN .breadcrumbs -->
+		<ul class="breadcrumbs">
+			<li><span>/</span><a href="#">Главная</a></li>
+			<li><span>/</span><a href="#">Программы</a></li>
+			<li><span>/</span>Антивирусы...</li>
+		</ul>
+		<!-- END .breadcrumbs -->
+		<div class="prod__articul">Артикул товара:<strong>00000011</strong></div>		
+		<div class="prod__content">
+			<div class="prod__left">
+				<div class="gallery js-gallery js-gallery-1">
+					<div class="gallery__nav">
+						<button class="gallery__up js-gallery-up"><i></i></button>
+						<button class="gallery__down js-gallery-down"><i></i></button>
+						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-1 .js-gallery-down" data-cycle-prev=".js-gallery-1 .js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
+							<div class="gallery__slide">
+								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a class="is-active" href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide is-inactive">
+								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+							<div class="gallery__slide">
+								<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__pic js-gallery-pic">
+						<a href="#gallery-popup"><img src="img/product.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>				
+			<div class="prod__right">	
+				<div class="prod__title">Assassin's Creed II for PS3 очень лимитированое издание в две строки</div>
+				<!-- BEGIN .rating -->
+				<div class="rating">
+					<div class="rating__in js-rating" data-score="4"></div>
+					<span>(15)</span>
+				</div>
+				<!-- END .rating -->
+				<ul class="prod__price prod__price_mod">
+					<li class="prod__price-super"><span>Последняя цена</span></li>
+					<li class="prod__price-new"><strong>1559</strong>грн.</li>
+					<li class="prod__price-links">	
+						<a href="#">Узнать о снижении цены</a>
+						<a href="#">Сообщить о скидках!</a>
+					</li>						
+				</ul>
+				<div class="prod__empty">
+					<strong>товар закончился</strong>
+					<button class="btn btn_gray">Сообщить о наличии</button>
+				</div>
+				<ul class="prod__links">
+					<li><a href="#">Отзывов</a><span>(68)</span></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">В список желаний</a></li>
+				</ul>			
+				<div class="prod__similar">
+					<div class="prod__similar-top">
+						<strong>похожие товары в наличии</strong>
+						<button id="prod-similar-next" class="prod__similar-next"></button>
+						<button id="prod-similar-prev" class="prod__similar-prev"></button>
+					</div>
+					<div class="prod__similar-slider cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-cycle-next="#prod-similar-next" data-cycle-prev="#prod-similar-prev">
+						<div class="prod__similar-item">
+							<a href="#">
+								<img src="img/pic1.jpg" width="46" height="64" alt="">
+								<span>Your Shape: Fitness Evolved</span>
+								<div class="label-in-stock">в наличии<i></i></div>
+							</a>
+							<a href="#">
+								<img src="img/pic1.jpg" width="46" height="64" alt="">
+								<span>Your Shape: Fitness Evolved</span>
+								<div class="label-in-stock">в наличии<i></i></div>
+							</a>
+						</div>
+						<div class="prod__similar-item">
+							<a href="#">
+								<img src="img/pic1.jpg" width="46" height="64" alt="">
+								<span>Your Shape: Fitness Evolved</span>
+								<div class="label-in-stock">в наличии<i></i></div>
+							</a>
+							<a href="#">
+								<img src="img/pic1.jpg" width="46" height="64" alt="">
+								<span>Your Shape: Fitness Evolved</span>
+								<div class="label-in-stock">в наличии<i></i></div>
+							</a>
+						</div>
+						<div class="prod__similar-item">
+							<a href="#">
+								<img src="img/pic1.jpg" width="46" height="64" alt="">
+								<span>Your Shape: Fitness Evolved</span>
+								<div class="label-in-stock">в наличии<i></i></div>
+							</a>
+							<a href="#">
+								<img src="img/pic1.jpg" width="46" height="64" alt="">
+								<span>Your Shape: Fitness Evolved</span>
+								<div class="label-in-stock">в наличии<i></i></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END .prod -->	
+	<!-- BEGIN .product-list -->
+	<div class="product-list">
+		<div class="product-list__top">
+			<h2 class="product-list__title">похожии товары в наличии</h2>
+		</div>
+		<div class="add-order">
+			<div class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+		</div>
+	</div>
+	<!-- END .product-list -->
+</div>
+<!-- END .page-->
+<!-- BEGIN .recent -->
+<div class="recent">
+	<div class="recent__head">
+		<h2 class="recent__title">Просмотренные товары</h2>
+		<button class="recent__key js-recent-key">
+			<span>Свернуть</span><i class="icon icon_arrow2"></i>
+		</button>
+	</div>
+	<!-- BEGIN .recent__carousel -->
+	<div class="recent__carousel">
+		<!-- BEGIN .recent__wrap -->
+		<div class="recent__wrap">
+			<div class="cycle-slideshow recent__list"
+			    data-cycle-fx=carousel
+			    data-cycle-timeout=0
+			    data-cycle-slides=".recent__item"
+			    data-cycle-carousel-visible="4"
+			    data-cycle-next=".js-recent-next"
+			    data-cycle-prev=".js-recent-prev"
+			    data-allow-wrap=false
+			    >
+			    <div class="recent__item">
+			   		<!-- BEGIN .recent__image -->
+			   		<a class="recent__image" href="#">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</a>
+			   		<!-- END .recent__image -->
+			   		<!-- BEGIN .recent__info -->
+			   		<div class="recent__info">
+			   			<div class="recent__checked"></div>
+			   			<a href="#">DMC: Devil May Cry</a>
+			   			<div class="recent__price"><strong>110</strong> грн.</div>
+			   		</div>
+			   		<!-- END .recent__info -->
+			    </div>
+			    <div class="recent__item">
+			   		<!-- BEGIN .recent__image -->
+			   		<a class="recent__image" href="#">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</a>
+			   		<!-- END .recent__image -->
+			   		<!-- BEGIN .recent__info -->
+			   		<div class="recent__info">
+			   			<div class="recent__checked"></div>
+			   			<a href="#">Your Shape: Fitness Evolved</a>
+			   			<div class="recent__price"><strong>110</strong> грн.</div>
+			   		</div>
+			   		<!-- END .recent__info -->
+			    </div>
+			    <div class="recent__item">
+			   		<!-- BEGIN .recent__image -->
+			   		<a class="recent__image" href="#">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</a>
+			   		<!-- END .recent__image -->
+			   		<!-- BEGIN .recent__info -->
+			   		<div class="recent__info">
+			   			<div class="recent__checked"></div>
+			   			<a href="#">DMC: Devil new May Cry</a>
+			   			<div class="recent__price"><strong>110</strong> грн.</div>
+			   		</div>
+			   		<!-- END .recent__info -->
+			    </div>
+			    <div class="recent__item">
+			   		<!-- BEGIN .recent__image -->
+			   		<a class="recent__image" href="#">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</a>
+			   		<!-- END .recent__image -->
+			   		<!-- BEGIN .recent__info -->
+			   		<div class="recent__info">
+			   			<div class="recent__checked"></div>
+			   			<a href="#">DMC: Devil new May Cry</a>
+			   			<div class="recent__price"><strong>110</strong> грн.</div>
+			   		</div>
+			   		<!-- END .recent__info -->
+			    </div>
+			    <div class="recent__item">
+			   		<!-- BEGIN .recent__image -->
+			   		<a class="recent__image" href="#">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</a>
+			   		<!-- END .recent__image -->
+			   		<!-- BEGIN .recent__info -->
+			   		<div class="recent__info">
+			   			<div class="recent__checked"></div>
+			   			<a href="#">DMC: Devil new May Cry</a>
+			   			<div class="recent__price"><strong>110</strong> грн.</div>
+			   		</div>
+			   		<!-- END .recent__info -->
+			    </div>
+			    <div class="recent__item">
+			   		<!-- BEGIN .recent__image -->
+			   		<a class="recent__image" href="#">
+			   			<img src="img/img-8.jpg" width="60" height="83" alt="img">
+			   		</a>
+			   		<!-- END .recent__image -->
+			   		<!-- BEGIN .recent__info -->
+			   		<div class="recent__info">
+			   			<div class="recent__checked"></div>
+			   			<a href="#">DMC: Devil new May Cry</a>
+			   			<div class="recent__price"><strong>110</strong> грн.</div>
+			   		</div>
+			   		<!-- END .recent__info -->
+			    </div>
+			</div>
+
+			    <button class="recent__nav recent__nav-prev js-recent-prev"><i></i></button>
+			    <button class="recent__nav recent__nav-next js-recent-next"><i></i></button>
+		</div>
+		<!-- END .recent__wrap -->
+	</div>
+	<!-- END .recent__carousel -->
+</div>
+<!-- END .recent -->
+<!-- BEGIN .footer -->
+<div class="footer">
+	<!-- BEGIN .footer__in -->
+	<div class="footer__in">
+		<!-- BEGIN .footer__subscribe -->
+		<div class="subscribe">
+			<div class="subscribe__text">
+				<i class="icon icon_subscribe"></i>подпишись и получи купон на скидку
+			</div>
+			<!-- BEGIN .footer__subscribe-field -->
+			<div class="subscribe__field">
+				<input type="text" class="subscribe__input" placeholder="введите ваш е-мейл...">
+				<input type="submit" class="btn btn_orange" value="Да">
+				<div class="tooltip" style="display:block">
+					<strong class="tooltip__title">ПОДПИСКА НА РАССЫЛКУ</strong>
+					<div class="tooltip__text">
+						Система безопасности GRENKA запрещает подписывать так много разных адресов, пожалуйста, зарегистрируйтесь на сайте, напишите в онлайн-чат или попробуйте повторить попытку немного позднее.
+					</div>
+				</div>
+			</div>
+			<!-- END .footer__subscribe-field -->
+		</div>
+		<!-- END .footer__subscribe -->
+		<!-- BEGIN .footer__nav -->
+		<div class="footer__nav">
+			<ul>
+				<li><a href="#" class="footer__title">Игры</a></li>
+				<li><a href="#">Стратегии</a></li>
+				<li><a href="#">Бродилки</a></li>
+				<li><a href="#">Аркады</a></li>
+				<li><a href="#">Экшн</a></li>
+				<li><a href="#">Гонки</a></li>
+				<li><a href="#">Леталки</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" class="footer__title">Программы</a></li>
+				<li><a href="#">Утилиты</a></li>
+				<li><a href="#">Финансовые</a></li>
+				<li><a href="#">Коммерческие</a></li>
+				<li><a href="#">Графика</a></li>
+				<li><a href="#">Дизайн</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" class="footer__title">Геймерам</a></li>
+				<li><a href="#">Блоки питания</a></li>
+				<li><a href="#">Видеокарты</a></li>
+				<li><a href="#">Материнские платы</a></li>
+				<li><a href="#">Клавиатуры</a></li>
+				<li><a href="#">Мыши</a></li>
+				<li><a href="#">Корпуса</a></li>
+				<li><a href="#">Игровые поверхности</a></li>
+				<li><a href="#">Системы охлаждения</a></li>
+				<li><a href="#">3D-очки</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" class="footer__title">Приставки</a></li>
+				<li><a href="#">Игровые приставки</a></li>
+				<li><a href="#">Игровые пакеты</a></li>
+				<li><a href="#">Игровые манипуляторы</a></li>
+				<li><a href="#">Аксессуары к приставкам</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" class="footer__title">Планшеты</a></li>
+				<li><a href="#">Офисные устройства</a></li>
+				<li><a href="#">USB-Лампочки</a></li>
+				<li><a href="#">Развлечения</a></li>
+				<li><a href="#">Новогодние сувениры</a></li>
+				<li><a href="#">Аудио. Видео</a></li>
+				<li><a href="#">Дом. Интерьер</a></li>
+				<li><a href="#">Логические игры</a></li>
+			</ul>
+			<ul>
+				<li><a href="#" class="footer__title">E-ключи</a></li>
+				<li><a href="#">Операционные системы</a></li>
+				<li><a href="#">Офисные приложения</a></li>
+				<li><a href="#">Антивирусы</a></li>
+				<li><a href="#">Распознавание текста</a></li>
+				<li><a href="#">Переводчики и словари</a></li>
+				<li><a href="#">Архиваторы</a></li>
+				<li><a href="#">Системные утилиты</a></li>
+				<li><a href="#">Серверное ПО</a></li>
+			</ul>
+		</div>
+		<!-- END .footer__nav -->
+		<!-- BEGIN .footer__row -->
+		<div class="footer__row">
+			<!-- BEGIN .footer__col -->
+			<div class="footer__col footer__delivery">
+				<a href="#" class="footer__title">Доставка</a>
+				<p>Вне зависимости от того, где вы находитесь на данный момент, вы сможете заказать товар, что, согласитесь, очень удобно. Какие же преимущества предлагает наш интернет-магазин электроники</p>
+			</div>
+			<!-- END .footer__col -->
+			<!-- BEGIN .footer__col -->
+			<div class="footer__col footer__about">
+				<a href="#" class="footer__title">О нас</a>
+				<p>Какие же преимущества предлагает наш интернет-магазин электроники, телефонов и прочих товаров? Наиболее существенный факт – наличие тысяч позиций, которые гарантированно имеются на складе. Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
+			</div>
+			<!-- END .footer__col -->
+			<!-- BEGIN .footer__col -->
+			<div class="footer__col footer__payment">
+				<a href="#" class="footer__title">Оплата</a>
+				<p>Вы сможете посетить наш интернет магазин и купить любые товары по невысокой цене. Вам необходим холодильник, стиральная машина или микроволновая печь?</p>
+				<!-- BEGIN .payment -->
+				<ul class="payment">
+					<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
+					<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
+					<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
+					<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
+					<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
+				</ul>
+				<!-- END .payment -->
+			</div>
+			<!-- END .footer__col -->
+		</div>
+		<!-- END .footer__row -->
+
+		<!-- BEGIN .footer__row -->
+		<div class="footer__row">
+			<!-- BEGIN .footer__info -->
+			<div class="footer__info" itemscope itemtype="http://schema.org/Organization">
+				<!-- BEGIN .footer__copyright -->
+				<div class="footer__copyright">
+					<div>&copy; <span itemprop="name">Гренка</span>, 2013</div>
+					<a href="mailto:info@grenka.com.ua" itemprop="email">info@grenka.com.ua</a>
+				</div>
+				<!-- END .footer__copyright -->
+				<!-- BEGIN .footer__tel -->
+				<div class="footer__tel">
+					<div>Наш телефон (многоканальный)</div>
+					<div class="footer__tel-number" itemprop="telephone">
+						<span>044</span> 359 05 055 <i class="icon icon_tel"></i>
+					</div>
+				</div>
+				<!-- END .footer__tel -->
+				<!-- BEGIN .footer__address -->
+				<div class="footer__address">
+					<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						Адрес: 
+						<span itemprop="addressLocality">Киев</span>, 
+						<span itemprop="streetAddress">ул. Жилянская, 97</span>
+					</div>
+					<a href="#">схема проезда</a>
+				</div>
+				<!-- END .footer__address -->
+			</div>
+			<!-- END .footer__info -->
+			<!-- BEGIN .socials -->
+			<ul class="socials">
+				<li>
+					<a href="#" class="icon icon_fb" title="Facebook">
+						Facebook
+						<span class="icon icon_fb_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_vk" title="Вконтакте">
+						Вконтакте
+						<span class="icon icon_vk_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_tw" title="Twitter">
+						Twitter
+						<span class="icon icon_tw_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_yt" title="YouTube">
+						YouTube
+						<span class="icon icon_yt_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_gp" title="Google+">
+						Google+
+						<span class="icon icon_gp_hover"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon icon_odk" title="Одноклассники">
+						Одноклассники
+						<span class="icon icon_odk_hover"></span>
+					</a>
+				</li>
+			</ul>
+			<!-- END .socials -->
+		</div>
+		<!-- END .footer__row -->
+	</div>
+	<!-- END .footer__in -->
+</div>
+<!-- END .footer -->
+<div class="popup" id="reg">
+	<div class="popup__header">
+		<div class="popup__title">
+			РЕГИСТРАЦИЯ В СИСТЕМЕ <br>СКИДОК И БОНУСОВ
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="popup__form">
+			<label class="label">
+				<span class="label__title">Электронная почта:</span>
+				<input class="label__input" type="text">
+				<span class="label__tooltip">Недопустимые символы</span>
+			</label>
+			<label class="label">
+				<span class="label__title">Мой пароль:</span>
+				<input class="label__input" type="password">
+				<span class="label__tooltip">короткий пароль</span>
+			</label>
+			<label class="label-check">
+				<input type="checkbox">
+				<i></i>
+				<span>Придумайте мне пароль</span>
+			</label>
+			<label class="label-check">
+				<input type="checkbox">
+				<i></i>
+				<span>Я соглашаюсь с</span>
+				<a class="js-agree-term" href="#agree">пользовательским соглашением</a>
+			</label>
+			<div class="btn-wrap">
+				<input type="submit" class="btn btn_orange btn_medium" value="зарегистрироваться">
+			</div>
+			<div class="enter-soc">
+				<span>Войти через:</span>
+				<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="recovery_pass">
+	<div class="popup__header">
+		<div class="popup__title">
+			ПОЗДРАВЛЯЕМ
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="popup__text popup__text-center">
+			<p>До скидок 1 шаг, заполните <a href="#">Ваши интересы</a>, чтобы мы могли правильно удивлять вам и дарить нужные подарки. После заполнения Бронзовая карта – Ваша!</p>
+		</div>
+		<div class="btn-wrap">
+			<a href="#" class="btn btn_orange">заполнить интересы</a>
+		</div>
+	</div>
+</div>
+<div class="popup popup_agree" id="agree">
+	<div class="popup__header">
+		<div class="popup__title">
+			ПОЛЬЗОВАТЕЛЬСкОЕ СОГЛАШЕНИЕ
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="scroll-pane scroll-pane_agree js-scroll-pane">
+			<div class="agree">
+				<p>При работе с интернет-магазином GRENKA.com.ua Вы даете согласие ООО «Гренка»  и физическому или юридическому лицу, которое может быть дополнительно привлечено к выполнению Вашего заказа, свое письменное безусловное и безотзывное согласие на обработку своих персональных данных (которые содержатся в вашем заказе и / или других документах, размещенных на сайте GRENKA.com.ua), включающий в себя совершение любых действий и / или совокупности действий, связанных со сбором, регистрацией, накоплением, хранением, адаптации, изменением, обновлением, использованием и распространением (распространением, реализацией, передачей),  уничтожением Ваших Персональных данных для выполнения Вашего заказа или проведения рекламных акций.</p>
+				<p>Объем Ваших Персональных данных, относительно которых осуществляется процесс обработки, которые могут быть включены в базу персональных данных клиентов, определяется как любая информация о Вас (которая содержатся в вашем заказе и / или любых других подобных документах, размещенных на сайте GRENKA.com.ua), ставшей известной ООО «Гренка»,  а также любым третьим лицам.  </p>           
+				<p>Предоставленное Вами согласие на обработку ваших персональных данных не требует осуществления ООО «Гренка» сообщений о передаче Ваших Персональных данных третьим лицам согласно нормам ст. 21 Закона Украины «О защите персональных данных». Вы подтверждаете, что Вам понятны ваши права, определенные Законом Украины «О защите персональных данных», а также Вы понимаете цель обработки Ваших Персональных данных, в том числе сбора Ваших Персональных данных. Вы соглашаетесь, что срок обработки Ваших Персональных данных – бессрочный</p>
+			</div>
+		</div>
+		<div class="btn-wrap">
+			<button class="btn btn_orange">принимаю</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+

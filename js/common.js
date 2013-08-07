@@ -169,18 +169,7 @@ tabs();
     // );
 
 // ------------------- Fancybox ----------------------// 
-  // $(".js-reg-link").fancybox({
-  //     openEffect  : 'none',
-  //     closeEffect : 'none',
-  //     padding: 0,
-  //     showCloseButton: true,
-  // });
-  // $(".js-agree-term").fancybox({
-  //     openEffect  : 'none',
-  //     closeEffect : 'none',
-  //     padding: 0,
-  //     showCloseButton: true,
-  // });
+
   $('.js-reg-link').on('click', function() {
     $this = $(this);
     $.fancybox({
@@ -213,6 +202,11 @@ tabs();
     });
     return false;
   });
+
+    if ($('#recovery_pass').length > 0) {
+      $.fancybox.open('#recovery_pass');
+    }
+    
 
   if ($('#slider-left-main').length > 0) {
       // Главный слайдер
