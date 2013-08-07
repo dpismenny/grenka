@@ -657,7 +657,9 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn btn_gray">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta">
+											<a href="#notific-not-authorize" class="js-popup-link">Узнать</a> о снижении цены
+										</div>
 										<div class="product__control">
 											<div class="product__remove">
 												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
@@ -709,7 +711,7 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn btn_gray">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta"><a href="#notific-authorize" class="js-popup-link">Узнать</a> о снижении цены</div>
 										<div class="product__control">
 											<div class="product__remove">
 												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
@@ -761,14 +763,14 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn btn_gray">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta"><a href="#notific-authorize" class="js-popup-link">Узнать</a> о снижении цены</div>
 										<div class="product__control">
 											<div class="product__remove">
 												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
 												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
 														<i class="product__remove-close js-replace-close"></i>
-														<div class="product__remove-title">Список желаний</div>
+														<div class="product__remove-title">Список чудес</div>
 														<div class="product__remove-select">
 															<label class="label-check">
 																<input type="checkbox">
@@ -795,7 +797,7 @@
 												<div class="product__remove-popup product__del-popup js-del-popup">
 													<div class="product__remove-in">
 														<i class="product__remove-close js-del-close"></i>
-														<div class="product__remove-title">Удалить список желаний</div>
+														<div class="product__remove-title">Удалить список чудес</div>
 														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
 														<button class="btn btn_gray">Да</button>
 														<button class="btn btn_orange">Нет</button>
@@ -1494,6 +1496,62 @@
 		<input class="btn" type="submit">
 	</div>
 </div>
-
+<div class="popup" id="notific-not-authorize">
+	<div class="popup__header">
+		<div class="popup__title">
+			Прислать письмо <span>когда снизится цена</span>
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="popup__form">
+			<label class="label">
+				<span class="label__title">Ваше имя:</span>
+				<input class="label__input" type="text">
+			</label>
+			<label class="label">
+				<span class="label__title">Ваш e-mail</span>
+				<input class="label__input" type="text">
+				<span class="label__tooltip">Недопустимые символы</span>
+			</label>
+			<div class="btn-wrap">
+				<input class="btn btn_medium" type="submit">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup" id="notific-authorize">
+	<div class="popup__header">
+		<div class="popup__title">
+			Прислать письмо <span>когда снизится цена</span>
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="popup__form">
+			<label class="label">
+				<span class="label__title">Ваш e-mail</span>
+				<input class="label__input" type="text">
+				<span class="label__tooltip">Недопустимые символы</span>
+			</label>
+			<label class="label">
+				<span class="label__title">Ваш пароль:</span>
+				<input class="label__input" type="password">
+				<span class="label__tooltip">Неверный пароль</span>
+			</label>
+			
+			<div class="btn-wrap">
+				<input class="btn btn_medium" type="submit">
+			</div>
+			<div class="enter-soc">
+				<span>Войти через:</span>
+				<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>
