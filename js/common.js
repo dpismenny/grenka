@@ -185,6 +185,9 @@ tabs();
   if ($('#recovery_pass').length > 0) {
     $.fancybox.open('#recovery_pass');
   }
+  if ($('#created-wish-popup').length > 0) {
+    $.fancybox.open('#created-wish-popup');
+  }
     
   var replace_popup = $(".js-replace-popup");
   $(".js-replace-wish-link").click(function(){
