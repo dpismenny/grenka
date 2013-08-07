@@ -139,3 +139,14 @@
     width: auto;
     height: auto;
 }
+.i-remember-pass {
+    display: block;
+    margin: 10px 0 20px;
+    text-align: center;
+    span {
+        color: #74b125;
+        font-size: 11px;
+        cursor: pointer;
+        border-bottom: 1px dashed #74b125;
+    }
+}

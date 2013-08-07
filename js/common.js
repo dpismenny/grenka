@@ -169,25 +169,50 @@ tabs();
     // );
 
 // ------------------- Fancybox ----------------------// 
-  $(".js-reg-link").fancybox({
-      openEffect  : 'none',
-      closeEffect : 'none',
-      padding: 0,
-      showCloseButton: true,
+  // $(".js-reg-link").fancybox({
+  //     openEffect  : 'none',
+  //     closeEffect : 'none',
+  //     padding: 0,
+  //     showCloseButton: true,
+  // });
+  // $(".js-agree-term").fancybox({
+  //     openEffect  : 'none',
+  //     closeEffect : 'none',
+  //     padding: 0,
+  //     showCloseButton: true,
+  // });
+  $('.js-reg-link').on('click', function() {
+    $this = $(this);
+    $.fancybox({
+        href: $this.attr('href'),
+        padding: 0
+    });
+    return false;
   });
-  $(".js-agree-term").fancybox({
-      openEffect  : 'none',
-      closeEffect : 'none',
-      padding: 0,
-      showCloseButton: true,
+  $('.js-gallery-pic a').on('click', function() {
+    $this = $(this);
+    $.fancybox({
+        href: $this.attr('href'),
+        padding: 0
+    });
+    return false;
   });
-  $(".js-remind-pass").fancybox({
-      openEffect  : 'none',
-      closeEffect : 'none',
-      padding: 0,
-      showCloseButton: true,
+  $('.js-agree-term').on('click', function() {
+    $this = $(this);
+    $.fancybox({
+        href: $this.attr('href'),
+        padding: 0
+    });
+    return false;
   });
-  
+  $('.js-remind-pass').on('click', function() {
+    $this = $(this);
+    $.fancybox({
+        href: $this.attr('href'),
+        padding: 0
+    });
+    return false;
+  });
 
   if ($('#slider-left-main').length > 0) {
       // Главный слайдер
