@@ -194,7 +194,40 @@ tabs();
   if ($('#popup-order').length > 0) {
     $.fancybox.open('#popup-order');
   }
-    
+// ------------------- END Fancybox ----------------------// 
+  function offer() {
+    var active_slide = $(".cycle-slide-active");
+    var offer_1 = $('.js-offer-slider1');
+    var offer_2 = $('.js-offer-slider2');
+    var price_1 = offer_1.find(active_slide).attr("data-price");
+    var discount_1 = offer_1.find(active_slide).attr("data-discount");
+    var price_2 = offer_2.find(active_slide).attr("data-price");
+    var discount_2 = offer_2.find(active_slide).attr("data-discount");
+    var price = +price_1 + +price_2;
+    if (+discount_1 > (+discount_2)) {
+      var discount = discount_2;
+    }
+    else {
+       var discount = discount_1;
+    }
+    var econom = (+price*(+discount/100)).toFixed(1);
+    var new_price = (+price*(1-(+discount)/100)).toFixed(1);
+    $(".js-offer-price").text(price);
+    $(".js-offer-discount").text(discount+'%');
+    $(".js-offer-econom").text(econom);
+    $(".js-offer-new-price").text(new_price);
+  }
+  offer();
+   $(".offer__slider button").on("click", function(event){ 
+      $('.js-offer-slider').on( 'cycle-after', function( event, opts ) {
+          offer();
+          //alert();
+      });
+  });
+
+  
+
+
   var replace_popup = $(".js-replace-popup");
   $(".js-replace-wish-link").click(function(){
     $(".product__remove-popup").hide();

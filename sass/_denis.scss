@@ -1369,6 +1369,7 @@
 .request-table__more{
 	font-size: 11px;
 	color: #6aa916;
+	font-weight: bold;
 }
 
 .request-table__mod{
@@ -1600,12 +1601,14 @@
 		content: "";
 		@include s(arrwish);
 	}
+	i{
+		display: inline-block;
+		vertical-align: middle;
+		@include s(heart);
+	}
 }
 .wishlist__create{
-	width: 455px;
 	position: relative;
-	display: inline-block;
-	margin-right: 5px;
 	.btn{
 		position: absolute;
 		top: 0;
@@ -1646,6 +1649,13 @@
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 1;
+	i{
+		display: inline-block;
+		vertical-align: middle;
+		@include s(heart);
+		margin-right: 10px;
+		margin-top: -2px;
+	}
 }
 .wishlist-box__control{
 	position: relative;
