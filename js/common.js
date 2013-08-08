@@ -191,6 +191,9 @@ tabs();
   if ($('#message-ok').length > 0) {
     $.fancybox.open('#message-ok');
   }
+  if ($('#popup-order').length > 0) {
+    $.fancybox.open('#popup-order');
+  }
     
   var replace_popup = $(".js-replace-popup");
   $(".js-replace-wish-link").click(function(){

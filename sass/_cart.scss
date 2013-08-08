@@ -1792,7 +1792,7 @@
 				position: absolute;
 				top: 5px;
 				left: 0;
-				@include s(ptichko);
+				@include s(label-in-stock);
 			}
 			em {
 				display: block;
