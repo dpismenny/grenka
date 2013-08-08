@@ -303,3 +303,23 @@
         }
     }
 }  
+.tooltip_small {
+    width: 245px;
+}
+.tooltip_mod {
+    .tooltip__title {
+        color: #585858;
+        font-size: 17px;
+        text-transform: uppercase;
+        span {
+            color: #6ba918;
+        }
+        strong {
+            color: #f47c01;
+        }
+    }
+}
+.tooltip_counter {
+    top: -170px;
+    left: 35px;
+}
