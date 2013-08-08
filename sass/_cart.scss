@@ -170,7 +170,7 @@
 }
 .label__tooltip {
 	position: absolute;
-	top: 2px; 
+	top: 0; 
 	left: -40px;
 	padding: 5px 12px;
 	border: 1px solid #ff8080;
@@ -665,6 +665,7 @@
 	color: #6b6b6b;
 }
 .cart__btn {
+	clear: both;
 	text-align: center;
 }
 .cart__address {

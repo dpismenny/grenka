@@ -400,10 +400,10 @@ if ($('.js-rating-read').length > 0) {
 //hide address on cart
 $('.js-hide-address').click(function() {
   if ($(this).find('input').is(':checked')) {
-    $(this).next().slideUp();
+    $(this).next().slideUp("fast");
   }
   else {
-    $(this).next().slideDown();
+    $(this).next().slideDown("fast");
   }
 });
 
