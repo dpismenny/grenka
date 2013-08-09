@@ -480,6 +480,17 @@ function gallery() {
 };
 gallery();
 
+if ($("a.js-fancy-img").length > 0) {
+  $("a.js-fancy-img").fancybox();
+}
+if ($('.js-cycle').length > 0) {
+  $('.js-cycle').cycle({
+    speed: 200,
+    manualSpeed: 50
+  });
 
+}
+
+  
 
 });
