@@ -293,7 +293,7 @@
 		</ul>
 	</div>
 	<!-- END .nav -->
-	<div class="title">дисконтная карта</div>
+	<div class="title">РЕГИСТРАЦИЯ В ПРОГРАММЕ ЛОЯЛЬНОСТИ</div>
 	<!-- BEGIN .reg -->
 	<div class="reg">
 		<!-- BEGIN .breadcrumbs -->
@@ -331,39 +331,43 @@
 				<div class="label reg__phones">
 					<div class="label__title">Телефоны<span>Для отправки СМС о статусе заказа</span></div>
 					<span class="label__required"><span>обязательное поле</span></span>
-					<div class="reg__number">
-						<div class="label__title">+38</div>
-						<input class="label__input reg__code" type="text" placeholder="0">
-						<input class="label__input" type="text">
-						<div class="label__select js-select">
-							<div class="label__select-val">
-								<button></button>
-								<span>Мобильный</span>									
+					<div>
+						<div class="reg__number js-new-number">
+							<div class="label__title">+38</div>
+							<input class="label__input reg__code" type="text" placeholder="0">
+							<input class="label__input" type="text">
+							<div class="label__select js-select">
+								<div class="label__select-val">
+									<button></button>
+									<span>Мобильный</span>									
+								</div>
+								<ul class="label__select-options">
+									<li>Мобильный</li>
+									<li>Стационарный</li>
+								</ul>
 							</div>
-							<ul class="label__select-options">
-								<li>Мобильный</li>
-								<li>Стационарный</li>
-							</ul>
-						</div>
-					</div>					
-					<div class="reg__number">
-						<div class="label__title">+38</div>
-						<input class="label__input reg__code" type="text" placeholder="0">
-						<input class="label__input" type="text">
-						<div class="label__select js-select">
-							<div class="label__select-val">
-								<button></button>
-								<span>Мобильный</span>									
+						</div>					
+					</div>	
+					<div class="js-number is-hidden">
+						<div class="reg__number">
+							<div class="label__title">+38</div>
+							<input class="label__input reg__code" type="text" placeholder="0">
+							<input class="label__input" type="text">
+							<div class="label__select js-select">
+								<div class="label__select-val">
+									<button></button>
+									<span>Мобильный</span>									
+								</div>
+								<ul class="label__select-options">
+									<li>Мобильный</li>
+									<li>Стационарный</li>
+								</ul>
 							</div>
-							<ul class="label__select-options">
-								<li>Мобильный</li>
-								<li>Стационарный</li>
-							</ul>
-						</div>
-						<button class="reg__number-del"><i></i></button>
-					</div>							
+							<button class="reg__number-del js-del-number"><i></i></button>
+						</div>			
+					</div>	
 				</div>
-				<button class="reg__add-btn">Добавить еще телефон</button>
+				<button class="reg__add-btn js-add-number">Добавить еще телефон</button>
 				<div class="label reg__birth">
 					<div class="label__title">Дата рождения</div>
 					<div class="reg__date">								

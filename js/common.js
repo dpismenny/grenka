@@ -361,6 +361,20 @@ tabs();
     $(this).next().slideToggle("fast");
   });
     
+// remove telephone number
+  var number_html = $(".js-number").html();
+  var add_number = $(".js-add-number");
+  var del_number = $(".js-del-number");
+  var number_last = $(".js-new-number").last();
+  add_number.live("click", function(event){
+    number_last.after(number_html);
+    return false;
+  });
+  del_number.live("click", function(event){
+    $(this).parent().remove();
+    return false;
+  });
+
 //  -------------------------------- Created by Artur Moroz!
 //rating
  if ($('.js-rating').length > 0) {
