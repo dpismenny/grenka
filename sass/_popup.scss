@@ -14,11 +14,18 @@
         }
     }
     .gallery__pic {
-    	height: 449px;
+    	height: 335px;
     	border: 0;
+        a {
+            height: 335px;
+            line-height: 335px;
+        }
     }
     .label__input {
         margin-bottom: 0;
+    }
+    .gallery__list {
+        height: 321px !important;
     }
 }
 .spec-table_popup {
