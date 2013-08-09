@@ -12,6 +12,7 @@
 	<script src="js/jquery.cycle2.scrollVert.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.veronica_slider.js"></script>
+	<script src="js/jquery.raty.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -609,155 +610,345 @@
 						</ul>
 					</div>
 				</div>
-				<div class="sort-view">
+				<div class="sort-view js-tabs-nav">
 					<span>вид:</span>
-					<button><i class="icon-list"></i></button>
-					<button class="is-active"><i class="icon-grid"></i></button>
+					<button class="is-active" data-tab="sort1"><i class="icon-list"></i></button>
+					<button data-tab="sort2"><i class="icon-grid"></i></button>
 				</div>
 			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state is-pre-order">
-						<i></i><span>Предзаказ</span>
+			<div id="sort1" class="js-tabs-content">
+				<div class="product-row">
+					<a href="#" class="product-row__img">
+						<img src="img/img-3.jpg" alt="img" width="96" height="131">
+					</a>
+					<div class="product-row__descr">
+						<h3 class="product-row__title">
+							<a href="#">Metal Gear Rising: Revengeance</a>
+						</h3>
+						<!-- BEGIN .rating -->
+							<div class="rating">
+								<div class="rating__in js-rating-read" data-score="4"></div>
+								<span></span>
+							</div>
+						<!-- END .rating -->
+				    	
+				    	<div class="product-row__text">
+				    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
+				    	</div>
+				    	<div class="product-row__links">
+				    		<a href="#">Читать отзывы</a> <span>(1)</span> 
+				    		<a href="#">Добавить к сравнению</a>      
+				    		<a href="#">Подробнее</a>
+				    	</div>
 					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
+					<div class="product-row__meta">
+						<div class="prod-state">
+							<i></i><span>есть в наличии</span>
+						</div>
+						<div class="product-row__price">
+							<span>210</span> грн. 
+						</div>
+						<a href="#" class="btn">купить</a>
+						<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
 					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
+					<i class="badge badge_new" alt="Новый товар"></i>
 				</div>
-				<i class="badge badge_action" alt="Новый товар"></i>
+				<div class="product-row">
+					<a href="#" class="product-row__img">
+						<img src="img/img-3.jpg" alt="img" width="96" height="131">
+					</a>
+					<div class="product-row__descr">
+						<h3 class="product-row__title">
+							<a href="#">Metal Gear Rising: Revengeance</a>
+						</h3>
+						<!-- BEGIN .rating -->
+							<div class="rating">
+								<div class="rating__in js-rating-read" data-score="4"></div>
+								<span></span>
+							</div>
+						<!-- END .rating -->
+				    	<div class="product-row__text">
+				    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
+				    	</div>
+				    	<div class="product-row__links">
+				    		<a href="#">Читать отзывы</a> <span>(1)</span> 
+				    		<a href="#">Добавить к сравнению</a>      
+				    		<a href="#">Подробнее</a>
+				    	</div>
+					</div>
+					<div class="product-row__meta">
+						<div class="prod-state is-no-stock">
+							<i></i><span>нет в наличии</span>
+						</div>
+						<div class="product-row__price">
+							<span>210</span> грн. 
+						</div>
+						<a href="#" class="btn">купить</a>
+						<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
+					</div>
+					<i class="badge badge_top" alt="Новый товар"></i>
+				</div>
+				<div class="product-row">
+					<a href="#" class="product-row__img">
+						<img src="img/img-3.jpg" alt="img" width="96" height="131">
+					</a>
+					<div class="product-row__descr">
+						<h3 class="product-row__title">
+							<a href="#">Metal Gear Rising: Revengeance</a>
+						</h3>
+						<!-- BEGIN .rating -->
+							<div class="rating">
+								<div class="rating__in js-rating-read" data-score="4"></div>
+								<span></span>
+							</div>
+						<!-- END .rating -->
+				    	<div class="product-row__text">
+				    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
+				    	</div>
+				    	<div class="product-row__links">
+				    		<a href="#">Читать отзывы</a> <span>(1)</span> 
+				    		<a href="#">Добавить к сравнению</a>      
+				    		<a href="#">Подробнее</a>
+				    	</div>
+					</div>
+					<div class="product-row__meta">
+						<div class="prod-state is-pre-order">
+							<i></i><span>предзаказ</span>
+						</div>
+						<div class="product-row__price">
+							<span>210</span> грн. 
+						</div>
+						<a href="#" class="btn">купить</a>
+						<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
+					</div>
+					<i class="badge badge_best" alt="Новый товар"></i>
+				</div>
+				<div class="product-row">
+					<a href="#" class="product-row__img">
+						<img src="img/img-3.jpg" alt="img" width="96" height="131">
+					</a>
+					<div class="product-row__descr">
+						<h3 class="product-row__title">
+							<a href="#">Metal Gear Rising: Revengeance</a>
+						</h3>
+						<!-- BEGIN .rating -->
+							<div class="rating">
+								<div class="rating__in js-rating-read" data-score="4"></div>
+								<span></span>
+							</div>
+						<!-- END .rating -->
+				    	<div class="product-row__text">
+				    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
+				    	</div>
+				    	<div class="product-row__links">
+				    		<a href="#">Читать отзывы</a> <span>(1)</span> 
+				    		<a href="#">Добавить к сравнению</a>      
+				    		<a href="#">Подробнее</a>
+				    	</div>
+					</div>
+					<div class="product-row__meta">
+						<div class="prod-state">
+							<i></i><span>есть в наличии</span>
+						</div>
+						<div class="product-row__price">
+							<span>210</span> грн. 
+						</div>
+						<a href="#" class="btn">купить</a>
+						<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
+					</div>
+					<i class="badge badge_new" alt="Новый товар"></i>
+				</div>
 			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state is-no-stock">
-						<i></i><span>нет в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_top-sale" alt="Новый товар"></i>
-			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_soon" alt="Новый товар"></i>
-			</div>
-			<div class="product-row">
-				<a href="#" class="product-row__img">
-					<img src="img/img-3.jpg" alt="img" width="96" height="131">
-				</a>
-				<div class="product-row__descr">
-					<h3 class="product-row__title">
-						<a href="#">Metal Gear Rising: Revengeance</a>
-					</h3>
-					<ul class="rating">
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    		<li class="is-active"><a href="#"></a></li>
-			    	</ul>
-			    	<div class="product-row__text">
-			    		<p>Mint calculates your average spending in any category to help you easily create a budget based on historical spending. Compare your spending year-to-year, month-to-month, whatever fits your style. Mint shows you exactly how your spending decisions will affect how much you have left at</p>
-			    	</div>
-			    	<div class="product-row__links">
-			    		<a href="#">Читать отзывы</a> <span>(1)</span> 
-			    		<a href="#">Добавить к сравнению</a>      
-			    		<a href="#">Подробнее</a>
-			    	</div>
-				</div>
-				<div class="product-row__meta">
-					<div class="prod-state">
-						<i></i><span>есть в наличии</span>
-					</div>
-					<div class="product-row__price">
-						<span>210</span> грн. 
-					</div>
-					<a href="#" class="btn">купить</a>
-					<div class="product-row__deliv"><i></i><span>Бесплатная доставка</span></div>
-				</div>
-				<i class="badge badge_action" alt="Новый товар"></i>
+			<div id="sort2" class="tabs__content js-tabs-content">
+				<!-- BEGIN .product-list -->
+				<ul class="product-list product-list_new">
+					<li class="product" itemscope itemtype="http://schema.org/Product">
+						<div class="product__inner">
+							<!-- BEGIN .product__image -->
+							<a itemprop="url" href="#" class="product__image">
+								<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+							</a>
+							<!-- END .product__image -->
+							<!-- BEGIN .product__info -->
+							<div class="product__info">
+								<h3 class="product__title" itemprop="name">
+									<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+								</h3>
+								
+								<!-- BEGIN .rating -->
+									<div class="rating">
+										<div class="rating__in js-rating-read" data-score="4"></div>
+										<span></span>
+									</div>
+								<!-- END .rating -->
+								<div class="schema-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+									<span itemprop="ratingValue">3.5</span>
+								</div>
+								<!-- END .rating -->
+								<div class="product__descr" itemprop="description">
+									<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+									<p><a href="#">подробнее</a></p>
+								</div>
+								<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+								<button class="btn">В корзину</button>
+								<link itemprop="availability" href="http://schema.org/InStock" />
+							</div>
+							<!-- END .product__info -->
+							<i class="badge badge_new" alt="Новый товар"></i>
+						</div>
+					</li>
+					<li class="product" itemscope itemtype="http://schema.org/Product">
+						<div class="product__inner">
+							<!-- BEGIN .product__image -->
+							<a itemprop="url" href="#" class="product__image">
+								<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+							</a>
+							<!-- END .product__image -->
+							<!-- BEGIN .product__info -->
+							<div class="product__info">
+								<h3 class="product__title" itemprop="name">
+									<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+								</h3>
+								
+								<!-- BEGIN .rating -->
+								<div class="rating">
+									<div class="rating__in js-rating-read" data-score="4"></div>
+									<span></span>
+								</div>
+							<!-- END .rating -->
+								<div class="product__descr" itemprop="description">
+									<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+									<p><a href="#">подробнее</a></p>
+								</div>
+								<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+								<button class="btn">В корзину</button>
+							</div>
+							<!-- END .product__info -->
+							<i class="badge badge_best" alt="Лучший товар"></i>
+						</div>
+					</li>
+					<li class="product" itemscope itemtype="http://schema.org/Product">
+						<div class="product__inner">
+							<!-- BEGIN .product__image -->
+							<a itemprop="url" href="#" class="product__image">
+								<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+							</a>
+							<!-- END .product__image -->
+							<!-- BEGIN .product__info -->
+							<div class="product__info">
+								<h3 class="product__title" itemprop="name">
+									<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+								</h3>
+								
+								<!-- BEGIN .rating -->
+									<div class="rating">
+										<div class="rating__in js-rating-read" data-score="4"></div>
+										<span></span>
+									</div>
+								<!-- END .rating -->
+								<div class="product__descr" itemprop="description">
+									<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+									<p><a href="#">подробнее</a></p>
+								</div>
+								<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+								<button class="btn">В корзину</button>
+							</div>
+							<!-- END .product__info -->
+							<i class="badge badge_best" alt="Лучший товар"></i>
+						</div>
+					</li>
+					<li class="product" itemscope itemtype="http://schema.org/Product">
+						<div class="product__inner">
+							<!-- BEGIN .product__image -->
+							<a itemprop="url" href="#" class="product__image">
+								<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+							</a>
+							<!-- END .product__image -->
+							<!-- BEGIN .product__info -->
+							<div class="product__info">
+								<h3 class="product__title" itemprop="name">
+									<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+								</h3>
+								
+								<!-- BEGIN .rating -->
+									<div class="rating">
+										<div class="rating__in js-rating-read" data-score="4"></div>
+										<span></span>
+									</div>
+								<!-- END .rating -->
+								<div class="product__descr" itemprop="description">
+									<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+									<p><a href="#">подробнее</a></p>
+								</div>
+								<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+								<button class="btn">В корзину</button>
+							</div>
+							<!-- END .product__info -->
+							<i class="badge badge_best" alt="Лучший товар"></i>
+						</div>
+					</li>
+					<li class="product" itemscope itemtype="http://schema.org/Product">
+						<div class="product__inner">
+							<!-- BEGIN .product__image -->
+							<a itemprop="url" href="#" class="product__image">
+								<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+							</a>
+							<!-- END .product__image -->
+							<!-- BEGIN .product__info -->
+							<div class="product__info">
+								<h3 class="product__title" itemprop="name">
+									<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+								</h3>
+								
+								<!-- BEGIN .rating -->
+									<div class="rating">
+										<div class="rating__in js-rating-read" data-score="4"></div>
+										<span></span>
+									</div>
+								<!-- END .rating -->
+								<div class="product__descr" itemprop="description">
+									<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+									<p><a href="#">подробнее</a></p>
+								</div>
+								<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+								<button class="btn">В корзину</button>
+							</div>
+							<!-- END .product__info -->
+							<i class="badge badge_best" alt="Лучший товар"></i>
+						</div>
+					</li>
+					<li class="product" itemscope itemtype="http://schema.org/Product">
+						<div class="product__inner">
+							<!-- BEGIN .product__image -->
+							<a itemprop="url" href="#" class="product__image">
+								<img itemprop="image" src="img/img-8.jpg" width="100" height="130" alt="img">
+							</a>
+							<!-- END .product__image -->
+							<!-- BEGIN .product__info -->
+							<div class="product__info">
+								<h3 class="product__title" itemprop="name">
+									<a href="#" itemprop="url">DMC: Devil new May Cry</a>
+								</h3>
+								
+								<!-- BEGIN .rating -->
+									<div class="rating">
+										<div class="rating__in js-rating-read" data-score="4"></div>
+										<span></span>
+									</div>
+								<!-- END .rating -->
+								<div class="product__descr" itemprop="description">
+									<p>Описание игры Far Cry 3:  В отличие от второй части серии Far Cry, действие новой игры...</p>
+									<p><a href="#">подробнее</a></p>
+								</div>
+								<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
+								<button class="btn">В корзину</button>
+							</div>
+							<!-- END .product__info -->
+							<i class="badge badge_best" alt="Лучший товар"></i>
+						</div>
+					</li>
+				</ul>
+				<!-- END .product-list -->
 			</div>
 			<div class="pagination pagination_mod">
 		     	<span class="paginator__nav paginator__prev">Ctrl + <a href="#"><i></i></a></span>
