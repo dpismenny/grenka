@@ -1954,6 +1954,16 @@
 				background: #d9d9d9;
 			}
 		}
+		&:hover {
+			td {
+				background: #ddeec5;
+			}
+			&:nth-child(2n) {
+				td {
+					background: #c9c9c9;
+				}
+			}
+		}
 	}
 	td {
 		padding: 7px 13px;
@@ -2557,10 +2567,8 @@
 	font-size: 0;
 }
 .params__item {
-	display: inline-block;
-	width: 50%;	
-	padding: 0 1px;
-	@include box-sizing(border-box);
+	width: 90%;
+	margin: 0 auto;
 	.table {
 		width: 100%;
 		font-size: 12px;
