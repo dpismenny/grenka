@@ -197,6 +197,19 @@
 		margin-left: -1px;
 	}
 }
+.cat-slider_mod {
+	.add-order__item {
+		width: 193px;
+	}
+	.cycle-carousel-wrap {
+		.add-order__item {
+			
+			&:first-child {
+				width: 192px;
+			}
+		}
+	}
+}
 .cat-slider__head {
 	position: relative;
 	z-index: 2;

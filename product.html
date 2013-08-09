@@ -441,9 +441,9 @@
 						<span>Новой Почтой - 20 грн<i></i></span>
 					</li>
 				</ul>
-				<div class="prod__delivery-more">
+				<!-- <div class="prod__delivery-more">
 					<a href="#">подробнее о доставке</a>
-				</div>
+				</div> -->
 			</div>
 			<div class="prod__payment">
 				<ul class="prod__services-list">
@@ -470,6 +470,99 @@
 		</div>
 	</div>
 	<!-- END .prod -->	
+	<!-- BEGIN .action-offer -->
+	<div class="action-offer">
+		<div class="action-offer__title"><span>Акционное предложение:</span> Купи комплект сейчас со скидкой</div>
+		<button id="action-offer-prev" class="action-offer__prev"><i></i></button>
+		<button id="action-offer-next" class="action-offer__next"><i></i></button>
+		<div class="action-offer__slider cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="0" data-cycle-slides=".action-offer__item" data-cycle-next="#action-offer-next" data-cycle-prev="#action-offer-prev" data-allow-wrap="true" data-cycle-carousel-visible="1">
+			<div class="action-offer__item">
+				<div class="action-offer__item-in">
+					<a class="action-offer__prod" href="#">
+						<span class="action-offer__pic">
+							<img src="img/img-1.jpg" alt="">
+						</span>	
+						<span class="action-offer__detail">
+							<span>Your Shape: Fitness Evolved</span>
+							<strong>735<i>грн.</i></strong>
+						</span>							
+					</a>
+					<div class="action-offer__plus"></div>
+					<a class="action-offer__prod" href="#">
+						<span class="action-offer__pic">
+							<img src="img/img-1.jpg" alt="">
+							<span>-15<i>%</i></span>
+						</span>	
+						<span class="action-offer__detail">
+							<span>Your Shape: Fitness Evolved</span>
+							<strong>735<i>грн.</i></strong>
+						</span>							
+					</a>
+					<div class="action-offer__equally"></div>
+					<div class="action-offer__price"><strong>1347</strong><span>грн.</span></div>
+					<div class="action-offer__code">Код комплекта: 3010-252259-35077</div>
+					<button class="btn btn_medium">КУПИТЬ комплект</button>
+				</div>
+			</div>		
+			<div class="action-offer__item">
+				<div class="action-offer__item-in">
+					<a class="action-offer__prod" href="#">
+						<span class="action-offer__pic">
+							<img src="img/img-1.jpg" alt="">
+						</span>	
+						<span class="action-offer__detail">
+							<span>Fitness Evolved</span>
+							<strong>735<i>грн.</i></strong>
+						</span>							
+					</a>
+					<div class="action-offer__plus"></div>
+					<a class="action-offer__prod" href="#">
+						<span class="action-offer__pic">
+							<img src="img/img-1.jpg" alt="">
+							<span>-15<i>%</i></span>
+						</span>	
+						<span class="action-offer__detail">
+							<span>Your Shape</span>
+							<strong>735<i>грн.</i></strong>
+						</span>							
+					</a>
+					<div class="action-offer__equally"></div>
+					<div class="action-offer__price"><strong>2947</strong><span>грн.</span></div>
+					<div class="action-offer__code">Код комплекта: 3010-252259-35077</div>
+					<button class="btn btn_medium">КУПИТЬ комплект</button>
+				</div>
+			</div>
+			<div class="action-offer__item">
+				<div class="action-offer__item-in">
+					<a class="action-offer__prod" href="#">
+						<span class="action-offer__pic">
+							<img src="img/img-1.jpg" alt="">
+						</span>	
+						<span class="action-offer__detail">
+							<span>Fitness Evolved</span>
+							<strong>735<i>грн.</i></strong>
+						</span>							
+					</a>
+					<div class="action-offer__plus"></div>
+					<a class="action-offer__prod" href="#">
+						<span class="action-offer__pic">
+							<img src="img/img-1.jpg" alt="">
+							<span>-15<i>%</i></span>
+						</span>	
+						<span class="action-offer__detail">
+							<span>Your Shape: Fitness Evolved</span>
+							<strong>735<i>грн.</i></strong>
+						</span>							
+					</a>
+					<div class="action-offer__equally"></div>
+					<div class="action-offer__price"><strong>1347</strong><span>грн.</span></div>
+					<div class="action-offer__code">Код комплекта: 3010-252259-35077</div>
+					<button class="btn btn_medium">КУПИТЬ комплект</button>
+				</div>
+			</div>		
+		</div>
+	</div>
+	<!-- END .action-offer -->
 	<!-- BEGIN .tabs -->
 	<div class="tabs tabs_desc js-tabs">
 		<div class="tabs__top">
@@ -1621,6 +1714,108 @@
 		</div>
 	</div>
 	<!-- END .tabs -->
+	<!-- BEGIN slider catalog -->
+	<div class="cat-slider cat-slider_mod">
+		<div class="cat-slider__head">
+			<h2 class="cat-slider__title">новинки</h2>
+			<div class="cat-slider__nav">
+				<a href="#">Смотреть все</a>
+				<button class="cat-slider__prev js-slide-prev"><i></i></button>
+				<button class="cat-slider__next js-slide-next"><i></i></button>
+			</div>
+		</div>
+		<div class="add-order cycle-slideshow"
+		    data-cycle-fx="carousel"
+		    data-cycle-timeout="0"
+		    data-cycle-slides=".js-cat-slide"
+		    data-cycle-next=".js-slide-next"
+		    data-cycle-prev=".js-slide-prev"
+		    data-cycle-carousel-visible="5"
+		    data-cycle-allow-wrap=false
+		>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+			<div class="add-order__item js-cat-slide">
+				<div class="add-order__pic">
+					<a href="#"><img src="img/img-1.jpg" alt=""></a>
+				</div>
+				<div class="add-order__title">
+					<a href="#">Your Shape</a>
+				</div>				
+				<div class="add-order__price"><strong>735</strong>грн.</div>
+				<button class="btn">в корзину</button>
+			</div>
+		</div>
+	</div>
+	<!-- END slider catalog -->
 </div>
 <!-- BEGIN .recent -->
 <div class="recent">
