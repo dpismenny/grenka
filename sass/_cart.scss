@@ -1151,6 +1151,18 @@
 		}
 	}
 }
+.prod_new {
+	.prod__services {
+		.prod__delivery {
+			float: left;
+			width: 486px;
+		}
+		.prod__payment {
+			float: right;
+			width: 398px;
+		}
+	}
+}
 .prod__articul {
 	position: absolute;
 	top: 0;
@@ -1168,11 +1180,14 @@
 	margin-bottom: 30px;
 	@extend %clr;	
 }
+.prod__content_mod {
+	margin-bottom: 0;
+}
 .prod__left {
 	float: left;
 	width: 485px;
 	.gallery {
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 	}
 }
 .prod__right {
@@ -1738,9 +1753,15 @@
 .prod__services {
 	@extend %clr;
 }
+.prod__services_mod {
+	margin-bottom: 20px;
+}
 .prod__delivery {
 	float: left;
 	width: 486px;
+}
+.prod__delivery_mod {
+	margin-bottom: 16px;
 }
 .prod__delivery-more {
 	text-align: right;

@@ -292,7 +292,7 @@
 	</div>
 	<!-- END .nav -->
 	<!-- BEGIN .prod -->
-	<div class="prod prod_mod">
+	<div class="prod prod_mod prod_new">
 		<!-- BEGIN .breadcrumbs -->
 		<ul class="breadcrumbs">
 			<li><span>/</span><a href="#">Главная</a></li>
@@ -302,7 +302,7 @@
 		<!-- END .breadcrumbs -->
 		<div class="prod__articul">Артикул товара:<strong>00000011</strong></div>
 		<div class="prod__title">Assassin's Creed II for PS3 очень лимитированое издание в две строки</div>
-		<div class="prod__content">
+		<div class="prod__content prod__content_mod">
 			<div class="prod__left">
 				<div class="gallery js-gallery js-gallery-1">
 					<div class="gallery__nav">
@@ -351,40 +351,6 @@
 						<a href="#gallery-popup" class="js-popup-link"><img src="img/product.jpg" alt=""></a>
 					</div>
 				</div>
-				<!-- BEGIN .benefits -->
-				<div class="benefits">
-					<div class="benefits__title">5 преимуществ</div>
-					<ul class="benefits__list benefits__list-first">
-						<li><a href="#"><span class="benefits__number">1</span>Возврат 21 день без вопросов</a></li>
-						<li><a href="#"><span class="benefits__number">2</span>Бесплатная доставка</a></li>
-					</ul>
-					<ul class="benefits__list benefits__list-second">
-						<li><a href="#"><span class="benefits__number">3</span>999 Эксклюзивных игр</a></li>
-						<li><a href="#"><span class="benefits__number">4</span>1500 городов с доставкой</a></li>
-					</ul>
-					<ul class="benefits__list">
-						<li><a href="#"><span class="benefits__number">5</span>Отправка без предоплаты</a></li>
-					</ul>
-				</div>
-				<!-- END .benefits -->
-				<!-- BEGIN .buy-click -->
-				<div class="buy-click buy-click_less">
-					<div class="buy-click__title">купить сейчас за один клик</div>
-					<div class="buy-click__form">
-						<div class="buy-click__pref">+38</div>
-						<label class="label buy-click__code">
-							<input class="label__input js-placeholder" type="text">
-							<span>Код<i>*</i></span>					
-						</label>
-						<label class="label buy-click__number">
-							<input class="label__input js-placeholder" type="text">
-							<span>Номер телефона<i>*</i></span>					
-						</label>
-						<div class="btn">купить за один клик</div>
-						<div class="buy-click__help">* - обязательные поля для заполнения</div>
-					</div>
-				</div>
-				<!-- END .buy-click -->
 			</div>				
 			<div class="prod__right">	
 				<div class="prod__action">
@@ -457,48 +423,67 @@
 						<button class="btn">оплатить</button>
 					</div>
 				</div>
-				<div class="prod__services">
-					<div class="prod__delivery">
-						<ul class="prod__services-list">
-							<li>доставка Assassin's Creed II for PS3 лимитированное издание в днепропетровске:</li>
-							<li>
-								<span>Бесплатно от 250 грн<i></i></span>
-								<span>Самовывоз - 0 грн<i></i></span>
-							</li>
-							<li>
-								<span>Курьером - 25грн<i></i></span>
-								<span>Новой Почтой - 20 грн<i></i></span>
-							</li>
-						</ul>
-						<div class="prod__delivery-more">
-							<a href="#">подробнее о доставке</a>
-						</div>
-					</div>
-					<div class="prod__payment">
-						<ul class="prod__services-list">
-							<li>способы оплаты</li>
-							<li>
-								<span>Наличными курьеру<i></i></span>
-								<span>Через банк<i></i></span>
-							</li>
-							<li>
-								<span>В офисе<i></i></span>
-								<span>Наложенным платежом<i></i><em>(Новая Почта и Укрпочта)</em></span>
-							</li>
-						</ul>
-						<!-- BEGIN .payment -->
-						<ul class="payment payment_gray">
-							<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
-							<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
-							<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
-							<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
-							<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
-						</ul>
-						<!-- END .payment -->
-					</div>
-				</div>
 			</div>
 		</div>
+		<div class="prod__services prod__services_mod">
+			<div class="prod__delivery">
+				<ul class="prod__services-list">
+					<li>доставка в днепропетровске:</li>
+					<li><strong>Assassin's Creed II for PS3 лимитированное издание</strong></li>
+					<li>
+						<span>Бесплатно от 250 грн<i></i></span>
+						<span>Самовывоз - 0 грн<i></i></span>
+					</li>
+					<li>
+						<span>Курьером - 25грн<i></i></span>
+						<span>Новой Почтой - 20 грн<i></i></span>
+					</li>
+				</ul>
+				<!-- <div class="prod__delivery-more">
+					<a href="#">подробнее о доставке</a>
+				</div> -->
+			</div>
+			<div class="prod__payment">
+				<ul class="prod__services-list">
+					<li>способы оплаты</li>
+					<li>
+						<span>Наличными курьеру<i></i></span>
+						<span>Через банк<i></i></span>
+					</li>
+					<li>
+						<span>В офисе<i></i></span>
+						<span>Наложенным платежом<i></i><em>(Новая Почта и Укрпочта)</em></span>
+					</li>
+				</ul>
+				<!-- BEGIN .payment -->
+				<ul class="payment payment_gray">
+					<li><a href="#" class="icon icon_wm" title="WebMoney">WebMoney</a></li>
+					<li><a href="#" class="icon icon_vs" title="VISA">VISA</a></li>
+					<li><a href="#" class="icon icon_p24" title="Приват24">Приват24</a></li>
+					<li><a href="#" class="icon icon_pu" title="PAYU">PAYU</a></li>
+					<li><a href="#" class="icon icon_mc" title="MasterCard">MasterCard</a></li>
+				</ul>
+				<!-- END .payment -->
+			</div>
+		</div>
+		<!-- BEGIN .buy-click -->
+		<div class="buy-click">
+			<div class="buy-click__title">купить сейчас за один клик</div>
+			<div class="buy-click__form">
+				<div class="buy-click__pref">+38</div>
+				<label class="label buy-click__code">
+					<input class="label__input js-placeholder" type="text">
+					<span>Код<i>*</i></span>					
+				</label>
+				<label class="label buy-click__number">
+					<input class="label__input js-placeholder" type="text">
+					<span>Номер телефона<i>*</i></span>					
+				</label>
+				<div class="btn">купить за один клик</div>
+				<div class="buy-click__help">* - обязательные поля для заполнения</div>
+			</div>
+		</div>
+		<!-- END .buy-click -->
 		<!-- BEGIN .action-offer -->
 		<div class="action-offer">
 			<div class="action-offer__title"><span>Акционное предложение:</span> Купи комплект сейчас со скидкой</div>

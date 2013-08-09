@@ -451,6 +451,8 @@ textarea {
 }
 
 .header{
+	position: relative;
+	z-index: 2000;
 	@extend %clr;
 }
 .header__logo{

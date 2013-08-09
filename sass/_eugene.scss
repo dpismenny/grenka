@@ -338,6 +338,11 @@
         padding: 30px 30px 0px;
     }
 }
+.section_search {
+    .section__inner {
+        padding: 30px 30px 10px;
+    }
+}
 .section_mod {
     margin-bottom: 0;
     .section__title {
@@ -446,20 +451,14 @@
     img {
         display: block;
         &:hover {
-            position: absolute;
-            top: -30px;
-            right: -30px;
-            bottom: -30px;
-            left: -30px;
-            width: 156px;  
-            height: 191px;
             z-index: 2;
-            @include transition(all .3s linear);
-            @include box-shadow(0 0 20px #000);
+            @include scale(1.4);
+            @include box-shadow(0 0 10px rgba(0,0,0,.4));
+            @include transition(all .2s linear);
         }
     }
 }
-.product-row__descr {
+.product-row__descr {   
     float: left;
     width: 400px;
     color: #606060;
