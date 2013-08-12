@@ -915,15 +915,16 @@
         display: block;
         
         &:hover {
-            position: absolute;
-            right: -30px;
-            top: -30px;
-            bottom: -30px;
-            left: -30px;
-            width: 255px;
-            height: 288px;
+            // position: absolute;
+            // right: -30px;
+            // top: -30px;
+            // bottom: -30px;
+            // left: -30px;
+            // width: 255px;
+            // height: 288px;
+            @include scale(1.4);
             @include transition(all .3s linear);
-            @include box-shadow(0 0 30px #000);
+            @include box-shadow(0 0 10px rgba(0,0,0,.5));
         }
     }
     .badge_counter {
