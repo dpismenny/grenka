@@ -6,7 +6,7 @@
 	<title>Registration 1</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 <!-- BEGIN .top -->
@@ -319,27 +319,10 @@
 					<input class="label__input" type="text">
 					<span class="label__help">Для Новой Почты, Автолюкса, УкрПочты, выдачи подарков</span>
 				</label>
-				<div class="label reg__phones">
-					<div class="label__title">Телефоны<span>Для отправки СМС о статусе заказа</span></div>
-					<span class="label__required"><span>обязательное поле</span></span>
-					<div>
-						<div class="reg__number js-new-number">
-							<div class="label__title">+38</div>
-							<input class="label__input reg__code" type="text" placeholder="0">
-							<input class="label__input" type="text">
-							<div class="label__select js-select">
-								<div class="label__select-val">
-									<button></button>
-									<span>Мобильный</span>									
-								</div>
-								<ul class="label__select-options">
-									<li>Мобильный</li>
-									<li>Стационарный</li>
-								</ul>
-							</div>
-						</div>					
-					</div>	
-					<div class="js-number is-hidden">
+				<div>
+					<div class="label reg__phones js-new-number">
+						<div class="label__title">Телефоны<span>Для отправки СМС о статусе заказа</span></div>
+						<span class="label__required"><span>обязательное поле</span></span>
 						<div class="reg__number">
 							<div class="label__title">+38</div>
 							<input class="label__input reg__code" type="text" placeholder="0">
@@ -349,14 +332,13 @@
 									<button></button>
 									<span>Мобильный</span>									
 								</div>
-								<ul class="label__select-options">
+								<ul class="label__select-options" style="display: none;">
 									<li>Мобильный</li>
 									<li>Стационарный</li>
 								</ul>
 							</div>
-							<button class="reg__number-del js-del-number"><i></i></button>
-						</div>			
-					</div>	
+						</div>					
+					</div>
 				</div>
 				<button class="reg__add-btn js-add-number">Добавить еще телефон</button>
 				<div class="label reg__birth">
@@ -834,6 +816,28 @@
 			<button class="btn btn_orange">принимаю</button>
 		</div>
 	</div>
+</div>
+<div class="js-number is-hidden">
+	<div class="label reg__phones">
+		<div class="label__title">Телефоны<span>Для отправки СМС о статусе заказа</span></div>
+		<span class="label__required"><span>обязательное поле</span></span>
+		<div class="reg__number">
+			<div class="label__title">+38</div>
+			<input class="label__input reg__code" type="text" placeholder="0">
+			<input class="label__input" type="text">
+			<div class="label__select js-select">
+				<div class="label__select-val">
+					<button></button>
+					<span>Мобильный</span>									
+				</div>
+				<ul class="label__select-options" style="display: none;">
+					<li>Мобильный</li>
+					<li>Стационарный</li>
+				</ul>
+			</div>
+			<button class="reg__number-del js-del-number"><i></i></button>
+		</div>					
+	</div>	
 </div>
 </body>
 </html>

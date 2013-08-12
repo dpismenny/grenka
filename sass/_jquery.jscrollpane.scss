@@ -130,24 +130,3 @@
         width: 98.5%;
     }
 }
-.order-sum {
-    padding: 7px 17px 10px 0;
-    @include pm;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #787878;
-    text-align: right;
-    border-bottom: 1px solid $brcl;
-    span {
-        font-size: 29px;
-        color: #6dab1b;
-    }
-    strong {
-        font-size: 29px;
-        color: #000;
-    }
-    em {
-        text-transform: capitalize;
-        font-style: normal;
-    }
-}

@@ -1011,3 +1011,24 @@
     background: url(../img/brand.jpg) no-repeat 0 0;
     z-index: 0;
 }
+.order-sum {
+    padding: 7px 17px 10px 0;
+    @include pm;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #787878;
+    text-align: right;
+    border-bottom: 1px solid $brcl;
+    span {
+        font-size: 29px;
+        color: #6dab1b;
+    }
+    strong {
+        font-size: 29px;
+        color: #000;
+    }
+    em {
+        text-transform: lowercase;
+        font-style: normal;
+    }
+}
