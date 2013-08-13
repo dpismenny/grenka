@@ -1333,6 +1333,21 @@
 .badge_action-small {@include s(badge_action-small);}
 .badge_top-sale {@include s(badge_top-sale);}
 .badge_soon {@include s(badge_soon);} 
+.badge_gift {
+	margin: 5px;
+	@include s(ico_gift);
+} 
+.badge_gift-m {@include s(badge-gift-m);} 
+.badge_sale-m {@include s(badge-sale-m);} 
+.badge_deliv-m {@include s(badge-deliv-m);} 
+.badge_best-m {@include s(badge-best-m);} 
+.badge_ex-m {@include s(badge-ex-m);} 
+.badge_new-m {@include s(badge-new-m);} 
+.badge_choise-m {@include s(badge-choise-m);} 
+.badge_mark-m {@include s(badge-mark-m);} 
+.badge_action-m {@include s(badge-action-m);} 
+.badge_discount-m {@include s(badge-discount-m);} 
+.badge_top-m {@include s(badge-top-m);} 
 .badge_counter {
 	width: 34px;
 	height: 34px;

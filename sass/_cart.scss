@@ -155,6 +155,17 @@
 		img {
 			vertical-align: middle;
 		}
+		.badge-wrap {
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+			line-height: 1;
+			.badge {
+				display: inline-block;
+				position: static;
+				vertical-align: middle;
+			}
+		}
 	}	
 	border: 1px solid $brcl;	
 	overflow: hidden;

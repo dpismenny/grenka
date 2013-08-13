@@ -17470,9 +17470,11 @@ function gallery() {
     $(this).find('.gallery__slide a').click(function() {
       if (!$(this).hasClass('is-active')) {
         var pic = $(this).attr('href');
+        var badges = $(this).find(".js-badges").html();
         $(this).parent().parent().find('a').removeClass('is-active');
         $(this).addClass('is-active');
         $(this).parent().parent().parent().parent().next().find('img').attr('src', pic);      
+        $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
       };    
       return false;
     });
@@ -17482,6 +17484,7 @@ function gallery() {
       act.parent().prev().find('a').addClass('is-active');
       var pic = act.parent().prev().find('a').attr('href');
       $(this).parent().next().find('img').attr('src', pic); 
+      $(this).parent().next().find('.js-gallery-badge').html(badges);    
     });
     $(this).find('.gallery__down').click(function() {
       var act = $(this).parent().find('.gallery__slide a.is-active');
@@ -17489,6 +17492,7 @@ function gallery() {
       act.parent().next().find('a').addClass('is-active');
       var pic = act.parent().prev().find('a').attr('href');
       $(this).parent().next().find('img').attr('src', pic); 
+      $(this).parent().next().find('.js-gallery-badge').html(badges); 
     });
   });
   
