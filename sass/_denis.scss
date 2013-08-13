@@ -328,13 +328,15 @@
 }
 .team__games-list{
 	position: relative;
-	.js-games-slide{
+	.cycle-slide {
 		margin-right: 20px;
-		img{
-			width: 60px;
-			height: 83px;
-			overflow: hidden;
-			display: block;
+		width: 60px;
+		height: 83px;
+		line-height: 83px;
+		text-align: center;
+		img {
+			width: 100%;
+			vertical-align: middle;	
 		}
 	}
 }
@@ -351,7 +353,7 @@
 }
 .team__media{
 	float: left;
-	width: 117px;
+	width: 117px;   
 	margin-right: 20px;
 }
 .team__userpic{
@@ -1734,7 +1736,7 @@
 .wishlist-box__list{
 	@extend %clr;
 }
-.wishlist-box__item{
+.wishlist-box__item {
 	float: left;
 	width: 214px;
 	border-left: 1px solid #dcdcdc;
@@ -1761,6 +1763,9 @@
 }
 .wishlist-box__item_mod{
 	padding: 0;
+}
+.wishlist-box__item_small {
+	height: auto;
 }
 .product__image_wishlist{
 	margin-bottom: 13px;

@@ -647,8 +647,17 @@
 .recent__image{
 	float: right;
 	width: 60px;
+	height: 87px;
+	line-height: 87px;
+	text-align: center;
 	margin-left: 10px;
 	margin-top: 32px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+		vertical-align: middle;
+	}
 }
 .recent__info {
 	position: relative;
@@ -966,11 +975,12 @@
 	}
 	.product__image {
 		height: 228px;
-		width: auto;
-		img {
-			height: 100%;
-			width: auto;
-		}
+		line-height: 228px;
+		width: 200px;
+		// img {
+		// 	height: 100%;
+		// 	width: auto;
+		// }
 	}
 }
 .product_width-mod {
@@ -995,12 +1005,13 @@
 		width: 196px;
 		height: 228px;
 		overflow: hidden;
-		text-align: right;
-		img {
-			display: inline-block;
-			width: auto;
-			height: 100%;
-		}
+		text-align: center;
+		line-height: 228px;
+		// img {
+		// 	display: inline-block;
+		// 	width: auto;
+		// 	height: 100%;
+		// }
 	}
 	.product__descr {
 		display: block;
@@ -1022,6 +1033,8 @@
 		}
 		.product__image {
 			height: 300px;
+			width: 300px;
+			line-height: 300px;
 		}
 		.product__price {
 			margin-bottom: 110px;
@@ -1097,9 +1110,14 @@
 .product__image{
 	float: right;
 	width: 100px;
+	height: 130px;
+	line-height: 130px;
 	margin-left: 15px;
+	overflow: hidden;
 	img {
-		display: block;
+		width: 100%;
+		height: auto;
+		vertical-align: middle;
 	}
 }
 .product__info{

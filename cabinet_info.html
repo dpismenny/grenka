@@ -6,7 +6,7 @@
 	<title>Cabinet info</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 <div class="code" title="Сообщите этот номер при заказе по телефону оператору и мы оформим заказ максимально быстро"> код клиента: <span>435435</span></div>
@@ -681,9 +681,24 @@
 								<td>
 									<div>
 										<div class="label">
-											<input class="label__input is-inactive js-edit-me" type="text" value="10.04.1980" disabled>
+											<input class="label__input is-inactive" type="text" value="10.04.1980" disabled>
 										</div>
-										<button class="btn-edit js-edit-input">изменить</button>
+										<button class="btn-edit js-edit-date">изменить</button>
+									</div>
+									<div class="reg__date is-hidden">
+										<input class="label__input reg__day" type="text">								
+										<div class="label__select js-select">
+											<div class="label__select-val">
+												<button></button>
+												<span>Месяц</span>									
+											</div>
+											<ul class="label__select-options">
+												<li>Месяц</li>
+												<li>Апрель</li>
+											</ul>
+										</div>
+										<input class="label__input" type="text">
+										<div class="label__title">года</div>
 									</div>
 								</td>
 							</tr>

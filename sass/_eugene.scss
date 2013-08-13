@@ -448,8 +448,12 @@
     margin-right: 30px;
     width: 96px;
     height: 131px;
+    line-height: 131px;
+    text-align: center;
     img {
-        display: block;
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
         &:hover {
             z-index: 2;
             @include scale(1.4);

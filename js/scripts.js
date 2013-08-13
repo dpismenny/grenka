@@ -17072,7 +17072,7 @@ function select() {
   var el = $('.js-select');
   var title = el.find('.label__select-val');
   var option = el.find('.label__select-options li');
-  title.live("click", function(event) {          
+  title.on("click", function(event) {          
       if (!$(this).parent().hasClass('is-open')) {
           el.removeClass('is-open');
           el.find('.label__select-options').hide();
@@ -17084,7 +17084,7 @@ function select() {
           $(this).next().hide();
       };
   });
-  option.live("click", function(event) {
+  option.on("click", function(event) {
       var value = $(this).text();
       $(this).parent().prev().find('span').html(value);
       $(this).parent().parent().removeClass('is-open');
@@ -17096,9 +17096,9 @@ function select() {
 };
 select();
 
-$('.js-select').live("click", function(event){
-    event.stopPropagation();
-});
+// $('.js-select').live("click", function(event){
+//     event.stopPropagation();
+// });
 
 
 // show/hide recent products
@@ -17166,22 +17166,6 @@ tabs();
       }
     );
     
-  $(".add-order__pic img").hover(
-      function () {
-        $(this).addClass("is-hover");
-      },
-      function () {
-        $(this).removeClass("is-hover");
-      }
-    );
-    // prod.hover(
-    //   function () {
-    //     //$(this).parent().parent().addClass("is-hover");
-    //   },
-    //   function () {
-    //     $(this).removeClass("is-hover");
-    //   }
-    // );
 
 // ------------------- Fancybox ----------------------// 
 
@@ -17312,6 +17296,11 @@ tabs();
     console.log("add");
     $(this).parent().find(new_field).last().after(html);
     return false;
+  });
+
+  $(".js-edit-date").live("click", function(){
+    $(this).prev().hide();
+    $(this).parent().next().removeClass("is-hidden");
   });
 
 // scrollpane
