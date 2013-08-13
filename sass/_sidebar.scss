@@ -74,13 +74,6 @@
     @include pm;
 }
 .recent-buy{
-    .recent-buy__info{
-        overflow: hidden;
-    }
-    .recent-buy__image{
-        float: right;
-        margin-left: 10px;
-    }
     .h1{
         font-size: 16px;
         font-weight: normal;
@@ -89,24 +82,39 @@
         text-transform: uppercase;
         line-height: 1.1;
     }
-    .recent-buy__description{
-        font-size: 13px;
-        color: #929292;
-        margin-bottom: 10px;
-    }
-    .recent-buy__price{
-        font-size: 11px;
-        text-transform: uppercase;
-        color: #f47b01;
-        strong{
-            font-size: 16px;
-        }
-        span{
-            font-size: 14px;
-        } 
-    }  
 }
-
+.recent-buy__info{
+    overflow: hidden;
+}
+.recent-buy__image{
+    float: right;
+    width: 60px;
+    height: 83px;
+    overflow: hidden;
+    line-height: 83px;
+    margin-left: 10px;
+    img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+.recent-buy__description{
+    font-size: 13px;
+    color: #929292;
+    margin-bottom: 10px;
+}
+.recent-buy__price{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #f47b01;
+    strong{
+        font-size: 16px;
+    }
+    span{
+        font-size: 14px;
+    } 
+}  
 .comments-list{
     .comment-list__title {
         margin-bottom: 2px;
@@ -283,8 +291,14 @@
 .reviews__media {
     float: right;
     width: 60px;
+    height: 83px;
+    overflow: hidden;
+    line-height: 83px;
+    text-align: center;
     img{
         width: 100%;
+        height: auto;
+        vertical-align: middle;
     }
 }
 
