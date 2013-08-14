@@ -716,7 +716,7 @@
 	margin-bottom: 20px;
 }
 .info-block__in {
-	padding: 26px 35px;
+	padding: 26px 35px 29px;
 	overflow: hidden;
 }
 .info-block__hide {
@@ -726,7 +726,7 @@
 .btn-show {
 	display: block;
 	width: 100%;
-	border-top: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;  
 	@include box-sizing(border-box);
 	height: 40px;
 	line-height: 1;
@@ -1090,6 +1090,42 @@
 	.product__inner {
 		padding: 30px;
 	}
+}
+.product_sidebar {
+	width: 100%;
+	margin-bottom: -1px;
+	height: 375px;
+	border: 0;
+	.product__inner {
+		padding: 20px;
+		border: 1px solid #ccc;
+	}
+	.product__image {
+		float: none;
+		margin: 0 auto;
+	}
+	.product__image {
+		display: block;
+		margin-bottom: 20px;
+	}
+	&.is-hover {
+		.product__inner {
+			position: absolute;
+			top: -20px;
+			right: -20px;
+			left: -20px;
+			bottom: -20px;
+			padding: 20px;
+			width: 274px;
+			height: 475px;
+			z-index: 1000;
+			@include box-shadow(0 0 16px rgba(0,0,0,.25));
+		}
+		.product__price {
+			margin-bottom: 15px;
+		}
+	}
+	
 }
 .product-list_funny {
 	margin-bottom: 0 !important;
