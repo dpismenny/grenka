@@ -915,6 +915,14 @@
 	padding: 20px 30px;
 	border: 1px solid #dcdcdc;
 	border-width: 0 1px 1px 1px; 
+	text-align: center;
+	#vk_like,
+	#fb-root {
+		display: inline-block;
+	}
+	.fb-like {  
+		margin-right: 30px;
+	}
 }
 
 .news__vote{
