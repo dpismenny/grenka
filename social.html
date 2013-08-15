@@ -6,24 +6,32 @@
 	<title>Promo Inner</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/scripts.min.js"></script>
+	<!-- this links to external just for example -->
+	<script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
 
-	<script type="text/javascript" src="//vk.com/js/api/openapi.js?98"></script>
+	
 <script type="text/javascript">
 	$(function () {
-		// facebook iframe - async
+		// facebook group - async
 		$('iframe#facebookiframe').attr('src', 'http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FGrenkaUA&amp;width=229&amp;height=262&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=true');    
-		//vkontakte social async
+		//vkontakte group - async
 		$('#vkontaktegroup').append('<div id="vk_groups" style="border: 1px solid #dcdcdc"></div>');
-		
-
+		jQuery.getScript('http://vk.com/js/api/openapi.js?97', function() { 
+			VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
+		}); 
+		// google group
+		window.___gcfg = {lang: 'ru'};
+		$("#googlegroup").append('<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>');
+		jQuery.getScript('https://apis.google.com/js/plusone.js', function() {}); 
 		// tweets async
-
+		$('#twitterfeed').append('<a class="twitter-timeline" href="https://twitter.com/GrenkaUa" data-widget-id="354579017233469441">Твиты пользователя @GrenkaUa</a>');
+		jQuery.getScript('http://platform.twitter.com/widgets.js', function() {}); 
 
 		//likes async
 	});
 </script>
 
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?98"></script>
 <script type="text/javascript">
   VK.init({apiId: 3475082, onlyWidgets: true});
 </script>
@@ -42,37 +50,28 @@
 				<iframe src="" id="facebookiframe" scrolling="no" frameborder="0" style="border:1px solid #dcdcdc; overflow:hidden; width:229px; height:262px;" allowTransparency="true"></iframe>
 			</div>
 			<!-- vkontakte group -->
-			<div class="social">
-				<div id="vkontaktegroup"></div>
-				<script type="text/javascript" src="//vk.com/js/api/openapi.js?97"></script>
-				<div id="vk_groups" style="border: 1px solid #dcdcdc"></div>
-				<script type="text/javascript">
-				VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
-				</script>
+			<div class="social" id="vkontaktegroup">
+				
 			</div>
 			<!-- twitter -->
 			<div class="social">
-				<a class="twitter-timeline" href="https://twitter.com/GrenkaUa" data-widget-id="354579017233469441">Твиты пользователя @GrenkaUa</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<div id="twitterfeed"></div>
 			</div>
 			<div class="social">
-				<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>
-			    <script type="text/javascript">
-			        window.___gcfg = {lang: 'ru'};
-
-			        (function() {
-			            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			            po.src = 'https://apis.google.com/js/plusone.js';
-			            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-			        })();
-			    </script>
-
+				<div id="googlegroup"></div>
 			</div>
 			<!-- END .social -->
 		</div>
 		<!-- END .l-sidebar -->
 		<!-- =============================== -->
+		<!-- =============================== -->
+		<!-- =============================== -->
+		<!-- =============================== -->
 		<!-- =========== LIKES SHARES =======-->
+		<!-- =============================== -->
+		<!-- =============================== -->
+		<!-- =============================== -->
+		<!-- =============================== -->
 		<!-- =============================== -->
 		<!-- BEGIN .l-main -->
 		<div class="l-main">
