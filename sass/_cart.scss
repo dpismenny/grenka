@@ -166,6 +166,18 @@
 				vertical-align: middle;
 			}
 		}
+		.badge-wrap_big {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: auto;
+			line-height: 1;
+			.badge {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
 	}	
 	border: 1px solid $brcl;	
 	overflow: hidden;

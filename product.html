@@ -6,7 +6,7 @@
 	<title>Product -> Page</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 <!-- BEGIN .top -->
@@ -306,6 +306,8 @@
 									<img src="img/gallery-nav.jpg" alt="">
 									<div class="is-hidden js-badges">
 									</div>
+									<div class="is-hidden js-badges-big">
+									</div>
 								</a>
 							</div>
 							<div class="gallery__slide">
@@ -314,6 +316,8 @@
 									<div class="is-hidden js-badges">
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
+									</div>
+									<div class="is-hidden js-badges-big">
 									</div>
 								</a>
 							</div>
@@ -321,12 +325,20 @@
 								<a class="is-active" href="img/product.jpg">
 									<img src="img/gallery-nav.jpg" alt="">
 									<div class="is-hidden js-badges">
+										<i class="badge badge_delivery" alt="Лучший товар"></i>
+										<i class="badge badge_gift" alt="Подарок"></i>
+									</div>
+									<div class="is-hidden js-badges-big">
 									</div>
 								</a>
 							</div>
 							<div class="gallery__slide is-inactive">
 								<a href="img/product1.jpg">
 									<img src="img/gallery-nav.jpg" alt="">
+									<div class="is-hidden js-badges-big">
+										<i class="badge badge_best-m" alt="Лучший товар"></i>
+										<i class="badge badge_top" alt="Подарок"></i>
+									</div>
 									<div class="is-hidden js-badges">
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
@@ -336,9 +348,11 @@
 							<div class="gallery__slide">
 								<a href="img/product.jpg">
 									<img src="img/gallery-nav.jpg" alt="">
-									<div class="is-hidden js-badges">
-										<i class="badge badge_delivery" alt="Лучший товар"></i>
-										<i class="badge badge_gift" alt="Подарок"></i>
+									<div class="is-hidden js-badges-big">
+										<i class="badge badge_best-m" alt="Лучший товар"></i>
+										<i class="badge badge_top" alt="Подарок"></i>
+									</div>
+									<div class="is-hidden js-badges-big">
 									</div>
 								</a>
 							</div>
@@ -348,6 +362,8 @@
 									<div class="is-hidden js-badges">
 
 									</div>
+									<div class="is-hidden js-badges-big">
+									</div>
 								</a>
 							</div>
 							<div class="gallery__slide">
@@ -355,6 +371,8 @@
 									<img src="img/gallery-nav.jpg" alt="">
 									<div class="is-hidden js-badges">
 
+									</div>
+									<div class="is-hidden js-badges-big">
 									</div>
 								</a>
 							</div>
@@ -365,6 +383,8 @@
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
 									</div>
+									<div class="is-hidden js-badges-big">
+									</div>
 								</a>
 							</div>
 							<div class="gallery__slide">
@@ -373,6 +393,8 @@
 									<div class="is-hidden js-badges">
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
+									</div>
+									<div class="is-hidden js-badges-big">
 									</div>
 								</a>
 							</div>
@@ -395,6 +417,8 @@
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
 									</div>
+									<div class="is-hidden js-badges-big">
+									</div>
 								</a>
 							</div>
 							<div class="gallery__slide">
@@ -404,6 +428,8 @@
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
 									</div>
+									<div class="is-hidden js-badges-big">
+									</div>
 								</a>
 							</div>
 						</div>
@@ -412,6 +438,9 @@
 						<a href="#gallery-popup" class="js-popup-link">
 							<img src="img/product.jpg" alt="">
 							<div class="badge-wrap js-gallery-badge">
+								
+							</div>
+							<div class="badge-wrap badge-wrap_big js-gallery-badge-big">
 								
 							</div>
 						</a>
@@ -2205,40 +2234,135 @@
 				<button class="gallery__down js-gallery-down"><i></i></button>
 				<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-popup .js-gallery-down" data-cycle-prev=".js-gallery-popup .js-gallery-up" data-cycle-carousel-visible="4" data-cycle-carousel-vertical="true" data-allow-wrap="false">
 					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product1.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a class="is-active" href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a class="is-active" href="img/product.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide is-inactive">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product1.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges-big">
+								<i class="badge badge_best-m" alt="Лучший товар"></i>
+								<i class="badge badge_top" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges-big">
+								<i class="badge badge_best-m" alt="Лучший товар"></i>
+								<i class="badge badge_top" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product1.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product1.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product1.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div><div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 					<div class="gallery__slide">
-						<a href="img/product1.jpg"><img src="img/gallery-nav.jpg" alt=""></a>
+						<a href="img/product1.jpg">
+							<img src="img/gallery-nav.jpg" alt="">
+							<div class="is-hidden js-badges">
+								<i class="badge badge_delivery" alt="Лучший товар"></i>
+								<i class="badge badge_gift" alt="Подарок"></i>
+							</div>
+							<div class="is-hidden js-badges-big">
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

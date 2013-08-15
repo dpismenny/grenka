@@ -17460,10 +17460,12 @@ function gallery() {
       if (!$(this).hasClass('is-active')) {
         var pic = $(this).attr('href');
         var badges = $(this).find(".js-badges").html();
+        var badges_big = $(this).find(".js-badges-big").html();
         $(this).parent().parent().find('a').removeClass('is-active');
         $(this).addClass('is-active');
         $(this).parent().parent().parent().parent().next().find('img').attr('src', pic);      
         $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
+        $(this).parent().parent().parent().parent().next().find('.js-gallery-badge-big').html(badges_big);      
       };    
       return false;
     });
@@ -17482,6 +17484,7 @@ function gallery() {
       var pic = act.parent().prev().find('a').attr('href');
       $(this).parent().next().find('img').attr('src', pic); 
       $(this).parent().next().find('.js-gallery-badge').html(badges); 
+      $(this).parent().next().find('.js-gallery-badge-big').html(badges_big); 
     });
   });
   
