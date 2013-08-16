@@ -17068,11 +17068,16 @@ $('.js-top-popup').click(function() {
 });
 
 //select
-function select() {
-  var el = $('.js-select');
+function selectcustom(whatever) {
+  //console.log(el);
+  whatever.each(function( index ) {
+    console.log( index + ": " );
+
+    el = $(this);
+    el.addClass('is-replaced');
   var title = el.find('.label__select-val');
   var option = el.find('.label__select-options li');
-  title.on("click", function(event) {          
+  title.on("click", function(event) {       
       if (!$(this).parent().hasClass('is-open')) {
           el.removeClass('is-open');
           el.find('.label__select-options').hide();
@@ -17093,8 +17098,10 @@ function select() {
   title.click(function(event){
       event.stopPropagation();
   });
+
+  });
 };
-select();
+selectcustom($('.page .js-select'));
 
 // $('.js-select').live("click", function(event){
 //     event.stopPropagation();
@@ -17370,8 +17377,10 @@ tabs();
   var add_number = $(".js-add-number");
   var del_number = $(".js-del-number");
   var number_last = $(".js-new-number").last();
+
   add_number.live("click", function(event){
     number_last.after(number_html);
+    selectcustom($('.js-select').not('.is-replaced'));
     return false;
   });
   del_number.live("click", function(event){

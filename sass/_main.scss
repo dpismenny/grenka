@@ -628,6 +628,7 @@
 	padding: 0 25px;
 	@include box-sizing(border-box);
 	position: relative;
+	vertical-align: top;
 	width: 240px;
 	height: 123px;
 	border-left: 1px solid #5d5d5d;
@@ -668,6 +669,7 @@
 		color: #fff;
 		font-weight: bold;
 		font-size: 15px;
+		text-transform: uppercase;
 	}
 }
 .recent__platform {
