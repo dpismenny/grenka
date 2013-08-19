@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lte IE 8]><html class="lteie8"><![endif]-->
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
@@ -992,33 +993,20 @@
 			</div>
 			<!-- END .reviews -->
 			<!-- BEGIN .social -->
-			<!-- <div class="social">
-				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FGrenkaUA&amp;width=229&amp;height=262&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=true" scrolling="no" frameborder="0" style="border:1px solid #dcdcdc; overflow:hidden; width:229px; height:262px;" allowTransparency="true"></iframe>
+			<div class="social">
+				<div id="facebookgroup"></div>
+			</div>
+			<!-- vkontakte group -->
+			<div class="social">
+				<div id="vkontaktegroup"></div>
+			</div>
+			<!-- twitter -->
+			<div class="social">
+				<div id="twitterfeed"></div>
 			</div>
 			<div class="social">
-				<script type="text/javascript" src="//vk.com/js/api/openapi.js?97"></script>
-				<div id="vk_groups" style="border: 1px solid #dcdcdc"></div>
-				<script type="text/javascript">
-				VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
-				</script>
+				<div id="googlegroup"></div>
 			</div>
-			<div class="social">
-				<a class="twitter-timeline" href="https://twitter.com/GrenkaUa" data-widget-id="354579017233469441">Твиты пользователя @GrenkaUa</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
-			<div class="social">
-				<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>
-			    <script type="text/javascript">
-			        window.___gcfg = {lang: 'ru'};
-
-			        (function() {
-			            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-			            po.src = 'https://apis.google.com/js/plusone.js';
-			            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-			        })();
-			    </script>
-
-			</div> -->
 			<!-- END .social -->
 		</div>
 		<!-- END .l-sidebar -->
@@ -2719,6 +2707,63 @@
 		<input class="btn" type="submit">
 	</div>
 </div> -->
+<!-- THIS. IS. SOCIALS. =) -->
+<script type="text/javascript">
+	$(function () {
+		// facebook group - async
+		$('#facebookgroup').append('<div class="fb-like-box" data-href="https://www.facebook.com/GrenkaUA" data-width="230" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>');
+		// jQuery.getScript('http://vk.com/js/api/openapi.js?97', function() { 
+		// 	VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
+		// }); 
+		// $('#facebookgroup').append('<iframe src="" id="facebookiframe" scrolling="no" frameborder="0" style="border-bottom:1px solid #AAAAAA; overflow:hidden; width:229px; height:262px;" allowTransparency="true"></iframe>');
+		// $('iframe#facebookiframe').attr('src', 'http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FGrenkaUA&amp;width=229&amp;height=262&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;show_border=false&amp;header=true');    
+		//vkontakte group - async
+		$('#vkontaktegroup').append('<div id="vk_groups" style="border: 1px solid #dcdcdc"></div>');
+		jQuery.getScript('http://vk.com/js/api/openapi.js?97', function() { 
+			VK.Widgets.Group("vk_groups", {mode: 0, width: "228", height: "265", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 48290600);
+		}); 
+		// google group
+		window.___gcfg = {lang: 'ru'};
+		$("#googlegroup").append('<div class="g-plus" data-width="229"  height="300" data-height="132" data-href="//plus.google.com/113702892940068182377" data-rel="publisher"></div>');
+		jQuery.getScript('https://apis.google.com/js/plusone.js', function() {}); 
+		// tweets async
+		$('#twitterfeed').append('<a class="twitter-timeline" href="https://twitter.com/GrenkaUa" data-widget-id="354579017233469441">Твиты пользователя @GrenkaUa</a>');
+		jQuery.getScript('http://platform.twitter.com/widgets.js', function() {}); 
 
+
+
+
+
+		//likes-shares async
+		$('#share__gooogle').append('<div class="g-plusone" data-size="medium"></div>');
+		jQuery.getScript('https://apis.google.com/js/plusone.js', function() {}); 
+
+		//facebook like
+		
+		
+		$('#share__facebook').append('<div class="fb-like" data-href="http://grenka.ua" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div><div id="fb-root"></div>');
+		d = document;
+		var js, 
+		id = 'facebook-jssdk', 
+		ref = d.getElementsByTagName('script')[0];
+		if (d.getElementById(id)) {return;}
+		else{
+			js = d.createElement('script'); js.id = id; js.async = true;
+			js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1&appId=566811483363013";
+			ref.parentNode.insertBefore(js, ref);
+		}
+
+		//share twitter
+		$('#share__twitter').append('<a href="https://twitter.com/share" class="twitter-share-button" data-via="GrenkaUa">Tweet</a>');
+		jQuery.getScript('http://platform.twitter.com/widgets.js', function() {}); 
+
+		//share vkontakte
+		$('#share__vkontakte').append('<div id="vk_like"></div>');
+		jQuery.getScript('http://vk.com/js/api/openapi.js?98', function() {
+			VK.init({apiId: 3475082, onlyWidgets: true});
+			VK.Widgets.Like("vk_like", {type: "mini", height: 20});
+		}); 
+	});
+</script>
 </body>
 </html>

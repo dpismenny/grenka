@@ -399,7 +399,8 @@
 					<textarea class="label__area"></textarea>
 					<span class="label__help">Дополнительная информация: район, лифт, этаж, домофон</span>
 				</label>
-				<button class="reg__add-btn">Добавить еще адрес</button>
+				<div id="addaddressflag"></div>
+				<button class="reg__add-btn js-addaddress">Добавить еще адрес</button>
 				<div class="reg__btns">
 					<button class="btn btn_gray">заполнить позже</button>
 					<button class="btn btn_big">сохранить</button>					
@@ -838,6 +839,49 @@
 			<button class="reg__number-del js-del-number"><i></i></button>
 		</div>					
 	</div>	
+</div>
+
+<div class="js-address is-hidden">
+<div class="label">
+	<span class="label__title">Адрес доставки</span>
+	<div class="label__select js-select">
+		<div class="label__select-val">
+			<button></button>
+			<span>Киев</span>									
+		</div>
+		<ul class="label__select-options">
+			<li>Киев</li>
+			<li>Город 1</li>
+			<li>Город 2</li>
+			<li>Город 3</li>
+			<li>Город 4</li>
+			<li>Город 5</li>
+			<li>Город 6</li>
+		</ul>
+	</div>
+	<span class="label__required"><span>обязательное поле</span></span>
+</div>
+<div class="reg__address">
+	<label class="label">
+		<span class="label__title">Улица</span>
+		<input class="label__input" type="text">
+	</label>
+	<label class="label">
+		<span class="label__title">№ Дома</span>
+		<input class="label__input" type="text">
+	</label>
+	<label class="label">
+		<span class="label__title">№ Кв./Офиса</span>
+		<input class="label__input" type="text">
+	</label>
+	<span class="label__required"><span>обязательное поле</span></span>
+</div>
+<label class="label">
+	<span class="label__title">Дополнительная информация<span>*</span></span>
+	<textarea class="label__area"></textarea>
+	<span class="label__help">Дополнительная информация: район, лифт, этаж, домофон</span>
+</label>	
+
 </div>
 </body>
 </html>

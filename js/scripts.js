@@ -17388,6 +17388,18 @@ tabs();
     return false;
   });
 
+  //same for address
+  var address_html = $(".js-address").html();
+  var add_address = $(".js-addaddress");
+  //var del_number = $(".js-del-number");
+  var flag = $("#addaddressflag").last();
+
+  add_address.live("click", function(event){
+    flag.after(address_html);
+    selectcustom($('.js-select').not('.is-replaced'));
+    return false;
+  });
+
 //  -------------------------------- Created by Artur Moroz!
 //rating
  if ($('.js-rating').length > 0) {
