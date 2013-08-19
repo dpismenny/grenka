@@ -145,6 +145,7 @@
 	}
 }
 .gallery__pic {
+	position: relative;
 	a {
 		position: relative;
 		display: block;
@@ -181,6 +182,16 @@
 	}	
 	border: 1px solid $brcl;	
 	overflow: hidden;
+	&.is-disabled:before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(#000, .3);
+		content: ' ';
+		z-index: 20;
+	}
 }
 //label
 .label {
