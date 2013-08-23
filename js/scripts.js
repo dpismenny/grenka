@@ -17088,6 +17088,9 @@ function selectcustom(whatever) {
           $(this).next().hide();
       };
   });
+  var value_first = option.first().text();
+  option.parent().prev().find('span').html(value_first);
+  option.parent().prev().find('input').val(value_first);
   option.on("click", function(event) {
       var value = $(this).text();
       $(this).parent().prev().find('span').html(value);
