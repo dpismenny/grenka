@@ -17089,12 +17089,14 @@ function selectcustom(whatever) {
       };
   });
   var value_first = option.first().text();
+  var id_first = option.first().attr("data-id");
   option.parent().prev().find('span').html(value_first);
-  option.parent().prev().find('input').val(value_first);
+  option.parent().prev().find('input').val(id_first);
   option.on("click", function(event) {
       var value = $(this).text();
+      var id = $(this).attr("data-id");
       $(this).parent().prev().find('span').html(value);
-      $(this).parent().prev().find('input').val(value);
+      $(this).parent().prev().find('input').val(id);
       $(this).parent().parent().removeClass('is-open');
       $(this).parent().hide();
   });
