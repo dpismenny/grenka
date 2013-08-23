@@ -17091,6 +17091,7 @@ function selectcustom(whatever) {
   option.on("click", function(event) {
       var value = $(this).text();
       $(this).parent().prev().find('span').html(value);
+      $(this).parent().prev().find('input').val(value);
       $(this).parent().parent().removeClass('is-open');
       $(this).parent().hide();
   });
