@@ -17064,7 +17064,6 @@ $('.js-top-popup').click(function(event){
 $('.js-top-popup').click(function() {
     $('.js-top-popup').removeClass('is-active');
     $(this).toggleClass('is-active');
-    return false;
 });
 
 //select
