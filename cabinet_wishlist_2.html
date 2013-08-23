@@ -587,14 +587,15 @@
 				<!-- BEGIN .section__inner -->
 				<div class="section__inner">
 					<div class="wishlist__top">
-						<h2 class="wishlist__title section__title">список желаний</h2>
-						<button class="btn btn_medium"><i class="icon_plus"></i>создать новый список</button>
+						<h2 class="wishlist__title section__title">список чудес</h2>
+						<a class="btn btn_medium js-popup-link" href="#to-favorite1"><i class="icon_plus"></i>создать новый список</a>
 						<div class="wishlist__new">
-							<i></i>
+
 							<div class="wishlist__create">
 								<input type="text" class="wishlist__input label__input" placeholder="Название нового списка желаний">
 								<input type="submit" class="btn" value="Создать">
 							</div>
+
 						</div>
 					</div>
 					<div class="wishlist-box">
@@ -655,13 +656,15 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta">
+											<a href="#notific-not-authorize" class="js-popup-link">Узнать</a> о снижении цены
+										</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -684,7 +687,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="wishlist-box__item">
@@ -696,13 +710,15 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta">
+											<a href="#notific-not-authorize" class="js-popup-link">Узнать</a> о снижении цены
+										</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup" style="display:none;">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -725,7 +741,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="wishlist-box__item">
@@ -737,13 +764,15 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta">
+											<a href="#notific-not-authorize" class="js-popup-link">Узнать</a> о снижении цены
+										</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup" style="display:none;">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -766,7 +795,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 								</ul>
@@ -812,13 +852,15 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta">
+											<a href="#notific-not-authorize" class="js-popup-link">Узнать</a> о снижении цены
+										</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup" style="display:none;">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -841,7 +883,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="wishlist-box__item">
@@ -853,13 +906,15 @@
 										</h3>
 										<div class="product__price"><strong itemprop="price">110</strong> грн.</div>
 										<button class="btn">Купить</button>
-										<div class="product__meta"><a href="#">Узнать</a> о снижении цены</div>
+										<div class="product__meta">
+											<a href="#notific-not-authorize" class="js-popup-link">Узнать</a> о снижении цены
+										</div>
 										<div class="product__control">
 											<div class="product__remove">
-												<a href="#"><i></i>переместить</a>
-												<div class="product__remove-popup" style="display:none;">
+												<a href="#" class="js-replace-wish-link"><i></i>переместить</a>
+												<div class="product__remove-popup js-replace-popup">
 													<div class="product__remove-in">
-														<i class="product__remove-close"></i>
+														<i class="product__remove-close js-replace-close"></i>
 														<div class="product__remove-title">Список желаний</div>
 														<div class="product__remove-select">
 															<label class="label-check">
@@ -882,7 +937,18 @@
 													</div>
 												</div>
 											</div>
-											<a href="#"><i></i>удалить</a>
+											<div class="product__remove">
+												<a href="#" class="js-del-wish-link"><i></i>удалить</a>
+												<div class="product__remove-popup product__del-popup js-del-popup">
+													<div class="product__remove-in">
+														<i class="product__remove-close js-del-close"></i>
+														<div class="product__remove-title">Удалить список желаний</div>
+														<p>Вы действительно хотите удалить товар NAME из сиска желаний ?</p>
+														<button class="btn btn_gray">Да</button>
+														<button class="btn btn_orange">Нет</button>
+													</div>
+												</div>
+											</div>
 										</div>
 									</li>
 									<li class="wishlist-box__item wishlist-box__item_mod">
@@ -1421,7 +1487,6 @@
 	<!-- END .footer__in -->
 </div>
 <!-- END .footer -->
-<!-- 
 <div class="popup popup_s" id="to-favorite1">
 	<div class="popup__header">
 		<div class="popup__title">
@@ -1449,7 +1514,7 @@
         	<i></i>
         	<span>Мой список желаний</span>
        </label>
-		<div class="label label_">
+		<div class="label label_radio-input-text">
 			<label class="label-radio">
 	        	<input type="radio" name="name">
 	        	<i></i>
@@ -1460,41 +1525,63 @@
 		<input class="btn" type="submit">
 	</div>
 </div>
-<div class="popup popup_s" id="to-favorite2">
+<div class="popup" id="notific-not-authorize">
 	<div class="popup__header">
 		<div class="popup__title">
-			Список желаний
+			Прислать письмо <span>когда снизится цена</span>
 		</div>
 	</div>
 	<div class="popup__body">
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список желаний</span>
+		<div class="popup__form">
+			<label class="label">
+				<span class="label__title">Ваше имя:</span>
+				<input class="label__input" type="text">
 			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список желаний</span>
+			<label class="label">
+				<span class="label__title">Ваш e-mail</span>
+				<input class="label__input" type="text">
+				<span class="label__tooltip">Недопустимые символы</span>
 			</label>
+			<div class="btn-wrap">
+				<input class="btn btn_medium" type="submit">
+			</div>
 		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<span>Мой список желаний</span>
-			</label>
-		</div>
-		<div class="radio">
-			<label>
-				<input type="radio" name="name">
-				<input type="text" class="input">
-			</label>
-			<p>Или например, "Желаю на День рождения"</p>
-		</div>
-		<input class="btn" type="submit">
 	</div>
-</div> -->
+</div>
+<div class="popup" id="notific-authorize">
+	<div class="popup__header">
+		<div class="popup__title">
+			Прислать письмо <span>когда снизится цена</span>
+		</div>
+	</div>
+	<div class="popup__body">
+		<div class="popup__form">
+			<label class="label">
+				<span class="label__title">Ваш e-mail</span>
+				<input class="label__input" type="text">
+				<span class="label__tooltip">Недопустимые символы</span>
+			</label>
+			<label class="label">
+				<span class="label__title">Ваш пароль:</span>
+				<input class="label__input" type="password">
+				<span class="label__tooltip">Неверный пароль</span>
+			</label>
+
+			<div class="btn-wrap">
+				<input class="btn btn_medium" type="submit">
+			</div>
+			<div class="enter-soc">
+				<span>Войти через:</span>
+				<a href="#" class="enter-soc__link enter-soc__yandex"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__vk"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__google"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__fb"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__mail"><i></i></a>
+				<a href="#" class="enter-soc__link enter-soc__tw"><i></i></a>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
