@@ -17189,15 +17189,28 @@ tabs();
     });
     return false;
   });
-  $('.js-popup-link-product').on('click', function() {
-    $this = $(this);
-    $.fancybox({
-        href: $this.attr('href'),
-        padding: 0,
-        minHeight: 560,
-        autoWidth: true
-    });
+  
+  $(".js-slider-popup-link").on("click", function(){
+    //var gallery_html = $(this).parent().parent().parent().html();
+    //$(".js-slider-popup .popup__body").html(gallery_html);
+    $(".js-slider-popup").show();
+    $(".js-overlay-popup").show();
+    var popup_inner_height = $(".js-gallery-pic a").outerHeight();
+  $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
     return false;
+
+  });
+  var popup_height = $(window).height()-80;
+  $(".js-slider-popup").css("height", popup_height);
+  
+  var overlay = $(".js-overlay-popup");
+  overlay.on("click", function(){
+    $(this).hide();
+    $(".popup").hide();
+  });
+  $(".js-close-popup").on("click", function(){
+    $(".popup").hide();
+    overlay.hide();
   });
 
   if ($('#reg-message').length > 0) {
@@ -17500,6 +17513,7 @@ function gallery() {
         $(this).parent().parent().find('a').removeClass('is-active');
         $(this).addClass('is-active');
         $(this).parent().parent().parent().parent().next().find('img').attr('src', pic);      
+        $(this).parent().parent().parent().parent().next().find('a').attr('href', pic);      
         $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
         $(this).parent().parent().parent().parent().next().find('.js-gallery-badge-big').html(badges_big);      
       };    
