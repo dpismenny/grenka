@@ -14,11 +14,11 @@
         }
     }
     .gallery__pic {
-    	height: 335px;
+    	//height: 335px;
     	border: 0;
         a {
-            height: 335px;
-            line-height: 335px;
+            height: auto;
+            line-height: 1;
         }
     }
     .label__input {

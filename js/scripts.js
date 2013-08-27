@@ -17185,7 +17185,17 @@ tabs();
     $this = $(this);
     $.fancybox({
         href: $this.attr('href'),
-        padding: 0
+        padding: 0,
+    });
+    return false;
+  });
+  $('.js-popup-link-product').on('click', function() {
+    $this = $(this);
+    $.fancybox({
+        href: $this.attr('href'),
+        padding: 0,
+        minHeight: 560,
+        autoWidth: true
     });
     return false;
   });
