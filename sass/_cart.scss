@@ -143,9 +143,24 @@
 	img {
 		vertical-align: middle;
 	}
+	.ico-play {
+		margin: -10px 0 0 -10px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		border-width: 1px;
+		i {
+			@include scale(.5);
+			top: 2px;
+			left: 4px;
+		}
+	}
 }
 .gallery__pic {
 	position: relative;
+	.ico-play {
+		cursor: pointer;
+	}
 	a {
 		position: relative;
 		display: block;

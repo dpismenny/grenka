@@ -17196,6 +17196,7 @@ tabs();
     $(".js-slider-popup").show();
     $(".js-overlay-popup").show();
     var popup_inner_height = $(".js-gallery-pic a").outerHeight();
+  $(".js-gallery-pic").css("line-height", popup_inner_height+"px");
   $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
     return false;
 
@@ -17504,11 +17505,25 @@ $('.js-read-all').click(function() {
 //gallery
 function gallery() {
   var el = $('.js-gallery');
+  el.find('.gallery__slide a.is-active').each(function(){
+    var pic = $(this).attr('href');
+    var badges = $(this).find(".js-badges").html();
+    var play_icon = $(this).find(".js-icon-play").html();
+    var badges_big = $(this).find(".js-badges-big").html();
+    $(this).parent().parent().find('a').removeClass('is-active');
+    $(this).addClass('is-active');
+    $(this).parent().parent().parent().parent().next().find('img').attr('src', pic);      
+    $(this).parent().parent().parent().parent().next().find('a').attr('href', pic);      
+    $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
+    $(this).parent().parent().parent().parent().next().find('.js-gallery-badge-big').html(badges_big);      
+    $(this).parent().parent().parent().parent().next().find('.js-play-video-icon').html(play_icon);
+  })
   el.each(function(){
     $(this).find('.gallery__slide a').click(function() {
       if (!$(this).hasClass('is-active')) {
         var pic = $(this).attr('href');
         var badges = $(this).find(".js-badges").html();
+        var play_icon = $(this).find(".js-icon-play").html();
         var badges_big = $(this).find(".js-badges-big").html();
         $(this).parent().parent().find('a').removeClass('is-active');
         $(this).addClass('is-active');
@@ -17516,6 +17531,7 @@ function gallery() {
         $(this).parent().parent().parent().parent().next().find('a').attr('href', pic);      
         $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
         $(this).parent().parent().parent().parent().next().find('.js-gallery-badge-big').html(badges_big);      
+        $(this).parent().parent().parent().parent().next().find('.js-play-video-icon').html(play_icon);
       };    
       return false;
     });
@@ -17526,6 +17542,8 @@ function gallery() {
       var pic = act.parent().prev().find('a').attr('href');
       $(this).parent().next().find('img').attr('src', pic); 
       $(this).parent().next().find('.js-gallery-badge').html(badges);    
+      $(this).parent().next().find('.js-gallery-badge-big').html(badges_big); 
+      $(this).parent().next().find('.js-play-video-icon').html(play_icon);
     });
     $(this).find('.gallery__down').click(function() {
       var act = $(this).parent().find('.gallery__slide a.is-active');
@@ -17535,6 +17553,7 @@ function gallery() {
       $(this).parent().next().find('img').attr('src', pic); 
       $(this).parent().next().find('.js-gallery-badge').html(badges); 
       $(this).parent().next().find('.js-gallery-badge-big').html(badges_big); 
+      $(this).parent().next().find('.js-play-video-icon').html(play_icon);
     });
   });
   
