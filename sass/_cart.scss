@@ -1551,11 +1551,13 @@
 	border: 1px solid $brcl;
 	border-width: 1px 0;	
 	font-size: 0;
+	@extend %clr;
 	li {
 		display: inline-block;
 		border-left: 1px solid $brcl;
 		font-size: 14px;
 		text-align: center;
+		@include box-sizing(border-box);
 		&:first-child {
 			border: none;
 		}
@@ -1612,13 +1614,15 @@
 	}
 }
 .prod__price-old {
-	width: 115px;
+	float:left;
+	width: 50%;
 	color: #8e8e8e;
-	text-align: left;	
+	text-align: center;	
 }
 .prod__price-new {
-	width: 118px;
-}
+	float:left;
+	width: 50%;
+	text-align: center;	}
 .prod__price-super {
 	width: 145px;
 	text-align: right;
@@ -2121,6 +2125,7 @@
 .description__buy-price {
 	padding: 12px 20px 14px;
 	overflow: hidden;
+	text-align: center;
 	li {
 		float: right;
 		padding: 0 10px;
@@ -2137,10 +2142,13 @@
 				text-decoration: line-through;
 			}
 		}
-		&.description__buy-old {			
+		&.description__buy-old {	
+			float: none;		
+			display: inline-block;
 			border: 1px solid #b7b7b7;
 			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
 			background: #fff;
+			color: #000;
 			@include background-image(linear-gradient(#fff, #e3e3e3));
 			border-radius: 4px;
 		}
@@ -2590,10 +2598,21 @@
 	}
 	img {
 		vertical-align: middle;
+		max-width: 129px;
+		max-height: 81px;
 	}
 }
 .media__preview {
 	float: left;
+	width: 466px;
+	height: 316px;
+	line-height: 316px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+		vertical-align: middle;
+	}
 }
 .media_videos {
 	margin-bottom: 28px;
@@ -2628,6 +2647,8 @@
 	margin-bottom: 40px;
 	.media__preview {
 		width: 212px;
+		height: 316px;
+		line-height: 316px;
 		margin-right: 20px;
 	}
 	.media__list {

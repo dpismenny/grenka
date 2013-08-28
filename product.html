@@ -6,7 +6,7 @@
 	<title>Product -> Page</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 <!-- BEGIN .top -->
@@ -481,9 +481,8 @@
 				</div>
 				<!-- END .rating -->
 				<ul class="prod__price">
-					<li class="prod__price-old is-inactive"><strong>1640</strong>грн.</li>
-					<li class="prod__price-new is-inactive"><strong>1559</strong>грн.</li>
-					<li class="prod__price-super"><span>супер цена!</span><strong>1209</strong>грн.</li>
+					<li class="prod__price-old is-inactive"><strong>10 999.55</strong>грн.</li>
+					<li class="prod__price-new is-inactive"><strong>10 999.55</strong>грн.</li>
 				</ul>
 				<div class="prod__buy">
 					<button class="btn btn_big">купить</button>
@@ -754,8 +753,7 @@
 					</table>
 					<div class="description__buy">
 						<ul class="description__buy-price">
-							<li><strong>1640</strong>грн.</li>
-							<li class="description__buy-old"><strong>1559</strong>грн.</li>
+							<li class="description__buy-old"><strong>10 999.55</strong>грн.</li>
 						</ul>
 						<div class="description__buy-btn">	
 							<div class="label-in-stock">наличие гарантировано<i></i></div>
@@ -956,15 +954,15 @@
 			<!-- BEGIN .media -->
 			<div class="media media_videos">
 				<div class="title title_gray">видео</div>
-				<div class="media__content">
+				<div class="media__content js-media-gallery">
 					<div class="media__preview">
 						<img src="img/pic6.jpg" alt="">
 						<i class="ico-play"><i></i></i>
 					</div>
 					<ul class="media__list">
-						<li><img src="img/pic5.jpg" alt=""></li>
-						<li><img src="img/pic5.jpg" alt=""></li>
-						<li class="is-active"><img src="img/pic5.jpg" alt=""</li>
+						<li><img src="http://lorempixel.com/400/200/sports/" alt=""></li>
+						<li><img src="http://lorempixel.com/129/81/sports/" alt=""></li>
+						<li><img src="http://lorempixel.com/400/200/sports/" alt=""></li>
 						<li class="is-empty"></li>
 						<li class="is-empty"></li>
 						<li class="is-empty"></li>
@@ -975,16 +973,28 @@
 			<!-- BEGIN .media -->
 			<div class="media media_photos">
 				<div class="title title_gray">фото</div>
-				<div class="media__content">
-					<div class="media__preview"><img src="img/pic7.jpg" alt=""></div>
+				<div class="media__content js-media-gallery">
+					<div class="media__preview">
+						<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider1.jpg">
+								<img src="img/demo/small-icon.jpg" alt="" />
+							</a>
+					</div>
 					<ul class="media__list">
-						<li><img src="img/pic2.jpg" alt=""></li>
-						<li><img src="img/pic2.jpg" alt=""></li>
-						<li><img src="img/pic2.jpg" alt=""></li>
-						<li><img src="img/pic2.jpg" alt=""></li>
-						<li><img src="img/pic2.jpg" alt=""></li>
-						<li><img src="img/pic2.jpg" alt=""></li>
-						<li class="is-active"><img src="img/pic2.jpg" alt=""</li>
+						<li>
+							<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider1.jpg">
+								<img src="img/demo/small-icon.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider2.jpg">
+								<img src="img/demo/slid-small.jpg" alt="" />
+							</a>
+						</li>
+						<li>
+							<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider3.jpg">
+								<img src="img/demo/slid-small4.jpg" alt="" />
+							</a>
+						</li>
 						<li class="is-empty"></li>
 						<li class="is-empty"></li>
 						<li class="is-empty"></li>
