@@ -17592,40 +17592,6 @@ tabs();
   });
 
 //  -------------------------------- Created by Artur Moroz!
-//rating
- if ($('.js-rating').length > 0) {
-  $('.js-rating').raty({
-    width: 80,
-    starOff: 'img/icons/rating.png',
-    starOn : 'img/icons/rating-act.png',
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
- }
-
-if ($('.js-rating-big').length > 0) {
-  $('.js-rating-big').raty({
-    width: 130,
-    starOff: 'img/icons/rating-big.png',
-    starOn : 'img/icons/rating-big-act.png',
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
- }
-if ($('.js-rating-read').length > 0) {
-  $('.js-rating-read').raty({
-    readOnly: true,
-    noRatedMsg: "",
-    width: 80,
-    starOff: 'img/icons/rating.png',
-    starOn : 'img/icons/rating-act.png',
-    score: function() {
-      return $(this).attr('data-score');
-    }
-  });
-}
 
 //hide address on cart
 $('.js-hide-address').click(function() {
@@ -17753,18 +17719,23 @@ $(".fancybox-thumb").fancybox({
     prevEffect : 'none',
     nextEffect : 'none',
     helpers : {
-        title : null,
-        thumbs : true
+        title : {
+            type : 'inside'
+        },
+        thumbs : {
+            
+        }
     },
     tpl : {
-        wrap     : '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
+        wrap     : '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin popup-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
         image    : '<img class="fancybox-image" src="{href}" alt="" />',
         iframe   : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0"' + ($.browser.msie ? ' allowtransparency="true"' : '') + '></iframe>',
         error    : '<p class="fancybox-error">The requested content cannot be loaded.<br/>Please try again later.</p>',
         closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>',
         next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
         prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
-    }
+    },
+    wrapCSS: "popup popup_gallery"
 });    
 
 

@@ -40,6 +40,9 @@
 	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
+.fancybox-opened .popup-skin {
+	padding: 15px !important;
+} 
 
 .fancybox-outer, .fancybox-inner {
 	position: relative;
@@ -153,12 +156,12 @@
 
 .fancybox-prev span {
 	left: 10px;
-	background-position: 0 -36px;
+	@include s(act-offer-prev);
 }
 
 .fancybox-next span {
 	right: 10px;
-	background-position: 0 -72px;
+	@include s(act-offer-next);
 }
 
 .fancybox-nav:hover span {
@@ -274,6 +277,7 @@
 	width: 100%;
 	overflow: hidden;
 	z-index: 8050;
+	bottom: 20px !important;
 }
 
 #fancybox-thumbs.bottom {
@@ -294,7 +298,7 @@
 #fancybox-thumbs ul li {
 	float: left;
 	padding: 1px;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 #fancybox-thumbs ul li.active {
@@ -323,3 +327,4 @@
 	padding: 0;
 	max-width: none;
 }
+

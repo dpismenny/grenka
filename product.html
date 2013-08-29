@@ -6,7 +6,7 @@
 	<title>Product -> Page</title>
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/scripts.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 <!-- BEGIN .top -->
@@ -479,6 +479,43 @@
 					<div class="rating__in js-rating" data-score="4"></div>
 					<span>(15)</span>
 				</div>
+				<script type="text/javascript">
+					 //rating small stars
+					 if ($('.js-rating').length > 0) {
+					  $('.js-rating').raty({
+					    width: 80,
+					    starOff: 'img/icons/rating.png',
+					    starOn : 'img/icons/rating-act.png',
+					    score: function() {
+					      return $(this).attr('data-score');
+					    }
+					  });
+					 }
+					 //rating big stars
+					 if ($('.js-rating-big').length > 0) {
+					  $('.js-rating-big').raty({
+					    width: 130,
+					    starOff: 'img/icons/rating-big.png',
+					    starOn : 'img/icons/rating-big-act.png',
+					    score: function() {
+					      return $(this).attr('data-score');
+					    }
+					  });
+					 }
+					 //rating readonly stars
+					if ($('.js-rating-read').length > 0) {
+					  $('.js-rating-read').raty({
+					    readOnly: true,
+					    noRatedMsg: "",
+					    width: 80,
+					    starOff: 'img/icons/rating.png',
+					    starOn : 'img/icons/rating-act.png',
+					    score: function() {
+					      return $(this).attr('data-score');
+					    }
+					  });
+					}
+				</script>
 				<!-- END .rating -->
 				<ul class="prod__price">
 					<li class="prod__price-old is-inactive"><strong>10 999.55</strong>грн.</li>
@@ -956,13 +993,27 @@
 				<div class="title title_gray">видео</div>
 				<div class="media__content js-media-gallery">
 					<div class="media__preview">
-						<img src="img/pic6.jpg" alt="">
+						<a class="fancybox-thumb" rel="gallery2" href="img/demo/slider1.jpg" title="title 1">
+							<img src="img/demo/small-icon.jpg" alt=""/>
+						</a>
 						<i class="ico-play"><i></i></i>
 					</div>
 					<ul class="media__list">
-						<li><img src="http://lorempixel.com/400/200/sports/" alt=""></li>
-						<li><img src="http://lorempixel.com/129/81/sports/" alt=""></li>
-						<li><img src="http://lorempixel.com/400/200/sports/" alt=""></li>
+						<li>
+							<a class="fancybox-thumb" rel="gallery2" href="img/demo/slider1.jpg" title="title 2">
+								<img src="img/demo/small-icon.jpg" alt=""/>
+							</a>
+						</li>
+						<li>
+							<a class="fancybox-thumb" rel="gallery2" href="img/demo/slider2.jpg" title="title 3">
+								<img src="img/demo/slid-small.jpg" alt=""/>
+							</a>
+						</li>
+						<li>
+							<a class="fancybox-thumb" rel="gallery2" href="img/demo/slider3.jpg" title="title 4">
+								<img src="img/demo/slid-small4.jpg" alt=""/>
+							</a>
+						</li>
 						<li class="is-empty"></li>
 						<li class="is-empty"></li>
 						<li class="is-empty"></li>
@@ -975,24 +1026,24 @@
 				<div class="title title_gray">фото</div>
 				<div class="media__content js-media-gallery">
 					<div class="media__preview">
-						<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider1.jpg">
-								<img src="img/demo/small-icon.jpg" alt="" />
-							</a>
+						<a class="fancybox-thumb" rel="gallery1" href="img/demo/slider1.jpg" title="title 1">
+							<img src="img/demo/small-icon.jpg" alt=""/>
+						</a>
 					</div>
 					<ul class="media__list">
 						<li>
-							<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider1.jpg">
-								<img src="img/demo/small-icon.jpg" alt="" />
+							<a class="fancybox-thumb" rel="gallery1" href="img/demo/slider1.jpg" title="title 2">
+								<img src="img/demo/small-icon.jpg" alt=""/>
 							</a>
 						</li>
 						<li>
-							<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider2.jpg">
-								<img src="img/demo/slid-small.jpg" alt="" />
+							<a class="fancybox-thumb" rel="gallery1" href="img/demo/slider2.jpg" title="title 3">
+								<img src="img/demo/slid-small.jpg" alt=""/>
 							</a>
 						</li>
 						<li>
-							<a class="fancybox-thumb" rel="fancybox-thumb" href="img/demo/slider3.jpg">
-								<img src="img/demo/slid-small4.jpg" alt="" />
+							<a class="fancybox-thumb" rel="gallery1" href="img/demo/slider3.jpg" title="title 4">
+								<img src="img/demo/slid-small4.jpg" alt=""/>
 							</a>
 						</li>
 						<li class="is-empty"></li>

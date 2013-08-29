@@ -38,6 +38,12 @@
         height: 321px !important;
     }
 }
+.popup_gallery {
+    display: block;
+    .fancybox-title {
+        padding: 10px 0;
+    }
+}
 .popup_slider {
     display: none;
     position: absolute;
