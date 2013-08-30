@@ -275,6 +275,9 @@
 	.cart__in {
 		padding: 40px;
 	}
+	.input-number{
+		display: inline-block;
+	}
 	.tabs {
 		margin-bottom: 30px;
 		.cart__btn {
@@ -327,6 +330,11 @@
 		td {
 			background: #f1f1f1;			
 		}		
+		.cart__table-delivery{
+			td{
+				background: #FFF;
+			}
+		}
 	}
 	.cart__table-link {
 		width: 120px;
@@ -543,7 +551,7 @@
 		border-bottom: 1px solid #ccc;
 	}
 }
-.cart__table-total {
+.cart__table-total, .cart__table-delivery {
 	text-align: right;
 	td {
 		padding: 13px 20px;		
@@ -556,9 +564,22 @@
 		text-transform: uppercase;
 	}	
 	span {
+		display: inline-block;
+		width: 100px;
+		padding-left: 5px;
 		font-size: 27px;
 		color: #000;
 		text-transform: none;
+		text-align: left;
+	}
+}
+.cart__table-delivery{
+	td{
+		background: #FFF;
+		font-size: 16px;
+	}
+	span{
+		font-size: 21px;
 	}
 }
 .cart__begin {
