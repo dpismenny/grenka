@@ -3070,3 +3070,26 @@
 		width: 25%;
 	}
 }
+
+//cart__wtf
+.cart__wtf{
+	margin-bottom: 30px;
+	.cart__table{
+		float: none;
+		width: 100%;
+		margin: 0;
+		border-bottom: 1px solid #ccc;
+	}
+	.cart__btn-in {
+		position: relative;
+		display: inline-block;
+		top: -20px;
+		padding: 0 20px;
+		background: #FFF;
+	}
+	.cart__table-link{
+		width: auto;
+	}
+}
+	
+	
