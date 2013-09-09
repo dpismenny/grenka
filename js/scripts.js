@@ -17353,15 +17353,37 @@ tabs();
   });
   
   $(".js-slider-popup-link").on("click", function(){
-    //var gallery_html = $(this).parent().parent().parent().html();
-    //$(".js-slider-popup .popup__body").html(gallery_html);
-    $(".js-slider-popup").show();
-    $(".js-overlay-popup").show();
-    var popup_inner_height = $(".js-gallery-pic a").outerHeight();
-  $(".js-gallery-pic").css("line-height", popup_inner_height+"px");
-  $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
-    return false;
+        //var gallery_html = $(this).parent().parent().parent().html();
+        //$(".js-slider-popup .popup__body").html(gallery_html);
+        getel = $('.js-gallery-1 .is-active').eq(0).parent();
+        num = getel.index();
+        num = num + 1;
+        //making foto active inside popup too
+        $('.js-popup-product .cycle-slide a').removeClass('is-active');
+        newactive = $('.js-popup-product .cycle-slide:eq('+num+')');
+        newactive.children('a').addClass('is-active');
+        
+        href = newactive.children('a').attr('href');
+        $('.js-popup-product .js-gallery-pic').html('<a href="'+href+'"><img src="'+href+'"></a>');
+        // +++++++
 
+
+        $(".js-popup-product").show();
+        $(".js-overlay-popup").show();
+        var popup_inner_height = $(".js-gallery-pic a").outerHeight();
+        $(".js-gallery-pic").css("line-height", popup_inner_height+"px");
+        $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
+        return false;
+  });
+  $('.js-media-gallery-popup').on("click", function(){
+        //var gallery_html = $(this).parent().parent().parent().html();
+        //$(".js-slider-popup .popup__body").html(gallery_html);
+        $(".js-slider-popup").show();
+        $(".js-overlay-popup").show();
+        var popup_inner_height = $(".js-gallery-pic a").outerHeight();
+        $(".js-gallery-pic").css("line-height", popup_inner_height+"px");
+        $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
+        return false;
   });
   var popup_height = $(window).height()-80;
   $(".js-slider-popup").css("height", popup_height);
@@ -17715,28 +17737,28 @@ if ($('.js-cycle').length > 0) {
 
 }
 
-$(".fancybox-thumb").fancybox({
-    prevEffect : 'none',
-    nextEffect : 'none',
-    helpers : {
-        title : {
-            type : 'inside'
-        },
-        thumbs : {
+// $(".fancybox-thumb").fancybox({
+//     prevEffect : 'none',
+//     nextEffect : 'none',
+//     helpers : {
+//         title : {
+//             type : 'inside'
+//         },
+//         thumbs : {
             
-        }
-    },
-    tpl : {
-        wrap     : '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin popup-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
-        image    : '<img class="fancybox-image" src="{href}" alt="" />',
-        iframe   : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0"' + ($.browser.msie ? ' allowtransparency="true"' : '') + '></iframe>',
-        error    : '<p class="fancybox-error">The requested content cannot be loaded.<br/>Please try again later.</p>',
-        closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>',
-        next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
-        prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
-    },
-    wrapCSS: "popup popup_gallery"
-});    
+//         }
+//     },
+//     tpl : {
+//         wrap     : '<div class="fancybox-wrap" tabIndex="-1"><div class="fancybox-skin popup-skin"><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
+//         image    : '<img class="fancybox-image" src="{href}" alt="" />',
+//         iframe   : '<iframe id="fancybox-frame{rnd}" name="fancybox-frame{rnd}" class="fancybox-iframe" frameborder="0" vspace="0" hspace="0"' + ($.browser.msie ? ' allowtransparency="true"' : '') + '></iframe>',
+//         error    : '<p class="fancybox-error">The requested content cannot be loaded.<br/>Please try again later.</p>',
+//         closeBtn : '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>',
+//         next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
+//         prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+//     },
+//     wrapCSS: "popup popup_gallery"
+// });    
 
 
   
