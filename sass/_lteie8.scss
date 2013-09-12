@@ -1,0 +1,88 @@
+
+.lteie8 {
+	.is-hover {
+		.product__inner {
+			border: 1px solid #ccc;
+		}
+	}
+	.title {
+		background: #67a713;
+	}
+	.banner {
+		background: #f47b01;
+	}
+	.product_hit {
+		.product__inner {
+			background: #404040;
+		}
+	}
+	.subscribe__field .btn {
+		top: 10px;
+	}
+	.qq_auction .qq__ava {
+		top: -24px;
+	}
+	.spec-table__head {
+		background: #f47c01;
+	}
+	.enter__down {
+		&:before {
+			display: none;
+		}
+	}
+	.bill__title {
+		font-size: 23px;
+	}
+	.bill__update .label__title {
+		font-size: 15px;
+		width: 200px;
+	}
+	.search__input {
+		line-height: 27px;
+	}
+	.prod-popup {
+		background: #e8e8e8;
+		&:after {
+			display: none;
+		}
+	}
+	.btn_bet {
+		font-size: 10px;
+	}
+	.qq__right {
+		margin-left: 0;
+	}
+	.wishlist-box__top {
+		background: #f37b01;
+	}
+	.input-number__value,
+	.cart__forms-item input {
+		line-height: 27px;
+	}
+	.btn {
+		padding-top: 4px;
+	}
+	.compare__del {
+		i {
+			margin-top: -10px;
+		}
+	}
+	.filer-selected__del,
+	.request-hint {
+		background: none;
+	}
+	.info-message {
+		font-size: 11px;
+	}
+	.pager {
+		button {
+			background: #e3e3e3;
+			&.is-active {
+				&:before {
+					margin: -6px 0 0 -2px;
+					background: #f47b01;
+				}
+			}
+		}
+	}
+}
