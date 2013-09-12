@@ -17,7 +17,7 @@
 		}
 	}
 	.subscribe__field .btn {
-		top: 10px;
+		top: 11px;
 	}
 	.qq_auction .qq__ava {
 		top: -24px;
@@ -84,5 +84,18 @@
 				}
 			}
 		}
+	}
+	.btn_added {
+		font-size: 11px;
+		padding-left: 5px;
+		padding-right: 33px;
+	}
+	.payment_gray {
+		// li {
+		// 	@include opacity(1);
+		// 	&:hover {
+		// 		@include opacity(0);
+		// 	}
+		// }
 	}
 }

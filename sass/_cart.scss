@@ -669,9 +669,9 @@
 }
 .payment_gray {
 	li {
-		@include opacity(1);
+		opacity: 1;
 		&:hover {
-			@include opacity(.5);
+			opacity: .5;
 		}
 	}
 	.icon_wm {
