@@ -9501,7 +9501,7 @@ $.fn.cycle = function( options ) {
         if ( container.data('cycle.opts') )
             return; // already initialized
 
-        if ( container.data('cycle-log') === false || 
+        if ( container.data('cycle-log') === false ||
             ( options && options.log === false ) ||
             ( opts && opts.log === false) ) {
             log = $.noop;
@@ -9556,7 +9556,7 @@ $.fn.cycle.API = {
         var slides = opts.slides;
         opts.slideCount = 0;
         opts.slides = $(); // empty set
-        
+
         // add slides that already exist
         slides = slides.jquery ? slides : opts.container.find( slides );
 
@@ -9602,7 +9602,7 @@ $.fn.cycle.API = {
                 pauseObj = $( opts.pauseOnHover );
 
             pauseObj.hover(
-                function(){ opts.API.pause( true ); }, 
+                function(){ opts.API.pause( true ); },
                 function(){ opts.API.resume( true ); }
             );
         }
@@ -9625,7 +9625,7 @@ $.fn.cycle.API = {
             alreadyPaused = opts.hoverPaused || opts.paused;
 
         if ( hover )
-            opts.hoverPaused = true; 
+            opts.hoverPaused = true;
         else
             opts.paused = true;
 
@@ -9636,7 +9636,7 @@ $.fn.cycle.API = {
             if ( slideOpts.timeout ) {
                 clearTimeout( opts.timeoutId );
                 opts.timeoutId = 0;
-                
+
                 // determine how much time is left for the current slide
                 opts._remainingTimeout -= ( $.now() - opts._lastQueue );
                 if ( opts._remainingTimeout < 0 || isNaN(opts._remainingTimeout) )
@@ -9651,7 +9651,7 @@ $.fn.cycle.API = {
             remaining;
 
         if ( hover )
-            opts.hoverPaused = false; 
+            opts.hoverPaused = false;
         else
             opts.paused = false;
 
@@ -9794,9 +9794,9 @@ $.fn.cycle.API = {
 
         // ensure that:
         //      1. advancing to a different slide
-        //      2. this is either a manual event (prev/next, pager, cmd) or 
+        //      2. this is either a manual event (prev/next, pager, cmd) or
         //              a timer event and slideshow is not paused
-        if ( opts.nextSlide != opts.currSlide && 
+        if ( opts.nextSlide != opts.currSlide &&
             (manual || (!opts.paused && !opts.hoverPaused && opts.timeout) )) { // #62
 
             opts.API.trigger('cycle-before', [ slideOpts, curr, next, fwd ]);
@@ -9874,8 +9874,8 @@ $.fn.cycle.API = {
                 opts._remainingTimeout = slideOpts.timeout;
 
             if ( !opts.paused && ! opts.hoverPaused ) {
-                opts.timeoutId = setTimeout(function() { 
-                    opts.API.prepareTx( false, !opts.reverse ); 
+                opts.timeoutId = setTimeout(function() {
+                    opts.API.prepareTx( false, !opts.reverse );
                 }, timeout );
             }
         }
@@ -9898,7 +9898,7 @@ $.fn.cycle.API = {
         clearTimeout(opts.timeoutId);
         opts.timeoutId = 0;
         opts.nextSlide = opts.currSlide + val;
-        
+
         if (opts.nextSlide < 0)
             opts.nextSlide = opts.slides.length - 1;
         else if (opts.nextSlide >= opts.slides.length)
@@ -9947,7 +9947,7 @@ $.fn.cycle.API = {
         var slideOpts = $(slide).data('cycle.opts');
         return $.extend( {}, opts, slideOpts );
     },
-    
+
     initSlide: function( slideOpts, slide, suggestedZindex ) {
         var opts = this.opts();
         slide.css( slideOpts.slideCss || {} );
@@ -9997,7 +9997,7 @@ $.fn.cycle.API = {
         }
         if (selector.jquery)
             return selector;
-        
+
         return $(selector);
     },
 
@@ -10131,7 +10131,7 @@ $(document).ready(function() {
 
 $.extend($.fn.cycle.defaults, {
     autoHeight: 0 // setting this option to false disables autoHeight logic
-});    
+});
 
 $(document).on( 'cycle-initialized', function( e, opts ) {
     var autoHeight = opts.autoHeight;
@@ -10149,7 +10149,7 @@ $(document).on( 'cycle-initialized', function( e, opts ) {
     if ( autoHeight == 'container' ) {
         opts.container.on( 'cycle-before', onBefore );
     }
-    else if ( t === 'string' && /\d+\:\d+/.test( autoHeight ) ) { 
+    else if ( t === 'string' && /\d+\:\d+/.test( autoHeight ) ) {
         // use ratio
         ratio = autoHeight.match(/(\d+)\:(\d+)/);
         ratio = ratio[1] / ratio[2];
@@ -10183,7 +10183,7 @@ function initAutoHeight( e, opts ) {
         height = $( opts.slides[ opts.currSlide ] ).outerHeight();
         opts.container.height( height );
     }
-    else if ( opts._autoHeightRatio ) { 
+    else if ( opts._autoHeightRatio ) {
         opts.container.height( opts.container.width() / opts._autoHeightRatio );
     }
     else if ( autoHeight === 'calc' || ( $.type( autoHeight ) == 'number' && autoHeight >= 0 ) ) {
@@ -10191,7 +10191,7 @@ function initAutoHeight( e, opts ) {
             sentinelIndex = calcSentinelIndex( e, opts );
         else if ( autoHeight >= opts.slides.length )
             sentinelIndex = 0;
-        else 
+        else
             sentinelIndex = autoHeight;
 
         // only recreate sentinel if index is different
@@ -10204,7 +10204,7 @@ function initAutoHeight( e, opts ) {
 
         // clone existing slide as sentinel
         clone = $( opts.slides[ sentinelIndex ].cloneNode(true) );
-        
+
         // #50; remove special attributes from cloned content
         clone.removeAttr( 'id name rel' ).find( '[id],[name],[rel]' ).removeAttr( 'id name rel' );
 
@@ -10217,7 +10217,7 @@ function initAutoHeight( e, opts ) {
 
         opts._sentinel = clone;
     }
-}    
+}
 
 function calcSentinelIndex( e, opts ) {
     var index = 0, max = -1;
@@ -10266,14 +10266,14 @@ $.extend($.fn.cycle.defaults, {
     overlay:          '> .cycle-overlay',
     overlayTemplate:  '<div>{{title}}</div><div>{{desc}}</div>',
     captionModule:    'caption'
-});    
+});
 
 $(document).on( 'cycle-update-view', function( e, opts, slideOpts, currSlide ) {
     if ( opts.captionModule !== 'caption' )
         return;
     var el;
     $.each(['caption','overlay'], function() {
-        var name = this; 
+        var name = this;
         var template = slideOpts[name+'Template'];
         var el = opts.API.getComponent( name );
         if( el.length && template ) {
@@ -10350,7 +10350,7 @@ $.extend( c2.API, {
         var opts = this.opts();
         if ( opts.busy && ! opts.manualTrump )
             return;
-        
+
         var count = opts.reverse ? -1 : 1;
         if ( opts.allowWrap === false && ( opts.currSlide + count ) >= opts.slideCount )
             return;
@@ -10513,7 +10513,7 @@ function onHashChange( opts, setStartingSlide ) {
         opts._hashFence = false;
         return;
     }
-    
+
     hash = window.location.hash.substring(1);
 
     opts.slides.each(function(i) {
@@ -10609,7 +10609,7 @@ $(document).on( 'cycle-bootstrap', function( e, opts ) {
 
         if ( slideCount )
             opts.container.addClass('cycle-loading');
-        
+
 
         function addSlide( slide ) {
             var curr;
@@ -10647,7 +10647,7 @@ $.extend($.fn.cycle.defaults, {
     pagerActiveClass: 'cycle-pager-active',
     pagerEvent:       'click.cycle',
     pagerTemplate:    '<span>&bull;</span>'
-});    
+});
 
 $(document).on( 'cycle-bootstrap', function( e, opts, API ) {
     // add method to API
@@ -10743,7 +10743,7 @@ $.extend($.fn.cycle.defaults, {
     prev:           '> .cycle-prev',
     prevEvent:      'click.cycle',
     swipe:          false
-});    
+});
 
 $(document).on( 'cycle-initialized', function( e, opts ) {
     opts.API.getComponent( 'next' ).on( opts.nextEvent, function(e) {
@@ -10841,7 +10841,7 @@ $(document).on( 'cycle-pre-initialize', function( e, opts ) {
         else {
             // plain text, split on delimeter
             slides = slides.split( new RegExp( scriptEl.data('cycle-split') || '\n') );
-            
+
             // #95; look for empty slide
             if ( ! slides[ slides.length - 1 ] )
                 slides.pop();
@@ -10901,11 +10901,11 @@ $(document).on( 'cycle-pre-initialize', function( e, opts ) {
                 opts.API.add( slide );
             }
             else {
-                nextFn.apply( opts.API );    
+                nextFn.apply( opts.API );
             }
         };
     }
-    
+
     if ( prevFn ) {
         API.prev = function() {
             var opts = this.opts();
@@ -10967,7 +10967,7 @@ $.extend($.fn.cycle.API, {
             return str;
         });
     }
-});    
+});
 
 })(jQuery);
 
@@ -11018,7 +11018,7 @@ $.fn.cycle.transitions.carousel = {
     // transition API impl
     preInit: function( opts ) {
         opts.hideNonActive = false;
-        
+
         opts.container.on('cycle-destroyed', $.proxy(this.onDestroy, opts.API));
         // override default API implementation
         opts.API.stopTransition = this.stopTransition;
@@ -11026,7 +11026,7 @@ $.fn.cycle.transitions.carousel = {
         // issue #10
         for (var i=0; i < opts.startingSlide; i++) {
             opts.container.append( opts.slides[0] );
-        }        
+        }
     },
 
     // transition API impl
@@ -11178,7 +11178,7 @@ $.fn.cycle.transitions.carousel = {
             else if ( hops < 0 && opts.currSlide > maxCurr ) {
                 hops += opts.currSlide - maxCurr;
             }
-            else 
+            else
                 currSlide = opts.currSlide;
 
             moveBy = this.getScroll( opts, vert, currSlide, hops );
@@ -13441,7 +13441,7 @@ $.fn.cycle.transitions.carousel = {
     }
 
 }(jQuery));
- 
+
 /*! Copyright (c) 2010 Brandon Aaron (http://brandonaaron.net)
  * Licensed under the MIT License (LICENSE.txt).
  *
@@ -13450,7 +13450,7 @@ $.fn.cycle.transitions.carousel = {
  * Thanks to: Seamus Leahy for adding deltaX and deltaY
  *
  * Version: 3.0.4
- * 
+ *
  * Requires: 1.2.2+
  */
 
@@ -13468,7 +13468,7 @@ $.event.special.mousewheel = {
             this.onmousewheel = handler;
         }
     },
-    
+
     teardown: function() {
         if ( this.removeEventListener ) {
             for ( var i=types.length; i; ) {
@@ -13484,7 +13484,7 @@ $.fn.extend({
     mousewheel: function(fn) {
         return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
     },
-    
+
     unmousewheel: function(fn) {
         return this.unbind("mousewheel", fn);
     }
@@ -13495,27 +13495,27 @@ function handler(event) {
     var orgEvent = event || window.event, args = [].slice.call( arguments, 1 ), delta = 0, returnValue = true, deltaX = 0, deltaY = 0;
     event = $.event.fix(orgEvent);
     event.type = "mousewheel";
-    
+
     // Old school scrollwheel delta
     if ( event.wheelDelta ) { delta = event.wheelDelta/120; }
     if ( event.detail     ) { delta = -event.detail/3; }
-    
+
     // New school multidimensional scroll (touchpads) deltas
     deltaY = delta;
-    
+
     // Gecko
     if ( orgEvent.axis !== undefined && orgEvent.axis === orgEvent.HORIZONTAL_AXIS ) {
         deltaY = 0;
         deltaX = -1*delta;
     }
-    
+
     // Webkit
     if ( orgEvent.wheelDeltaY !== undefined ) { deltaY = orgEvent.wheelDeltaY/120; }
     if ( orgEvent.wheelDeltaX !== undefined ) { deltaX = -1*orgEvent.wheelDeltaX/120; }
-    
+
     // Add event and delta to the front of the arguments
     args.unshift(event, delta, deltaX, deltaY);
-    
+
     return $.event.handle.apply(this, args);
 }
 
@@ -13555,14 +13555,14 @@ function handler(event) {
 // This plugin is tested on the browsers below and has been found to work reliably on them. If you run
 // into a problem on one of the supported browsers then please visit the support section on the jScrollPane
 // website (http://jscrollpane.kelvinluck.com/) for more information on getting support. You are also
-// welcome to fork the project on GitHub if you can contribute a fix for a given issue. 
+// welcome to fork the project on GitHub if you can contribute a fix for a given issue.
 //
 // jQuery Versions - tested in 1.4.2+ - reported to work in 1.3.x
 // Browsers Tested - Firefox 3.6.8, Safari 5, Opera 10.6, Chrome 5.0, IE 6, 7, 8
 //
 // About: Release History
 //
-// 2.0.0beta11 - (in progress) 
+// 2.0.0beta11 - (in progress)
 // 2.0.0beta10 - (2011-04-17) cleaner required size calculation, improved keyboard support, stickToBottom/Left, other small fixes
 // 2.0.0beta9 - (2011-01-31) new API methods, bug fixes and correct keyboard support for FF/OSX
 // 2.0.0beta8 - (2011-01-29) touchscreen support, improved keyboard support
@@ -13625,7 +13625,7 @@ function handler(event) {
                     paneHeight = elem.innerHeight();
 
                     elem.width(paneWidth);
-                    
+
                     pane = $('<div class="jspPane" />').css('padding', originalPadding).append(elem.children());
                     container = $('<div class="jspContainer" />')
                         .css({
@@ -13636,7 +13636,7 @@ function handler(event) {
 
                     /*
                     // Move any margins from the first and last children up to the container so they can still
-                    // collapse with neighbouring elements as they would before jScrollPane 
+                    // collapse with neighbouring elements as they would before jScrollPane
                     firstChild = pane.find(':first-child');
                     lastChild = pane.find(':last-child');
                     elem.css(
@@ -13671,7 +13671,7 @@ function handler(event) {
                         return;
                     }
                     previousContentWidth = contentWidth;
-                    
+
                     pane.css('width', '');
                     elem.width(paneWidth);
 
@@ -13727,14 +13727,14 @@ function handler(event) {
                     initFocusHandler();
                     initMousewheel();
                     initTouch();
-                    
+
                     if (settings.enableKeyboardNavigation) {
                         initKeyboardNav();
                     }
                     if (settings.clickOnTrack) {
                         initClickOnTrack();
                     }
-                    
+
                     observeHash();
                     if (settings.hijackInternalLinks) {
                         hijackInternalLinks();
@@ -13995,7 +13995,7 @@ function handler(event) {
             function appendArrows(ele, p, a1, a2)
             {
                 var p1 = "before", p2 = "after", aTemp;
-                
+
                 // Sniff for mac... Is there a better way to determine whether the arrows would naturally appear
                 // at the top or the bottom of the bar?
                 if (p == "os") {
@@ -14110,7 +14110,7 @@ function handler(event) {
                         }
                     );
                 }
-                
+
                 if (isScrollableH) {
                     horizontalTrack.bind(
                         'mousedown.jsp',
@@ -14227,7 +14227,7 @@ function handler(event) {
                     wasAtBottom = isAtBottom;
                     elem.trigger('jsp-arrow-change', [wasAtTop, wasAtBottom, wasAtLeft, wasAtRight]);
                 }
-                
+
                 updateVerticalArrows(isAtTop, isAtBottom);
                 pane.css('top', destTop);
                 elem.trigger('jsp-scroll-y', [-destTop, isAtTop, isAtBottom]).trigger('scroll');
@@ -14274,7 +14274,7 @@ function handler(event) {
                     wasAtRight = isAtRight;
                     elem.trigger('jsp-arrow-change', [wasAtTop, wasAtBottom, wasAtLeft, wasAtRight]);
                 }
-                
+
                 updateHorizontalArrows(isAtLeft, isAtRight);
                 pane.css('left', destLeft);
                 elem.trigger('jsp-scroll-x', [-destLeft, isAtLeft, isAtRight]).trigger('scroll');
@@ -14324,7 +14324,7 @@ function handler(event) {
 
                 container.scrollTop(0);
                 container.scrollLeft(0);
-                
+
                 // loop through parents adding the offset top of any elements that are relatively positioned between
                 // the focused element and the jspPane so we can get the true distance from the top
                 // of the focused element to the top of the scrollpane...
@@ -14348,7 +14348,7 @@ function handler(event) {
                 if (destY) {
                     scrollToY(destY, animate);
                 }
-                
+
                 viewportLeft = contentPositionX();
                 maxVisibleEleLeft = viewportLeft + paneWidth;
                 if (eleLeft < viewportLeft || stickToTop) { // element is to the left of viewport
@@ -14422,13 +14422,13 @@ function handler(event) {
             {
                 pane.find(':input,a').unbind('focus.jsp');
             }
-            
+
             function initKeyboardNav()
             {
                 var keyDown, elementHasScrolled, validParents = [];
                 isScrollableH && validParents.push(horizontalBar[0]);
                 isScrollableV && validParents.push(verticalBar[0]);
-                
+
                 // IE also focuses elements that don't have tabindex set.
                 pane.focus(
                     function()
@@ -14436,7 +14436,7 @@ function handler(event) {
                         elem.focus();
                     }
                 );
-                
+
                 elem.attr('tabindex', 0)
                     .unbind('keydown.jsp keypress.jsp')
                     .bind(
@@ -14481,7 +14481,7 @@ function handler(event) {
                             return !elementHasScrolled;
                         }
                     );
-                
+
                 if (settings.hideFocus) {
                     elem.css('outline', 'none');
                     if ('hideFocus' in container[0]){
@@ -14493,7 +14493,7 @@ function handler(event) {
                         elem.attr('hideFocus', false);
                     }
                 }
-                
+
                 function keyDownHandler()
                 {
                     var dX = horizontalDragPosition, dY = verticalDragPosition;
@@ -14523,7 +14523,7 @@ function handler(event) {
                     return elementHasScrolled;
                 }
             }
-            
+
             function removeKeyboardNav()
             {
                 elem.attr('tabindex', '-1')
@@ -14592,7 +14592,7 @@ function handler(event) {
                     }
                 );
             }
-            
+
             // Init touch on iPad, iPhone, iPod, Android
             function initTouch()
             {
@@ -14602,7 +14602,7 @@ function handler(event) {
                     touchStartY,
                     moved,
                     moving = false;
-  
+
                 container.unbind('touchstart.jsp touchmove.jsp touchend.jsp click.jsp-touchclick').bind(
                     'touchstart.jsp',
                     function(e)
@@ -14622,14 +14622,14 @@ function handler(event) {
                         if(!moving) {
                             return;
                         }
-                        
+
                         var touchPos = ev.originalEvent.touches[0],
                             dX = horizontalDragPosition, dY = verticalDragPosition;
-                        
+
                         jsp.scrollTo(startX + touchStartX - touchPos.pageX, startY + touchStartY - touchPos.pageY);
-                        
+
                         moved = moved || Math.abs(touchStartX - touchPos.pageX) > 5 || Math.abs(touchStartY - touchPos.pageY) > 5;
-                        
+
                         // return true if there was no movement so rest of screen can scroll
                         return dX == horizontalDragPosition && dY == verticalDragPosition;
                     }
@@ -14653,7 +14653,7 @@ function handler(event) {
                     }
                 );
             }
-            
+
             function destroy(){
                 var currentY = contentPositionY(),
                     currentX = contentPositionX();
@@ -14848,13 +14848,13 @@ function handler(event) {
                     }
                 }
             );
-            
+
             initialise(s);
         }
 
         // Pluginifying code...
         settings = $.extend({}, $.fn.jScrollPane.defaults, settings);
-        
+
         // Apply default speed
         $.each(['mouseWheelSpeed', 'arrowButtonSpeed', 'trackClickSpeed', 'keyboardSpeed'], function() {
             settings[this] = settings[this] || settings.speed;
@@ -15397,24 +15397,24 @@ jQuery.fn.veronica_slider = function(options)
         fixed: false,
         down : function(el)
         {
-            var d = new Date();  
+            var d = new Date();
             if (d.getTime() >= options.megastart + options.megaclick)
-            { 
-                options.megastart = d.getTime(); 
-            } 
-            else 
-            { 
+            {
+                options.megastart = d.getTime();
+            }
+            else
+            {
                 return true;
             }
-            
-            
-            
+
+
+
             if (options.active)
                 {
                     options.changeActive(false);
                 }
-            
-            
+
+
             if (options.cycle)
             {
                 var bl = options.block_height();
@@ -15431,30 +15431,30 @@ jQuery.fn.veronica_slider = function(options)
 
                 switch(options.mode)
                 {
-                    
+
                     case 'horizontal':
-                        options.list().animate({'left' : parseInt(options.list().css('left'),10) - bl},'slow','', function() 
-                        { 
-                                var n = options.list().children().eq(0).detach(); 
+                        options.list().animate({'left' : parseInt(options.list().css('left'),10) - bl},'slow','', function()
+                        {
+                                var n = options.list().children().eq(0).detach();
                                 n.appendTo(options.list());
                                 options.list().css({'left' : parseInt(options.list().css('left'),10) + bl});
-                                
+
                         });
                         break;
                     default:
-                        options.list().animate({'top' : parseInt(options.list().css('top'),10) - bl},'slow','', function() 
-                        {  
-                                var n = options.list().children().eq(0).detach(); 
+                        options.list().animate({'top' : parseInt(options.list().css('top'),10) - bl},'slow','', function()
+                        {
+                                var n = options.list().children().eq(0).detach();
                                 n.appendTo(options.list());
                                 options.list().css({'top' : parseInt(options.list().css('top'),10) + bl});
-                                
+
                         });
-                    
+
                 }
                 return true;
             }
-            
-            
+
+
             if (options.fixed)
             {
                 var d = options.deline(),
@@ -15466,7 +15466,7 @@ jQuery.fn.veronica_slider = function(options)
                     return true;
                 }
             }
-            
+
                 var a = options.all_height(),
                     d = options.deline(),
                     b = options.body_height(),
@@ -15479,12 +15479,12 @@ jQuery.fn.veronica_slider = function(options)
                 {
                     l = a - d - b;
                     g = bl;
-                    
+
                     if (options.doubleside)
                     {
                         options.upButton.removeClass(options.disable);
                     }
-                    
+
                     if (l <= bl)
                     {
                         g = l;
@@ -15524,27 +15524,27 @@ jQuery.fn.veronica_slider = function(options)
         },
         up : function(el)
         {
-            var d = new Date();  
+            var d = new Date();
             if (d.getTime() >= options.megastart + options.megaclick)
-            { 
-                options.megastart = d.getTime(); 
-            } 
-            else 
-            { 
+            {
+                options.megastart = d.getTime();
+            }
+            else
+            {
                 return true;
             }
-           
+
             if (options.active)
             {
                 options.changeActive(true);
             }
-           
+
             if (options.cycle)
             {
                 var bl = options.block_height();
-                
-                
-                
+
+
+
                 if (options.fixed)
                 {
                     var d = options.deline();
@@ -15554,25 +15554,25 @@ jQuery.fn.veronica_slider = function(options)
                         return true;
                     }
                 }
-                
-                
+
+
                 switch(options.mode)
                 {
                     case 'horizontal':
                         options.list().css({'left' : parseInt(options.list().css('left'),10) - bl});
-                        var n = options.list().children().eq(options.list().children().length - 1).detach(); 
+                        var n = options.list().children().eq(options.list().children().length - 1).detach();
                         $(n).insertBefore(options.list().children().eq(0));
                         options.list().animate({'left' : parseInt(options.list().css('left'),10) + bl},'slow');
                         break;
                     default:
                         options.list().css({'top' : parseInt(options.list().css('top'),10) - bl});
-                        var n = options.list().children().eq(options.list().children().length - 1).detach(); 
+                        var n = options.list().children().eq(options.list().children().length - 1).detach();
                         $(n).insertBefore(options.list().children().eq(0));
                         options.list().animate({'top' : parseInt(options.list().css('top'),10) + bl},'slow');
                 }
                 return true;
             }
-            
+
 
             if (options.fixed)
             {
@@ -15594,13 +15594,13 @@ jQuery.fn.veronica_slider = function(options)
                     g = 0;
                 if (d >= 0)
                 {
-                    
+
                     if (options.doubleside)
                     {
                         options.downButton.removeClass(options.disable);
                     }
-                    
-                    
+
+
                     l = d - bl;
                     g = bl;
                     if (l <= 0)
@@ -15669,7 +15669,7 @@ jQuery.fn.veronica_slider = function(options)
             var h = 0;
             options.list().find('li').each(function(i,e)
             {
-                
+
                 if (options.height)
                 {
                     h += options.height;
@@ -15716,7 +15716,7 @@ jQuery.fn.veronica_slider = function(options)
                     return parseInt(options.list().parent().css('height'),10);
             }
         },
-        current : function() 
+        current : function()
         {
             return options.list().find('li.active');
         },
@@ -15771,23 +15771,23 @@ jQuery.fn.veronica_slider = function(options)
         click : false,
         noselect : false,
         disableSelection : function(target){
-            if (typeof target.onselectstart!="undefined") 
-               target.onselectstart=function(){return false} 
-            else if (typeof target.style.MozUserSelect!="undefined")  
-               target.style.MozUserSelect="none" 
-            else target.onmousedown=function(){return false} 
-            target.style.cursor = "default" 
+            if (typeof target.onselectstart!="undefined")
+               target.onselectstart=function(){return false}
+            else if (typeof target.style.MozUserSelect!="undefined")
+               target.style.MozUserSelect="none"
+            else target.onmousedown=function(){return false}
+            target.style.cursor = "default"
         }
     },options);
-    
-    return this.each(function() 
+
+    return this.each(function()
     {
         options.list().css({'position' : 'absolute'});
         switch(options.mode)
         {
             case 'horizontal':
                 options.list().css({'left' : 0, 'width' : options.list().children().length * options.block_height()});
-                
+
                 break;
             default:
                 options.list().css({'top' : 0});
@@ -15802,8 +15802,8 @@ jQuery.fn.veronica_slider = function(options)
                 options.disableSelection(document.getElementById(options.noselect[i]));
             }
         }
-        
-        
+
+
         if (options.autoplay)
         {
             setTimeout(function()
@@ -15816,8 +15816,8 @@ jQuery.fn.veronica_slider = function(options)
                     },options.step);
                 },options.step);
         }
-        
-        
+
+
         if (options.stop)
         {
             for(i in options.stop)
@@ -15831,11 +15831,11 @@ jQuery.fn.veronica_slider = function(options)
                 });
             }
         }
-        
+
         if (options.click)
         {
             options.list().find('li').each(function(i,e){
-                $(e).click(function(){ options.click(jQuery(this)); }); 
+                $(e).click(function(){ options.click(jQuery(this)); });
             });
         }
 
@@ -15846,7 +15846,7 @@ jQuery.fn.veronica_slider = function(options)
 /* http://keith-wood.name/countdown.html
    Countdown for jQuery v1.6.3.
    Written by Keith Wood (kbwood{at}iinet.com.au) January 2008.
-   Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license. 
+   Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license.
    Please attribute the author if you use it. */
 
 /* Display a countdown timer.
@@ -15961,7 +15961,7 @@ $.extend(Countdown.prototype, {
 
     /* List of currently active countdown targets. */
     _timerTargets: [],
-    
+
     /* Override the default settings for all instances of the countdown widget.
        @param  options  (object) the new settings to use as defaults */
     setDefaults: function(options) {
@@ -16158,7 +16158,7 @@ $.extend(Countdown.prototype, {
             }
         }
     },
-    
+
     /* Calculate interal settings for an instance.
        @param  target  (element) the containing division
        @param  inst    (object) the current settings for this instance
@@ -16245,7 +16245,7 @@ $.extend(Countdown.prototype, {
                 inst[inst._since ? '_since' : '_until'] =
                     this._determineTime(sign + inst._periods[0] + 'y' +
                         sign + inst._periods[1] + 'o' + sign + inst._periods[2] + 'w' +
-                        sign + inst._periods[3] + 'd' + sign + inst._periods[4] + 'h' + 
+                        sign + inst._periods[3] + 'd' + sign + inst._periods[4] + 'h' +
                         sign + inst._periods[5] + 'm' + sign + inst._periods[6] + 's');
                 this._addTarget(target);
             }
@@ -16295,7 +16295,7 @@ $.extend(Countdown.prototype, {
                     case 'd': day += parseInt(matches[1], 10); break;
                     case 'w': day += parseInt(matches[1], 10) * 7; break;
                     case 'o':
-                        month += parseInt(matches[1], 10); 
+                        month += parseInt(matches[1], 10);
                         day = Math.min(day, plugin._getDaysInMonth(year, month));
                         break;
                     case 'y':
@@ -16380,8 +16380,8 @@ $.extend(Countdown.prototype, {
             inst.options.compact, inst.options.significant, showSignificant) :
             ((inst.options.compact ? // Compact version
             '<span class="' + this._rowClass + ' ' + this._amountClass +
-            (inst._hold ? ' ' + this._holdingClass : '') + '">' + 
-            showCompact(Y) + showCompact(O) + showCompact(W) + showCompact(D) + 
+            (inst._hold ? ' ' + this._holdingClass : '') + '">' +
+            showCompact(Y) + showCompact(O) + showCompact(W) + showCompact(D) +
             (show[H] ? this._minDigits(inst, inst._periods[H], 2) : '') +
             (show[M] ? (show[H] ? inst.options.timeSeparator : '') +
             this._minDigits(inst, inst._periods[M], 2) : '') +
@@ -16506,7 +16506,7 @@ $.extend(Countdown.prototype, {
         show[S] = (format.match('s') ? '?' : (format.match('S') ? '!' : null));
         return show;
     },
-    
+
     /* Calculate the requested periods between now and the target time.
        @param  inst         (object) the current settings for this instance
        @param  show         (string[7]) flags indicating which periods are requested/required
@@ -17180,9 +17180,9 @@ $(document).ready(function() {
 // Created by Eugene Godun!
 // init variables
     var prod_carousel = $('.recent-product__carousel');
-    var prod = $(".product"); 
-    var prod_image = $(".product__image"); 
-    var key_text = $('.js-text-key'); 
+    var prod = $(".product");
+    var prod_image = $(".product__image");
+    var key_text = $('.js-text-key');
     var recent_key = $(".js-recent-key");
     var hidden_block = $(".js-hidden-block").hide();
     //input number
@@ -17238,7 +17238,7 @@ function selectcustom(whatever) {
     el.addClass('is-replaced');
   var title = el.find('.label__select-val');
   var option = el.find('.label__select-options li');
-  title.on("click", function(event) {       
+  title.on("click", function(event) {
       if (!$(this).parent().hasClass('is-open')) {
           el.removeClass('is-open');
           el.find('.label__select-options').hide();
@@ -17292,10 +17292,10 @@ selectcustom($('.page .js-select'));
     });
 
 // ---------------- hide slider text -------------------- //
-        
-    key_text.live("hover", function(){ 
+
+    key_text.live("hover", function(){
         $(this).parent().find(".slider-info, .shadow-slider").fadeToggle();
-     });  
+     });
 // ----------------  info-block visible -------------------- //
     $('.js-show-hidden').click(function() {
         $(this).parent().find(hidden_block).slideToggle();
@@ -17316,12 +17316,12 @@ function tabs() {
       $(this).parent().parent().parent().find('.js-tabs-content').hide();
       $('#' + value).show();
       $(this).parent().next().find('.js-tabs-count').html('('+count+')');
-    };    
+    };
   });
 };
 tabs();
 
-// zomm product item on hover 
+// zomm product item on hover
 
     prod_image.hover(
       function () {
@@ -17339,9 +17339,11 @@ tabs();
         $(this).removeClass("is-hover");
       }
     );
-    
 
-// ------------------- Fancybox ----------------------// 
+
+// ------------------- Fancybox ----------------------//
+
+  popup();
 
   $('.js-popup-link').on('click', function() {
     $this = $(this);
@@ -17350,52 +17352,6 @@ tabs();
         padding: 0,
     });
     return false;
-  });
-  
-  $(".js-slider-popup-link").on("click", function(){
-        //var gallery_html = $(this).parent().parent().parent().html();
-        //$(".js-slider-popup .popup__body").html(gallery_html);
-        getel = $('.js-gallery-1 .is-active').eq(0).parent();
-        num = getel.index();
-        num = num + 1;
-        //making foto active inside popup too
-        $('.js-popup-product .cycle-slide a').removeClass('is-active');
-        newactive = $('.js-popup-product .cycle-slide:eq('+num+')');
-        newactive.children('a').addClass('is-active');
-        
-        href = newactive.children('a').attr('href');
-        $('.js-popup-product .js-gallery-pic').html('<a href="'+href+'"><img src="'+href+'"></a>');
-        // +++++++
-
-
-        $(".js-popup-product").show();
-        $(".js-overlay-popup").show();
-        var popup_inner_height = $(".js-gallery-pic a").outerHeight();
-        $(".js-gallery-pic").css("line-height", popup_inner_height+"px");
-        $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
-        return false;
-  });
-  $('.js-media-gallery-popup').on("click", function(){
-        //var gallery_html = $(this).parent().parent().parent().html();
-        //$(".js-slider-popup .popup__body").html(gallery_html);
-        $(".js-slider-popup").show();
-        $(".js-overlay-popup").show();
-        var popup_inner_height = $(".js-gallery-pic a").outerHeight();
-        $(".js-gallery-pic").css("line-height", popup_inner_height+"px");
-        $(".js-gallery-pic a").css("line-height", popup_inner_height+"px");
-        return false;
-  });
-  var popup_height = $(window).height()-80;
-  $(".js-slider-popup").css("height", popup_height);
-  
-  var overlay = $(".js-overlay-popup");
-  overlay.on("click", function(){
-    $(this).hide();
-    $(".popup").hide();
-  });
-  $(".js-close-popup").on("click", function(){
-    $(".popup").hide();
-    overlay.hide();
   });
 
   if ($('#reg-message').length > 0) {
@@ -17413,7 +17369,7 @@ tabs();
   if ($('#popup-order').length > 0) {
     $.fancybox.open('#popup-order');
   }
-// ------------------- END Fancybox ----------------------// 
+// ------------------- END Fancybox ----------------------//
   function offer() {
     var active_slide = $(".cycle-slide-active");
     var offer_1 = $('.js-offer-slider1');
@@ -17437,14 +17393,14 @@ tabs();
     $(".js-offer-new-price").text(new_price);
   }
   offer();
-   $(".offer__slider button").on("click", function(event){ 
+   $(".offer__slider button").on("click", function(event){
       $('.js-offer-slider').on( 'cycle-after', function( event, opts ) {
           offer();
           //alert();
       });
   });
 
-  
+
 
 
   var replace_popup = $(".js-replace-popup");
@@ -17489,7 +17445,7 @@ tabs();
           }
       );
   }
-    
+
 
   // Search example
   $(".js-search-example a").click(function(){
@@ -17538,7 +17494,7 @@ tabs();
       $(this).parent().parent().next().find(".cart__table").hide();
     }
     else {
-      
+
       $(this).text("Скрыть");
       $(this).addClass("js-active");
       $(this).parent().parent().next().find(".cart__table").show();
@@ -17560,14 +17516,14 @@ tabs();
       layout: $('.js-counter-list').html()
     });
   }
-  
+
 // delite compare product
   $(".js-del-compare").click(function(){
       var index = $(this).parent().parent().index();
       $(this).parent().parent().hide();
       $(".js-compare tr").each(function(){
           $(this).children("td").eq(index).hide();
-      }); 
+      });
   });
 
 // delite filter
@@ -17577,14 +17533,14 @@ tabs();
   $(".js-del-all-filters").click(function(){
     $(this).parent().parent().remove();
     return false;
-  }); 
+  });
 
 // accordion filter
   $(".js-accord-body").hide();
   $(".js-accord-key").click(function(){
     $(this).next().slideToggle("fast");
   });
-    
+
 // remove telephone number
   var number_html = $(".js-number").html();
   var add_number = $(".js-add-number");
@@ -17649,65 +17605,9 @@ $('.js-read-all').click(function() {
     $(this).html('Читать полностью...');
     $(this).parent().prev().height('135px');
   }
-  
+
 })
 
-//gallery
-function gallery() {
-  var el = $('.js-gallery');
-  el.find('.gallery__slide a.is-active').each(function(){
-    var pic = $(this).attr('href');
-    var badges = $(this).find(".js-badges").html();
-    var play_icon = $(this).find(".js-icon-play").html();
-    var badges_big = $(this).find(".js-badges-big").html();
-    $(this).parent().parent().find('a').removeClass('is-active');
-    $(this).addClass('is-active');
-    $(this).parent().parent().parent().parent().next().find('img').attr('src', pic);      
-    $(this).parent().parent().parent().parent().next().find('a').attr('href', pic);      
-    $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
-    $(this).parent().parent().parent().parent().next().find('.js-gallery-badge-big').html(badges_big);      
-    $(this).parent().parent().parent().parent().next().find('.js-play-video-icon').html(play_icon);
-  })
-  el.each(function(){
-    $(this).find('.gallery__slide a').click(function() {
-      if (!$(this).hasClass('is-active')) {
-        var pic = $(this).attr('href');
-        var badges = $(this).find(".js-badges").html();
-        var play_icon = $(this).find(".js-icon-play").html();
-        var badges_big = $(this).find(".js-badges-big").html();
-        $(this).parent().parent().find('a').removeClass('is-active');
-        $(this).addClass('is-active');
-        $(this).parent().parent().parent().parent().next().find('img').attr('src', pic);      
-        $(this).parent().parent().parent().parent().next().find('a').attr('href', pic);      
-        $(this).parent().parent().parent().parent().next().find('.js-gallery-badge').html(badges);      
-        $(this).parent().parent().parent().parent().next().find('.js-gallery-badge-big').html(badges_big);      
-        $(this).parent().parent().parent().parent().next().find('.js-play-video-icon').html(play_icon);
-      };    
-      return false;
-    });
-    $(this).find('.gallery__up').click(function() {
-      var act = $(this).parent().find('.gallery__slide a.is-active');
-      act.removeClass('is-active');
-      act.parent().prev().find('a').addClass('is-active');
-      var pic = act.parent().prev().find('a').attr('href');
-      $(this).parent().next().find('img').attr('src', pic); 
-      $(this).parent().next().find('.js-gallery-badge').html(badges);    
-      $(this).parent().next().find('.js-gallery-badge-big').html(badges_big); 
-      $(this).parent().next().find('.js-play-video-icon').html(play_icon);
-    });
-    $(this).find('.gallery__down').click(function() {
-      var act = $(this).parent().find('.gallery__slide a.is-active');
-      act.removeClass('is-active');
-      act.parent().next().find('a').addClass('is-active');
-      var pic = act.parent().prev().find('a').attr('href');
-      $(this).parent().next().find('img').attr('src', pic); 
-      $(this).parent().next().find('.js-gallery-badge').html(badges); 
-      $(this).parent().next().find('.js-gallery-badge-big').html(badges_big); 
-      $(this).parent().next().find('.js-play-video-icon').html(play_icon);
-    });
-  });
-  
-};
 gallery();
 
 function media_gallery() {
@@ -17715,7 +17615,7 @@ function media_gallery() {
         var first = $(this).find(".media__list li:first");
         var src = first.find("img").attr("src");
         first.find("img").attr("src");
-        first.parent().parent().find(".media__preview img").attr("src", src); 
+        first.parent().parent().find(".media__preview img").attr("src", src);
     });
     // $(".js-media-gallery li").click(function(){
     //     var src = $(this).find("img").attr("src");
@@ -17745,7 +17645,7 @@ if ($('.js-cycle').length > 0) {
 //             type : 'inside'
 //         },
 //         thumbs : {
-            
+
 //         }
 //     },
 //     tpl : {
@@ -17758,9 +17658,145 @@ if ($('.js-cycle').length > 0) {
 //         prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
 //     },
 //     wrapCSS: "popup popup_gallery"
-// });    
+// });
 
 
-  
+
 
 });
+
+//gallery
+function gallery() {
+  var el = $('.js-gallery');
+
+  //gallery init
+  el.find('.js-gallery-link.is-active').each(function(){
+    var pic = $(this).attr('href');
+    var full_link = $(this).data('full-link');
+    var full_size = $(this).data('full-size');
+    var badges = $(this).find('.js-badges').html();
+    var play_icon = $(this).find('.js-icon-play').html();
+    var badges_big = $(this).find('.js-badges-big').html();
+    $(this).closest('.js-gallery-nav').find('.js-gallery-link').removeClass('is-active');
+    $(this).addClass('is-active');
+    gallery = $(this).closest('.js-gallery');
+    gallery.find('.js-gallery-pic-img').attr('src', pic);
+    gallery.find('.js-gallery-pic-link').attr('href', pic);
+    gallery.find('.js-gallery-picFull-link').attr('href', full_link);
+    gallery.find('.js-gallery-picFull-size').html(full_size);
+    gallery.find('.js-gallery-badge').html(badges);
+    gallery.find('.js-gallery-badge-big').html(badges_big);
+    gallery.find('.js-play-video-icon').html(play_icon);
+  });
+
+  el.each(function(){
+    //click gallery item
+    $(this).find('.js-gallery-link').click(function() {
+      if (!$(this).hasClass('is-active')) {
+        var pic = $(this).attr('href');
+        var full_link = $(this).data('full-link');
+        var full_size = $(this).data('full-size');
+        var badges = $(this).find('.js-badges').html();
+        var play_icon = $(this).find('.js-icon-play').html();
+        var badges_big = $(this).find('.js-badges-big').html();
+        $(this).closest('.js-gallery-nav').find('.js-gallery-link').removeClass('is-active');
+        $(this).addClass('is-active');
+        gallery = $(this).closest('.js-gallery');
+        gallery.find('.js-gallery-pic-img').attr('src', pic);
+        gallery.find('.js-gallery-pic-link').attr('href', pic);
+        gallery.find('.js-gallery-picFull-link').attr('href', full_link);
+        gallery.find('.js-gallery-picFull-size').html(full_size);
+        gallery.find('.js-gallery-badge').html(badges);
+        gallery.find('.js-gallery-badge-big').html(badges_big);
+        gallery.find('.js-play-video-icon').html(play_icon);
+      };
+      return false;
+    });
+
+    //click up
+    $(this).find('.js-gallery-up').click(function() {
+      var act = $(this).closest('.js-gallery-nav').find('.js-gallery-link.is-active');
+      var act_new = act.closest('.js-gallery-slide').prev('.js-gallery-slide');
+      act.removeClass('is-active'); 
+      act_new.find('.js-gallery-link').addClass('is-active');
+      var pic = act_new.find('.js-gallery-link').attr('href');
+      var full_link = act_new.find('.js-gallery-link').data('full-link');
+      var full_size = act_new.find('.js-gallery-link').data('full-size');
+      var badges = act_new.find('.js-badges').html();
+      var play_icon = act_new.find('.js-icon-play').html();
+      var badges_big = act_new.find('.js-badges-big').html();
+      gallery = $(this).closest('.js-gallery');
+      gallery.find('.js-gallery-pic-img').attr('src', pic);
+      gallery.find('.js-gallery-pic-link').attr('href', pic);
+      gallery.find('.js-gallery-picFull-link').attr('href', full_link);
+      gallery.find('.js-gallery-picFull-size').html(full_size);
+      gallery.find('.js-gallery-badge').html(badges);
+      gallery.find('.js-gallery-badge-big').html(badges_big);
+      gallery.find('.js-play-video-icon').html(play_icon);
+    });
+
+    //click down
+    $(this).find('.gallery__down').click(function() {
+      var act = $(this).closest('.js-gallery-nav').find('.js-gallery-link.is-active');
+      var act_new = act.closest('.js-gallery-slide').next('.js-gallery-slide');
+      act.removeClass('is-active');
+      act_new.find('.js-gallery-link').addClass('is-active');
+      var pic = act_new.find('.js-gallery-link').attr('href');
+      var full_link = act_new.find('.js-gallery-link').data('full-link');
+      var full_size = act_new.find('.js-gallery-link').data('full-size');
+      var badges = act_new.find('.js-badges').html();
+      var play_icon = act_new.find('.js-icon-play').html();
+      var badges_big = act_new.find('.js-badges-big').html();
+      gallery = $(this).closest('.js-gallery');
+      gallery.find('.js-gallery-pic-img').attr('src', pic);
+      gallery.find('.js-gallery-pic-link').attr('href', pic);
+      gallery.find('.js-gallery-picFull-link').attr('href', full_link);
+      gallery.find('.js-gallery-picFull-size').html(full_size);
+      gallery.find('.js-gallery-badge').html(badges);
+      gallery.find('.js-gallery-badge-big').html(badges_big);
+      gallery.find('.js-play-video-icon').html(play_icon);
+    });
+  });
+}
+
+//popup
+function popup() {
+  $('.js-slider-popup-link').on('click', function(){
+  
+    //попап который надо показать
+    var jspopupproduct = $('.js-popup-product'+$(this).attr('data-popupNum'));
+
+    getel = $(this).closest('.js-gallery').find('.js-gallery-link.is-active').closest('.js-gallery-slide');
+    num = getel.index() + 1;
+    num = (num) ? num : $(this).parent().index() + 1;
+    console.log($(this).parent().index() + 1);
+
+    //making foto active inside popup too
+    jspopupproduct.find('.js-gallery-link').removeClass('is-active');
+    newactive = jspopupproduct.find('.cycle-slide:eq('+num+')');
+    newactive.children('.js-gallery-link').addClass('is-active');
+
+    href = newactive.children('.js-gallery-link').attr('href');
+    full_link = newactive.children('.js-gallery-link').data('full-link');
+    full_size = newactive.children('.js-gallery-link').data('full-size');
+    jspopupproduct.find('.js-gallery-pic').html('<a class="gallery__picLink js-gallery-pic-link" href="'+href+'"><img class="js-gallery-pic-img" src="'+href+'"></a><div class="picFull"><a class="picFull__link js-gallery-picFull-link" href="'+full_link+'">Открыть большое изображение</a> <span class="picFull__size">(<var class="js-gallery-picFull-size">'+full_size+'</var> пикс.)</span></div>');
+    // +++++++
+
+    jspopupproduct.css({
+      'top'        : $(window).scrollTop() + 20
+    }).show();
+    $('.js-overlay-popup').show();
+    return false;
+  });
+
+
+  var overlay = $('.js-overlay-popup');
+  overlay.on("click", function(){
+    $(this).hide();
+    $('.popup').hide();
+  });
+  $('.js-close-popup').on('click', function(){
+    $('.popup').hide();
+    overlay.hide();
+  });
+}

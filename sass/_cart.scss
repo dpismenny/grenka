@@ -9,7 +9,7 @@
 		color: #5d5d5d;
 		text-transform: uppercase;
 		&:after { 
-			bottom: 20px;
+			bottom: 20px; 
 		}
 	}
 }
@@ -48,9 +48,9 @@
 	width: 99px;
 	button {
 		position: absolute;
-		left: 0;
-		right: 0;
+    left: 0;
 		height: 20px;
+    width: 77px;
 		background: none;
 		&.disabled {
 			@include opacity(0);
@@ -161,7 +161,7 @@
 	.ico-play {
 		cursor: pointer;
 	}
-	a {
+	.gallery__picLink {
 		position: relative;
 		display: block;
 		height: 447px;
