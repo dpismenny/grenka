@@ -17784,7 +17784,7 @@ function popup() {
     href = newactive.children('.js-gallery-link').attr('href');
     full_link = newactive.children('.js-gallery-link').data('full-link');
     full_size = newactive.children('.js-gallery-link').data('full-size');
-    jspopupproduct.find('.js-gallery-pic').html('<a class="gallery__picLink js-gallery-pic-link" href="'+href+'"><img class="js-gallery-pic-img" src="'+href+'"></a><div class="picFull"><a class="picFull__link js-gallery-picFull-link" href="'+full_link+'">Открыть большое изображение</a> <span class="picFull__size">(<var class="js-gallery-picFull-size">'+full_size+'</var> пикс.)</span></div>');
+    jspopupproduct.find('.js-gallery-pic').html('<div class="gallery__picLink js-gallery-pic-link" ><img class="js-gallery-pic-img" src="'+href+'"></div><div class="picFull"><a class="picFull__link js-gallery-picFull-link" href="'+full_link+'">Открыть большое изображение</a> <span class="picFull__size">(<var class="js-gallery-picFull-size">'+full_size+'</var> пикс.)</span></div>');
     // +++++++
 
     jspopupproduct.css({
