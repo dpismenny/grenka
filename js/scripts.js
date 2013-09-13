@@ -17767,9 +17767,14 @@ function popup() {
     var jspopupproduct = $('.js-popup-product'+$(this).attr('data-popupNum'));
 
     getel = $(this).closest('.js-gallery').find('.js-gallery-link.is-active').closest('.js-gallery-slide');
+
     num = getel.index() + 1;
     num = (num) ? num : $(this).parent().index() + 1;
     console.log($(this).parent().index() + 1);
+
+     if($(this).closest('.media__list').length>0){
+        num= num+1;
+    }
 
     //making foto active inside popup too
     jspopupproduct.find('.js-gallery-link').removeClass('is-active');
