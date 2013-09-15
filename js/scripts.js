@@ -1,3 +1,6 @@
+if (typeof console == "undefined") {
+    this.console = {log: function() {}};
+}
 /*!
  * jQuery JavaScript Library v1.8.3
  * http://jquery.com/

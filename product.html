@@ -140,7 +140,7 @@
 </div>
 <!-- END .top -->
 	<!-- BEGIN  page-->
-<div class="page">
+<div class="page"  itemscope itemtype="http://data-vocabulary.org/Product">
 	<!-- BEGIN .header -->
 	<div class="header">
 		<!-- BEGIN .header__logo -->
@@ -287,13 +287,13 @@
 	<!-- BEGIN .prod -->
 	<div class="prod">
 		<!-- BEGIN .breadcrumbs -->
-		<ul class="breadcrumbs">
+		<ul class="breadcrumbs" itemprop="category" content="Антивирусы">
 			<li><span>/</span><a href="#">Главная</a></li>
 			<li><span>/</span><a href="#">Программы</a></li>
 			<li><span>/</span>Антивирусы...</li>
 		</ul>
 		<!-- END .breadcrumbs -->
-		<div class="prod__articul">Артикул товара:<strong>00000011</strong></div>
+		<div class="prod__articul">Артикул товара:<strong itemprop="identifier" content="mpn:00000011">00000011</strong></div>
 		<div class="prod__content">
 			<div class="prod__left">
 				<div class="gallery js-gallery js-gallery-1">
@@ -303,7 +303,7 @@
 						<div class="gallery__list cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-next=".js-gallery-1 .js-gallery-down" data-cycle-prev=".js-gallery-1 .js-gallery-up" data-cycle-carousel-visible="7" data-cycle-carousel-vertical="true" data-allow-wrap="false">
 							<div class="gallery__slide js-gallery-slide">
 								<a class="js-gallery-link" href="img/product.jpg" data-full-link="img/product.jpg?full" data-full-size="1000 x 1000">
-									<img src="img/gallery-nav.jpg" alt="">
+									<img src="img/gallery-nav.jpg" itemprop="image" alt="">
 									<div class="is-hidden js-badges">
 									</div>
 									<div class="is-hidden js-badges-big">
@@ -314,7 +314,7 @@
 							</div>
 							<div class="gallery__slide js-gallery-slide">
 								<a class="js-gallery-link" href="img/product1.jpg" data-full-link="img/product1.jpg?full" data-full-size="1000 x 1000">
-									<img src="img/gallery-nav.jpg" alt="">
+									<img src="img/gallery-nav.jpg" itemprop="image" alt="">
 									<div class="is-hidden js-badges">
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
@@ -327,7 +327,7 @@
 							</div>
 							<div class="gallery__slide js-gallery-slide">
 								<a class="js-gallery-link is-active" href="img/product.jpg" data-full-link="img/product.jpg?full" data-full-size="1000 x 1000">
-									<img src="img/gallery-nav.jpg" alt="">
+									<img src="img/gallery-nav.jpg" itemprop="image" alt="">
 									<div class="is-hidden js-badges">
 										<i class="badge badge_delivery" alt="Лучший товар"></i>
 										<i class="badge badge_gift" alt="Подарок"></i>
@@ -473,11 +473,18 @@
 				</div>
 			</div>
 			<div class="prod__right">
-				<div class="prod__title">Assassin's Creed II for PS3 очень лимитированое издание в две строки</div>
+				<div class="prod__title" itemprop="name" >Assassin's Creed II for PS3 очень лимитированое издание в две строки</div>
+				<span itemprop="condition" content="new"></span>
 				<!-- BEGIN .rating -->
 				<div class="rating">
 					<div class="rating__in js-rating" data-score="4"></div>
 					<span>(15)</span>
+					<span style="display:none" itemprop="review" itemscope itemtype="http://data-vocabulary.org/Review-aggregate">
+					     
+					  Средняя оценка: <span itemprop="rating">4.4</span> на основе
+					  <span itemprop="count">89</span> отзывов
+					 
+					 </span>
 				</div>
 				<script type="text/javascript">
 					 //rating small stars
@@ -517,13 +524,15 @@
 					}
 				</script>
 				<!-- END .rating -->
-				<ul class="prod__price">
-					<li class="prod__price-old is-inactive"><strong>10 999.55</strong>грн.</li>
+				<ul class="prod__price" itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer">
+					<li class="prod__price-old"><strong>10 999.55</strong>грн.
+					<meta itemprop="currency" content="UAH" /></li>
+
 					<li class="prod__price-new is-inactive"><strong>10 999.55</strong>грн.</li>
 				</ul>
 				<div class="prod__buy">
 					<button class="btn btn_big">купить</button>
-					<div class="label-in-stock">наличие гарантировано<i></i></div>
+					<div class="label-in-stock" itemprop="availability" content="in_stock">наличие гарантировано<i></i></div>
 					<div class="prod__buy-links">
 						<a href="#">Узнать о снижении цены
 							Сообщить о скидках!</a>
@@ -750,7 +759,7 @@
 			<div class="description">
 				<div class="description__content">
 					<div class="description__title">Описание Battlefield 3 Русская версия (PC) Jewel Case</div>
-					<div class="description__txt">
+					<div class="description__txt" itemprop="description">
 						<p>В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...
 						В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...</p>
 						<p>В Battlefield 3 Вам предстоит выступить в роли бойцов КМП США. Вас ждут захватывающая индивидуальная кампания и сетевые баталии во всех регионах земного шара. Благодаря передовой технологии Frostbite 2 игра Battlefield 3 откроет перед Вами новые горизонты жанра боевика от 1-го лица. Благодаря ядру Frostbite — новейшей разработке студии DICE — игра Battlefield 3 достигла невероятных высот как в плане графики, так и в игровом процессе. Масштабы игры, система разрушений, динамическое озвучивание, «живая» анимация персонажей...</p>
