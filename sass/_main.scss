@@ -318,6 +318,9 @@
 	margin-bottom: 17px;
 	cursor: pointer;
 	@include unselectable;
+	.label__tooltip {
+		top: -27px;
+	}
 	&.is-open {
 		z-index: 20;
 	}
