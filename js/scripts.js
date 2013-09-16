@@ -17262,6 +17262,7 @@ function selectcustom(whatever) {
       var id = $(this).attr("data-id");
       $(this).parent().prev().find('span').html(value);
       $(this).parent().prev().find('input').val(id);
+      $(this).parent().prev().find('input').trigger('change');
       $(this).parent().parent().removeClass('is-open');
       $(this).parent().hide();
   });
@@ -17534,7 +17535,7 @@ tabs();
     $(this).parent().hide();
   });
   $(".js-del-all-filters").click(function(){
-    $(this).parent().parent().remove();
+    $(".filter-selected").remove();
     return false;
   });
 

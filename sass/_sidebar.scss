@@ -412,10 +412,8 @@
 }
 .filter-selected__item {
     @extend %clr;
-    padding: 0 10px 0 20px;
+    padding: 10px 10px 10px 20px;
     @include box-sizing(border-box);
-    height: 41px;
-    line-height: 41px;
     border-top: 1px solid #dcdcdc;
     @include box-shadow(inset 0 1px 0 #fff);
     &:first-child {
@@ -423,17 +421,6 @@
         font-size: 12px;
         border-top: 0;
         @include box-shadow(none);
-    }
-    &
-    div{
-        display: inline-block;
-        vertical-align: middle;
-        line-height: 1.2;
-    }
-    span {
-        display: block;
-        font-size: 10px;
-        color: #71ae20; 
     }
     i {
         float: right;
@@ -443,10 +430,18 @@
         text-decoration: underline;
     }
 }
+.filter-selected__type {
+    font-size: 10px;
+    color: #71ae20;
+}
+.filer-selected__property {
+    position: relative;
+    margin-bottom: 5px;
+    @extend %clr;
+}
 .filer-selected__del {
     float: right;
     cursor: pointer;
-    margin-top: 14px;
     width: 11px;   
     height: 11px;
     line-height: 10px;  
@@ -464,6 +459,9 @@
         vertical-align: middle;
         @include s(del)
     }
+}
+.filer-selected__property {
+    position: relative;
 }
 
 .accord {
