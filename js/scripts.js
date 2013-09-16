@@ -17311,7 +17311,7 @@ selectcustom($('.page .js-select'));
 function tabs() {
   $(".js-tabs-content").first().show();
   $('.tabs__top').next().show();
-  $('.js-tabs-nav button').click(function() {
+  $('.js-tabs-nav button').click(function(e) {
     if (!$(this).hasClass('active')) {
       $(this).parent().find('button').removeClass('is-active');
       var value = $(this).attr('data-tab');
@@ -17320,8 +17320,8 @@ function tabs() {
       $(this).parent().parent().parent().find('.js-tabs-content').hide();
       $('#' + value).show();
       $(this).parent().next().find('.js-tabs-count').html('('+count+')');
-       window.location.hash = value;
-       return false;
+       window.location.hash = "section-"+value;
+      e.preventDefault();
     };
   });
 };
