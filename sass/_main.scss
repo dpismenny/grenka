@@ -319,7 +319,7 @@
 	cursor: pointer;
 	@include unselectable;
 	.label__tooltip {
-		top: -27px;
+		top: -25px;
 	}
 	&.is-open {
 		z-index: 20;
