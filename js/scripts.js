@@ -17320,6 +17320,8 @@ function tabs() {
       $(this).parent().parent().parent().find('.js-tabs-content').hide();
       $('#' + value).show();
       $(this).parent().next().find('.js-tabs-count').html('('+count+')');
+       window.location.hash = value;
+       return false;
     };
   });
 };
