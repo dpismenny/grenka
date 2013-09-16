@@ -17530,14 +17530,7 @@ tabs();
       });
   });
 
-// delite filter
-  $(".js-del-filter").click(function(){
-    $(this).parent().hide();
-  });
-  $(".js-del-all-filters").click(function(){
-    $(".filter-selected").remove();
-    return false;
-  });
+
 
 // accordion filter
   $(".js-accord-body").hide();
