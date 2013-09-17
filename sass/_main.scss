@@ -377,6 +377,8 @@
 	top: 25px;
 	left: 0;
 	width: 100%;
+	max-height: 250px;
+	overflow-y: auto;
 	background: #FFF;
 	border: 1px solid #adadad;
 	border-radius: 4px;
