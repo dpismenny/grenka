@@ -5,7 +5,9 @@
 			border: 1px solid #ccc;
 		}
 	}
-	.title {
+	.title,
+	.s-delivery .sidebar-head,
+	.popup__header {
 		background: #67a713;
 	}
 	.banner {
@@ -97,5 +99,25 @@
 		// 		@include opacity(0);
 		// 	}
 		// }
+	}
+
+	.cabina__links {
+		a {
+			font-size: 12px;
+		}
+		
+	}
+	.spec-table_loyalty {
+		th {
+			width: 47px !important;
+		}
+	}
+	.spec-table__body {
+		td {
+			text-align: center;
+			&:first-child {
+				text-align: left;
+			}
+		}
 	}
 }
