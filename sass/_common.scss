@@ -801,6 +801,19 @@ textarea {
 		@include pm;
 		text-transform: uppercase;
 	}
+	.is-basket-gift {
+		.icon_gift,
+		.basket__text {
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.basket__text {
+			width: 120px;
+		}
+	}
 }
 .nav {
 	display: table;
